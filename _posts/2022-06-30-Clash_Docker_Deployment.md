@@ -39,9 +39,10 @@ sudo ufw allow 1234
 
 ## 1.2 直接部署WebUI
 
-通过[此链接]()
+通过[此链接](https://github.com/haishanh/yacd/releases)下载最新版本的```yacd.tar.xz```解压，并将文件夹重命名为dashboard。将其与下文中的**config.yaml**放置在同一文件夹下。
 
 ![img](img/_post_image/2022-06-30/Clash_Dashboard.jpg)
+![img](https://github.com/MoaxWang/moaxwang.github.io/blob/main/img/_post_image/2022-06-30/Clash_Dashboard.jpg)
 
 # 2 部署Clash容器
 
