@@ -16,20 +16,20 @@ catalog: true
 
 这里我们首先拉取Clash Dashbaord的镜像。该镜像基于 haishanh/yacd（[Docker链接](https://hub.docker.com/r/haishanh/yacd)，[Github链接](https://github.com/haishanh/yacd)）。
 
-```applescript
+```yaml
 docker pull haishanh/yacd
 ```
 >需要注意的是如果你并非使用root账户或用户未加入docker组则<mark>在对docker操作时需要使用 sudo</mark>
 
 然后根据介绍直接运行。
 
-```applescript
+```yaml
 docker run --name clash_webui -d -p 1234:80 haishanh/yacd
 ```
 
 在这里80端口是容器的端口，1234是服务器的端口（该端口可以由自己定义，只要没有被占用就可以）。
 
-```applescript
+```yaml
 sudo ufw allow 1234
 ```
 
@@ -41,7 +41,7 @@ sudo ufw allow 1234
 
 通过[此链接]()
 
-![img](_posts\_post_image\2022-06-30\Clash_Dashboard.jpg)
+![img](/img/_post_image/2022-06-30/Clash_Dashboard.jpg)
 
 # 2 部署Clash容器
 
