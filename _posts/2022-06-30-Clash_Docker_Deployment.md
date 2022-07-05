@@ -41,7 +41,7 @@ sudo ufw allow 1234
 
 通过[此链接]()
 
-![img](\_post_image\2022-06-30\Clash_Dashboard.png)
+![img](_posts\_post_image\2022-06-30\Clash_Dashboard.png)
 
 # 2 部署Clash容器
 
@@ -49,13 +49,9 @@ sudo ufw allow 1234
 
 ```applescript
 port: 7890
-
 socks-port: 7891
-
 #转发端口一定要配置
-
 redir-port: 7892
-
 #允许接管局域网流量
 allow-lan: true
 #默认代理模式
