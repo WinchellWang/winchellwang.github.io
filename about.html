@@ -6,107 +6,75 @@ header-img: "img/about-bg.jpg"
 ---
 
 <!-- Language Selector -->
-<select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+<select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
     <option value="0" selected> 中文 Chinese </option>
-    <option value="1"> 英语 English </option>
+    <option value="1"> 英文 English </option>
 </select>
 
 <!-- Chinese Version -->
 <div class="zh post-container">
-    <blockquote>
-        一条菜狗，还在学习。
-    </blockquote>
-    <br>
-    希望自己的能力在三年的学习后可以独当一面，遨游四方。
-    <br>
-    <!-- <p style="text-align:right;">
-        —— <a href="http://www.zhihu.com/question/19687065">李书航 － 什么是「共产中文腔调」？ </a>
-    </p> -->
-
+    {% capture about_zh %}{% include about/zh.md %}{% endcapture %}
+    {{ about_zh | markdownify }}
 </div>
 
 <!-- English Version -->
 <div class="en post-container">
-    <blockquote>
-        A Study Nerd.
-    </blockquote>
-
-    <p>
-    Word Hard, Play Harder.
-    </p>
-
-    <!-- <p style="text-align:right;">
-    -- Steve Jobs
-    </p> -->
-
+    {% capture about_en %}{% include about/en.md %}{% endcapture %}
+    {{ about_en | markdownify }}
 </div>
 
 <!-- Handle Language Change -->
 <script type="text/javascript">
+    // get nodes
     var $zh = document.querySelector(".zh");
     var $en = document.querySelector(".en");
-    function onLanChange(index){
-        if(index == 0){
-            $zh.style.display = "block";
-            $en.style.display = "none";
-        }else{
+    var $select = document.querySelector("select");
+
+    // bind hashchange event
+    window.addEventListener('hashchange', _render);
+
+    // handle render
+    function _render(){
+        var _hash = window.location.hash;
+        // en
+        if(_hash == "#en"){
+            $select.selectedIndex = 1;
             $en.style.display = "block";
             $zh.style.display = "none";
+        // zh by default
+        }else{
+            // not trigger onChange, otherwise cause a loop call.
+            $select.selectedIndex = 0;
+            $zh.style.display = "block";
+            $en.style.display = "none";
         }
     }
-    onLanChange(0);
+
+    // handle select change
+    function onLanChange(index){
+        if(index == 0){
+            window.location.hash = "#zh"
+        }else{
+            window.location.hash = "#en"
+        }
+    }
+
+    // init
+    _render();
 </script>
 
 
-
-<!-- {% if site.duoshuo_username %} -->
-<!-- 多说评论框 start -->
-<!-- <div class="comment">
-    <div class="ds-thread"
-    {% if site.duoshuo_username == "huxblog" %}
-        data-thread-id="1187623191091085319"
-    {% else %}
-        data-thread-key="{{site.duoshuo_username}}/about"
-    {% endif %}
-
-    data-title="{{page.title}}"
-    data-url="{{site.url}}/about/"></div>
-</div> -->
-<!-- 多说评论框 end -->
-
-<!-- Duoshuo hacking -->
-<!-- <input id="dsUser" type="hidden" value="{{site.duoshuo_username}}"  /> -->
-
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<!-- <script type="text/javascript">
-    // dynamic User hacking by Hux
-    var _user = document.getElementById('dsUser').value;
-    // duoshuo comment query.
-    var duoshuoQuery = {short_name: _user };
-    (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-         || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-</script> -->
-<!-- 多说公共JS代码 end -->
-<!-- {% endif %} -->
-
-
-<!-- {% if site.disqus_username %} -->
+{% if site.disqus_username %}
 <!-- disqus 评论框 start -->
-<!-- <div class="comment">
+<div class="comment">
     <div id="disqus_thread" class="disqus-thread">
 
     </div>
-</div> -->
+</div>
 <!-- disqus 评论框 end -->
 
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
-<!-- <script type="text/javascript">
+<script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "{{site.disqus_username}}";
     var disqus_identifier = "{{site.disqus_username}}/{{page.url}}";
@@ -117,6 +85,6 @@ header-img: "img/about-bg.jpg"
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
-</script> -->
+</script>
 <!-- disqus 公共JS代码 end -->
-<!-- {% endif %} -->
+{% endif %}
