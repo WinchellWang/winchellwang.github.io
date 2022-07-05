@@ -41,9 +41,6 @@ sudo ufw allow 1234
 
 通过[此链接](https://github.com/haishanh/yacd/releases)下载最新版本的```yacd.tar.xz```解压，并将文件夹重命名为dashboard。将其与下文中的**config.yaml**放置在同一文件夹下。
 
-![img](img/_post_image/2022-06-30/Clash_Dashboard.jpg)
-![img](https://github.com/MoaxWang/moaxwang.github.io/blob/main/img/_post_image/2022-06-30/Clash_Dashboard.jpg)
-
 # 2 部署Clash容器
 
 这里首先要准备好你的设置文件**config.yaml**，设置文件可以参考[此链接](https://github.com/Dreamacro/clash/wiki/configuration)内的设置，但有几个设置是需要与下文保持一致。（其实当然也可以按照你自己的意愿设定，但前提是确实明白这些参数代表的意思与功能）
@@ -82,12 +79,12 @@ dns:
 ```
 
 准备好配置文件后，将配置文件放置在 ```~/clash```中，创建文件夹的命令为：
-```applescript
+```shell
 mkdir ~/clash
 ```
 
 然后在防火墙中打开以下端口
-```applescript
+```shell
 sudo ufw allow 端口号
 需要开启的端口号：7890, 7891, 7892, 7070, 1053, 53
 ```
@@ -95,17 +92,23 @@ sudo ufw allow 端口号
 然后拉取 Clash 的镜像。Clash的镜像共有两种。普通版与高级版两个都是免费的，但高级版有更多的功能，具体的区别可以在[此处链接](https://github.com/Dreamacro/clash/wiki/premium-core-features)中了解。
 
 [普通版镜像](https://hub.docker.com/r/dreamacro/clash)拉取方式：
-```applescript
+
+```shell
 docker pull dreamacro/clash
 ```
+
 [高级版镜像](https://hub.docker.com/r/dreamacro/clash-premium)拉取方式：
-```
+
+```shell
 docker pull dreamacro/clash-premium
-```applescript
+```
+
 然后运行如下命令启动clash容器
-```applescript
+
+```shell
 docker run --name clash -d -v ~/clash/config.yaml:/root/.config/clash/config.yaml --network="host" --privileged dreamacro/clash
 ```
+
 >其中 -v 命令之后的挂载卷映射的左侧原始路径是你自己的config.yaml的位置，此处已是我们在用户文件夹下创建好的用于存储配置文件的路径。
 
 如果配置文件设置无误的话，可以在Dashboard页面输入服务器地址与端口，链接到Clash进行设置了。
@@ -117,13 +120,13 @@ Dashboard支持对链接添加参数，具体设置可以参考[此链接](https
 以服务器地址为192.168.1.2，clash的 config.yaml 中 external-controller 端口设置为7070，且Clash Dashboard的端口设置为1234为例，则可以使用以下链接进行访问：
 <br>&ensp;&ensp;```http://192.168.1.2:1234/?hostname=192.168.1.2&port=7070```
 
-# 3 配置路由表
+# 3 配置路由表 (Optional)
 
 ## 3.1 配置服务器路由表转发规则
 
 可以终端中输入以下命令，也可以写进.sh脚本，chmod +x 之后执行./xxx.sh。
 
-```applescript
+```shell
 #在nat表中新建一个clash规则链
 iptables -t nat -N CLASH
 #排除环形地址与保留地址，匹配之后直接RETURN
@@ -158,7 +161,7 @@ iptables -t nat -I PREROUTING -p udp --dport 53 -j CLASH_DNS
 ## 3.2 路由表持久化
 
 路由表每次重新开机之后都会回复为默认值，如果想要将更改的内容持久化，需要借助一个软件包 iptables-persistent 实现。
-```applescript
+```shell
 sudo apt install iptables-persistent
 sudo netfilter-persistent save
 ```
@@ -166,7 +169,7 @@ sudo netfilter-persistent save
 ## 3.3 路由表复原
 
 如果需要删除上述的路由表配置，执行以下命令
-```applescript
+```shell
 sudo iptables -t nat -D PREROUTING -p tcp -j CLASH
 sudo iptables -t nat -D OUTPUT -p udp --dport 53 -j CLASH_DNS
 sudo iptables -t nat -D PREROUTING -p udp --dport 53 -j CLASH_DNS
@@ -185,37 +188,39 @@ sudo netfilter-persistent save
 
 手动设置需要被接管流量的终端设备的IP地址，将网关地址与DNS服务器地址设置为你部署clash的服务器地址。
 
-![img](https://pic1.zhimg.com/80/v2-766c3e6f0474efc3ad5157fbdc8c39c8_1440w.jpg)
+网关：
+![img](https://raw.githubusercontent.com/MoaxWang/moaxwang.github.io/main/img/_post_image/2022-06-30/Screenshoot_2.jpeg)
+
+DNS：
+![img](https://raw.githubusercontent.com/MoaxWang/moaxwang.github.io/main/img/_post_image/2022-06-30/Screenshoot_3.jpeg)
 
 ### 4.1.1 代理模式
 
 打开网络代理设置，将服务器地址填入，并在端口中输入7890（Socks代理则在端口中输入7891）。
 
-![img](https://pic1.zhimg.com/80/v2-766c3e6f0474efc3ad5157fbdc8c39c8_1440w.jpg)
+![img](https://raw.githubusercontent.com/MoaxWang/moaxwang.github.io/main/img/_post_image/2022-06-30/Screenshoot_1.jpeg)
 
 此种方式为终端设备主动寻求流量接管。优点是如果服务器宕机，局域网里的其他联网设备不受影响。缺点是每一个需要接管的设备都需要手动设置，较为麻烦。
 
 ## 4.2 侵入式
 
 手动设置服务器的网关地址为主路由器
-```applescript
+```shell
 vim /etc/netplan/xxx.yaml
 ```
 
-修改dhcp4设置并在下面添加如下参数：
-```applescript
-test
-```
-
-![img](https://cdn.jsdelivr.net/gh/Erw1nK/PicGo-imgs@master/blog/20220223152557.png)
+修改dhcp4为false，并配置静态IP，其中需要注意的是nameservers中的addresses应该是路由器的地址，在本例中即为192.168.1.1。
 
 在路由器中，在内网DHCP配置页面，将网关与DNS服务器都设置为clash服务器的IP地址。
 
-![img](https://cdn.jsdelivr.net/gh/Erw1nK/PicGo-imgs@master/blog/20220223152557.png)
+![img](https://raw.githubusercontent.com/MoaxWang/moaxwang.github.io/main/img/_post_image/2022-06-30/Router.jpg)
 
 这样设置下，由主路由器分发给所有终端设备clash服务器的地址作为网关与dns解析接口。Clash服务器处理完数据包之后发送回主路由器，并由主路由器向上送至光猫。此时网络才是通的，实现的是旁路由的原理。
 
 这种方法将由clash服务器全权接管局域网内的所有流量。好处是在局域网覆盖范围内只要接入，直接走代理，不需要进行任何设置。缺点是一旦服务器宕机，整个局域网就瘫痪了。
+
+最终效果：
+![img](https://raw.githubusercontent.com/MoaxWang/moaxwang.github.io/main/img/_post_image/2022-06-30/Screenshoot_4.jpeg)
 
 >**Tips：**
 打通整个网络，除了配置要没有错误之外，以下三点要反复确认:<br>docker里的clash在运行状态<br>路由表配置完毕<br>clash服务器网关地址指向主路由器
