@@ -10,7 +10,9 @@ catalog: true
 ---
 在Ubuntu Server 20.04上利用Docker部署Clash对网络进行接管并实现透明代理。
 
-# 1 部署Clash的WebUI容器（Clash Dashboard）
+# 1 部署Clash的WebUI（Clash Dashboard）
+
+## 1.1 基于Docker容器的WebUI
 
 这里我们首先拉取Clash Dashbaord的镜像。该镜像基于 haishanh/yacd（[Docker链接](https://hub.docker.com/r/haishanh/yacd)，[Github链接](https://github.com/haishanh/yacd)）。
 
@@ -35,6 +37,10 @@ sudo ufw allow 1234
 
 打开防火墙对应端口，即可以使用服务器地址跟对应端口号访问。例如服务器地址为192.168.1.2，则在浏览器中输入```192.168.1.2:1234```，就可以打开Clash Dashboard。
 
+## 1.2 直接部署WebUI
+
+通过[此链接]()
+
 ![img](\_post_image\2022-06-30\Clash_Dashboard.png)
 
 # 2 部署Clash容器
@@ -43,9 +49,13 @@ sudo ufw allow 1234
 
 ```applescript
 port: 7890
+
 socks-port: 7891
+
 #转发端口一定要配置
+
 redir-port: 7892
+
 #允许接管局域网流量
 allow-lan: true
 #默认代理模式
