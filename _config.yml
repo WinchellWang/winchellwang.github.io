@@ -6,7 +6,7 @@ email: moax.wang@outlook.com
 description: "Nothing more than a student."
 keyword: ""
 url: "https://moaxwang.github.io/"              # your host, for absolute URL
-baseurl: "/"         # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 # SNS settings
 RSS: MoaxWang
