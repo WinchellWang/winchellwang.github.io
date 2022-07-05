@@ -162,7 +162,7 @@ iptables -t nat -I PREROUTING -p udp --dport 53 -j CLASH_DNS
 ## 3.2 路由表持久化
 
 路由表每次重新开机之后都会回复为默认值，如果想要将更改的内容持久化，需要借助一个软件包 iptables-persistent 实现。
-```shell
+```bash
 sudo apt install iptables-persistent
 sudo netfilter-persistent save
 ```
