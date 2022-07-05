@@ -14,20 +14,20 @@ catalog: true
 
 这里我们首先拉取Clash Dashbaord的镜像。该镜像基于 haishanh/yacd（[Docker链接](https://hub.docker.com/r/haishanh/yacd)，[Github链接](https://github.com/haishanh/yacd)）。
 
-```
+```applescript
 docker pull haishanh/yacd
 ```
 >需要注意的是如果你并非使用root账户或用户未加入docker组则<mark>在对docker操作时需要使用 sudo</mark>
 
 然后根据介绍直接运行。
 
-```
+```applescript
 docker run --name clash_webui -d -p 1234:80 haishanh/yacd
 ```
 
 在这里80端口是容器的端口，1234是服务器的端口（该端口可以由自己定义，只要没有被占用就可以）。
 
-```
+```applescript
 sudo ufw allow 1234
 ```
 
@@ -41,7 +41,7 @@ sudo ufw allow 1234
 
 这里首先要准备好你的设置文件**config.yaml**，设置文件可以参考[此链接](https://github.com/Dreamacro/clash/wiki/configuration)内的设置，但有几个设置是需要与下文保持一致。（其实当然也可以按照你自己的意愿设定，但前提是确实明白这些参数代表的意思与功能）
 
-```css
+```applescript
 port: 7890
 socks-port: 7891
 #转发端口一定要配置
@@ -75,12 +75,12 @@ dns:
 ```
 
 准备好配置文件后，将配置文件放置在 ```~/clash```中，创建文件夹的命令为：
-```
+```applescript
 mkdir ~/clash
 ```
 
 然后在防火墙中打开以下端口
-```
+```applescript
 sudo ufw allow 端口号
 需要开启的端口号：7890, 7891, 7892, 7070, 1053, 53
 ```
@@ -88,15 +88,15 @@ sudo ufw allow 端口号
 然后拉取 Clash 的镜像。Clash的镜像共有两种。普通版与高级版两个都是免费的，但高级版有更多的功能，具体的区别可以在[此处链接](https://github.com/Dreamacro/clash/wiki/premium-core-features)中了解。
 
 [普通版镜像](https://hub.docker.com/r/dreamacro/clash)拉取方式：
-```
+```applescript
 docker pull dreamacro/clash
 ```
 [高级版镜像](https://hub.docker.com/r/dreamacro/clash-premium)拉取方式：
 ```
 docker pull dreamacro/clash-premium
-```
+```applescript
 然后运行如下命令启动clash容器
-```
+```applescript
 docker run --name clash -d -v ~/clash/config.yaml:/root/.config/clash/config.yaml --network="host" --privileged dreamacro/clash
 ```
 >其中 -v 命令之后的挂载卷映射的左侧原始路径是你自己的config.yaml的位置，此处已是我们在用户文件夹下创建好的用于存储配置文件的路径。
@@ -117,7 +117,7 @@ Dashboard支持对链接添加参数，具体设置可以参考[此链接](https
 
 可以终端中输入以下命令，也可以写进.sh脚本，chmod +x 之后执行./xxx.sh。
 
-```css
+```applescript
 #在nat表中新建一个clash规则链
 iptables -t nat -N CLASH
 #排除环形地址与保留地址，匹配之后直接RETURN
@@ -152,7 +152,7 @@ iptables -t nat -I PREROUTING -p udp --dport 53 -j CLASH_DNS
 ## 3.2 路由表持久化
 
 路由表每次重新开机之后都会回复为默认值，如果想要将更改的内容持久化，需要借助一个软件包 iptables-persistent 实现。
-```
+```applescript
 sudo apt install iptables-persistent
 sudo netfilter-persistent save
 ```
@@ -160,7 +160,7 @@ sudo netfilter-persistent save
 ## 3.3 路由表复原
 
 如果需要删除上述的路由表配置，执行以下命令
-```
+```applescript
 sudo iptables -t nat -D PREROUTING -p tcp -j CLASH
 sudo iptables -t nat -D OUTPUT -p udp --dport 53 -j CLASH_DNS
 sudo iptables -t nat -D PREROUTING -p udp --dport 53 -j CLASH_DNS
@@ -192,12 +192,12 @@ sudo netfilter-persistent save
 ## 4.2 侵入式
 
 手动设置服务器的网关地址为主路由器
-```
+```applescript
 vim /etc/netplan/xxx.yaml
 ```
 
 修改dhcp4设置并在下面添加如下参数：
-```
+```applescript
 test
 ```
 
