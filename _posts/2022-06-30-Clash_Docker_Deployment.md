@@ -106,8 +106,13 @@ docker pull dreamacro/clash-premium
 然后运行如下命令启动clash容器
 
 ```shell
-docker run --name clash -v ~/clash:/root/.config/clash --network=host --privileged --restart=unless-stopped -d dreamacro/clash-premium
-```
+docker run --name clash \
+        -v ~/clash:/root/.config/clash \
+        --network=host \ 
+        --privileged \ 
+        --restart=unless-stopped \ 
+        -d dreamacro/clash-premium
+ ```
 
 >其中 -v 命令之后的挂载卷映射的左侧原始路径是你自己的config.yaml的位置，此处已是我们在用户文件夹下创建好的用于存储配置文件的路径。
 
