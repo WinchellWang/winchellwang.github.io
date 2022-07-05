@@ -41,7 +41,7 @@ sudo ufw allow 1234
 
 通过[此链接]()
 
-![img](/img/_post_image/2022-06-30/Clash_Dashboard.jpg)
+![img](img/_post_image/2022-06-30/Clash_Dashboard.jpg)
 
 # 2 部署Clash容器
 
