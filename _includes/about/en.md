@@ -1,3 +1,3 @@
-A Study Nerd.
+A Nerd.
 
 Word Hard, Play Harder.
