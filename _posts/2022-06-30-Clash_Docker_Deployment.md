@@ -16,20 +16,20 @@ catalog: true
 
 这里我们首先拉取Clash Dashbaord的镜像。该镜像基于 haishanh/yacd（[Docker链接](https://hub.docker.com/r/haishanh/yacd)，[Github链接](https://github.com/haishanh/yacd)）。
 
-```yaml
+```
 docker pull haishanh/yacd
 ```
 >需要注意的是如果你并非使用root账户或用户未加入docker组则<mark>在对docker操作时需要使用 sudo</mark>
 
 然后根据介绍直接运行。
 
-```yaml
+```
 docker run --name clash_webui -d -p 1234:80 haishanh/yacd
 ```
 
 在这里80端口是容器的端口，1234是服务器的端口（该端口可以由自己定义，只要没有被占用就可以）。
 
-```yaml
+```
 sudo ufw allow 1234
 ```
 
@@ -47,7 +47,7 @@ sudo ufw allow 1234
 
 这里首先要准备好你的设置文件**config.yaml**，设置文件可以参考[此链接](https://github.com/Dreamacro/clash/wiki/configuration)内的设置，但有几个设置是需要与下文保持一致。（其实当然也可以按照你自己的意愿设定，但前提是确实明白这些参数代表的意思与功能）
 
-```yaml
+```yml
 port: 7890
 socks-port: 7891
 #转发端口一定要配置
