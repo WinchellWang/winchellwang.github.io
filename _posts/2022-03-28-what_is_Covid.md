@@ -5,7 +5,7 @@ date: 2022-03-28
 author: Me
 header-img: "img/home-bg-o.jpg"
 tags: [Blog]
-header-mask: 0.3
+header-mask: 0.1
 catalog: true
 comments: false
 ---

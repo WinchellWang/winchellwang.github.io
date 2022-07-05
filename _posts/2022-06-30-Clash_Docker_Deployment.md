@@ -5,7 +5,7 @@ date: 2022-06-30
 author: Me
 header-img: "img/home-bg-o.jpg"
 tags: [Technology]
-header-mask: 0.3
+header-mask: 0.1
 catalog: true
 ---
 在Ubuntu Server 20.04上利用Docker部署Clash对网络进行接管并实现透明代理。
