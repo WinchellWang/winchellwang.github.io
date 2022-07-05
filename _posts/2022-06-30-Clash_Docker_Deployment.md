@@ -41,13 +41,13 @@ sudo ufw allow 1234
 
 通过[此链接]()
 
-![img](_posts\_post_image\2022-06-30\Clash_Dashboard.png)
+![img](_posts\_post_image\2022-06-30\Clash_Dashboard.jpg)
 
 # 2 部署Clash容器
 
 这里首先要准备好你的设置文件**config.yaml**，设置文件可以参考[此链接](https://github.com/Dreamacro/clash/wiki/configuration)内的设置，但有几个设置是需要与下文保持一致。（其实当然也可以按照你自己的意愿设定，但前提是确实明白这些参数代表的意思与功能）
 
-```applescript
+```yaml
 port: 7890
 socks-port: 7891
 #转发端口一定要配置
