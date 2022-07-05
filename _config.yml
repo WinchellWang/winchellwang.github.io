@@ -3,7 +3,7 @@ title: Moax Wang
 SEOTitle: Moax.Wang Blog
 header-img: img/home-bg.jpg
 email: moax.wang@outlook.com
-description: "Nothing more than a student."
+description: "Welcome to my blog :D"
 keyword: ""
 url: "https://moaxwang.github.io/"             # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
@@ -15,9 +15,9 @@ RSS: MoaxWang
 #weibo_username: None
 #zhihu_username: None
 github_username: MoaxWang
-# twitter_username:   None
+#twitter_username:   None
 #facebook_username:  None
-linkedin_username:  wen-qiang-wang-08335713a
+#linkedin_username:  wen-qiang-wang-08335713a
 
 
 
