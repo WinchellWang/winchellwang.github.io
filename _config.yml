@@ -1,23 +1,23 @@
 # Site settings
-title: Duanrw Blog
-SEOTitle: Duanrw Blog
+title: Moax Wang
+SEOTitle: Moax.Wang Blog
 header-img: img/home-bg.jpg
-email: 719756810@qq.com
-description: "python,学习历程,学习心得,经验记录,个人见解|js,mysql,mongodb,redis,python,爬虫,框架"
-keyword: "段任文,renwen,duanrenwen,duanrw,任文,python, js ,html, css, mongodb,redis,mysql,爬虫,框架,自学,机器学习,machine learning,Linux"
-url: ""              # your host, for absolute URL
+email: moax.wang@outlook.com
+description: "Nothing more than a student."
+keyword: ""
+url: "https://moaxwang.github.io/"             # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
-RSS: false
-#weibo_username: duanrw
-#zhihu_username: duanrw
-#github_username: renwenduan
-# twitter_username:   duanrw
-#facebook_username:  huxpro
-# linkedin_username:  firstname-lastname-idxxxx
+RSS: MoaxWang
+#weibo_username: None
+#zhihu_username: None
+github_username: MoaxWang
+# twitter_username:   None
+#facebook_username:  None
+linkedin_username:  wen-qiang-wang-08335713a
 
 
 
@@ -48,29 +48,16 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: duanrw
-
-# Netease setttings
-netease_comment: false
-
-
-
-# Analytics settings
-# Baidu Analytics 
-ba_track_id: 944078588b543b13d81daed2bb7faa22
+# disqus_username: None
 
 # Google Analytics
-ga_track_id: 'UA-102558176-1'            # Format: UA-xxxxxx-xx
-ga_domain: www.duanrw.cn
-
-
+# ga_track_id: 'UA-102558176-1'            # Format: UA-xxxxxx-xx
+# ga_domain: www.duanrw.cn
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "试着做个正经的程序员"
-sidebar-avatar: /img/renwen-sidebar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
-
-
+sidebar-about-description: "Nothing more than a student."
+sidebar-avatar: /img/avatar.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
@@ -85,43 +72,12 @@ service-worker: true
 
 
 # Friends
-friends: [
-    {
-        title: "Hux Blog",
-        href: "http://huangxuan.me"
-    },{
-        title: "乱序",
-        href: "http://mida.re/"
-    },{
-        title: "前端外刊评论",
-        href: "http://qianduan.guru/"
-    },{
-        title: "天镶的博客",
-        href: "http://lingyu.wang/"
-    },{
-        title: "Luke 的自留地",
-        href: "http://hmqk1995.github.io"
-    },{
-        title: "Ebn's Blog",
-        href: "http://ebnbin.com/"
-    },{
-        title: "SmdCn's Blog",
-        href: "http://blog.smdcn.net"
-    },{
-        title: "解旻的博客",
-        href: "http://xieminis.me/"
-    },{
-        title: "DHong Say",
-        href: "http://dhong.co"
-    },{
-        title: "尹峰以为",
-        href: "http://ingf.github.io/"
-    },{
-        title: "前端神盾局",
-        href: "http://wepiaofei.github.io/blog/"
-    },{
-        title: "duanrw blog",
-        href: "http://www.duanrw.cn"
-    
-    }
-]
+# friends: [
+#     {
+#         title: "Hux Blog",
+#         href: "http://huangxuan.me"
+#     },{
+#         title: "Example",
+#         href: "URL"
+#     }
+# ]
