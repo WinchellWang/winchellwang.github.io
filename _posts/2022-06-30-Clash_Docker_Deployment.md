@@ -108,7 +108,7 @@ docker pull dreamacro/clash-premium
 然后运行如下命令启动clash容器
 
 ```shell
-docker run --name clash -d -v ~/clash/config.yaml:/root/.config/clash/config.yaml --network="host" --privileged dreamacro/clash
+docker run --name clash -v ~/clash:/root/.config/clash --network=host --privileged --restart=unless-stopped -d dreamacro/clash-premium
 ```
 
 >其中 -v 命令之后的挂载卷映射的左侧原始路径是你自己的config.yaml的位置，此处已是我们在用户文件夹下创建好的用于存储配置文件的路径。
@@ -181,6 +181,14 @@ sudo iptables -t nat -F CLASH
 sudo iptables -t nat -X CLASH_DNS
 sudo netfilter-persistent save
 ```
+>**或在修改iptables前使用如下命令保存原始设置**
+```shell
+sudo iptables-save > iptables.bak
+```
+**用如下命令复原iptables**
+```shell
+sudo iptables-restore < iptables.bak
+```
 
 # 4 两种流量接管方式
 
@@ -197,6 +205,8 @@ DNS：
 ![img](https://raw.githubusercontent.com/MoaxWang/moaxwang.github.io/main/img/_post_image/2022-06-30/Screenshoot_3.jpeg)
 
 ### 4.1.1 代理模式
+
+**此模式无需在第三步中对路由表进行修改**
 
 打开网络代理设置，将服务器地址填入，并在端口中输入7890（Socks代理则在端口中输入7891）。
 
@@ -226,3 +236,6 @@ vim /etc/netplan/xxx.yaml
 
 >**Tips：**
 打通整个网络，除了配置要没有错误之外，以下三点要反复确认:<br>docker里的clash在运行状态<br>路由表配置完毕<br>clash服务器网关地址指向主路由器
+
+>Reference:
+[Docker+Clash 部署透明“网关”的实现](https://zhuanlan.zhihu.com/p/423684520)
