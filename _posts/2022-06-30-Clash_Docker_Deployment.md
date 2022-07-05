@@ -35,7 +35,7 @@ sudo ufw allow 1234
 
 打开防火墙对应端口，即可以使用服务器地址跟对应端口号访问。例如服务器地址为192.168.1.2，则在浏览器中输入```192.168.1.2:1234```，就可以打开Clash Dashboard。
 
-![img](https://pic1.zhimg.com/80/v2-766c3e6f0474efc3ad5157fbdc8c39c8_1440w.jpg)
+![img](\_post_image\2022-06-30\Clash_Dashboard.png)
 
 # 2 部署Clash容器
 
