@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Docker部署Clash实现透明网关
-sub-title: 在Ubuntu Server 20.04上利用Docker部署Clash对网络进行接管并实现透明代理
+subtitle: 在Ubuntu Server 20.04上利用Docker部署Clash对网络进行接管并实现透明代理
 date: 2022-06-30
 author: Me
 header-img: "img/home-bg-o.jpg"
@@ -9,8 +9,6 @@ tags: [Technology]
 header-mask: 0.1
 catalog: true
 ---
-
-在Ubuntu Server 20.04上利用Docker部署Clash对网络进行接管并实现透明代理。
 
 # 1 部署Clash的WebUI（Clash Dashboard）
 
@@ -184,25 +182,17 @@ sudo netfilter-persistent save
 >**或在修改iptables前使用如下命令保存原始设置**
 ```shell
 sudo iptables-save > iptables.bak
+sudo netfilter-persistent save
 ```
 **用如下命令复原iptables**
 ```shell
 sudo iptables-restore < iptables.bak
+sudo netfilter-persistent save
 ```
 
 # 4 两种流量接管方式
 
 ## 4.1 非侵入式
-
-### 4.1.1 非代理模式
-
-手动设置需要被接管流量的终端设备的IP地址，将网关地址与DNS服务器地址设置为你部署clash的服务器地址。
-
-网关：
-![img](https://raw.githubusercontent.com/MoaxWang/moaxwang.github.io/main/img/_post_image/2022-06-30/Screenshoot_2.jpeg)
-
-DNS：
-![img](https://raw.githubusercontent.com/MoaxWang/moaxwang.github.io/main/img/_post_image/2022-06-30/Screenshoot_3.jpeg)
 
 ### 4.1.1 代理模式
 
@@ -213,6 +203,16 @@ DNS：
 ![img](https://raw.githubusercontent.com/MoaxWang/moaxwang.github.io/main/img/_post_image/2022-06-30/Screenshoot_1.jpeg)
 
 此种方式为终端设备主动寻求流量接管。优点是如果服务器宕机，局域网里的其他联网设备不受影响。缺点是每一个需要接管的设备都需要手动设置，较为麻烦。
+
+### 4.1.2 非代理模式
+
+手动设置需要被接管流量的终端设备的IP地址，将网关地址与DNS服务器地址设置为你部署clash的服务器地址。
+
+网关：
+![img](https://raw.githubusercontent.com/MoaxWang/moaxwang.github.io/main/img/_post_image/2022-06-30/Screenshoot_2.jpeg)
+
+DNS：
+![img](https://raw.githubusercontent.com/MoaxWang/moaxwang.github.io/main/img/_post_image/2022-06-30/Screenshoot_3.jpeg)
 
 ## 4.2 侵入式
 
