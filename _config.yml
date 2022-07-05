@@ -4,7 +4,7 @@ SEOTitle: Moax.Wang Blog
 header-img: img/home-bg.jpg
 email: moax.wang@outlook.com
 description: "Nothing more than a student."
-keyword: "Test"
+keyword: ""
 url: "https://moaxwang.github.io/"             # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
