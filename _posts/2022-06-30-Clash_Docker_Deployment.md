@@ -9,7 +9,6 @@ header-mask: 0.3
 catalog: true
 ---
 在Ubuntu Server 20.04上利用Docker部署Clash对网络进行接管并实现透明代理。
-<!-- more -->
 
 # 1 部署Clash的WebUI容器（Clash Dashboard）
 
