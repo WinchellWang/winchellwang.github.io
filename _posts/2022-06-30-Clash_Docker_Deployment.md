@@ -8,9 +8,6 @@ tags: [Technology]
 header-mask: 0.1
 catalog: true
 ---
-<style>
-div.white pre.r { background-color:white; }
-</style>
 
 在Ubuntu Server 20.04上利用Docker部署Clash对网络进行接管并实现透明代理。
 
@@ -20,11 +17,9 @@ div.white pre.r { background-color:white; }
 
 这里我们首先拉取Clash Dashbaord的镜像。该镜像基于 haishanh/yacd（[Docker链接](https://hub.docker.com/r/haishanh/yacd)，[Github链接](https://github.com/haishanh/yacd)）。
 
-<div class = "white">
 ```shell
 docker pull haishanh/yacd
 ```
-</div>
 >需要注意的是如果你并非使用root账户或用户未加入docker组则<mark>在对docker操作时需要使用 sudo</mark>
 
 然后根据介绍直接运行。
