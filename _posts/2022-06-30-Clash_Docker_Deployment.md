@@ -110,8 +110,7 @@ docker run --name clash -d -v ~/clash/config.yaml:/root/.config/clash/config.yam
 
 如果配置文件设置无误的话，可以在Dashboard页面输入服务器地址与端口，链接到Clash进行设置了。
 
-![img](https://pic1.zhimg.com/80/v2-766c3e6f0474efc3ad5157fbdc8c39c8_1440w.jpg)
-![img](https://pic1.zhimg.com/80/v2-766c3e6f0474efc3ad5157fbdc8c39c8_1440w.jpg)
+![img](https://raw.githubusercontent.com/MoaxWang/moaxwang.github.io/main/img/_post_image/2022-06-30/Clash_Dashboard.jpg)
 
 >**Tips:**
 Dashboard支持对链接添加参数，具体设置可以参考[此链接](https://github.com/haishanh/yacd)。
