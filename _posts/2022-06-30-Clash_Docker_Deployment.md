@@ -60,7 +60,7 @@ log-level: warning
 external-controller: 0.0.0.0:7070
 #如果服务器对公网开放可以设置密码
 secret: ""
-#external-ui: dashboard
+#external-ui: dashboard #如果采用直接部署WebUI则这里取消注释
 #配置由clash接管的dns解析
 dns:
   enable: true
