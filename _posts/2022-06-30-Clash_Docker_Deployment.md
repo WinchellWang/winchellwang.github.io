@@ -226,7 +226,17 @@ DNS：
 vim /etc/netplan/xxx.yaml
 ```
 
-修改dhcp4为false，并配置静态IP，其中需要注意的是nameservers中的addresses应该是路由器的地址，在本例中即为192.168.1.1。
+修改dhcp4为false，并配置静态IP，其中需要注意的是gateway4应该是路由器的地址，在本例中即为192.168.1.1。
+
+```shell
+network:
+  ethernets:
+    ens0:
+      dhcp4: true
+      addresses: [192.168.1.2/24]
+      gateway4: 192.168.1.1
+      dhcp6: true
+```
 
 在路由器中，在内网DHCP配置页面，将网关与DNS服务器都设置为clash服务器的IP地址。
 
