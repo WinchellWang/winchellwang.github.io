@@ -187,7 +187,6 @@ sudo netfilter-persistent save
 >**或在修改iptables前使用如下命令保存原始设置**
 ```shell
 sudo iptables-save > iptables.bak
-sudo netfilter-persistent save
 ```
 **用如下命令复原iptables**
 ```shell
