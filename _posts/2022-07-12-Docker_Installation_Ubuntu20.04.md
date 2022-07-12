@@ -103,12 +103,12 @@ OR pull the latest image available on your system.
 docker pull imageNAME
 ```
 
-**List all runing docker container**
+**List all containers**
 ```shell
 docker ps -a
 ```
 
-**List all docker images**
+**List all images**
 ```shell
 docker images
 ```
