@@ -4,7 +4,7 @@ title: 时至今日，到底谁才是那个Covid
 subtitle: 心情很烦躁，写一篇日志。
 date: 2022-03-28
 author: Moax.Wang
-header-img: "img/home-bg-o.jpg"
+header-img: "img/post-bg-life.jpg"
 tags: [Blog]
 header-mask: 0.1
 catalog: true

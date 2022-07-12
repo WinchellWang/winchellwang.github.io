@@ -4,7 +4,7 @@ title: Docker部署Clash实现透明网关
 subtitle: 在Ubuntu Server 20.04上利用Docker部署Clash对网络进行接管并实现透明代理
 date: 2022-06-30
 author: Moax.Wang
-header-img: "img/home-bg-o.jpg"
+header-img: "img/post-bg-tech.jpg"
 tags: [Technology]
 header-mask: 0.1
 catalog: true

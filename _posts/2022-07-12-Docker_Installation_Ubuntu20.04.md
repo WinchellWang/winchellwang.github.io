@@ -4,7 +4,7 @@ title: Install Docker on Ubuntu Server 20.04
 subtitle: A simple and neat installation guide for Docker
 date: 2022-07-12
 author: Moax.Wang
-header-img: "img/home-bg-o.jpg"
+header-img: "img/post-bg-tech.jpg"
 tags: [Technology]
 header-mask: 0.1
 catalog: true
