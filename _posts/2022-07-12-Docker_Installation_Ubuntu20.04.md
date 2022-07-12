@@ -6,7 +6,7 @@ date: 2022-07-12
 author: Moax.Wang
 header-img: "img/post-bg-tech.jpg"
 tags: [Technology]
-header-mask: 0.9
+header-mask: 0.1
 catalog: true
 ---
 
