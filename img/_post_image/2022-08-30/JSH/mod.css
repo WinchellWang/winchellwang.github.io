@@ -1,0 +1,72 @@
+body.hs-0 .hs-layout .hs48hours {
+  display: none;
+}
+
+body.hs-1 .hs-layout .no-hsym {
+  display: none;
+}
+
+body.hs-0 .hs-layout > .shadow-layout-hsym.hs48hours-border {
+  padding: unset !important;
+  border: unset !important;
+  color: unset !important;
+  box-shadow: unset !important;
+  border-radius: unset !important;
+}
+
+body.ym-0 .ym-layout .ym-result {
+  display: none;
+}
+
+body.ym-1 .ym-layout .no-hsym {
+  display: none;
+}
+
+body.ym-0 .ym-layout > .shadow-layout-hsym.ym3-border {
+  padding: unset !important;
+  border: unset !important;
+  border-radius: unset !important;
+  color: unset !important;
+  box-shadow: unset !important;
+}
+
+.hs-layout,
+.ym-layout,
+.gwyxckcx,
+.gwyxckcx-layout,
+#code-name,
+#code-id {
+  user-select: none;
+}
+
+.gwyxckcx-layout .gwyxck-btn,
+.gwyxckcx-layout .gwyxck-btns,
+.gwyxckcx-layout .gwyxck-tip1,
+.gwyxckcx-layout .gwyxck-tip2 {
+  display: none;
+}
+
+body.xc-0 .gwyxckcx-layout .gwyxck-btn,
+body.xc-0 .gwyxckcx-layout .gwyxck-btns {
+  display: block;
+}
+
+body.xc-1 .gwyxckcx-layout .gwyxck-tip1 {
+  display: block;
+}
+
+body.xc-2 .gwyxckcx-layout .gwyxck-tip2 {
+  display: block;
+}
+
+#area {
+  color: black !important;
+  font-weight: bold !important;
+}
+
+.bott {
+  line-height: 1.2 !important;
+  font-size: 16px !important;
+  text-align: left !important;
+  display: block !important;
+}
