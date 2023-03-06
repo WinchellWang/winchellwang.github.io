@@ -59,7 +59,7 @@ $$i^2(R_{l},R_{r})={w_lw_r \over w_l+w_r}(\bar{y_l}+\bar{y_r})^2$$
 $$Sum_{left}=\sum^{N}_{i=1}{y_{left}}$$
 $$Sum_{right}=\sum^{N}_{i=1}{y_{right}}$$
 $$diff=w_r*Sum_{left}+w_l*Sum_{right}$$
-$$proxy\ impurity\ improvement={{diff}^2 \over w_r*w_l}$$
+$$proxy\ impurity\ improvement={diff^2 \over w_r*w_l}$$
 >$w_r$和$w_l$是子树的权重，$Sum_{left}$和$Sum_{right}$是对应子树内真实值的总和
 
 在friedman_mse中预测值并不重要，它侧重的是对真实值概率分布的最佳分类。这里它用了数学期望而不是平均值来做$diff$的计算，并目标向$proxy\ impurity\ improvement$的最小化。因此，当数据的分布相对不符合简单的曲线，但存在明显的概率分布特征时，可以使用该函数做回归树的标准。
