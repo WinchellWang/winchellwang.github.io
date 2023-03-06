@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 回归树的评价指标
+title: Decision_Tree_Criterion
 subtitle: Sklearn
 date: 2023-03-07
 author: Moax.Wang
