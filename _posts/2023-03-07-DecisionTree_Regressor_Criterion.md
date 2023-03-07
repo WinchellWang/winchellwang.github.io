@@ -18,7 +18,7 @@ catalog: true
 
 回归树同样是有监督的学习，但它的目的并不在于为数据打标签，而是更精确的预测一个输入所对应的输出。这个输出值并不是几个类别，而是精确的预测值。因此，回归树的训练集应该是连续型变量，它的训练方式应当如同建立回归方程一样去理解，但它可以做到回归方程难以做到的对异常值的妥善处理。通常当数据中存在异常值时，回归方程倾向于忽略异常值，但同样的会造成拟合度下降。回归方程或者可以通过升维等方式来囊括进异常值，但这就会造成回归方程在异常值附近的拟合十分怪异（升维会造成曲线在异常值附近有非常夸张的变化），也同样对附近正常值的预测造成了影响。
 
-![ Decision_Tree_Regression](https://scikit-learn.org/stable/_images/sphx_glr_plot_tree_regression_001.png)
+![Decision_Tree_Regression_img](https://scikit-learn.org/stable/_images/sphx_glr_plot_tree_regression_001.png)
 
 回归树则用另一种思路解决了对异常值的处理问题。它将输入数据做了极其细碎的切割（切割程度取决于对模型参数的规定），对每一个小的数据分类都有一个精确的预测值，因此可以特地为异常值建立一个子类，从而把它囊括进去的同时不影响对临近正常值的预测（因为异常值与正常值属于不同的子类中）。然而这样的缺点也显而易见，即如果将回归树模型切的过于细碎，那模型对于输入的扰动会极度敏感，从而造成过拟合，失去了对数据整体分布的合理判断（上图）。
 
@@ -37,12 +37,13 @@ Sklearn 1.2.1版本中内置了4个criterion，也可以称为损失函数，来
 
 这里的squared_error在我阅读了Sklearn的文档后认为就是MSE（Mean Squared Error）均方误差，也称L2损失（MSE在Sklearn中对[Decision Tree的Regression criteria](https://scikit-learn.org/stable/modules/tree.html)中做了解释，并清楚的在[DecisionTreeRegressor函数](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeRegressor.html)中明确说明了squared_error就是MSE）。
 
-$$ MSE(y_i,f_i)={\sum^{N}_{i=1}{(y_i-f_i)^2} \over n}$$
+$$MSE(y_i,f_i)={\sum^{N}_{i=1}{(y_i-f_i)^2} \over n}$$
+
 >$f_i$是模型的预测值，$y_i$是真实值，n是样本总数。
 
 在回归树中[MSE为左右两支子树的MSE之和](https://github.com/scikit-learn/scikit-learn/blob/f0e9d298be351eda7eb7302d6e673b097ae79831/sklearn/tree/_criterion.pyx#L926-L927)，算法通过计算得到最低的MSE来确定左右两支子树的分类界限在哪里。
 
-$$ MSE = {MSE_{left} \over weight_{left}} + {MSE_{right} \over weight_{right}}$$
+$$MSE = {MSE_{left} \over weight_{left}} + {MSE_{right} \over weight_{right}}$$
 
 虽然MSE的计算十分简单易懂，但在squared_error中模型对于不同程度的误差关注度是不一样的，这是需要在使用中注意的。MSE的计算方式天然决定了它对小于1的误差十分宽容，甚至进一步减弱了小误差对模型的影响，但对大于1的误差则进行了平方的放大。因此，就需要慎重考虑输入参数中是否存在极小的值，或者是否对数据做归一化（<mark>需要强调的是在决策树中没有必要进行归一化，因为模型对数据的量纲不敏感</mark>）。总而言之，squared_error是一种对大误差有更大惩罚的函数，而对小的误差不敏感。
 
@@ -52,18 +53,20 @@ friedman_mse是基于MSE这种思路的一种改进，但**计算方法完全不
 
 原版Friedman的方程中为如下定义：
 
-$$ i^2(R_{l},R_{r})={w_lw_r \over w_l+w_r}(\bar{y_l}+\bar{y_r})^2$$
+$$i^2(R_{l},R_{r})={w_lw_r \over w_l+w_r}(\bar{y_l}+\bar{y_r})^2$$
+
 >$w$是子类的权重，$\bar{y}$是对应子类的平均值
 
 在Sklearn中，模型使用如下方程计算：
 
-$$ Sum_{left}=\sum^{N}_{i=1}{y_{left}}$$
+$$Sum_{left}=\sum^{N}_{i=1}{y_{left}}$$
 
-$$ Sum_{right}=\sum^{N}_{i=1}{y_{right}}$$
+$$Sum_{right}=\sum^{N}_{i=1}{y_{right}}$$
 
-$$ diff=w_r*Sum_{left}+w_l*Sum_{right}$$
+$$diff=w_r*Sum_{left}+w_l*Sum_{right}$$
 
-$$ proxy\ impurity\ improvement={diff^2 \over w_r*w_l}$$
+$$proxy\ impurity\ improvement={diff^2 \over w_r*w_l}$$
+
 >$w_r$和$w_l$是子树的权重，$Sum_{left}$和$Sum_{right}$是对应子树内真实值的总和
 
 在friedman_mse中预测值并不重要，它侧重的是对真实值概率分布的最佳分类。这里它用了数学期望而不是平均值来做$diff$的计算，并目标向$proxy\ impurity\ improvement$的最小化。因此，当数据的分布相对不符合简单的曲线，但存在明显的概率分布特征时，可以使用该函数做回归树的标准。
@@ -72,14 +75,16 @@ $$ proxy\ impurity\ improvement={diff^2 \over w_r*w_l}$$
 
 absolute_error就是MAE（Mean Absolute Error），也称L1损失。这个函数中规中矩，在回归树中目的同MSE一样，在程序设定条件下，最小化L1损失。
 
-$$ MAE={\sum^{N}_{i=1}{|y_i-f_i|} \over n}$$
+$$MAE={\sum^{N}_{i=1}{|y_i-f_i|} \over n}$$
+
 >$f_i$是模型的预测值，$y_i$是真实值，n是样本总数。
 
 ## 2.5 poisson
 
 poisson在该程序中是指[Half Poisson deviance](https://scikit-learn.org/stable/modules/tree.html)。该函数同样也是基于概率分布来拟合模型，只不过是基于泊松分布。既然是泊松分布那对于该标准的使用就有一定的限制。该损失函数可以理解为用于预测某时间段访客的多少，或者某限定条件下多少人或物出现在某地。基于这种适用条件，首先该函数仅适用于因变量大于0的数据，因为事情的发生要么是不发生要么就是发生了，但不会有负的情况；其次该函数适用于因变量为整数的数据集，因为限定条件下，人或物出现的数量都是整数的，比如5个人，6只鸟等。另外，在sklearn中同样也指出了该函数的运行显著慢于MSE，因此在对大数据进行机器学习时需要平衡其中的时间与能源成本。
 
- $$ Poisson\ deviance = {2\sum^{N}_{i=1}{(y_i\log{y_i \over f_i} + f_i - y_i)} \over n}$$
+$$Poisson\ deviance = {2\sum^{N}_{i=1}{(y_i\log{y_i \over f_i} + f_i - y_i)} \over n}$$
+
 >$f_i$是模型的预测值，$y_i$是真实值，n是样本总数。
 
 # 3 Sklearn模型中返回的Score是什么
@@ -88,11 +93,12 @@ poisson在该程序中是指[Half Poisson deviance](https://scikit-learn.org/sta
 
 Sklearn中的Score是基于$R^2$(**不同于MSE**)。$R^2$的计算非常简单，仅计算预测值与真实值的误差的平方和以及真实值与真实值的平均值的差的平方和，并做简单的除法和减法计算。
 
-$$ u=\sum^{N}_{i=1}{(f_i-y_i)^2}$$
+$$u=\sum^{N}_{i=1}{(f_i-y_i)^2}$$
 
-$$ v=\sum^{N}_{i=1}{(y_i-\hat{y})^2}$$
+$$v=\sum^{N}_{i=1}{(y_i-\hat{y})^2}$$
 
-$$ R^2=1-{u\over v}$$
+$$R^2=1-{u\over v}$$
+
 >$f_i$是模型的预测值，$y_i$是真实值，$\hat{y}$是真实值的平均。
 
 在这个计算中，比较的是模型的预测结果的残差平方和以及模型的总平方和的差距。在这里对确定的数据集而言很明显$v$是固定值，而当预测值与真实值偏差过大时$u$会增大从而使$u\over v$增大，当误差超过了模型的平方和时$R^2$会出现负值，而当预测结果十分靠近真实值时$u\over v$趋近于0，即$R^2$接近1。因此，总结来说<mark>$R^2$是集合$(-\infty,1]$中的一个数</mark>，且**越靠近1则表明拟合效果越好**。
