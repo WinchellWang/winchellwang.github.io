@@ -5,7 +5,7 @@ subtitle: Sklearn
 date: 2023-03-07
 author: Moax.Wang
 header-img: "img/post-bg-tech.jpg"
-tags: [Technology][Machine Learning][Learning Note]
+tags: [Technology]
 header-mask: 0.1
 catalog: true
 ---
