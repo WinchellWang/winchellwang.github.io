@@ -38,7 +38,7 @@ Sklearn 1.2.1版本中内置了4个criterion，也可以称为损失函数，来
 这里的squared_error在我阅读了Sklearn的文档后认为就是MSE（Mean Squared Error）均方误差，也称L2损失（MSE在Sklearn中对[Decision Tree的Regression criteria](https://scikit-learn.org/stable/modules/tree.html)中做了解释，并清楚的在[DecisionTreeRegressor函数](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeRegressor.html)中明确说明了squared_error就是MSE）。
 
 $$MSE(y_i,f_i)={\sum^{N}_{i=1}{(y_i-f_i)^2} \over n}$$
->$f_i$是模型的预测值，$y_i$是真实值，n是样本总数。
+> \(f_i|)是模型的预测值，\[y_i\]是真实值，n是样本总数。
 
 在回归树中[MSE为左右两支子树的MSE之和](https://github.com/scikit-learn/scikit-learn/blob/f0e9d298be351eda7eb7302d6e673b097ae79831/sklearn/tree/_criterion.pyx#L926-L927)，算法通过计算得到最低的MSE来确定左右两支子树的分类界限在哪里。
 
