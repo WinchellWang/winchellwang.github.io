@@ -5,7 +5,9 @@ subtitle: A simple and neat installation guide for Docker
 date: 2022-07-12
 author: Moax.Wang
 header-img: "img/post-bg-tech.jpg"
-tags: [Technology]
+tags: 
+   - Technology
+   - Computer
 header-mask: 0.1
 catalog: true
 ---

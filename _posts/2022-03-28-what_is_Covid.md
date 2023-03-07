@@ -5,7 +5,8 @@ subtitle: 心情很烦躁，写一篇日志。
 date: 2022-03-28
 author: Moax.Wang
 header-img: "img/post-bg-life.jpg"
-tags: [Blog]
+tags:
+    - Blog
 header-mask: 0.1
 catalog: true
 ---

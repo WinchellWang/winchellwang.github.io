@@ -5,7 +5,9 @@ subtitle: Sklearn中Decision Tree在回归模型中的评价指标
 date: 2023-03-07
 author: Moax.Wang
 header-img: "img/post-bg-tech.jpg"
-tags: [Technology]
+tags:
+   - Technology
+   - Computer
 header-mask: 0.1
 catalog: true
 ---
