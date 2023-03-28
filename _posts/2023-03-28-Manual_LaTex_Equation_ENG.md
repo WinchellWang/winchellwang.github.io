@@ -29,7 +29,7 @@ There are some characters which need to be typed out by a specific method in LaT
 |Symbol|LaTeX|Capitalize|LaTeX|With `var` prefix|LaTeX|Phonetic Symbol|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |$\alpha$|`\alpha`|$\Alpha$|`\Alpha`|||/'ælfə/|
-<!-- |$\beta$|`\beta`|$\Beta$|`\Beta`|||/'beɪtə/|
+|$\beta$|`\beta`|$\Beta$|`\Beta`|||/'beɪtə/|
 |$\gamma$|`\gamma`|$\Gamma$|`\Gamma`|$\varGamma$|`\varGamma`|/'ɡæmə/|
 |$\delta$|`\delta`|$\Delta$|`\Delta`|$\varDelta$|`\varDelta`|/'dɛltə/|
 |$\epsilon$|`\epsilon`|$\Epsilon$|`\Epsilon`|||/'ɛpsɪlɒn/|
@@ -52,11 +52,11 @@ There are some characters which need to be typed out by a specific method in LaT
 |$\chi$|`\chi`|$\Chi$|`\Chi`|||/kaɪ/|
 |$\psi$|`\psi`|$\Psi$|`\Psi`|$\varPsi$|`\varPsi`|/psaɪ/|
 |$\omega$|`\omega`|$\Omega$|`\Omega`|$\varOmega$|`\varOmega`|/oʊˈmeɪɡə/|
-|$\digamma$|`\digamma`|||||/daɪ'gæmə/| -->
+|$\digamma$|`\digamma`|||||/daɪ'gæmə/|
 
 # 3. Hebrew Alphabet
 |Symbol|LaTex|English|
-|:---:|:---:|:---:|
+|:----------------:|:----------------:|:----------------:|
 |$\aleph$|`\aleph`|aleph|
 |$\beth$|`\beth`|beth|
 |$\gimel$|`\gimel`|gimel|
@@ -215,7 +215,7 @@ LaTex also allow user to customize special function style by using `\operatornam
 # 13. Limit
 |Symbol|LaTex|
 |:---:|:---:|
-|$	\lim_{n \to \infty}x_n$|`	\lim_{n \to \infty}x_n`|
+|$\lim_{n \to \infty}x_n$|`\lim_{n \to \infty}x_n`|
 |$\textstyle \lim_{n \to \infty}x_n$|`\textstyle \lim_{n \to \infty}x_n`|
 
 # 14. Range & Prediction
@@ -269,7 +269,7 @@ LaTex also allow user to customize special function style by using `\operatornam
 |$\bigl( \begin{smallmatrix}a&b\\c&d\end{smallmatrix} \bigr)$|`\bigl( \begin{smallmatrix}`<br>`a&b\\`<br>`c&d`<br>`\end{smallmatrix} \bigr)`|
 
 # 19. Array
-Example:
+Example:<br>
 $$
 \begin{array}{ | c | c | c | }
 a & b & S \\
