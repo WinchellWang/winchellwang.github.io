@@ -29,7 +29,7 @@ There are some characters which need to be typed out by a specific method in LaT
 |Symbol|LaTeX|Capitalize|LaTeX|With `var` prefix|LaTeX|Phonetic Symbol|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |$\alpha$|`\alpha`|$\Alpha$|`\Alpha`|||/'ælfə/|
-|$\beta$|`\beta`|$\Beta$|`\Beta`|||/'beɪtə/|
+<!-- |$\beta$|`\beta`|$\Beta$|`\Beta`|||/'beɪtə/|
 |$\gamma$|`\gamma`|$\Gamma$|`\Gamma`|$\varGamma$|`\varGamma`|/'ɡæmə/|
 |$\delta$|`\delta`|$\Delta$|`\Delta`|$\varDelta$|`\varDelta`|/'dɛltə/|
 |$\epsilon$|`\epsilon`|$\Epsilon$|`\Epsilon`|||/'ɛpsɪlɒn/|
@@ -52,7 +52,7 @@ There are some characters which need to be typed out by a specific method in LaT
 |$\chi$|`\chi`|$\Chi$|`\Chi`|||/kaɪ/|
 |$\psi$|`\psi`|$\Psi$|`\Psi`|$\varPsi$|`\varPsi`|/psaɪ/|
 |$\omega$|`\omega`|$\Omega$|`\Omega`|$\varOmega$|`\varOmega`|/oʊˈmeɪɡə/|
-|$\digamma$|`\digamma`|||||/daɪ'gæmə/|
+|$\digamma$|`\digamma`|||||/daɪ'gæmə/| -->
 
 # 3. Hebrew Alphabet
 |Symbol|LaTex|English|
@@ -266,5 +266,38 @@ LaTex also allow user to customize special function style by using `\operatornam
 |$\begin{bmatrix}0 & \cdots & 0 \\ \vdots & \ddots & \vdots \\0 & \cdots & 0\end{bmatrix}$|`\begin{bmatrix}`<br>`0 & \cdots & 0 \\`<br>`\vdots & \ddots & \vdots \\`<br>`0 & \cdots & 0`<br>`\end{bmatrix}`|
 |$\begin{Bmatrix}x & y \\ z & v\end{Bmatrix}$|`\begin{Bmatrix}`<br>`x & y \\`<br>`z & v`<br>`\end{Bmatrix}`|
 |$\begin{pmatrix}x & y \\z & v\end{pmatrix}$|`\begin{pmatrix}`<br>`x & y \\`<br>`z & v`<br>`\end{pmatrix}`|
-|$$|``|
-|$$|``|
+|$\bigl( \begin{smallmatrix}a&b\\c&d\end{smallmatrix} \bigr)$|`\bigl( \begin{smallmatrix}`<br>`a&b\\`<br>`c&d`<br>`\end{smallmatrix} \bigr)`|
+
+# 19. Array
+Example:
+$$
+\begin{array}{ | c | c | c | }
+a & b & S \\
+\hline
+0 & 0 & 1 \\
+0 & 1 & 1 \\
+1 & 0 & 1 \\
+1 & 1 & 0
+\end{array}
+$$
+
+LaTex:
+```
+\begin{array}{ | c | c | c | }
+a & b & S \\
+\hline
+0 & 0 & 1 \\
+0 & 1 & 1 \\
+1 & 0 & 1 \\
+1 & 1 & 0
+\end{array}
+```
+
+# 20. Equation Sets
+$$
+\begin{cases}
+3x + 5y + z \\
+7x - 2y + 4z \\
+-6x + 3y + 2z
+\end{cases}
+$$
