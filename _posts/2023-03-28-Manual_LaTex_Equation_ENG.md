@@ -286,7 +286,6 @@ LaTex also allow user customizing special function style by `\operatorname{}`
 |$$\bigl( \begin{smallmatrix}a&b\\c&d\end{smallmatrix} \bigr)$$|`\bigl( \begin{smallmatrix}`<br>`a&b\\`<br>`c&d`<br>`\end{smallmatrix} \bigr)`|
 
 # Array
-Example:
 
 $$
 \begin{array}{ | c | c | c | }
@@ -350,3 +349,31 @@ n/2, & \text{if }n\text{ is even} \\
 3n+1, & \text{if }n\text{ is odd}
 \end{cases}
 ```
+
+# Multi-line Equation
+
+$$
+\begin{align}
+f(x) & = (a+b)^2\\
+& = a^2+2ab+b^2
+\end{align}
+$$
+
+LaTex:
+```
+\begin{align}
+f(x) & = (a+b)^2\\
+& = a^2+2ab+b^2
+\end{align}
+```
+
+# Letter Style
+
+|Type|Example|LaTex|
+|:---:|:---:|:---:|
+|Normal|$Ab9$|`Ab9`|
+|Script|$\mathcal{Ab9}$|`\mathcal{Ab9}`|
+|Blackboard|$\mathbb{Ab9}$|`\mathbb{Ab9}`|
+|Bold|$\boldsymbol{Ab9}$|`\boldsymbol{Ab9}`|
+|Italic|$\mathit{Ab9}$|`\mathit{Ab9}`|
+|Roman|$\mathrm{Ab9}$|`\mathrm{Ab9}`|
