@@ -26,6 +26,7 @@ There are some characters which need to be typed out by a specific method in LaT
 |_|`\_`|
 
 # 2. Greek Alphabet
+
 |Symbol|LaTeX|Capitalize|LaTeX|With `var` prefix|LaTeX|Phonetic Symbol|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |$\alpha$|`\alpha`|$\Alpha$|`\Alpha`|||/'ælfə/|
@@ -55,14 +56,16 @@ There are some characters which need to be typed out by a specific method in LaT
 |$\digamma$|`\digamma`|||||/daɪ'gæmə/|
 
 # 3. Hebrew Alphabet
+
 |Symbol|LaTex|English|
-|---|---|---|
+|:---:|:---:|:---:|
 |$\aleph$|`\aleph`|aleph|
 |$\beth$|`\beth`|beth|
 |$\gimel$|`\gimel`|gimel|
 |$\daleth$|`\daleth`|daleth|
 
 # 4. Symbols
+
 |Symbol|LaTex|Symbol|LaTex|
 |:---:|:---:|:---:|:---:|
 |$\times$|`\times`|$\div$|`\div`|
@@ -125,6 +128,7 @@ There are some characters which need to be typed out by a specific method in LaT
 |$\leftarrow$|`\leftarrow`|$\iff$|`\iff`|
 
 # 5. Geometric Symbol
+
 |Symbol|LaTex|Symbol|LaTex|
 |:---:|:---:|:---:|:---:|
 |$\parallel$|`\parallel`|$\nparallel$|`\nparallel`|
@@ -141,6 +145,7 @@ There are some characters which need to be typed out by a specific method in LaT
 |$\blacktriangleleft$|`\blacktriangleleft`|$\blacktriangleright$|`\blacktriangleright`|
 
 # 6. Symbols on letter/number
+
 |Symbol|LaTex|Symbol|LaTex|
 |:---:|:---:|:---:|:---:|
 |$\bar{q}$|`\bar{q}`|$\bar{abc}$|`\bar{abc}`|
@@ -164,6 +169,7 @@ The distance of a space is defined as `em`, and the actual size of `em` is chang
 |Tight Close|$a\!b$|`a\!b`|
 
 # 8. Fraction
+
 |Example|Latex|
 |:---:|:---:|
 |$\frac{2}{4}x=0.5x\ or\ {2 \over 4}x=0.5x$|`\frac{2}{4}x=0.5x\ or\ {2 \over 4}x=0.5x`|
@@ -172,6 +178,7 @@ The distance of a space is defined as `em`, and the actual size of `em` is chang
 |$\cfrac{2}{c + \cfrac{2}{d + \cfrac{2}{4}}} = a$|`\cfrac{2}{c + \cfrac{2}{d + \cfrac{2}{4}}} = a`|
 
 # 9. Numerical Function
+
 |Example|Latex|
 |:---:|:---:|
 |$\exp_a b = a^b, \exp b = e^b, 10^m$|`\exp_a b = a^b, \exp b = e^b, 10^m`|
@@ -192,12 +199,14 @@ LaTex also allow user to customize special function style by using `\operatornam
 |$\operatorname{mydefine}x$|`\operatorname{mydefine}x`|
 
 # 10. $n^{th}$ Root
+
 |Symbol|LaTex|Symbol|LaTex|
 |:---:|:---:|:---:|:---:|
 |$\surd$|`\surd`|$\sqrt{\pi}$|`\sqrt{\pi}`|
 |$\sqrt[n]{\pi}$|`\sqrt[n]{\pi}`|$\sqrt[3]{\frac{x^3+y^3}{2}}$|`\sqrt[3]{\frac{x^3+y^3}{2}}`|
 
 # 11. Differentiation and Derivatives
+
 |Symbol|LaTex|
 |:---:|:---:|
 |$dt, \mathrm{d}t, \partial t, \nabla\psi$|`dt, \mathrm{d}t, \partial t, \nabla\psi`|
@@ -205,6 +214,7 @@ LaTex also allow user to customize special function style by using `\operatornam
 |$\prime, \backprime, f^\prime, f', f'', f^{(3)}, \dot y, \ddot y$|`\prime, \backprime, f^\prime, f', f'', f^{(3)}, \dot y, \ddot y`|
 
 # 12. Modulo Operation
+
 |Symbol|LaTex|
 |:---:|:---:|
 |$s_k \equiv 0 \pmod{m}$|`s_k \equiv 0 \pmod{m}`|
@@ -213,12 +223,14 @@ LaTex also allow user to customize special function style by using `\operatornam
 |$\mid, \nmid, \shortmid, \nshortmid$|`\mid, \nmid, \shortmid, \nshortmid`|
 
 # 13. Limit
+
 |Symbol|LaTex|
 |:---:|:---:|
 |$\lim_{n \to \infty}x_n$|`\lim_{n \to \infty}x_n`|
 |$\textstyle \lim_{n \to \infty}x_n$|`\textstyle \lim_{n \to \infty}x_n`|
 
 # 14. Range & Prediction
+
 |Symbol|LaTex|
 |:---:|:---:|
 |$\min x, \max y, \inf s, \sup t$|`\min x, \max y, \inf s, \sup t`|
@@ -227,6 +239,7 @@ LaTex also allow user to customize special function style by using `\operatornam
 |$\Pr j, \hom l, \lVert z \rVert, \arg z$|`\Pr j, \hom l, \lVert z \rVert, \arg z`|
 
 # 15. Integral
+
 |Example|LaTex|
 |:---:|:---:|
 |$\int\limits_{1}^{3}\frac{e^3/x}{x^2}\, dx$|`\int\limits_{1}^{3}\frac{e^3/x}{x^2}\, dx`|
@@ -237,9 +250,11 @@ LaTex also allow user to customize special function style by using `\operatornam
 |$\iiint\limits_E dx\,dy\,dz$|`\iiint\limits_E dx\,dy\,dz`|
 |$\int_{(x,y)\in C} x^3\, dx + 4y^2\, dy$|`\int_{(x,y)\in C} x^3\, dx + 4y^2\, dy`|
 |$\oint_{(x,y)\in C} x^3\, dx + 4y^2\, dy$|`\oint_{(x,y)\in C} x^3\, dx + 4y^2\, dy`|
+
 >`\int\_{}^{}` is used for single integral, double integral is `\iint\_{}^{}`, and so on, until quadruple integral.
 
 # 16. Calculation Symbol
+
 |Type|Symbol|LaTex|
 |:---:|:---:|:---:|
 |Product|$\prod_{a}^{b}$|`\prod_{a}^{b}`|
@@ -251,6 +266,7 @@ LaTex also allow user to customize special function style by using `\operatornam
 |Sum|$\sum_{a}^{b}$|`\sum_{a}^{b}`|
 
 # 17. Binomial
+
 |Type|Example|LaTex|
 |:---:|:---:|:---:|
 |Binomial Cofficient|$\binom{n}{k}$|`\binom{n}{k}`|
@@ -258,6 +274,7 @@ LaTex also allow user to customize special function style by using `\operatornam
 |Larger Binomial Cofficient|$\dbinom{n}{k}$|`\dbinom{n}{k}`|
 
 # 18. Matrix
+
 |Example|LaTex|
 |:---:|:---|
 |$\begin{matrix}x & y \\ z & v\end{matrix}$|`\begin{matrix}`<br>`x & y \\`<br>`z & v`<br>`\end{matrix}`|
