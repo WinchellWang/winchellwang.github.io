@@ -311,43 +311,43 @@ a & b & S \\
 
 # Equation Sets
 
-## Without Condition:
+   ## Without Condition
 
-$$
-\begin{cases}
-3x + 5y + z \\
-7x - 2y + 4z \\
--6x + 3y + 2z
-\end{cases}
-$$
+   $$
+   \begin{cases}
+   3x + 5y + z \\
+   7x - 2y + 4z \\
+   -6x + 3y + 2z
+   \end{cases}
+   $$
 
-LaTex:
-```
-\begin{cases}
-3x + 5y + z \\
-7x - 2y + 4z \\
--6x + 3y + 2z
-\end{cases}
-```
+   LaTex:
+   ```
+   \begin{cases}
+   3x + 5y + z \\
+   7x - 2y + 4z \\
+   -6x + 3y + 2z
+   \end{cases}
+   ```
 
-## With Conditions:
+   ## With Condition
 
-$$
-f(n) =
-\begin{cases}
-n/2, & \text{if }n\text{ is even} \\
-3n+1, & \text{if }n\text{ is odd}
-\end{cases}
-$$
+   $$
+   f(n) =
+   \begin{cases}
+   n/2, & \text{if }n\text{ is even} \\
+   3n+1, & \text{if }n\text{ is odd}
+   \end{cases}
+   $$
 
-Latex:
-```
-f(n) =
-\begin{cases}
-n/2, & \text{if }n\text{ is even} \\
-3n+1, & \text{if }n\text{ is odd}
-\end{cases}
-```
+   Latex:
+   ```
+   f(n) =
+   \begin{cases}
+   n/2, & \text{if }n\text{ is even} \\
+   3n+1, & \text{if }n\text{ is odd}
+   \end{cases}
+   ```
 
 # Multi-line Equation
 
