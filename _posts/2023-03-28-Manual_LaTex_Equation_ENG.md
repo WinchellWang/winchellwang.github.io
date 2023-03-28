@@ -56,7 +56,7 @@ There are some characters which need to be typed out by a specific method in LaT
 
 # 3. Hebrew Alphabet
 |Symbol|LaTex|English|
-|:----------------:|:----------------:|:----------------:|
+|---|---|---|
 |$\aleph$|`\aleph`|aleph|
 |$\beth$|`\beth`|beth|
 |$\gimel$|`\gimel`|gimel|
