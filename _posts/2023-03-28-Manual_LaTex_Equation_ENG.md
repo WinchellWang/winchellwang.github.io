@@ -166,7 +166,6 @@ The distance of a space is defined as `em`, and the actual size of `em` is chang
 |2/7 `em`|$a\;b$|`a\;b`|
 |1/6 `em`|$a\,b$|`a\,b`|
 |No Space|$ab$|`ab`|
-|Tight Close|$a\!b$|`a\!b`|
 
 # Fraction
 
@@ -186,7 +185,7 @@ The distance of a space is defined as `em`, and the actual size of `em` is chang
 |$\sin a, \cos b, \tan c, \cot d, \sec e, \csc f$|`\sin a, \cos b, \tan c, \cot d, \sec e, \csc f`|
 |$\arcsin a, \arccos b, \arctan c$|`\arcsin a, \arccos b, \arctan c`|
 |$\operatorname{arccot} d, \operatorname{arcsec} e, \operatorname{arccsc} f$|`\operatorname{arccot} d, \operatorname{arcsec} e, \operatorname{arccsc} f`|
-|$	\sinh a, \cosh b, \tanh c, \coth d$|`	\sinh a, \cosh b, \tanh c, \coth d`|
+|$\sinh a, \cosh b, \tanh c, \coth d$|`\sinh a, \cosh b, \tanh c, \coth d`|
 |$\operatorname{sh}k, \operatorname{ch}l, \operatorname{th}m, \operatorname{coth}n$|`\operatorname{sh}k, \operatorname{ch}l, \operatorname{th}m, \operatorname{coth}n`|
 |$\operatorname{argsh}o, \operatorname{argch}p, \operatorname{argth}q$|`\operatorname{argsh}o, \operatorname{argch}p, \operatorname{argth}q`|
 |$\operatorname{sgn}r, \left\vert s \right\vert$|`\operatorname{sgn}r, \left\vert s \right\vert`|
