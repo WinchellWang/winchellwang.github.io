@@ -192,7 +192,7 @@ The distance of a space is defined as `em`, and the actual size of `em` is chang
 |$\operatorname{sgn}r, \left\vert s \right\vert$|`\operatorname{sgn}r, \left\vert s \right\vert`|
 |$\min(x,y), \max(x,y)$|`\min(x,y), \max(x,y)`|
 
-LaTex also allow user to customize special function style by using `\operatorname{}`
+LaTex also allow user customizing special function style by `\operatorname{}`
 
 |Example|Latex|
 |:---:|:---:|
@@ -277,7 +277,7 @@ LaTex also allow user to customize special function style by using `\operatornam
 
 |Example|LaTex|
 |:---:|:---|
-|$\begin{matrix}x & y \\ z & v\end{matrix}$|`\begin{matrix}`<br>`x & y \\`<br>`z & v`<br>`\end{matrix}`|
+|$\begin{matrix}x & y \\ z & v\end{matrix}$|```\begin{matrix}```<br>```x & y \\```<br>```z & v```<br>```\end{matrix}```|
 |$\begin{vmatrix}x & y \\ z & v\end{vmatrix}$|`\begin{vmatrix}`<br>`x & y \\`<br>`z & v`<br>`\end{vmatrix}`|
 |$\begin{Vmatrix}x & y \\ z & v\end{Vmatrix}$|`\begin{Vmatrix}`<br>`x & y \\`<br>`z & v`<br>`\end{Vmatrix}`|
 |$\begin{bmatrix}0 & \cdots & 0 \\ \vdots & \ddots & \vdots \\0 & \cdots & 0\end{bmatrix}$|`\begin{bmatrix}`<br>`0 & \cdots & 0 \\`<br>`\vdots & \ddots & \vdots \\`<br>`0 & \cdots & 0`<br>`\end{bmatrix}`|
