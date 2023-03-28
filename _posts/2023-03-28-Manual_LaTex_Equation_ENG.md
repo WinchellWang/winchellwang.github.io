@@ -14,7 +14,7 @@ catalog: true
 
 This document mainly copied the content from [this link](http://www.uinio.com/Math/LaTex/) to study the LaTex for mathmatic equation.
 
-# 1. Reserved Symbol
+# Reserved Symbol
 There are some characters which need to be typed out by a specific method in LaTex.
 
 |Symbol|LaTex|Symbol|LaTex|
@@ -25,7 +25,7 @@ There are some characters which need to be typed out by a specific method in LaT
 |&|`\&`|`\`|`\backslash`|
 |_|`\_`|
 
-# 2. Greek Alphabet
+# Greek Alphabet
 
 |Symbol|LaTeX|Capitalize|LaTeX|With `var` prefix|LaTeX|Phonetic Symbol|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -55,7 +55,7 @@ There are some characters which need to be typed out by a specific method in LaT
 |$\omega$|`\omega`|$\Omega$|`\Omega`|$\varOmega$|`\varOmega`|/oʊˈmeɪɡə/|
 |$\digamma$|`\digamma`|||||/daɪ'gæmə/|
 
-# 3. Hebrew Alphabet
+# Hebrew Alphabet
 
 |Symbol|LaTex|English|
 |:---:|:---:|:---:|
@@ -64,7 +64,7 @@ There are some characters which need to be typed out by a specific method in LaT
 |$\gimel$|`\gimel`|gimel|
 |$\daleth$|`\daleth`|daleth|
 
-# 4. Symbols
+# Symbols
 
 |Symbol|LaTex|Symbol|LaTex|
 |:---:|:---:|:---:|:---:|
@@ -127,7 +127,7 @@ There are some characters which need to be typed out by a specific method in LaT
 |$\nsubseteq$|`\nsubseteq`|$\Rightarrow$|`\Rightarrow`|
 |$\leftarrow$|`\leftarrow`|$\iff$|`\iff`|
 
-# 5. Geometric Symbol
+# Geometric Symbol
 
 |Symbol|LaTex|Symbol|LaTex|
 |:---:|:---:|:---:|:---:|
@@ -144,7 +144,7 @@ There are some characters which need to be typed out by a specific method in LaT
 |$\blacktriangle$|`\blacktriangle`|$\blacktriangledown$|`\blacktriangledown`|
 |$\blacktriangleleft$|`\blacktriangleleft`|$\blacktriangleright$|`\blacktriangleright`|
 
-# 6. Symbols on letter/number
+# Symbols on letter/number
 
 |Symbol|LaTex|Symbol|LaTex|
 |:---:|:---:|:---:|:---:|
@@ -155,7 +155,7 @@ There are some characters which need to be typed out by a specific method in LaT
 |$\overbrace{ 1+2+\cdots+100 }^{5050}$|`\overbrace{ 1+2+\cdots+100 }^{5050}`|
 |$\underbrace{ a+b+\cdots+z }_{26}$|`\underbrace{ a+b+\cdots+z }_{26}`|
 
-# 7. Space
+# Space
 The distance of a space is defined as `em`, and the actual size of `em` is changing with the font size.
 
 |Size|Example|LaTex|
@@ -168,7 +168,7 @@ The distance of a space is defined as `em`, and the actual size of `em` is chang
 |No Space|$ab$|`ab`|
 |Tight Close|$a\!b$|`a\!b`|
 
-# 8. Fraction
+# Fraction
 
 |Example|Latex|
 |:---:|:---:|
@@ -177,7 +177,7 @@ The distance of a space is defined as `em`, and the actual size of `em` is chang
 |$\dfrac{2}{4} = 0.5 \qquad \dfrac{2}{c + \dfrac{2}{d + \dfrac{2}{4}}} = a$|`\dfrac{2}{4} = 0.5 \qquad \dfrac{2}{c + \dfrac{2}{d + \dfrac{2}{4}}} = a`|
 |$\cfrac{2}{c + \cfrac{2}{d + \cfrac{2}{4}}} = a$|`\cfrac{2}{c + \cfrac{2}{d + \cfrac{2}{4}}} = a`|
 
-# 9. Numerical Function
+# Numerical Function
 
 |Example|Latex|
 |:---:|:---:|
@@ -198,14 +198,14 @@ LaTex also allow user customizing special function style by `\operatorname{}`
 |:---:|:---:|
 |$\operatorname{mydefine}x$|`\operatorname{mydefine}x`|
 
-# 10. $n^{th}$ Root
+# $n^{th}$ Root
 
 |Symbol|LaTex|Symbol|LaTex|
 |:---:|:---:|:---:|:---:|
 |$\surd$|`\surd`|$\sqrt{\pi}$|`\sqrt{\pi}`|
 |$\sqrt[n]{\pi}$|`\sqrt[n]{\pi}`|$\sqrt[3]{\frac{x^3+y^3}{2}}$|`\sqrt[3]{\frac{x^3+y^3}{2}}`|
 
-# 11. Differentiation & Derivatives
+# Differentiation & Derivatives
 
 |Symbol|LaTex|
 |:---:|:---:|
@@ -213,7 +213,7 @@ LaTex also allow user customizing special function style by `\operatorname{}`
 |$dy/dx, \mathrm{d}y/\mathrm{d}x, \frac{dy}{dx}, \frac{\mathrm{d}y}{\mathrm{d}x}, \frac{\partial^2}{\partial x_1\partial x_2}y$|`dy/dx, \mathrm{d}y/\mathrm{d}x, \frac{dy}{dx}, \frac{\mathrm{d}y}{\mathrm{d}x}, \frac{\partial^2}{\partial x_1\partial x_2}y`|
 |$\prime, \backprime, f^\prime, f', f'', f^{(3)}, \dot y, \ddot y$|`\prime, \backprime, f^\prime, f', f'', f^{(3)}, \dot y, \ddot y`|
 
-# 12. Modulo Operation
+# Modulo Operation
 
 |Symbol|LaTex|
 |:---:|:---:|
@@ -222,14 +222,14 @@ LaTex also allow user customizing special function style by `\operatorname{}`
 |$\gcd(m, n), \operatorname{lcm}(m, n)$|`\gcd(m, n), \operatorname{lcm}(m, n)`|
 |$\mid, \nmid, \shortmid, \nshortmid$|`\mid, \nmid, \shortmid, \nshortmid`|
 
-# 13. Limit
+# Limit
 
 |Symbol|LaTex|
 |:---:|:---:|
 |$\lim_{n \to \infty}x_n$|`\lim_{n \to \infty}x_n`|
 |$\textstyle \lim_{n \to \infty}x_n$|`\textstyle \lim_{n \to \infty}x_n`|
 
-# 14. Range & Prediction
+# Range & Prediction
 
 |Symbol|LaTex|
 |:---:|:---:|
@@ -238,7 +238,7 @@ LaTex also allow user customizing special function style by `\operatorname{}`
 |$\dim p, \deg q, \det m, \ker\phi$|`\dim p, \deg q, \det m, \ker\phi`|
 |$\Pr j, \hom l, \lVert z \rVert, \arg z$|`\Pr j, \hom l, \lVert z \rVert, \arg z`|
 
-# 15. Integral
+# Integral
 
 |Example|LaTex|
 |:---:|:---:|
@@ -253,7 +253,7 @@ LaTex also allow user customizing special function style by `\operatorname{}`
 
 >`\int\_{}^{}` is used for single integral, double integral is `\iint\_{}^{}`, and so on, until quadruple integral.
 
-# 16. Calculation Symbol
+# Calculation Symbol
 
 |Type|Symbol|LaTex|
 |:---:|:---:|:---:|
@@ -265,7 +265,7 @@ LaTex also allow user customizing special function style by `\operatorname{}`
 |Conjunction|$\bigwedge_{a}^{b}$|`\bigwedge_{a}^{b}`|
 |Sum|$\sum_{a}^{b}$|`\sum_{a}^{b}`|
 
-# 17. Binomial
+# Binomial
 
 |Type|Example|LaTex|
 |:---:|:---:|:---:|
@@ -273,7 +273,7 @@ LaTex also allow user customizing special function style by `\operatorname{}`
 |Smaller Binomial Cofficient|$\tbinom{n}{k}$|`\tbinom{n}{k}`|
 |Larger Binomial Cofficient|$\dbinom{n}{k}$|`\dbinom{n}{k}`|
 
-# 18. Matrix
+# Matrix
 
 |Example|LaTex|
 |:---:|:---|
@@ -285,8 +285,9 @@ LaTex also allow user customizing special function style by `\operatorname{}`
 |$$\begin{pmatrix}x & y \\z & v\end{pmatrix}$$|`\begin{pmatrix}`<br>`x & y \\`<br>`z & v`<br>`\end{pmatrix}`|
 |$$\bigl( \begin{smallmatrix}a&b\\c&d\end{smallmatrix} \bigr)$$|`\bigl( \begin{smallmatrix}`<br>`a&b\\`<br>`c&d`<br>`\end{smallmatrix} \bigr)`|
 
-# 19. Array
-Example:<br>
+# Array
+Example:
+
 $$
 \begin{array}{ | c | c | c | }
 a & b & S \\
@@ -310,7 +311,10 @@ a & b & S \\
 \end{array}
 ```
 
-# 20. Equation Sets
+# Equation Sets
+
+## Without Condition:
+
 $$
 \begin{cases}
 3x + 5y + z \\
@@ -318,3 +322,31 @@ $$
 -6x + 3y + 2z
 \end{cases}
 $$
+
+LaTex:
+```
+\begin{cases}
+3x + 5y + z \\
+7x - 2y + 4z \\
+-6x + 3y + 2z
+\end{cases}
+```
+
+## With Conditions:
+
+$$
+f(n) =
+\begin{cases}
+n/2, & \text{if }n\text{ is even} \\
+3n+1, & \text{if }n\text{ is odd}
+\end{cases}
+$$
+
+Latex:
+```
+f(n) =
+\begin{cases}
+n/2, & \text{if }n\text{ is even} \\
+3n+1, & \text{if }n\text{ is odd}
+\end{cases}
+```
