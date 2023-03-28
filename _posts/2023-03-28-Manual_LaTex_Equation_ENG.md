@@ -277,13 +277,13 @@ LaTex also allow user customizing special function style by `\operatorname{}`
 
 |Example|LaTex|
 |:---:|:---|
-|$$\begin{matrix}x & y \\ z & v\end{matrix}$$|```\begin{matrix}```<br>```x & y \\```<br>```z & v```<br>```\end{matrix}```|
+|$$\begin{matrix}x & y \\ z & v\end{matrix}$$|`\begin{matrix}`<br>`x & y \\`<br>`z & v`<br>`\end{matrix}`|
 |$$\begin{vmatrix}x & y \\ z & v\end{vmatrix}$$|`\begin{vmatrix}`<br>`x & y \\`<br>`z & v`<br>`\end{vmatrix}`|
-|$\begin{Vmatrix}x & y \\ z & v\end{Vmatrix}$|`\begin{Vmatrix}`<br>`x & y \\`<br>`z & v`<br>`\end{Vmatrix}`|
-|$\begin{bmatrix}0 & \cdots & 0 \\ \vdots & \ddots & \vdots \\0 & \cdots & 0\end{bmatrix}$|`\begin{bmatrix}`<br>`0 & \cdots & 0 \\`<br>`\vdots & \ddots & \vdots \\`<br>`0 & \cdots & 0`<br>`\end{bmatrix}`|
-|$\begin{Bmatrix}x & y \\ z & v\end{Bmatrix}$|`\begin{Bmatrix}`<br>`x & y \\`<br>`z & v`<br>`\end{Bmatrix}`|
-|$\begin{pmatrix}x & y \\z & v\end{pmatrix}$|`\begin{pmatrix}`<br>`x & y \\`<br>`z & v`<br>`\end{pmatrix}`|
-|$\bigl( \begin{smallmatrix}a&b\\c&d\end{smallmatrix} \bigr)$|`\bigl( \begin{smallmatrix}`<br>`a&b\\`<br>`c&d`<br>`\end{smallmatrix} \bigr)`|
+|$$\begin{Vmatrix}x & y \\ z & v\end{Vmatrix}$$|`\begin{Vmatrix}`<br>`x & y \\`<br>`z & v`<br>`\end{Vmatrix}`|
+|$$\begin{bmatrix}0 & \cdots & 0 \\ \vdots & \ddots & \vdots \\0 & \cdots & 0\end{bmatrix}$$|`\begin{bmatrix}`<br>`0 & \cdots & 0 \\`<br>`\vdots & \ddots & \vdots \\`<br>`0 & \cdots & 0`<br>`\end{bmatrix}`|
+|$$\begin{Bmatrix}x & y \\ z & v\end{Bmatrix}$$|`\begin{Bmatrix}`<br>`x & y \\`<br>`z & v`<br>`\end{Bmatrix}`|
+|$$\begin{pmatrix}x & y \\z & v\end{pmatrix}$$|`\begin{pmatrix}`<br>`x & y \\`<br>`z & v`<br>`\end{pmatrix}`|
+|$$\bigl( \begin{smallmatrix}a&b\\c&d\end{smallmatrix} \bigr)$$|`\bigl( \begin{smallmatrix}`<br>`a&b\\`<br>`c&d`<br>`\end{smallmatrix} \bigr)`|
 
 # 19. Array
 Example:<br>
