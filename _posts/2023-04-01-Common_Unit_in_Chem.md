@@ -2,7 +2,7 @@
 layout: post
 title: Common Units in Chemistry
 subtitle: A brief manual to conclude the common units in chemistry
-date: 2023-04-03
+date: 2023-04-01
 author: Moax.Wang
 header-img: "img/post-bg-tech.jpg"
 tags:
