@@ -34,8 +34,8 @@ Let's assume that the substance does not change the density of the water, and th
 
 $$
 \begin{align}
-{1mg \over L} = & {1mg \over 1,000g} = {1mg \over 10^6mg} = 1\ ppm \\
-& \therefore 1mg/L = 1ppm
+{1mg \over L} = {1mg \over 1,000g} & = {1mg \over 10^6mg} = 1\ ppm \\
+\therefore 1mg/L & = 1ppm
 \end{align}
 $$
 
@@ -44,7 +44,7 @@ $$
 In the calculation of P, we assume that:
 
 $$
-W+W_0=W; \\
+W+W_0=W; \newline
 the\ concentration\ of\ substance\ is\ 1ppm
 $$
 
