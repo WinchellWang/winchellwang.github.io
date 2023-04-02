@@ -33,7 +33,7 @@ W<sub>0</sub> = Grams of solution
 Let's assume that the substance does not change the density of the water, and the mixture contains 1 gram of substance in 1L water. Then we will have
 
 $$
-{1mg \over L} = {1mg \over 1,000g} = {1mg \over 10^6mg} = 1\ ppm\\
+{1mg \over L} = {1mg \over 1,000g} = {1mg \over 10^6mg} = 1\ ppm \newline
 \therefore 1mg/L = 1ppm
 $$
 
@@ -41,18 +41,18 @@ $$
 
 $$
 \begin{align}
-In\ the\ calculation\ of\ P: \\
-Assume: \\
-& W+W_0=W; \\
-& \ the\ concentration\ of\ substance\ is\ 1ppm \\
+In\ the\ calculation\ of\ P: \newline
+Assume: \newline
+& W+W_0=W; \newline
+& \ the\ concentration\ of\ substance\ is\ 1ppm \newline
 Then:
-\end{align} \\
+\end{align} \newline
 \begin{align}
-P & = {W \over W+W_0} \times 100 \% \\
-& = {1mg \over 1L} \times 100 \% \\
-& = ({10^{-3} g \over 10^3 g} \times 100)\% \\
+P & = {W \over W+W_0} \times 100 \% \newline
+& = {1mg \over 1L} \times 100 \% \newline
+& = ({10^{-3} g \over 10^3 g} \times 100)\% \newline
 & = 10^{-4} \%
-\end{align} \\
+\end{align} \newline
 \therefore \boldsymbol{1ppm = 10^{-4} \% \qquad OR \qquad 1 \% = 10^4 ppm = 10^4 mg/L}
 $$
 
