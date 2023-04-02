@@ -43,7 +43,7 @@ $$
 
 In the calculation of P, we assume that:
 
-$W+W_0=W$ & the concentration of substance is 1ppm
+$W+W_0=W_0$ & the concentration of substance is 1ppm
 
 Then:
 
