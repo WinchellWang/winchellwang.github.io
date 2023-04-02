@@ -21,7 +21,7 @@ catalog: true
 Weight Percent (重量比), P is used to express approximate concentrations. The term specifies the grams of substance per 100 grams of solution (**Solution just means the solution, does not include the substance**).
 
 $$
-P = {W \over W+W_0} \times 100 \%
+P = {W \over W+W_0} \times 100 {\%}
 $$
 
 > P = Percent of substance by weight <br>
