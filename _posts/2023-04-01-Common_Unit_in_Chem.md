@@ -41,19 +41,24 @@ $$
 
 ## 1.3 Conversion between P and ppm
 
+In the calculation of P:
+
 $$
 \begin{align}
-In\ the\ calculation\ of\ P: \\
 Assume: \\
 & W+W_0=W; \\
 & \ the\ concentration\ of\ substance\ is\ 1ppm \\
-Then:
 \end{align} \\
+$$
+
+Then:
+
+$$
 \begin{align}
-P & = {W \over W+W_0} \times 100 \% \\
-& = {1mg \over 1L} \times 100 \% \\
+P & = {W \over W+W_0} \times 100\% \\
+& = {1mg \over 1L} \times 100\% \\
 & = ({10^{-3} g \over 10^3 g} \times 100)\% \\
-& = 10^{-4} \%
+& = 10^{-4}\%
 \end{align} \\
 \therefore \boldsymbol{1ppm = 10^{-4} \% \qquad OR \qquad 1 \% = 10^4 ppm = 10^4 mg/L}
 $$
