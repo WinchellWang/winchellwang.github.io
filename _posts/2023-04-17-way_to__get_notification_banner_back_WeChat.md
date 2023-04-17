@@ -26,7 +26,7 @@ catalog: true
 因为用的英文版的WeChat，这里只给英文的流程。中文WeChat或者微信步骤应该是一样的。
 
 $$
-Me \Rightarrow Settings \Rightarrow Help\ \&\ Feedback \\
+Me \Rightarrow Settings \Rightarrow Help\  \& \ Feedback \\:
 \Rightarrow Samll\ Spanner\ Logo\ on\ the\ Top\ Right \Rightarrow Repair\ Notifications
 $$
 
