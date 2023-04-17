@@ -27,6 +27,7 @@ catalog: true
 
 $$
 Me \Rightarrow Settings \Rightarrow Help\& Feedback \\
+
 \Rightarrow Samll\ Spanner\ Logo\ on\ the\ Top\ Right \Rightarrow Repair\ Notifications
 $$
 
