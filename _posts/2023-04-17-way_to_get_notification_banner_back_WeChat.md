@@ -26,9 +26,11 @@ catalog: true
 因为用的英文版的WeChat，这里只给英文的流程。中文WeChat或者微信步骤应该是一样的。
 
 $$
-Me \Rightarrow Settings \Rightarrow Help\& Feedback \\
-
-\Rightarrow Samll\ Spanner\ Logo\ on\ the\ Top\ Right \Rightarrow Repair\ Notifications
+\begin{align}
+Me & \Rightarrow Settings \Rightarrow Help\& Feedback \\
+& \Rightarrow Samll\ Spanner\ Logo\ on\ the\ Top\ Right \\
+& \Rightarrow Repair\ Notifications
+\end{align}
 $$
 
 然后关掉微信，过一段时间（确保后台已经完全退出），再打开。
