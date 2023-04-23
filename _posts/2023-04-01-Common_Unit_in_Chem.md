@@ -39,7 +39,19 @@ $$
 \end{align}
 $$
 
-## 1.3 Conversion between P and ppm
+## 1.3 Convert to ppb
+
+1 ppb is defined as 1 parts-per billion, which following this rule to convert to ppm:
+
+$$
+1 ppb = 0.001 ppm
+$$
+
+$$
+1ppm = {1\over{1\over 1000}}ppb = 1000ppb
+$$
+
+## 1.4 Conversion between P and ppm
 
 In the calculation of P, we assume that:
 
