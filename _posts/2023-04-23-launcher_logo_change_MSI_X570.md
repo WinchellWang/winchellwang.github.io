@@ -13,7 +13,7 @@ catalog: true
 
 # Software Requirements
 
-There are two software has the capacity to replace the logo, but only one I have tried.
+There are two softwares have the capacity to replace the logo, but only one that I have tried.
 
 - [UEFITool](https://github.com/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/releases/tag/ChangeLogo)
 
