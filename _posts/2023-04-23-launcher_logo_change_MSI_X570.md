@@ -39,7 +39,7 @@ There are two softwares have the capacity to replace the logo, but only one that
 
     <img src="https://raw.githubusercontent.com/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/main/jpg/check_img_type.jpg"  width="40%">
 
-    Default BIOS logo extracted from ROM. <mark>(The actual format is **bmp**)</mark>
+    Default BIOS logo extracted from ROM. <mark>(The actual format is bmp in this ROM)</mark>
 
     <img src="https://raw.githubusercontent.com/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/main/jpg/splash.jpg"  width="30%">
 
