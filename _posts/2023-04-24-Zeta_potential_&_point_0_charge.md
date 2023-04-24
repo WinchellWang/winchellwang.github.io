@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Point of zero charge
-subtitle: A brief explnation of pzc and the concept of zeta potential
+subtitle: A brief explanation of pzc and the concept of zeta potential
 date: 2023-04-24
 author: Moax.Wang
 header-img: "img/post-bg-tech.jpg"
