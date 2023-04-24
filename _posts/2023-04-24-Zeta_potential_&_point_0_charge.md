@@ -13,7 +13,7 @@ catalog: true
 
 **Still Editing**
 
-Point of zero charge (pzc) is an important concept in colloid chemistry. I am trying to learn it and utilize this knowledge in my study. This paper is only talks about my personal understanding of pzc. Knowledge of zeta potential is not critical to understand pzc, but it would greatly help me to know what truly happened inside the colloid when we talking about pzc.
+Point of zero charge (pzc) is an important concept in colloid chemistry. I am trying to learn it and utilize this knowledge in my study. This paper only talks about my personal understanding of pzc. Knowledge of zeta potential is not critical to understand pzc, but it would greatly help me to know what truly happened inside the colloid when we talking about pzc.
 
 Before we talk about the electrochemical things, let us define the system in analysis. Assuming we have a colloidal system contains two composition, and the substance A is evenly dispersed in the substance B in a tiny scale. We probably will have eight different status depends on the type of the substances.
 
