@@ -75,3 +75,19 @@ $$
 $$
 
 **Notice:** In this conversion, we assumed that the total weight would not change with the add of more substance. However, the weight of substance will take effect and the error will increase, since the density is changing. **This convenient conversion would not be usable when the solute concentration exceeds 10%.**
+
+## 1.5 Unit of Weight
+
+|Unit|to Gram|Equivalent to|
+|---|---|---|
+|Gram (g)|1g|10<sup>-3</sup>kg|
+|Milligram (mg)|10<sup>-3</sup>g|10<sup>-3</sup>g|
+|Microgram (μg)|10<sup>-6</sup>g|10<sup>-3</sup>mg|
+|Nanogram (ng)|10<sup>-9</sup>g|10<sup>-3</sup>μg|
+|Picogram (pg)|10<sup>-12</sup>g|10<sup>-3</sup>ng|
+|Femtogram (fg)|10<sup>-15</sup>g|10<sup>-3</sup>pg|
+|Attogram (ag)|10<sup>-18</sup>g|10<sup>-3</sup>fg|
+|Zeptogram (zg)|10<sup>-21</sup>g|10<sup>-3</sup>ag|
+|Pound (lb)|453.592g|16oz|
+|Ounce (oz)|28.350g|1/16lb|
+|Carat (c)|0.2g|0.00705oz|
