@@ -45,7 +45,7 @@ Based on the sectors defined in the previous discussion, we know that the solid 
 ## 1.3 Why Zeta Potential
 
 <figure>
-<img src="https://water.mecc.edu/courses/Env211/changes/neg.gif" width=80%>
+<img src="https://raw.githubusercontent.com/MoaxWang/moaxwang.github.io/main/img/_post_image/2023-04-24/neg.jpg" width=80%>
 <figcaption>Negatively charged particles repel each other due to electricity.</figcaption>
 </figure>
 
@@ -58,3 +58,5 @@ Now, let us imagine a bigger picture which we are not only have one solid surfac
 |30-40|Moderate stability|
 |40-60|Good stability|
 |>61|Excellent stability|
+
+# 2. Point of Zero Charge
