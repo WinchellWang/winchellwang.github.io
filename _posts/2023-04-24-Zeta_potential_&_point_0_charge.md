@@ -44,8 +44,8 @@ Based on the sectors defined in the previous discussion, we know that the solid 
 
 ## 1.3 Why Zeta Potential
 
-<img src="https://water.mecc.edu/courses/Env211/changes/neg.gif" width=80%>
-<figcaption>Negatively charged particles repel each other due to electricity.</figcaption>
+<img src="https://raw.githubusercontent.com/MoaxWang/moaxwang.github.io/main/img/_post_image/2023-04-24/neg.jpg" width=80%>
+Negatively charged particles repel each other due to electricity.
 
 Now, let us imagine a bigger picture which we are not only have one solid surface, but many of them. Many tiny sticks suspending in a salty water. These sticks tend to absorb specific charged ions, like Cl<sup>-</sup>, and formed negative charged solids that, of course, they all have the negative charged solid surface. Sticks should tend to coagulate together because of the van der waals force, but they actually repels each other by the electrostatic repulsive force, that more powerful than van der waals force. That force slows their sedimentation hugely, and make the sol so stable in a long time frame. Here, the question comes up. How we measure the stability of a colloid system? Zeta potential, as our today's topic, is the answer.
 
