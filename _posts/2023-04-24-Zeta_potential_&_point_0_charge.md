@@ -38,7 +38,7 @@ We should notice that the reason of ions stay on the surface is not only electro
 
 ## 1.2 What is Zeta Potential
 
-![img](....../img/_post_image/2023-04-24/fig1.svg)
+![img](../../../img/_post_image/2023-04-24/fig1.svg)
 
 Based on the previous discussion, we know that the solid surface, stern layer, slipping plane shares different value of potential as the distance is various. Therefore, we define the electrical potential on the solid surface is the **surface potential**, and the potential on stern layer is the **stern potential**. **Zeta potential** is the potential on the slipping plane.
 
