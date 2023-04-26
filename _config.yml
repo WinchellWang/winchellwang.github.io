@@ -39,19 +39,9 @@ highlighter: rouge
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
 
-# Comment Component
-# Gitalk
-gitalk:
-  enable: true    #是否开启Gitalk评论
-  clientID: 0eae816804cef91bf680                            #生成的clientID
-  clientSecret: cb71a9b35e7137507066bd11a28f59b9f2914e81    #生成的clientSecret
-  repo: moaxwang.github.io    #仓库名称
-  owner: MoaxWang    #github用户名
-  admin: MoaxWang
-
 # Analytics settings
 # Google Analytics
-# ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
+# ga_track_id: 'UA-99999999-9'            # Format: UA-xxxxxx-xx
 # ga_domain: auto              # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 # Featured Tags
