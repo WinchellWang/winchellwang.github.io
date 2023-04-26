@@ -48,8 +48,6 @@ gitalk:
   repo: moaxwang.github.io    #仓库名称
   owner: MoaxWang    #github用户名
   admin: MoaxWang
-  distractionFreeMode: true #是否启用类似FB的阴影遮罩
-  enableHotKey: true # 提交评论快捷键(cmd/ctrl + enter) 
 
 # Analytics settings
 # Google Analytics
