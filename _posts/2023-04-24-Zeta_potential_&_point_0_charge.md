@@ -38,8 +38,7 @@ We should notice that the reason of ions stay on the surface is not only electro
 
 ## 1.2 What is Zeta Potential
 
-![img](../../../../img/_post_image/2023-04-24/fig1.svg)
-![img](~/img/_post_image/2023-04-24/fig1.svg)
+<img src="https://raw.githubusercontent.com/MoaxWang/moaxwang.github.io/main/img/_post_image/2023-04-24/fig1.svg">
 
 Based on the previous discussion, we know that the solid surface, stern layer, slipping plane shares different value of potential as the distance is various. Therefore, we define the electrical potential on the solid surface is the **surface potential**, and the potential on stern layer is the **stern potential**. **Zeta potential** is the potential on the slipping plane.
 
@@ -62,5 +61,8 @@ Now, let us imagine a bigger picture which we are not only have one solid surfac
 
 # 2. Point of Zero Charge
 
-Point of zero charge is the **pH value** of the net charge of total particle surface is zero. It is easy to imagine what will happen if the particle surface has zero net charge. 
+Point of zero charge is the **pH value** of the net charge of total particle surface is zero. It is easy to imagine what will happen if the particle surface has zero net charge. The coulomb force is disappeared, and van der waals force take the place to aggregate particles to sedimentation.
+
+## 2.1 pH and ζ-potential
+
 
