@@ -32,7 +32,7 @@ Zeta potential (ζ-potential) is the potential at the slipping plane. The unit o
 
 ## 1.1 Electrodouble Layer
 
-The concept of zeta potential is tightly correlated with the theory of electrodouble layer (EDL). Now, we have an aqueous solution at the interface with a negative charged solid surface. We can simply cut the solution into 3 sectors based on the concentration of positive charged ions. It is easy to understand that only positive charged ions would lay on the surface, and form a single ion layer, since the negative charged ions are repelled from the surface and the positive ions are so love to stay on the negative charged surface. This thin layer is the first section, and the surface of this layer named **stern layer**. The repulsion force will, of course, decrease with the distance increasing, so it is reasonable that some of negative ions will mixed into a bunch of positive ions outside of the stern layer (Because the positive ions around the surface are so attractive to negative ions in solution. Who will refuse a lovely party that you are the only one boy/girl). Another layer, which contains part of mobile fluid from the solution which attached to the stern layer, hence, be called **slipping plane**. Everything outside the diffuse layer belongs to **bulk liquid**. The combine of bulk liquid and slipping plane is called **diffuse layer**. The electrical potential at the stern layer and slipping plane are **stern potential** and **zeta potential** respectively.
+The concept of zeta potential is tightly correlated with the theory of electrodouble layer (EDL). Now, we have an aqueous solution at the interface with a negative charged solid surface. We can simply cut the solution into 3 sectors based on the concentration of positive charged ions. It is easy to understand that only positive charged ions would lay on the surface, and form a single ion layer, since the negative charged ions are repelled from the surface and the positive ions are so love to stay on the negative charged surface. This thin layer is the first section, and the surface of this layer named **stern layer**. The repulsion force will, of course, decrease with the distance increasing, so it is reasonable that some of negative ions will mixed into a bunch of positive ions outside of the stern layer (Because the positive ions around the surface are so attractive to negative ions in solution. Who will refuse a lovely party that you are the only one boy/girl). Another layer, which contains part of mobile fluid from the solution which attached to the stern layer, hence, be called **slipping plane**. Everything outside the slipping plane belongs to **bulk liquid**. The combine of bulk liquid and slipping plane is called **diffuse layer**. The electrical potential at the stern layer and slipping plane are **stern potential** and **zeta potential** respectively.
 
 We should notice that the reason of ions stay on the surface is not only electrostatic force or coulomb force, but also has the influences from chemical bonding, adsorption, etc. However, the discussion of why ions distributing like this is beyond my interest, so I would not spend my limited IQ in this complex world.
 
@@ -45,11 +45,11 @@ Based on the sectors defined in the previous discussion, we know that the solid 
 ## 1.3 Why Zeta Potential
 
 <figure>
-<img src="https://water.mecc.edu/courses/Env211/changes/neg.gif" width="80%">
+<img src="https://water.mecc.edu/courses/Env211/changes/neg.gif" width="40%">
 <figcaption>Negatively charged particles repel each other due to electricity.</figcaption>
 </figure>
 
-Now, let us imagine a bigger picture which we are not only have one solid surface, but many of them. Many tiny sticks suspending in a salty water. These sticks tend to absorb specific charged ions, like Cl<sup>-</sup>, and formed negative charged solids that, of course, they all have the negative charged solid surface. Sticks should tend to coagulate together because of the van der waals force, but they actually repels each other by the electrostatic repulsive force, that more powerful than van der waals force. That force slows their sedimentation hugely, and make the sol so stable in a long time frame. Here, the question comes up. How we measure the stability of a colloid system? Zeta potential, as our today's topic, is the answer.
+Now, let us imagine a bigger picture which we are not only have one solid surface, but many of them. Many tiny sticks suspending in a salty water. These sticks tend to absorb specific ions, like Cl<sup>-</sup>, and formed negative charged solids that, of course, they all have the negative charged solid surface. Sticks should tend to coagulate together because of the van der waals force, but they actually repels each other by the electrostatic repulsive force, that more powerful than van der waals force. That force slows their sedimentation hugely, and make the sol so stable in a long time frame. Here, the question comes up. How we measure the stability of a colloid system? Zeta potential, as our today's topic, is the answer.
 
 |Magnitude of Zeta potential (mV)|Stability behavior|
 |:---:|:---:|
@@ -60,4 +60,6 @@ Now, let us imagine a bigger picture which we are not only have one solid surfac
 |>61|Excellent stability|
 
 # 2. Point of Zero Charge
+
+Point of zero charge is the **pH value** of the net charge of total particle surface is zero. It is easy to imagine what will happen if the particle surface has zero net charge. 
 
