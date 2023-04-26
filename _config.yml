@@ -11,13 +11,13 @@ github_repo: "https://github.com/MoaxWang/moaxwang.github.io.git" # you code rep
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Goals determine what you going to be!"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "Nothing more than a student."
+sidebar-avatar: /img/avatar.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # SNS settings
 RSS: MoaxWang
-github_username:    MoaxWang
-#linkedin_username:  None
+github_username: MoaxWang
+#linkedin_username: None
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
