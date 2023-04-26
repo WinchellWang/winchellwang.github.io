@@ -38,16 +38,13 @@ We should notice that the reason of ions stay on the surface is not only electro
 
 ## 1.2 What is Zeta Potential
 
-<img src="https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/_post_image/2023-04-24/fig1.svg">
+![fig1](https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/_post_image/2023-04-24/fig1.svg)
 
 Based on the previous discussion, we know that the solid surface, stern layer, slipping plane shares different value of potential as the distance is various. Therefore, we define the electrical potential on the solid surface is the **surface potential**, and the potential on stern layer is the **stern potential**. **Zeta potential** is the potential on the slipping plane.
 
 ## 1.3 Why Zeta Potential
 
-<figure>
-<img src="https://water.mecc.edu/courses/Env211/changes/neg.gif" width="40%">
-<figcaption>Negatively charged particles repel each other due to electricity.</figcaption>
-</figure>
+![Negatively charged particles repel each other due to electricity.](https://water.mecc.edu/courses/Env211/changes/neg.gif)
 
 Now, let us imagine a bigger picture which we are not only have one solid surface, but many of them. Many tiny sticks suspending in a salty water. These sticks tend to absorb specific ions, like Cl<sup>-</sup>, and formed negative charged solids that, of course, they all have the negative charged solid surface. Sticks should tend to coagulate together because of the van der waals force, but they actually repels each other by the electrostatic repulsive force, that more powerful than van der waals force. That force slows their sedimentation hugely, and make the sol so stable in a long time frame. Here, the question comes up. How we measure the stability of a colloid system? Zeta potential, as our today's topic, is the answer.
 
@@ -64,5 +61,3 @@ Now, let us imagine a bigger picture which we are not only have one solid surfac
 Point of zero charge is the **pH value** of the net charge of total particle surface is zero. It is easy to imagine what will happen if the particle surface has zero net charge. The coulomb force is disappeared, and van der waals force take the place to aggregate particles to sedimentation.
 
 ## 2.1 pH and ζ-potential
-
-
