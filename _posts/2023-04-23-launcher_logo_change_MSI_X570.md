@@ -1,63 +1,104 @@
 ---
 layout: post
-title: Point of Zero Charge
-subtitle: A brief explanation of pzc and the concept of zeta potential
-date: 2023-04-24
+title: Change MSI X570 BIOS Logo
+subtitle: A method to replace the logo in BIOS during lanuch
+date: 2023-04-23
 author: Moax.Wang
 header-img: "img/post-bg-tech.jpg"
 tags:
-   - Chemistry
+   - Computer
 header-mask: 0.1
 catalog: true
 ---
 
-**Still Editing**
+# Software Requirements
 
-Point of zero charge (pzc) is an important concept in colloid chemistry. I am trying to learn it and utilize this knowledge in my study. This paper only talks about my personal understanding of pzc. Knowledge of zeta potential is not critical to understand pzc, but it would greatly help me to know what truly happened inside the colloid when we talking about pzc.
+There are two softwares have the capacity to replace the logo, but only one that I have tried.
 
-Before we talk about the electrochemical things, let us define the system in analysis. Assuming we have a colloidal system contains two composition, and the substance A is evenly dispersed in the substance B in a tiny scale. We probably will have eight different status depends on the type of the substances.
+- [UEFITool](https://github.com/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/releases/tag/ChangeLogo)
 
-|||*Substance A* $\Downarrow$||
-|:---:|:---:|:---:|:---:|
-|***Substance B*** $\Downarrow$|**Gas**|**Liquid**|**Solid**|
-|**Gas**|None|Liquid Aerosols|Solid Aerosols|
-|**Liquid**|Liquid Foam|Emulsion|Sol|
-|**Solid**|Solid Foam|Gel|Solid Sol|
+- [AMI ChangeLogo Tool](https://github.com/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/releases/tag/ChangeLogo) **(Did not Test)**
 
-Sol and emulsion would be the major system we focusing on in this topic, as they do have an efficient transportation of ions in the system and easy for me to understand it.
+# Procedure
 
-# 1. Zeta Potential
+1. Download bios file from [MSI website](https://us.msi.com/Motherboard/MPG-X570-GAMING-PLUS/support), and extract it. **BIOS file usually have AE0, AJ0... as the suffix.**
 
-Zeta potential (ζ-potential) is the potential at the slipping plane. The unit of this potential usually is millivolts (mv). It basically reflects the energy consumed to move an monovalent charged ion from an infinity distance to the slipping plane on an opposite charged particle.
+2. Extract the ROM by [AMI ChangeLogo Tool](https://github.com/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/releases/tag/ChangeLogo)
 
-## 1.1 Electrodouble Layer
+    2.1 Load ROM
 
-The concept of zeta potential is tightly correlated with the theory of electrodouble layer (EDL). Now, we have an aqueous solution at the interface with a negative charged solid surface. We can simply cut the solution into 3 sectors based on the concentration of positive charged ions. It is easy to understand that only positive charged ions would lay on the surface, and form a single ion layer, since the negative charged ions are repelled from the surface and the positive ions are so love to stay on the negative charged surface. This thin layer is the first section, and the surface of this layer named **stern layer**. The repulsion force will, of course, decrease with the distance increasing, so it is reasonable that some of negative ions will mixed into a bunch of positive ions outside of the stern layer (Because the positive ions around the surface are so attractive to negative ions in solution. Who will refuse a lovely party that you are the only one boy/girl). Another layer, which contains part of mobile fluid from the solution which attached to the stern layer, hence, be called **slipping plane**. Everything outside the diffuse layer belongs to **bulk liquid**. The combine of bulk liquid and slipping plane is called **diffuse layer**. The electrical potential at the stern layer and slipping plane are **stern potential** and **zeta potential** respectively.
+    Please change the 'Files of type' to 'All Files (\*.*)', if thr ROM does shows up in the selection.
 
-We should notice that the reason of ions stay on the surface is not only electrostatic force or coulomb force, but also has the influences from chemical bonding, adsorption, etc. However, the discussion of why ions distributing like this is beyond my interest, so I would not spend my limited IQ in this complex world.
+    <img src="https://raw.githubusercontent.com/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/main/jpg/open_changelogo.jpg">
 
-## 1.2 What is Zeta Potential
+    2.2 Extract logo
 
-<img src="https://raw.githubusercontent.com/MoaxWang/moaxwang.github.io/main/img/_post_image/2023-04-24/fig1.svg">
+    **More importantly, check the image type**
 
-Based on the sectors defined in the previous discussion, we know that the solid surface, stern layer, slipping plane shares different value of potential as the distance is various. Therefore, we define the electrical potential on the solid surface is the **surface potential**, and the potential on stern layer is the **stern potential**. **Zeta potential**, hence, is the potential on the slipping plane.
+    Just need to chose the first one with suffix, and click "Save Logo". The image usually will converted to jpg type.
 
-## 1.3 Why Zeta Potential
+    <img src="https://raw.githubusercontent.com/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/main/jpg/check_img_type.jpg">
 
-<figure>
-<img src="https://water.mecc.edu/courses/Env211/changes/neg.gif" width="80%">
-<figcaption>Negatively charged particles repel each other due to electricity.</figcaption>
-</figure>
+    Default BIOS logo extracted from ROM. <mark>(The actual format is bmp in this ROM)</mark>
 
-Now, let us imagine a bigger picture which we are not only have one solid surface, but many of them. Many tiny sticks suspending in a salty water. These sticks tend to absorb specific charged ions, like Cl<sup>-</sup>, and formed negative charged solids that, of course, they all have the negative charged solid surface. Sticks should tend to coagulate together because of the van der waals force, but they actually repels each other by the electrostatic repulsive force, that more powerful than van der waals force. That force slows their sedimentation hugely, and make the sol so stable in a long time frame. Here, the question comes up. How we measure the stability of a colloid system? Zeta potential, as our today's topic, is the answer.
+    <img src="https://raw.githubusercontent.com/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/main/jpg/splash.jpg"  width="50%">
 
-|Magnitude of Zeta potential (mV)|Stability behavior|
-|:---:|:---:|
-|0-5|Rapid coagulation or flocculation|
-|10-30|Incipient instability|
-|30-40|Moderate stability|
-|40-60|Good stability|
-|>61|Excellent stability|
+3. Modify Logo
 
-# 2. Point of Zero Charge
+    I would suggest that the new logo should keep the same size as the original. X570 does allow a larger image, but there is no guarantee that it will display properly.
 
+    Here I changed it to a Microsoft logo as an example.
+
+    <img src="https://raw.githubusercontent.com/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/main/jpg/img_save.jpg">
+
+    Then export the image as bmp. It would be fine if just keep the default setting when save the image.
+
+    <img src="https://raw.githubusercontent.com/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/main/jpg/exp_opt.jpg"  width="60%">
+
+4. Replace the logo in ROM by [UEFITool](https://github.com/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/releases/tag/ChangeLogo)
+
+    4.1 Load ROM
+
+    $$
+    File\Rightarrow Open\ image\ file\ \mathbb{OR}\ Ctrl+O
+    $$
+
+    Chose to 'All files', if the rom does not show up in the selection window.
+
+    4.2 Locate logo file in ROM
+
+    Ctrl + F to open the search box, and switch to Text option. Search 'logo', and it will show you all the logo files location.
+
+    <img src="https://raw.githubusercontent.com/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/main/jpg/uefi_logo_search.jpg">
+
+    4.3 Replace the images in ROM
+
+    ROM for MSI usually contains more than 1 logo, so we have to change all of them, since I tried to only change few of them and it would not show the correct image during launch.
+
+    Double click each line in Messages box to jump into the files location, as we are looking for the file which has a section named 'Raw' OR 'Freeform subtype GUID'
+
+    <img src="https://raw.githubusercontent.com/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/main/jpg/rpl_rom_img_1.jpg">
+
+    Then right click the section, and replace the body to your logo.bmp. The software will show something like Rebuild, Remove, and Replace in the section you are changing at the Section column.
+
+    <img src="https://raw.githubusercontent.com/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/main/jpg/rpl_rom_img_2.jpg">
+
+    There are 4 images should be replaced in the ROM, if you are changing the logo for MSI X570 Gaming Plus. 
+
+    4.4 Export the new ROM
+
+    $$
+    File\Rightarrow Save\ image\ file\ \mathbb{OR}\ Ctrl+S
+    $$
+
+    **Please name the new image exactly same as the original file.**
+
+    >Show the file name extensions in explorer, so you can truly change file suffix.
+
+5. Flash the new BIOS by following this [tutorial/SOP](https://storage-asset.msi.com/files/pdf/How_to_flash_the_BIOS.pdf).
+    
+# Results
+
+My new logo :D
+
+<img src="https://raw.githubusercontent.com/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/main/jpg/launch.gif"  width="50%">
