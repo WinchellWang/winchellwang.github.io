@@ -61,3 +61,5 @@ Now, let us imagine a bigger picture which we are not only have one solid surfac
 Point of zero charge is the **pH value** of the net charge of total particle surface is zero. It is easy to imagine what will happen if the particle surface has zero net charge. The coulomb force is disappeared, and van der waals force take the place to aggregate particles to sedimentation.
 
 ## 2.1 pH and ζ-potential
+
+sososososoos confused on web design
