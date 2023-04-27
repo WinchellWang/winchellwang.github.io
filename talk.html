@@ -46,6 +46,19 @@ header-img: "img/tag-bg.jpg"
     border-bottom: 1px #ddd solid;
 }
 
+@media screen and (max-width: 600px) {
+    .hexo-douban-item {
+        width: 100%;
+    }
+}
+
+.hexo-douban-picture {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 1px;
+}
+
 .hexo-douban-picture {
     position: absolute;
     left: 0;
@@ -226,8 +239,8 @@ header-img: "img/tag-bg.jpg"
     
     <!-- 分页 开始 -->
     <div class="hexo-douban-pagination">
-      <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;">First Page</a>
-      <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">Previous</a>
+      <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;">→</a>
+      <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">←</a>
       <span class="hexo-douban-pagenum">2 / 3</span>
       <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">Next</a>
       <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">Last Page</a>
