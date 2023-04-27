@@ -1,9 +1,8 @@
 ---
-title: 说说
+title: Talks
 layout: default
-permalink: /talks/
-description: 乐享每一天，快乐永相伴
-header-img: "img/post-bg-YesOrNo.jpg"
+description: Say What I Want.
+header-img: "img/tag-bg.jpg"
 ---
 
 <!-- Page Header -->
@@ -51,6 +50,13 @@ header-img: "img/post-bg-YesOrNo.jpg"
     .hexo-douban-item {
         width: 100%;
     }
+}
+
+.hexo-douban-picture {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 1px;
 }
 
 .hexo-douban-picture {
@@ -140,20 +146,12 @@ header-img: "img/post-bg-YesOrNo.jpg"
 
 <!-- Main Content start-->
 <div class="container">
-<!--
-<h1>这里是我的书籍清单</h1>
--->
-<blockquote>
-    <p>这是我的说说，记录日常所感所悟，欢迎互动！互动评论格式：“@2019年10月30日 评论:这是你的评论内容。”(点击“评论”按钮自动复制该格式)</p>
-</blockquote>
 
 <div class="hexo-douban-tabs">
     <a class="hexo-douban-tab" id="hexo-douban-tab1" rel="external">
         </a>
     <a class="hexo-douban-tab" id="hexo-douban-tab2" rel="external">
         </a>
-    <a class="hexo-douban-tab" id="hexo-douban-tab3" href="javascript:;" rel="external">
-        我的说说</a>
 </div>
 
 <div>
@@ -162,7 +160,7 @@ header-img: "img/post-bg-YesOrNo.jpg"
     <!-- 已读000开始 -->
     {% for talk in site.data.talks2 %}
     <div class="hexo-douban-item">
-      <div class="hexo-douban-picture"><img src="https://raw.githubusercontent.com/Duter2016/Duter2016.github.io/master/img/talks_img.png}" data-src="https://raw.githubusercontent.com/Duter2016/Duter2016.github.io/master/img/talks_img.png" referrerpolicy="no-referrer"></div>
+      <div class="hexo-douban-picture"><img src="https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/talks_img.png}" data-src="https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/talks_img.png" referrerpolicy="no-referrer"></div>
       <div class="page-action-calendar">
           <div class="sub-month">{{ talk.talkmonth }}</div>
           <div class="sub-day">{{ talk.talkday }}</div>
@@ -170,7 +168,7 @@ header-img: "img/post-bg-YesOrNo.jpg"
       <div class="hexo-douban-info">
           <div class="hexo-douban-title"><a> {{ talk.mytalk }}</a></div>
           <div class="hexo-douban-meta"><br></div>
-          <div class="hexo-douban-meta"><textarea id="copy{{ talk.talkmonth }}{{ talk.talkday }}" class="copy">@{{ talk.talkmonth }}月{{ talk.talkday }}日 评论:</textarea> 💖 Duter2016 | ⌛️ {{ talk.talkmonth }}月{{ talk.talkday }}日 | ☎️ <a onclick="copyLink()" href="#comments"><font color="#2fb4f5">评论</font></a></div>
+          <div class="hexo-douban-meta"><textarea id="copy{{ talk.talkmonth }}{{ talk.talkday }}" class="copy">@{{ talk.talkmonth }}/{{ talk.talkday }}/ Comments:</textarea> Moax.Wang | ⌛️ {{ talk.talkmonth }}/{{ talk.talkday }}/</a></div>
           <div class="hexo-douban-comments"></div>
       </div>
     </div>
@@ -192,18 +190,18 @@ header-img: "img/post-bg-YesOrNo.jpg"
     <!-- 已读000开始 -->
     {% for talk in site.data.talks2 %}
     <div class="hexo-douban-item">
-      <div class="hexo-douban-picture"><img src="https://raw.githubusercontent.com/Duter2016/Duter2016.github.io/master/img/talks_img.png}" data-src="https://raw.githubusercontent.com/Duter2016/Duter2016.github.io/master/img/talks_img.png" referrerpolicy="no-referrer"></div>
-      <div class="page-action-calendar">
-          <div class="sub-month">{{ talk.talkmonth }}</div>
-          <div class="sub-day">{{ talk.talkday }}</div>
+        <div class="hexo-douban-picture"><img src="https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/talks_img.png}" data-src="https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/talks_img.png" referrerpolicy="no-referrer"></div>
+        <div class="page-action-calendar">
+            <div class="sub-month">{{ talk.talkmonth }}</div>
+            <div class="sub-day">{{ talk.talkday }}</div>
+        </div>
+        <div class="hexo-douban-info">
+            <div class="hexo-douban-title"><a> {{ talk.mytalk }}</a></div>
+            <div class="hexo-douban-meta"><br></div>
+            <div class="hexo-douban-meta"><textarea id="copy{{ talk.talkmonth }}{{ talk.talkday }}" class="copy">@{{ talk.talkmonth }}/{{ talk.talkday }}/ Comments:</textarea> Moax.Wang | ⌛️ {{ talk.talkmonth }}/{{ talk.talkday }}/</a></div>
+            <div class="hexo-douban-comments"></div>
+        </div>
       </div>
-      <div class="hexo-douban-info">
-          <div class="hexo-douban-title"><a> {{ talk.mytalk }}</a></div>
-          <div class="hexo-douban-meta"><br></div>
-          <div class="hexo-douban-meta"><textarea id="copy{{ talk.talkmonth }}{{ talk.talkday }}" class="copy">@{{ talk.talkmonth }}月{{ talk.talkday }}日 评论:</textarea> 💖 Duter2016 | ⌛️ {{ talk.talkmonth }}月{{ talk.talkday }}日 | ☎️ <a onclick="copyLink()" href="#comments"><font color="#2fb4f5">评论</font></a></div>
-          <div class="hexo-douban-comments"></div>
-      </div>
-    </div>
     {% endfor %}
     <!-- 已读000结束 -->
     
@@ -222,40 +220,30 @@ header-img: "img/post-bg-YesOrNo.jpg"
     <!-- 说说000开始 -->
     {% for talk in site.data.talks %}
     <div class="hexo-douban-item">
-      <div class="hexo-douban-picture"><img src="https://raw.githubusercontent.com/Duter2016/Duter2016.github.io/master/img/talks_img.png}" data-src="https://raw.githubusercontent.com/Duter2016/Duter2016.github.io/master/img/talks_img.png" referrerpolicy="no-referrer"></div>
-      <div class="page-action-calendar">
-          <div class="sub-month">{{ talk.talkmonth }}</div>
-          <div class="sub-day">{{ talk.talkday }}</div>
+        <div class="hexo-douban-picture"><img src="https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/talks_img.png}" data-src="https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/talks_img.png" referrerpolicy="no-referrer"></div>
+        <div class="page-action-calendar">
+            <div class="sub-month">{{ talk.talkmonth }}</div>
+            <div class="sub-day">{{ talk.talkday }}</div>
+        </div>
+        <div class="hexo-douban-info">
+            <div class="hexo-douban-title"><a> {{ talk.mytalk }}</a></div>
+            <div class="hexo-douban-meta"><br></div>
+            <div class="hexo-douban-meta"><textarea id="copy{{ talk.talkmonth }}{{ talk.talkday }}" class="copy">@{{ talk.talkmonth }}/{{ talk.talkday }}/ Comments:</textarea> Moax.Wang | ⌛️ {{ talk.talkmonth }}/{{ talk.talkday }}/</a></div>
+            <div class="hexo-douban-comments"></div>
+        </div>
       </div>
-      <div class="hexo-douban-info">
-          <div class="hexo-douban-title"><a> {{ talk.mytalk }}</a></div>
-          <div class="hexo-douban-meta"><br></div>
-          <div class="hexo-douban-meta"><textarea id="copy{{ talk.talkmonth }}{{ talk.talkday }}" class="copy">@{{ talk.talkmonth }}月{{ talk.talkday }}日 评论:</textarea> 💖 Duter2016 | ⌛️ {{ talk.talkmonth }}月{{ talk.talkday }}日 | ☎️ <a onclick="copyLink{{ talk.talkmonth }}{{ talk.talkday }}()" href="#comments"><font color="#2fb4f5">评论</font></a></div>
-          <div class="hexo-douban-comments"></div>
       </div>
-      
-      <!-- 点击复制 开始 -->
-      <script type="text/javascript">
-      function copyLink{{ talk.talkmonth }}{{ talk.talkday }}(){
-          var e = document.getElementById("copy{{ talk.talkmonth }}{{ talk.talkday }}");
-          e.select(); // 选择对象
-          document.execCommand("Copy"); // 执行浏览器复制命令
-          alert("评论格式已复制，评论框粘贴即可！");
-      }
-      </script>
-      <!-- 点击复制 结束 -->
-      
     </div>
     {% endfor %}
     <!-- 说说000结束 -->
     
     <!-- 分页 开始 -->
     <div class="hexo-douban-pagination">
-      <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;"> 首页</a>
-      <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">上一页</a>
+      <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;">→</a>
+      <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">←</a>
       <span class="hexo-douban-pagenum">2 / 3</span>
-      <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">下一页</a>
-      <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">尾页</a>
+      <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">Next</a>
+      <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">Last Page</a>
     </div>
     <!-- 分页 结束 -->
     
@@ -266,17 +254,11 @@ header-img: "img/post-bg-YesOrNo.jpg"
 
     <!-- 说说统计 开始 -->
     <div align="center">
-    Duter2016 共发表了 <script language="JavaScript">
+    Moax.Wang have <script language="JavaScript">
     var numitem3 = document.getElementById('hexo-douban-item3').getElementsByClassName('hexo-douban-item').length;
     document.write(numitem3)
-</script> 条说说！
-    <!-- Valine 评论框 start -->
-    {% if site.valine.enable %}
-        {% include valine_comments.html %}
-    {% endif %}
-    <!-- Valine 评论框 end -->
-    </div>
-    <!-- 说说统计 结束 -->
+</script> talks.
+
 
 </div>
 <!-- Main Content end-->
