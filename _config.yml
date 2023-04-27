@@ -15,7 +15,7 @@ sidebar-about-description: "Nothing more than a student."
 sidebar-avatar: /img/avatar.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # SNS settings
-RSS: MoaxWang
+RSS: true
 github_username: MoaxWang
 #linkedin_username: None
 
