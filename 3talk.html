@@ -137,22 +137,33 @@ permalink: /talk/
 <!-- Main Content start-->
 <div class="container">
 
-<div class="hexo-douban-tabs">
+<!-- <div class="hexo-douban-tabs">
     <a class="hexo-douban-tab" id="hexo-douban-tab1" rel="external">
         </a>
     <a class="hexo-douban-tab" id="hexo-douban-tab2" rel="external">
         </a>
     <a class="hexo-douban-tab" id="hexo-douban-tab3" href="javascript:;" rel="external">
         My Small Talks.</a>
+</div> -->
+
+<!-- 说说统计 开始 -->
+<div align="center">
+    Moax.Wang has  
+    <script language="JavaScript">
+    var numitem1 = document.getElementById('hexo-douban-item1').getElementsByClassName('hexo-douban-item').length;
+    document.write(numitem1)
+    </script> 
+    talks
 </div>
+<!-- 说说统计 结束 -->
 
 <div>
   <div id="hexo-douban-item1">
     
-    <!-- talk start-->
+    <!-- talk start -->
     {% for talk in site.data.talks %}
     <div class="hexo-douban-item">
-      <div class="hexo-douban-picture"><img src="https://raw.githubusercontent.com/Duter2016/Duter2016.github.io/master/img/talks_img.png}" data-src="https://raw.githubusercontent.com/Duter2016/Duter2016.github.io/master/img/talks_img.png" referrerpolicy="no-referrer"></div>
+      <div class="hexo-douban-picture"><img data-src="https://raw.githubusercontent.com/Duter2016/Duter2016.github.io/master/img/talks_img.png" referrerpolicy="no-referrer"></div>
       <div class="page-action-calendar">
           <div class="sub-month">{{ talk.talkmonth }}</div>
           <div class="sub-day">{{ talk.talkday }}</div>
@@ -175,24 +186,12 @@ permalink: /talk/
       <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">Oldest</a>
     </div>
     <!-- 分页 结束 -->
-  <!--      我的说说 end      -->
 
-</div>
-
-    <!-- 说说统计 开始 -->
-    <div align="center">
-    Moax.Wang has  
-    <script language="JavaScript">
-    var numitem1 = document.getElementById('hexo-douban-item1').getElementsByClassName('hexo-douban-item').length;
-    document.write(numitem1)
-    </script> 
-    talks
+    <!-- talk end -->
     </div>
-    <!-- 说说统计 结束 -->
-
 </div>
 <!-- Main Content end-->
-
+</div>
 
 <!-- 标签切换脚本 -->
 <script>
