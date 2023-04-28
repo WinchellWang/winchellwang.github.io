@@ -1,63 +1,11 @@
-- mytalk: "Testing the system. 1"    #说说内容
+- mytalk: "Testing the system."    #说说内容
   talkmonth: "2023/04"    #年月格式‘2019年10’
-  talkday: "1"    #日期‘日’
+  talkday: "27"    #日期‘日’
 
-- mytalk: "Testing the system. 2"    #说说内容
-  talkmonth: "2023/04"    #年月格式‘2019年10’
-  talkday: "2"    #日期‘日’
+- mytalk: "终于修好了说说的bug，好累QAQ"
+  talkmonth: "2023/04"
+  talkday: "28"
 
-- mytalk: "Testing the system. 3"    #说说内容
-  talkmonth: "2023/04"    #年月格式‘2019年10’
-  talkday: "3"    #日期‘日’
-
-- mytalk: "Testing the system. 4"    #说说内容
-  talkmonth: "2023/04"    #年月格式‘2019年10’
-  talkday: "4"    #日期‘日’
-
-- mytalk: "Testing the system. 5"    #说说内容
-  talkmonth: "2023/04"    #年月格式‘2019年10’
-  talkday: "5"    #日期‘日’
-
-- mytalk: "Testing the system. 6"    #说说内容
-  talkmonth: "2023/04"    #年月格式‘2019年10’
-  talkday: "6"    #日期‘日’
-
-- mytalk: "Testing the system. 7"    #说说内容
-  talkmonth: "2023/04"    #年月格式‘2019年10’
-  talkday: "7"    #日期‘日’
-
-- mytalk: "Testing the system. 8"    #说说内容
-  talkmonth: "2023/04"    #年月格式‘2019年10’
-  talkday: "8"    #日期‘日’
-
-- mytalk: "Testing the system. 9"    #说说内容
-  talkmonth: "2023/04"    #年月格式‘2019年10’
-  talkday: "9"    #日期‘日’
-
-- mytalk: "Testing the system. 10"    #说说内容
-  talkmonth: "2023/04"    #年月格式‘2019年10’
-  talkday: "10"    #日期‘日’
-
-- mytalk: "Testing the system. 11"    #说说内容
-  talkmonth: "2023/04"    #年月格式‘2019年10’
-  talkday: "11"    #日期‘日’
-
-- mytalk: "Testing the system. 12"    #说说内容
-  talkmonth: "2023/04"    #年月格式‘2019年10’
-  talkday: "12"    #日期‘日’
-
-- mytalk: "Testing the system. 13"    #说说内容
-  talkmonth: "2023/04"    #年月格式‘2019年10’
-  talkday: "13"    #日期‘日’
-
-- mytalk: "Testing the system. 14"    #说说内容
-  talkmonth: "2023/04"    #年月格式‘2019年10’
-  talkday: "14"    #日期‘日’
-
-- mytalk: "Testing the system. 15"    #说说内容
-  talkmonth: "2023/04"    #年月格式‘2019年10’
-  talkday: "15"    #日期‘日’
-
-- mytalk: "Testing the system. 16"    #说说内容
-  talkmonth: "2023/04"    #年月格式‘2019年10’
-  talkday: "16"    #日期‘日’
+- mytalk: "提醒一下自己，文章的文件名不能带有&，要不然RSS订阅的XML文件会报错导致订阅出问题！"
+  talkmonth: "2023/04"
+  talkday: "28"
