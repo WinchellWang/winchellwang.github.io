@@ -137,26 +137,6 @@ permalink: /talk/
 <!-- Main Content start-->
 <div class="container">
 
-<!-- <div class="hexo-douban-tabs">
-    <a class="hexo-douban-tab" id="hexo-douban-tab1" rel="external">
-        </a>
-    <a class="hexo-douban-tab" id="hexo-douban-tab2" rel="external">
-        </a>
-    <a class="hexo-douban-tab" id="hexo-douban-tab3" href="javascript:;" rel="external">
-        My Small Talks.</a>
-</div> -->
-
-<!-- 说说统计 开始 -->
-<div align="center">
-    Moax.Wang has  
-    <script language="JavaScript">
-    var numitem1 = document.getElementById('hexo-douban-item1').getElementsByClassName('hexo-douban-item').length;
-    document.write(numitem1)
-    </script> 
-    talks
-</div>
-<!-- 说说统计 结束 -->
-
 <div>
   <div id="hexo-douban-item1">
     
@@ -191,6 +171,18 @@ permalink: /talk/
     </div>
 </div>
 <!-- Main Content end-->
+
+<!-- 说说统计 开始 -->
+<div align="center">
+    Moax.Wang has  
+    <script language="JavaScript">
+    var numitem1 = document.getElementById('hexo-douban-item1').getElementsByClassName('hexo-douban-item').length;
+    document.write(numitem1)
+    </script> 
+    talks
+</div>
+<!-- 说说统计 结束 -->
+
 </div>
 
 <!-- 标签切换脚本 -->
@@ -225,12 +217,6 @@ function tabClick() {
         sibs[k].classList.remove('hexo-douban-show');
     }
 }
-// var tabs = document.getElementsByClassName("hexo-douban-tab");
-// for (var i = 0; i < tabs.length; i++) {
-//     tabs[i].onclick = tabClick;
-//     tabs[i].onclick.apply(tabs[i]);
-// }
-// tabs[2].click();
 
 var firstpages = document.getElementsByClassName("hexo-douban-firstpage");
 var previouspages = document.getElementsByClassName("hexo-douban-previouspage");
