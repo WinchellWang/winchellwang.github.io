@@ -19,14 +19,6 @@ permalink: /talk/
         </div>
     </div>
 <style>
-.hexo-douban-tabs {
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-
-.hexo-douban-tab {
-    padding: 5px;
-}
 
 .hexo-douban-active {
     background: #657b83;
@@ -42,7 +34,7 @@ permalink: /talk/
     padding-bottom: 10px;
     position: relative;
     clear: both;
-    min-height: 170px;
+    min-height: 80px;
     padding: 10px 0;
     border-bottom: 1px #ddd solid;
 }
@@ -154,13 +146,13 @@ permalink: /talk/
         <!-- 已读000结束 -->
         
         <!-- 分页 开始 -->
-        <div class="hexo-douban-pagination">
+        <!-- <div class="hexo-douban-pagination">
         <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;"> -</a>
         <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">-</a>
         <span class="hexo-douban-pagenum">-</span>
         <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">-</a>
         <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">-</a>
-        </div>
+        </div> -->
         <!-- 分页 结束 -->
         
     <!--      已读 start      -->
@@ -182,13 +174,13 @@ permalink: /talk/
         <!-- 已读000结束 -->
         
         <!-- 分页 开始 -->
-        <div class="hexo-douban-pagination">
+        <!-- <div class="hexo-douban-pagination">
         <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;"> -</a>
         <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">-</a>
         <span class="hexo-douban-pagenum">-</span>
         <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">-</a>
         <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">-</a>
-        </div>
+        </div> -->
         <!-- 分页 结束 -->
         
     <!--      我的说说 start      -->
@@ -229,7 +221,7 @@ permalink: /talk/
     <div align="center">
         Moax.Wang has  
         <script language="JavaScript">
-        var numitem1 = document.getElementById('hexo-douban-item1').getElementsByClassName('hexo-douban-item').length;
+        var numitem1 = document.getElementById('hexo-douban-item3').getElementsByClassName('hexo-douban-item').length;
         document.write(numitem1)
         </script> 
         talks.
@@ -272,12 +264,6 @@ function tabClick() {
         sibs[k].classList.add('hexo-douban-hide');
     }
 }
-var tabs = document.getElementsByClassName("hexo-douban-tab");
-for (var i = 0; i < tabs.length; i++) {
-    tabs[i].onclick = tabClick;
-    tabs[i].onclick.apply(tabs[i]);
-}
-tabs[2].click();
 
 var firstpages = document.getElementsByClassName("hexo-douban-firstpage");
 var previouspages = document.getElementsByClassName("hexo-douban-previouspage");
