@@ -6,7 +6,7 @@ email: moax.wang@outlook.com
 description: "Moax Wang Personal Blog"
 keyword: "Chemical, Engineering, DIY, Canada, Student, MOAX"
 url: "https://moaxwang.github.io/"          # your host, for absolute URL
-baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: "/home"      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/MoaxWang/moaxwang.github.io.git" # you code repository
 
 # Sidebar settings

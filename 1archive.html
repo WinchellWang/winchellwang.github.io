@@ -3,6 +3,7 @@ title: Archive
 layout: page
 description: Articles by Year
 header-img: "img/tag-bg.jpg"
+permalink: /archive/
 ---
 
 <ul>
@@ -13,7 +14,7 @@ header-img: "img/tag-bg.jpg"
 	{% assign prevyear = post.previous.date | date: "%Y" %}
 	{% assign counter = counter | plus: 1 %}
 	{% if thisyear != prevyear %}
-	🗄<a href="#{{ post.date | date: '%Y Year' }}"><font color="#0085a1">{{ thisyear }} Article Number: {{ counter }}</font></a>
+	🗄<a href="#{{ post.date | date: '%Y Year' }}"><font color="#0085a1">{{ thisyear }} Article Number: {{ counter }}</font></a><br>
 	  {% assign counter = 0 %}
 	{% endif %}
   {% endfor %}
