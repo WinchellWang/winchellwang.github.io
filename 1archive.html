@@ -14,7 +14,7 @@ permalink: /archive/
 	{% assign prevyear = post.previous.date | date: "%Y" %}
 	{% assign counter = counter | plus: 1 %}
 	{% if thisyear != prevyear %}
-	🗄<a href="#{{ post.date | date: '%Y Year' }}"><font color="#0085a1">{{ thisyear }} Article Number: {{ counter }}</font></a><br>
+	🗄<a href="#{{ post.date | date: '%Y' }}"><font color="#0085a1">{{ thisyear }} Article Number: {{ counter }}</font></a><br>
 	  {% assign counter = 0 %}
 	{% endif %}
   {% endfor %}
