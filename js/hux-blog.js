@@ -82,3 +82,5 @@ jQuery(document).ready(function($) {
             });
     }
 });
+
+$html = preg_replace("|&([^;]+?)[\s<&]|","&amp;$1 ",$html);
