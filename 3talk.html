@@ -148,17 +148,6 @@ permalink: /talk/
 
 <div>
   <div id="hexo-douban-item1">
-
-    <!-- 分页 开始 -->
-    <div class="hexo-douban-pagination">
-        <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;"> -</a>
-        <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">-</a>
-        <span class="hexo-douban-pagenum">-</span>
-        <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">-</a>
-        <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">-</a>
-    </div>
-    <!-- 分页 结束 -->
-      
     
     <!-- talk start-->
     {% for talk in site.data.talks %}
@@ -231,20 +220,18 @@ function tabClick() {
     //显示对应板块
     var itemId = this.id.replace('tab', 'item');
     var target = document.getElementById(itemId);
-    target.classList.remove('hexo-douban-hide');
     target.classList.add('hexo-douban-show');
     sibs = document.getElementById(itemId).siblings();
     for (var k = 0; k < sibs.length; k++) {
         sibs[k].classList.remove('hexo-douban-show');
-        sibs[k].classList.add('hexo-douban-hide');
     }
 }
-var tabs = document.getElementsByClassName("hexo-douban-tab");
-for (var i = 0; i < tabs.length; i++) {
-    tabs[i].onclick = tabClick;
-    tabs[i].onclick.apply(tabs[i]);
-}
-tabs[2].click();
+// var tabs = document.getElementsByClassName("hexo-douban-tab");
+// for (var i = 0; i < tabs.length; i++) {
+//     tabs[i].onclick = tabClick;
+//     tabs[i].onclick.apply(tabs[i]);
+// }
+// tabs[2].click();
 
 var firstpages = document.getElementsByClassName("hexo-douban-firstpage");
 var previouspages = document.getElementsByClassName("hexo-douban-previouspage");
@@ -295,11 +282,8 @@ function lastBtn() {
 function displayPage(arr, num) {
     for (var i = 0; i < arr.length; i++) {
         if (Math.floor(i / 10) === num) {
-            arr[i].classList.remove('hexo-douban-hide');
             var img = arr[i].getElementsByTagName('img')[0];
             img.src = img.getAttribute('data-src');
-        } else {
-            arr[i].classList.add('hexo-douban-hide');
         }
     }
 }
