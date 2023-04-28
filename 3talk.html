@@ -132,7 +132,6 @@ permalink: /talk/
         <!-- 已读000开始 -->
         {% for talk in site.data.talks2 %}
         <div class="hexo-douban-item">
-            <!-- <div class="hexo-douban-picture"><img data-src="https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/talks_img.png" referrerpolicy="no-referrer"></div> -->
             <div class="page-action-calendar">
                 <div class="sub-month">{{ talk.talkmonth }}</div>
                 <div class="sub-day">{{ talk.talkday }}</div>
@@ -150,7 +149,6 @@ permalink: /talk/
         <!-- 已读000开始 -->
         {% for talk in site.data.talks2 %}
         <div class="hexo-douban-item">
-            <!-- <div class="hexo-douban-picture"><img data-src="https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/talks_img.png" referrerpolicy="no-referrer"></div> -->
             <div class="page-action-calendar">
                 <div class="sub-month">{{ talk.talkmonth }}</div>
                 <div class="sub-day">{{ talk.talkday }}</div>
@@ -168,7 +166,6 @@ permalink: /talk/
         <!-- 说说000开始 -->
         {% for talk in site.data.talks %}
         <div class="hexo-douban-item">
-            <!-- <div class="hexo-douban-picture"><img data-src="https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/talks_img.png" referrerpolicy="no-referrer"></div> -->
             <div class="page-action-calendar">
                 <div class="sub-month">{{ talk.talkmonth }}</div>
                 <div class="sub-day">{{ talk.talkday }}</div>
@@ -296,7 +293,6 @@ function displayPage(arr, num) {
         if (Math.floor(i / 10) === num) {
             arr[i].classList.remove('hexo-douban-hide');
             var img = arr[i].getElementsByTagName('img')[0];
-            img.src = img.getAttribute('data-src');
         } else {
             arr[i].classList.add('hexo-douban-hide');
         }
