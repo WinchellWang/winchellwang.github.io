@@ -70,10 +70,6 @@ permalink: /talk/
     padding-right: 10px;
 }
 
-.hexo-douban-comments {
-    font-size: 12px;
-}
-
 .hexo-douban-pagination {
     margin-top: 15px;
     text-align: center;
@@ -138,52 +134,109 @@ permalink: /talk/
 <div class="container">
 
 <div>
-  <div id="hexo-douban-item1">
-    
-    <!-- talk start -->
-    {% for talk in site.data.talks %}
-    <div class="hexo-douban-item">
-      <div class="hexo-douban-picture"><img data-src="https://raw.githubusercontent.com/Duter2016/Duter2016.github.io/master/img/talks_img.png" referrerpolicy="no-referrer"></div>
-      <div class="page-action-calendar">
-          <div class="sub-month">{{ talk.talkmonth }}</div>
-          <div class="sub-day">{{ talk.talkday }}</div>
-      </div>
-      <div class="hexo-douban-info">
-          <div class="hexo-douban-title"><a> {{ talk.mytalk }}</a></div>
-          <div class="hexo-douban-meta"><br></div>
-          <div class="hexo-douban-meta">✍️ Moax.Wang | 🗓 {{ talk.talkmonth }}/{{ talk.talkday }}</a></div>
-      </div>
-    </div>
-    {% endfor %}
-    <!-- talk end -->
-    
-    <!-- 分页 开始 -->
-    <div class="hexo-douban-pagination">
-      <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;"> Newest</a>
-      <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">←</a>
-      <span class="hexo-douban-pagenum">2 / 3</span>
-      <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">→</a>
-      <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">Oldest</a>
-    </div>
-    <!-- 分页 结束 -->
 
-    <!-- talk end -->
+    <!--      已读 start      -->
+    <div id="hexo-douban-item1">
+        <!-- 已读000开始 -->
+        {% for talk in site.data.talks2 %}
+        <div class="hexo-douban-item">
+            <div class="hexo-douban-picture"><img data-src="https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/talks_img.png" referrerpolicy="no-referrer"></div>
+            <div class="page-action-calendar">
+                <div class="sub-month">{{ talk.talkmonth }}</div>
+                <div class="sub-day">{{ talk.talkday }}</div>
+            </div>
+            <div class="hexo-douban-info">
+                <div class="hexo-douban-title">{{ talk.mytalk }}</div>
+                <div class="hexo-douban-meta">✍️ Moax.Wang | 🗓 {{ talk.talkmonth }}/{{ talk.talkday }}</a></div>
+            </div>
+        </div>
+        {% endfor %}
+        <!-- 已读000结束 -->
+        
+        <!-- 分页 开始 -->
+        <div class="hexo-douban-pagination">
+        <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;"> -</a>
+        <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">-</a>
+        <span class="hexo-douban-pagenum">-</span>
+        <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">-</a>
+        <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">-</a>
+        </div>
+        <!-- 分页 结束 -->
+        
+    <!--      已读 start      -->
+    <div id="hexo-douban-item2">
+        <!-- 已读000开始 -->
+        {% for talk in site.data.talks2 %}
+        <div class="hexo-douban-item">
+            <div class="hexo-douban-picture"><img data-src="https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/talks_img.png" referrerpolicy="no-referrer"></div>
+            <div class="page-action-calendar">
+                <div class="sub-month">{{ talk.talkmonth }}</div>
+                <div class="sub-day">{{ talk.talkday }}</div>
+            </div>
+            <div class="hexo-douban-info">
+                <div class="hexo-douban-title">{{ talk.mytalk }}</div>
+                <div class="hexo-douban-meta">✍️ Moax.Wang | 🗓 {{ talk.talkmonth }}/{{ talk.talkday }}</a></div>
+            </div>
+        </div>
+        {% endfor %}
+        <!-- 已读000结束 -->
+        
+        <!-- 分页 开始 -->
+        <div class="hexo-douban-pagination">
+        <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;"> -</a>
+        <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">-</a>
+        <span class="hexo-douban-pagenum">-</span>
+        <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">-</a>
+        <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">-</a>
+        </div>
+        <!-- 分页 结束 -->
+        
+    <!--      我的说说 start      -->
+    <div id="hexo-douban-item3">
+        <!-- 说说000开始 -->
+        {% for talk in site.data.talks %}
+        <div class="hexo-douban-item">
+            <div class="hexo-douban-picture"><img data-src="https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/talks_img.png" referrerpolicy="no-referrer"></div>
+            <div class="page-action-calendar">
+                <div class="sub-month">{{ talk.talkmonth }}</div>
+                <div class="sub-day">{{ talk.talkday }}</div>
+            </div>
+        <div class="hexo-douban-info">
+            <div class="hexo-douban-title">{{ talk.mytalk }}</div>
+            <div class="hexo-douban-meta">✍️ Moax.Wang | 🗓 {{ talk.talkmonth }}/{{ talk.talkday }}</a></div>
+        </div>
+        
+        </div>
+        {% endfor %}
+        <!-- 说说000结束 -->
+
+        <!-- 分页 开始 -->
+        <div class="hexo-douban-pagination">
+        <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;"> Newest</a>
+        <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">←</a>
+        <span class="hexo-douban-pagenum">2 / 3</span>
+        <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">→</a>
+        <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">Oldest</a>
+        </div>
+        <!-- 分页 结束 -->
+
+        <!-- talk end -->
+        </div>
     </div>
-</div>
-<!-- Main Content end-->
+    <!-- Main Content end-->
 
-<!-- 说说统计 开始 -->
-<div align="center">
-    Moax.Wang has  
-    <script language="JavaScript">
-    var numitem1 = document.getElementById('hexo-douban-item1').getElementsByClassName('hexo-douban-item').length;
-    document.write(numitem1)
-    </script> 
-    talks
-</div>
-<!-- 说说统计 结束 -->
+    <!-- 说说统计 开始 -->
+    <div align="center">
+        Moax.Wang has  
+        <script language="JavaScript">
+        var numitem1 = document.getElementById('hexo-douban-item1').getElementsByClassName('hexo-douban-item').length;
+        document.write(numitem1)
+        </script> 
+        talks.
+    </div>
+    <!-- 说说统计 结束 -->
 
-</div>
+    </div>
 
 <!-- 标签切换脚本 -->
 <script>
@@ -211,12 +264,20 @@ function tabClick() {
     //显示对应板块
     var itemId = this.id.replace('tab', 'item');
     var target = document.getElementById(itemId);
+    target.classList.remove('hexo-douban-hide');
     target.classList.add('hexo-douban-show');
     sibs = document.getElementById(itemId).siblings();
     for (var k = 0; k < sibs.length; k++) {
         sibs[k].classList.remove('hexo-douban-show');
+        sibs[k].classList.add('hexo-douban-hide');
     }
 }
+var tabs = document.getElementsByClassName("hexo-douban-tab");
+for (var i = 0; i < tabs.length; i++) {
+    tabs[i].onclick = tabClick;
+    tabs[i].onclick.apply(tabs[i]);
+}
+tabs[2].click();
 
 var firstpages = document.getElementsByClassName("hexo-douban-firstpage");
 var previouspages = document.getElementsByClassName("hexo-douban-previouspage");
@@ -267,8 +328,11 @@ function lastBtn() {
 function displayPage(arr, num) {
     for (var i = 0; i < arr.length; i++) {
         if (Math.floor(i / 10) === num) {
+            arr[i].classList.remove('hexo-douban-hide');
             var img = arr[i].getElementsByTagName('img')[0];
             img.src = img.getAttribute('data-src');
+        } else {
+            arr[i].classList.add('hexo-douban-hide');
         }
     }
 }
