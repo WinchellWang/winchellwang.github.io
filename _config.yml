@@ -52,13 +52,13 @@ featured-condition-size: 1              # 相同标签数量大于这个数，�
 chrome-tab-theme-color: "#000000"
 service-worker: true
 
-Friends
+# Friends
 friends: [
     {
         title: "Huxpro",
         href: "http://huangxuan.me/"
     },{
-        title: "Qiubaiying",
+        title: "Qiubaiying",w
         href: "https://qiubaiying.github.io/"
     },{
         title: "Duter2016",
