@@ -1,7 +1,7 @@
 ---
 title: Talks
 layout: default
-description: Say What I Want.
+description: Say Whatever I Want.
 header-img: "img/tag-bg.jpg"
 permalink: /talk/
 ---
@@ -147,7 +147,18 @@ permalink: /talk/
 </div>
 
 <div>
-  <div id="hexo-douban-item">
+  <div id="hexo-douban-item1">
+
+    <!-- 分页 开始 -->
+    <div class="hexo-douban-pagination">
+        <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;"> -</a>
+        <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">-</a>
+        <span class="hexo-douban-pagenum">-</span>
+        <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">-</a>
+        <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">-</a>
+    </div>
+    <!-- 分页 结束 -->
+      
     
     <!-- talk start-->
     {% for talk in site.data.talks %}
@@ -181,10 +192,12 @@ permalink: /talk/
 
     <!-- 说说统计 开始 -->
     <div align="center">
-    Moax.Wang has  <script language="JavaScript">
-    var numitem = document.getElementById('hexo-douban-item').getElementsByClassName('hexo-douban-item').length;
-    document.write(numitem)
-</script> talks
+    Moax.Wang has  
+    <script language="JavaScript">
+    var numitem1 = document.getElementById('hexo-douban-item1').getElementsByClassName('hexo-douban-item').length;
+    document.write(numitem1)
+    </script> 
+    talks
     </div>
     <!-- 说说统计 结束 -->
 
