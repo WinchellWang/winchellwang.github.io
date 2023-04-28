@@ -131,19 +131,11 @@ permalink: /talk/
     color: #2fb4f5;
 }
 
-/* .copy {
-    height: 0.01px;
-    width: 0.01px;
-} */
 </style>
 </header>
 
 <!-- Main Content start-->
 <div class="container">
-
-<!-- <blockquote>
-    <p>My Small Talks.</p>
-</blockquote> -->
 
 <div class="hexo-douban-tabs">
     <a class="hexo-douban-tab" id="hexo-douban-tab1" rel="external">
@@ -155,67 +147,9 @@ permalink: /talk/
 </div>
 
 <div>
-  <!--      已读 start      -->
   <div id="hexo-douban-item1">
-    <!-- 已读000开始 -->
-    <!-- {% for talk in site.data.talks2 %}
-    <div class="hexo-douban-item">
-      <div class="hexo-douban-picture"><img src="https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/talks_img.png}" data-src="https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/talks_img.png" referrerpolicy="no-referrer"></div>
-      <div class="page-action-calendar">
-          <div class="sub-month">{{ talk.talkmonth }}</div>
-          <div class="sub-day">{{ talk.talkday }}</div>
-      </div>
-      <div class="hexo-douban-info">
-          <div class="hexo-douban-title"><a> {{ talk.mytalk }}</a></div>
-          <div class="hexo-douban-meta"><br></div>
-          <div class="hexo-douban-meta">Moax.Wang | 📅 {{ talk.talkmonth }}/{{ talk.talkday }}</a></div>
-      </div>
-    </div>
-    {% endfor %} -->
-    <!-- 已读000结束 -->
     
-    <!-- 分页 开始 -->
-    <!-- <div class="hexo-douban-pagination">
-      <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;"> -</a>
-      <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">-</a>
-      <span class="hexo-douban-pagenum">-</span>
-      <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">-</a>
-      <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">-</a>
-    </div> -->
-    <!-- 分页 结束 -->
-    
-  <!--      已读 start      -->
-  <div id="hexo-douban-item2">
-    <!-- 已读000开始 -->
-    <!-- {% for talk in site.data.talks2 %}
-    <div class="hexo-douban-item">
-        <div class="hexo-douban-picture"><img src="https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/talks_img.png}" data-src="https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/talks_img.png" referrerpolicy="no-referrer"></div>
-        <div class="page-action-calendar">
-            <div class="sub-month">{{ talk.talkmonth }}</div>
-            <div class="sub-day">{{ talk.talkday }}</div>
-        </div>
-        <div class="hexo-douban-info">
-            <div class="hexo-douban-title"><a> {{ talk.mytalk }}</a></div>
-            <div class="hexo-douban-meta"><br></div>
-            <div class="hexo-douban-meta">Moax.Wang | 🗓 {{ talk.talkmonth }}/{{ talk.talkday }}</a></div>
-        </div>
-      </div>
-    {% endfor %} -->
-    <!-- 已读000结束 -->
-    
-    <!-- 分页 开始 -->
-    <!-- <div class="hexo-douban-pagination">
-      <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;"> -</a>
-      <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">-</a>
-      <span class="hexo-douban-pagenum">-</span>
-      <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">-</a>
-      <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">-</a>
-    </div> -->
-    <!-- 分页 结束 -->
-    
-  <!--      我的说说 start      -->
-  <div id="hexo-douban-item3">
-    <!-- 说说000开始 -->
+    <!-- talk start-->
     {% for talk in site.data.talks %}
     <div class="hexo-douban-item">
       <div class="hexo-douban-picture"><img src="https://raw.githubusercontent.com/Duter2016/Duter2016.github.io/master/img/talks_img.png}" data-src="https://raw.githubusercontent.com/Duter2016/Duter2016.github.io/master/img/talks_img.png" referrerpolicy="no-referrer"></div>
@@ -226,11 +160,11 @@ permalink: /talk/
       <div class="hexo-douban-info">
           <div class="hexo-douban-title"><a> {{ talk.mytalk }}</a></div>
           <div class="hexo-douban-meta"><br></div>
-          <div class="hexo-douban-meta">Moax.Wang | 📆 {{ talk.talkmonth }}/{{ talk.talkday }}</a></div>
+          <div class="hexo-douban-meta">✍️ Moax.Wang | 🗓 {{ talk.talkmonth }}/{{ talk.talkday }}</a></div>
       </div>
     </div>
     {% endfor %}
-    <!-- 说说000结束 -->
+    <!-- talk end -->
     
     <!-- 分页 开始 -->
     <div class="hexo-douban-pagination">
@@ -241,8 +175,6 @@ permalink: /talk/
       <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">Oldest</a>
     </div>
     <!-- 分页 结束 -->
-    
-  </div>
   <!--      我的说说 end      -->
 
 </div>
