@@ -64,6 +64,7 @@ permalink: /talk/
     margin-top: 15px;
     text-align: center;
     margin-bottom: 10px;
+    text-decoration: none;
 }
 
 .hexo-douban-button {
@@ -102,7 +103,7 @@ permalink: /talk/
     width: 60px;
     height: 60px;
     background-color: #0085a1;
-    border: 1px solid #eeeeee;
+    border: 1px solid #0085a1;
     border-radius: 5px;
     float: left;
     margin-right: 10px;
@@ -141,7 +142,7 @@ permalink: /talk/
         {% for talk in site.data.talks2 %}
         <div class="hexo-douban-item">
             <div class="page-action-calendar">
-                <div class="sub-month">{{ talk.talkdate | date: "%B, %Y" }}</div>
+                <div class="sub-month">{{ talk.talkdate | date: "%B %Y" }}</div>
                 <div class="sub-day">{{ talk.talkdate | date: "%-d" }}</div>
             </div>
             <div class="hexo-douban-info">
@@ -158,7 +159,7 @@ permalink: /talk/
         {% for talk in site.data.talks2 %}
         <div class="hexo-douban-item">
             <div class="page-action-calendar">
-                <div class="sub-month">{{ talk.talkdate | date: "%B, %Y" }}</div>
+                <div class="sub-month">{{ talk.talkdate | date: "%B %Y" }}</div>
                 <div class="sub-day">{{ talk.talkdate | date: "%-d" }}</div>
             </div>
             <div class="hexo-douban-info">
@@ -175,7 +176,7 @@ permalink: /talk/
         {% for talk in site.data.talks %}
         <div class="hexo-douban-item">
             <div class="page-action-calendar">
-                <div class="sub-month">{{ talk.talkdate | date: "%B, %Y" }}</div>
+                <div class="sub-month">{{ talk.talkdate | date: "%B %Y" }}</div>
                 <div class="sub-day">{{ talk.talkdate | date: "%-d" }}</div>
             </div>
         <div class="hexo-douban-info">
