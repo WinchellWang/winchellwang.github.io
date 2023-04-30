@@ -48,7 +48,7 @@ permalink: /archive/
 </header>
 
 <div class="container">
-<ul class="archive_meta">
+<p class="archive_meta">
 	<h2><font color="#0085a1">Year</font></h2>
   {% assign counter = 0 %}
   {% for post in site.posts %}
@@ -56,18 +56,18 @@ permalink: /archive/
 	{% assign prevyear = post.previous.date | date: "%Y" %}
 	{% assign counter = counter | plus: 1 %}
 	{% if thisyear != prevyear %}
-	<li style="list-style:none">
-		<a href="#{{ post.date | date: '%Y' }}" style="text-decoration: none">
-			<font color="#0085a1">{{ thisyear }} Article Number: {{ counter }}</font>
-		</a>
-	</li>
+	<!-- <li style="list-style:none"> -->
+	<a href="#{{ post.date | date: '%Y' }}" style="text-decoration: none">
+		<font color="#0085a1">{{ thisyear }} Article Number: {{ counter }}</font>
+	</a>
+	<!-- </li> -->
 	  {% assign counter = 0 %}
 	{% endif %}
   {% endfor %}
-</ul>
+</p>
 
 <hr>
-<ul class="archive_meta">
+<p class="archive_meta">
 {% for post in site.posts %}
 	{% unless post.next %}
 	<h2 id="{{ post.date | date: '%Y'}}">{{ post.date | date: '%Y' }}</h2>
@@ -78,15 +78,15 @@ permalink: /archive/
 		<h2 id="{{ post.date | date: '%Y'}}">{{ post.date | date: '%Y' }}</h2>
 	{% endif %}
 	{% endunless %}
-	<li style="list-style:none">{{ post.date | date: "%b %d, %Y" }}: 
-	<a href="{{ post.url }}" target="_blank" style="text-decoration: none">{{ post.title }}</a>
-	{% for tag in post.tags %}
-	<a class="archive_tag" href="#{{ tag }}" title="{{ tag }}" target="_blank"> 
-		{{ tag }}
+	<a style="list-style:none">{{ post.date | date: "%b %d, %Y" }}: 
+		<a href="{{ post.url }}" target="_blank" style="text-decoration: none">{{ post.title }}</a>
+		{% for tag in post.tags %}
+		<a class="archive_tag" href="#{{ tag }}" title="{{ tag }}" target="_blank"> 
+			{{ tag }}
+		</a>
+		{% endfor %}
 	</a>
-	{% endfor %}
-</li>
 {% endfor %}
-</ul>
+</p>
 
 </div>
