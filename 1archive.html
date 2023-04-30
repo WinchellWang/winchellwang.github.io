@@ -38,10 +38,10 @@ permalink: /archive/
 		<h2 id="{{ post.date | date: '%Y'}}">{{ post.date | date: '%Y' }}</h2>
 	{% endif %}
 	{% endunless %}
-	<li>{{ post.date | date:"%Y-%m-%d:" }} 
+	<li>{{ post.date | date:"%Y-%m-%d:" }}
+	<div id='tag_cloud' class="tags">
 	<a href="{{ post.url }}" target="_blank">{{ post.title }}</a> 
 	<!-- <font color="#0085a1">🏷</font>  -->
-	<div id='tag_cloud' class="tags">
 	{% for tag in post.tags %}
 	<a href="#{{ tag }}" title="{{ tag }}" target="_blank"> 
 		<font color="#0085a1">{{ tag }}</font>

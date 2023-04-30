@@ -1,23 +1,15 @@
 # Template
 # - mytalk: ""
-#   talkmonth: "2023/0"
-#   talkday: ""
+#   talkdate: "2023-04"
 
-# - mytalk: "还是华硕的主板好！没有内存兼容性问题，而且提供软件修改BIOS Logo，被圈粉了！"
-#   talkmonth: "2023/04"
-#   talkday: "30"
+- mytalk: "还是华硕的主板好！没有内存兼容性问题，而且提供软件修改BIOS Logo，被圈粉了！"
+  talkdate: "2023-04-30"
 
-# - mytalk: "提醒一下自己，文章的文件名不能带有&，要不然RSS订阅的XML文件会报错导致订阅出问题！"
-#   talkmonth: "2023/04"
-#   talkday: "28"
+- mytalk: "提醒一下自己，文章的文件名不能带有&，要不然RSS订阅的XML文件会报错导致订阅出问题！"
+  talkdate: "2023-04-28"
 
-# - mytalk: "终于修好了说说的bug，好累QAQ"
-#   talkmonth: "2023/04"
-#   talkday: "28"
+- mytalk: "终于修好了说说的bug，好累QAQ"
+  talkdate: "2023-04-28"
 
-# - mytalk: "Testing the system."    #说说内容
-#   talkmonth: "2023/04"    #年月格式‘2019年10’
-#   talkday: "27"    #日期‘日’
-
-- mytalk: "Testing the system."
-  talkdate: "2023-04-27"
+- mytalk: "Testing the system." # Talk Content
+  talkdate: "2023-04-27" # Date Format
