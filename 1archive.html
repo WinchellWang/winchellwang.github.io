@@ -52,12 +52,14 @@ permalink: /archive/
 	{% endif %}
 	{% endunless %}
 	<li>{{ post.date | date:"%Y-%m-%d:" }} 
-	<a href="{{ post.url }}" target="_blank">{{ post.title }}</a> 
+	<a href="{{ post.url }}" target="_blank">{{ post.title }}</a>
+	<div class="tags">
 	{% for tag in post.tags %}
-	<a class="tags" href="#{{ tag }}" title="{{ tag }}" target="_blank"> 
+	<a href="#{{ tag }}" title="{{ tag }}" target="_blank"> 
 		<font color="#0085a1">{{ tag }}</font>
 	</a>
 	{% endfor %}
+</div>
 </li>
 {% endfor %}
 </ul>
