@@ -18,7 +18,7 @@ permalink: /archive/
     </div>
 </header>
 
-<div class="container">
+<div>
 <ul>
 	<h2><font color="#0085a1">Year</font></h2>
   {% assign counter = 0 %}
@@ -39,7 +39,7 @@ permalink: /archive/
 </div>
 
 <hr>
-<div class="container">
+<div>
 <ul>
 {% for post in site.posts %}
 	{% unless post.next %}
@@ -53,13 +53,11 @@ permalink: /archive/
 	{% endunless %}
 	<li>{{ post.date | date:"%Y-%m-%d:" }} 
 	<a href="{{ post.url }}" target="_blank">{{ post.title }}</a>
-	<div class="tags">
 	{% for tag in post.tags %}
 	<a href="#{{ tag }}" title="{{ tag }}" target="_blank"> 
 		<font color="#0085a1">{{ tag }}</font>
 	</a>
 	{% endfor %}
-</div>
 </li>
 {% endfor %}
 </ul>
