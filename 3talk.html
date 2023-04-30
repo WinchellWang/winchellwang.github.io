@@ -20,23 +20,13 @@ permalink: /talk/
     </div>
 <style>
 
-.hexo-douban-active {
-    background: #657b83;
-    color: #fff;
-}
-
-.hexo-douban-active:hover{
-    background: #657b83;
-    color: red;
-}
-
 .hexo-douban-item {
     padding-bottom: 10px;
     position: relative;
     clear: both;
     min-height: 100px;
     padding: 10px 0;
-    border-bottom: 1px #ddd solid;
+    border-bottom: 1px #bfbfbf;
 }
 
 @media screen and (max-width: 600px) {
@@ -58,7 +48,7 @@ permalink: /talk/
 
 .hexo-douban-meta {
     font-size: 14px;
-    color: #2fb4f5;
+    color: #bfbfbf;
     padding-right: 10px;
 }
 
@@ -69,11 +59,21 @@ permalink: /talk/
 }
 
 .hexo-douban-button {
-    padding: 5px;
+    /* padding: 5px; */
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 999em;
+    padding: 0 10px;
+    /* color: #ffffff; */
+    line-height: 24px;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 0 1px;
+    margin-bottom: 6px;
 }
 
 .hexo-douban-button:hover {
-    background: #657b83;
+    background: #0085a1;
     color: #fff;
 }
 
@@ -93,15 +93,15 @@ permalink: /talk/
 .page-action-calendar {
     width: 60px;
     height: 60px;
-    background-color: #f2f2f2;
-    border: 1px solid #d9d9d9;
+    background-color: #0085a1;
+    border: 1px solid #eeeeee;
     border-radius: 5px;
     float: left;
     margin-right: 10px;
 }
 
 .page-action-calendar .sub-month {
-    background-color: #2fb4f5;
+    background-color: #bfbfbf;
     color: #fff;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -116,7 +116,7 @@ permalink: /talk/
     font-size: 30px;
     line-height: 36px;
     text-align: center;
-    color: #2fb4f5;
+    color: #bfbfbf;
 }
 
 </style>
@@ -223,24 +223,6 @@ Element.prototype.siblings = function () {
     }
     return siblingElement;
 };
-function tabClick() {
-    //修改标签样式
-    this.classList.add('hexo-douban-active');
-    var sibs = this.siblings();
-    for (var j = 0; j < sibs.length; j++) {
-        sibs[j].classList.remove('hexo-douban-active');
-    }
-    //显示对应板块
-    var itemId = this.id.replace('tab', 'item');
-    var target = document.getElementById(itemId);
-    target.classList.remove('hexo-douban-hide');
-    target.classList.add('hexo-douban-show');
-    sibs = document.getElementById(itemId).siblings();
-    for (var k = 0; k < sibs.length; k++) {
-        sibs[k].classList.remove('hexo-douban-show');
-        sibs[k].classList.add('hexo-douban-hide');
-    }
-}
 
 var firstpages = document.getElementsByClassName("hexo-douban-firstpage");
 var previouspages = document.getElementsByClassName("hexo-douban-previouspage");
