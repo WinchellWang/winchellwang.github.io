@@ -14,7 +14,7 @@ permalink: /archive/
 	{% assign prevyear = post.previous.date | date: "%Y" %}
 	{% assign counter = counter | plus: 1 %}
 	{% if thisyear != prevyear %}
-	<li>🗄
+	<li>
 		<a href="#{{ post.date | date: '%Y' }}">
 			<font color="#0085a1">{{ thisyear }} Article Number: {{ counter }}</font>
 		</a>
@@ -38,16 +38,14 @@ permalink: /archive/
 		<h2 id="{{ post.date | date: '%Y'}}">{{ post.date | date: '%Y' }}</h2>
 	{% endif %}
 	{% endunless %}
-	<li>{{ post.date | date:"%Y-%m-%d:" }}
-	<div id='tag_cloud' class="tags">
+	<li>{{ post.date | date:"%Y-%m-%d:" }} 
 	<a href="{{ post.url }}" target="_blank">{{ post.title }}</a> 
 	<!-- <font color="#0085a1">🏷</font>  -->
 	{% for tag in post.tags %}
-	<a href="#{{ tag }}" title="{{ tag }}" target="_blank"> 
+	<a class="tags" href="#{{ tag }}" title="{{ tag }}" target="_blank"> 
 		<font color="#0085a1">{{ tag }}</font>
 	</a>
 	{% endfor %}
-	</div>
 </li>
 {% endfor %}
 </ul>
