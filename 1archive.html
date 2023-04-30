@@ -40,9 +40,8 @@ permalink: /archive/
 	{% endunless %}
 	<li>{{ post.date | date:"%Y-%m-%d:" }} 
 	<a href="{{ post.url }}" target="_blank">{{ post.title }}</a> 
-	<!-- <font color="#0085a1">🏷</font>  -->
 	{% for tag in post.tags %}
-	<a class="post-heading" href="#{{ tag }}" title="{{ tag }}" target="_blank"> 
+	<a class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" href="#{{ tag }}" title="{{ tag }}" target="_blank"> 
 		<font color="#0085a1">{{ tag }}</font>
 	</a>
 	{% endfor %}
