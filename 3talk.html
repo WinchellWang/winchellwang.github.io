@@ -133,12 +133,12 @@ permalink: /talk/
         {% for talk in site.data.talks2 %}
         <div class="hexo-douban-item">
             <div class="page-action-calendar">
-                <div class="sub-month">{{ talk.talkmonth }}</div>
-                <div class="sub-day">{{ talk.talkday }}</div>
+                <div class="sub-month" class="post-meta">{{ talk.talkdate | date: "%B, %Y" }}</div>
+                <div class="sub-day">{{ talk.talkdate | date: "%-d" }}</div>
             </div>
             <div class="hexo-douban-info">
                 <div class="hexo-douban-title">{{ talk.mytalk }}</div>
-                <div class="hexo-douban-meta">Posted by  Moax.Wang on {{ talk.talkmonth }}/{{ talk.talkday }}</a></div>
+                <div class="hexo-douban-meta" class="post-meta">Posted by  Moax.Wang on {{ talk.talkdate | date: "%B %-d, %Y" }}</a></div>
             </div>
         </div>
         {% endfor %}
@@ -150,12 +150,11 @@ permalink: /talk/
         {% for talk in site.data.talks2 %}
         <div class="hexo-douban-item">
             <div class="page-action-calendar">
-                <div class="sub-month">{{ talk.talkmonth }}</div>
-                <div class="sub-day">{{ talk.talkday }}</div>
+                <div class="sub-month" class="post-meta">{{ talk.talkdate | date: "%B, %Y" }}</div>
             </div>
             <div class="hexo-douban-info">
                 <div class="hexo-douban-title">{{ talk.mytalk }}</div>
-                <div class="hexo-douban-meta">Posted by  Moax.Wang on {{ talk.talkmonth }}/{{ talk.talkday }}</a></div>
+                <div class="hexo-douban-meta" class="post-meta">Posted by  Moax.Wang on {{ talk.talkdate | date: "%B %-d, %Y" }}</a></div>
             </div>
         </div>
         {% endfor %}
@@ -167,12 +166,12 @@ permalink: /talk/
         {% for talk in site.data.talks %}
         <div class="hexo-douban-item">
             <div class="page-action-calendar">
-                <div class="sub-month">{{ talk.talkmonth }}</div>
-                <div class="sub-day">{{ talk.talkday }}</div>
+                <div class="sub-month" class="post-meta">{{ talk.talkdate | date: "%B, %Y" }}</div>
+                <div class="sub-day">{{ talk.talkdate | date: "%-d" }}</div>
             </div>
         <div class="hexo-douban-info">
             <div class="hexo-douban-title">{{ talk.mytalk }}</div>
-            <div class="hexo-douban-meta">Posted by  Moax.Wang on {{ talk.talkmonth }}/{{ talk.talkday }}</a></div>
+            <div class="hexo-douban-meta" class="post-meta">Posted by  Moax.Wang on {{ talk.talkdate | date: "%B %-d, %Y" }}</a></div>
         </div>
         
         </div>
