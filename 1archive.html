@@ -28,7 +28,6 @@ permalink: /archive/
 
 <ul>
 {% for post in site.posts %}
-
 	{% unless post.next %}
 	<h2 id="{{ post.date | date: '%Y'}}">{{ post.date | date: '%Y' }}</h2>
 	{% else %}
