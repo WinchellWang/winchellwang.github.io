@@ -13,14 +13,16 @@ Any suggestions or help would be greatly appreciated. 👍
 </div>
 <hr>
 
+<!-- giscus comment start  -->
+{% if site.giscus.enable %}
 <script src="https://giscus.app/client.js"
-        data-repo="MoaxWang/moaxwang.github.io"
-        data-repo-id="R_kgDOHnDuaQ"
-        data-category="General"
-        data-category-id="DIC_kwDOHnDuac4CWMWd"
+        data-repo='{{site.giscus.repo}}'
+        data-repo-id='{{site.giscus.repo-id}}'
+        data-category='{{site.giscus.category}}'
+        data-category-id='{{site.giscus.category-id}}'
         data-mapping="pathname"
         data-strict="0"
-        data-reactions-enabled="1"
+        data-reactions-enabled="0"
         data-emit-metadata="0"
         data-input-position="top"
         data-theme="light"
@@ -28,11 +30,13 @@ Any suggestions or help would be greatly appreciated. 👍
         crossorigin="anonymous"
         async>
 </script>
+{% endif %}
+<!-- giscus comment end  -->
 
 <!-- Gitalk 评论 start  -->
-<!-- {% if site.gitalk.enable %} -->
+{% if site.gitalk.enable %}
 <!-- Gitalk link  -->
-<!-- <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
 
 <div id="gitalk-container"></div>
@@ -47,7 +51,7 @@ Any suggestions or help would be greatly appreciated. 👍
     id: 'comment',
     });
     gitalk.render('gitalk-container');
-</script> -->
+</script>
 {% endif %}
 <!-- Gitalk end -->
     

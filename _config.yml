@@ -39,11 +39,19 @@ highlighter: rouge
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
 
+# giscus
+giscus:
+    enable: true #是否开启giscus评论
+    repo: MoaxWang/moaxwang.github.io #仓库名称
+    repo-id: R_kgDOHnDuaQ #仓库ID
+    category: General #评论默认类别
+    category-id: DIC_kwDOHnDuac4CWMWd #分类ID
+
 # Gitalk
 gitalk:
-  enable: true    #是否开启Gitalk评论
-  clientID: 0eae816804cef91bf680                            #生成的clientID
-  clientSecret: a2156259a826fdae824edb6862044d4d0182a585    #生成的clientSecret
+  enable: false    #是否开启Gitalk评论
+  clientID:                             #生成的clientID
+  clientSecret:     #生成的clientSecret
   repo: moaxwang.github.io    #仓库名称
   owner: moaxwang    #github用户名
   admin: moaxwang
