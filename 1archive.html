@@ -5,48 +5,36 @@ description: Articles by Year
 header-img: "img/archive-bg.jpg"
 permalink: /archive/
 ---
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading" id="tag-heading">
-                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
-                    <span class="subheading">{{ page.description }}</span>
-                </div>
-            </div>
-        </div>
-    </div>
+
+<div class="container">
 
 	<style>
 
-	.archive_meta {
-		font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
-	}
+		.archive_meta {
+			font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+		}
+		
+		.archive_tag {
+			font-size: 70%;
+			display: inline-block;
+			background: #0085a1;
+			border: 0px solid #0085a1;
+			color: #fff;
+			border-radius: 999em;
+			padding: 0 10px;
+			line-height: 16px;
+			margin: 0 0px;
+			margin-bottom: 0px;
+		}
 	
-	.archive_tag {
-		font-size: 70%;
-		display: inline-block;
-		background: #0085a1;
-		border: 0px solid #0085a1;
-		color: #fff;
-		border-radius: 999em;
-		padding: 0 10px;
-		line-height: 16px;
-		margin: 0 0px;
-		margin-bottom: 0px;
-	}
+		.archive_tag:hover{
+			text-decoration: none;
+			background: #0085a1;
+			color: #fff;
+		}
+	
+		</style>
 
-	.archive_tag:hover{
-		text-decoration: none;
-		background: #0085a1;
-		color: #fff;
-	}
-
-	</style>
-
-</header>
-
-<div class="container">
 <ul style="list-style:none; padding:0" class="archive_meta">
 	<h2 style="color: #0085a1; font-weight: 200">Year</h2>
   {% assign counter = 0 %}
