@@ -108,13 +108,13 @@ permalink: /talk/
     <li class="previous">
         <a class="hexo-douban-previouspage" href="javascript:;">&larr; Newer Talks</a>
     </li>
-    <span align="center" style="line-height: 2; margin-top: 20px;">
+    <li align="center">
         Moax.Wang has 
         <script language="JavaScript">
             var numitem3 = document.getElementById('my_talk').getElementsByClassName('hexo-talk-item').length;
             document.write(numitem3)
         </script> talks.
-    </span>
+    </li>
     <li class="next">
         <a class="hexo-douban-nextpage" href="javascript:;">Older Talks &rarr;</a>
     </li>
@@ -135,20 +135,20 @@ Element.prototype.siblings = function () {
 
 function tabClick() {
     //修改标签样式
-    this.classList.add('hexo-douban-active');
+    this.classList.add('hexo-talk-active');
     var sibs = this.siblings();
     for (var j = 0; j < sibs.length; j++) {
-        sibs[j].classList.remove('hexo-douban-active');
+        sibs[j].classList.remove('hexo-talk-active');
     }
     //显示对应板块
     var itemId = this.id.replace('tab', 'item');
     var target = document.getElementById(itemId);
-    target.classList.remove('hexo-douban-hide');
-    target.classList.add('hexo-douban-show');
+    target.classList.remove('hexo-talk-hide');
+    target.classList.add('hexo-talk-show');
     sibs = document.getElementById(itemId).siblings();
     for (var k = 0; k < sibs.length; k++) {
-        sibs[k].classList.remove('hexo-douban-show');
-        sibs[k].classList.add('hexo-douban-hide');
+        sibs[k].classList.remove('hexo-talk-show');
+        sibs[k].classList.add('hexo-talk-hide');
     }
 }
 var tabs = document.getElementsByClassName("hexo-douban-tab");
