@@ -133,12 +133,9 @@ permalink: /talk/
 </style>
 
 <div class="hexo-talk-tabs">
-    <a class="hexo-talk-tab" id="hexo-talk-tab1" rel="external">
-        </a>
-    <a class="hexo-talk-tab" id="hexo-talk-tab2" rel="external">
-        </a>
-    <a class="hexo-talk-tab" id="hexo-talk-tab3" href="javascript:;" rel="external">
-        我的说说</a>
+    <a class="hexo-talk-tab" id="hexo-talk-tab1" rel="external">hexo-talk-tab1</a>
+    <a class="hexo-talk-tab" id="hexo-talk-tab2" rel="external">hexo-talk-tab2</a>
+    <a class="hexo-talk-tab" id="hexo-talk-tab3" href="javascript:;" rel="external">hexo-talk-tab3</a>
 </div>
 
 <div>
@@ -152,7 +149,7 @@ permalink: /talk/
             <div class="sub-day">{{ talk.talkdate | date: "%-d" }}</div>
         </div>
         <div class="hexo-talk-info">
-            <div class="hexo-talk-title">{{ talk.mytalk }}</div>
+            <div class="hexo-talk-title"><a style="text-decoration: none">{{ talk.mytalk }}</a></div>
             <div class="hexo-talk-meta">Posted by Moax.Wang on {{ talk.talkdate | date: "%B %-d, %Y" }}</div>
         </div>
     </div>
@@ -179,7 +176,7 @@ permalink: /talk/
             <div class="sub-day">{{ talk.talkdate | date: "%-d" }}</div>
         </div>
         <div class="hexo-talk-info">
-            <div class="hexo-talk-title">{{ talk.mytalk }}</div>
+            <div class="hexo-talk-title"><a style="text-decoration: none">{{ talk.mytalk }}</a></div>
             <div class="hexo-talk-meta">Posted by Moax.Wang on {{ talk.talkdate | date: "%B %-d, %Y" }}</div>
         </div>
     </div>
@@ -206,7 +203,7 @@ permalink: /talk/
             <div class="sub-day">{{ talk.talkdate | date: "%-d" }}</div>
         </div>
         <div class="hexo-talk-info">
-            <div class="hexo-talk-title">{{ talk.mytalk }}</div>
+            <div class="hexo-talk-title"><a style="text-decoration: none">{{ talk.mytalk }}</a></div>
             <div class="hexo-talk-meta">Posted by Moax.Wang on {{ talk.talkdate | date: "%B %-d, %Y" }}</div>
         </div>
     </div>
@@ -225,25 +222,26 @@ permalink: /talk/
     
     </div>
     <!--      我的说说 end      -->
+    <!-- Pager -->
+    <ul class="pager">
+        <li class="previous">
+            <a class="hexo-talk-previouspage" href="javascript:;">&larr; Newer Talks</a>
+        </li>
+        <li style="line-height: 1.7;">
+            Moax.Wang has 
+            <script language="JavaScript">
+                var numitem3 = document.getElementById('hexo-talk-item3').getElementsByClassName('hexo-talk-item').length;
+                document.write(numitem3)
+            </script> talks.
+        </li>
+        <li class="next">
+            <a class="hexo-talk-nextpage" href="javascript:;">Older Talks &rarr;</a>
+        </li>
+    </ul>
 
 </div>
 
-<!-- Pager -->
-<ul class="pager">
-    <li class="previous">
-        <a class="hexo-talk-previouspage" href="javascript:;">&larr; Newer Talks</a>
-    </li>
-    <li style="line-height: 1.7;">
-        Moax.Wang has 
-        <script language="JavaScript">
-            var numitem3 = document.getElementById('hexo-talk-item3').getElementsByClassName('hexo-talk-item').length;
-            document.write(numitem3)
-        </script> talks.
-    </li>
-    <li class="next">
-        <a class="hexo-talk-nextpage" href="javascript:;">Older Talks &rarr;</a>
-    </li>
-</ul>
+
 <!-- Main Content end-->
 
 
@@ -338,8 +336,6 @@ function displayPage(arr, num) {
     for (var i = 0; i < arr.length; i++) {
         if (Math.floor(i / 10) === num) {
             arr[i].classList.remove('hexo-talk-hide');
-            var img = arr[i].getElementsByTagName('img')[0];
-            img.src = img.getAttribute('data-src');
         } else {
             arr[i].classList.add('hexo-talk-hide');
         }
