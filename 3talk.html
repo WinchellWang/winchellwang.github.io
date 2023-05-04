@@ -25,6 +25,16 @@ permalink: /talk/
         display: block;
     }
 
+    .hexo-talk-active {
+        background: #657b83;
+        color: #fff;
+    }
+
+    .hexo-talk-active:hover{
+        background: #657b83;
+        color: red;
+
+    }
     @media screen and (max-width: 600px) {
         .hexo-talk-item {
             width: 100%;
@@ -98,13 +108,13 @@ permalink: /talk/
     <li class="previous">
         <a class="hexo-douban-previouspage" href="javascript:;">&larr; Newer Talks</a>
     </li>
-    <div align="center">
+    <span align="center">
         Moax.Wang has 
         <script language="JavaScript">
             var numitem3 = document.getElementById('my_talk').getElementsByClassName('hexo-talk-item').length;
             document.write(numitem3)
         </script> talks.
-    </div>
+    </span>
     <li class="next">
         <a class="hexo-douban-nextpage" href="javascript:;">Older Talks &rarr;</a>
     </li>
