@@ -39,14 +39,6 @@ permalink: /talk/
     padding-right: 10px;
 }
 
-.hexo-douban-pagenumfont {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
-    line-height: 1.7;
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 1px;
-}
-
 .hexo-douban-hide {
     display: none;
 }
@@ -119,57 +111,53 @@ permalink: /talk/
     {% endfor %}
     <!-- 已读000结束 -->
     
-<!--      我的说说 start      -->
-<div id="hexo-douban-item3">
-    <!-- 说说000开始 -->
-    {% for talk in site.data.talks %}
-    <div class="hexo-douban-item">
-        <div class="page-action-calendar">
-            <div class="sub-month">{{ talk.talkdate | date: "%b %Y" }}</div>
-            <div class="sub-day">{{ talk.talkdate | date: "%-d" }}</div>
+    <div id="hexo-douban-item3">
+        <!-- 说说000开始 -->
+        {% for talk in site.data.talks %}
+        <div class="hexo-douban-item">
+            <div class="page-action-calendar">
+                <div class="sub-month">{{ talk.talkdate | date: "%b %Y" }}</div>
+                <div class="sub-day">{{ talk.talkdate | date: "%-d" }}</div>
+            </div>
+        <div class="hexo-douban-info">
+            <div class="hexo-douban-title">{{ talk.mytalk }}</div>
+            <div class="hexo-douban-meta">Posted by Moax.Wang on {{ talk.talkdate | date: "%B %-d, %Y" }}</a></div>
         </div>
-    <div class="hexo-douban-info">
-        <div class="hexo-douban-title">{{ talk.mytalk }}</div>
-        <div class="hexo-douban-meta">Posted by Moax.Wang on {{ talk.talkdate | date: "%B %-d, %Y" }}</a></div>
-    </div>
-    
-    </div>
-    {% endfor %}
-    <!-- 说说000结束 -->
+        
+        </div>
+        {% endfor %}
+        <!-- 说说000结束 -->
 
-    <!-- 分页 开始 -->
-    <ul class="pager">
-        <li class="previous">
-            <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">Newer Talks</a>
-        </li>
-        <span class="hexo-douban-pagenum hexo-douban-pagenumfont">2 / 3</span>
-        <li class="next">
-            <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">Older Talks</a>
-        </li>
-    </ul>
-    <!-- 分页 结束 -->
+        <!-- 分页 开始 -->
+        <ul class="pager">
+            <li class="previous">
+                <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">Newer Talks</a>
+            </li>
+            <!-- 说说统计 开始 -->
+            <a align="center">
+                Moax.Wang has  
+                <script language="JavaScript">
+                var numitem1 = document.getElementById('hexo-douban-item3').getElementsByClassName('hexo-douban-item').length;
+                document.write(numitem1)
+                </script> 
+                talks.
+            </a>
+            <!-- 说说统计 结束 -->
+            <li class="next">
+                <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">Older Talks</a>
+            </li>
+        </ul>
+        <!-- 分页 结束 -->
 
     <!-- talk end -->
     </div>
 </div>
+
+</div>
 <!-- Main Content end-->
-
-<!-- 说说统计 开始 -->
-<div align="center">
-    Moax.Wang has  
-    <script language="JavaScript">
-    var numitem1 = document.getElementById('hexo-douban-item3').getElementsByClassName('hexo-douban-item').length;
-    document.write(numitem1)
-    </script> 
-    talks.
-</div>
-<!-- 说说统计 结束 -->
-
-</div>
 
 <!-- 标签切换脚本 -->
 <script>
-
 Element.prototype.siblings = function () {
     var siblingElement = [];
     var sibs = this.parentNode.children;
