@@ -39,61 +39,13 @@ permalink: /talk/
     padding-right: 10px;
 }
 
-.hexo-douban-pagination {
-    margin-top: 15px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-/* .hexo-douban-button {
-    display: inline-block;
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    border-radius: 999em;
-    padding: 0 10px;
-    line-height: 24px;
-    font-size: 12px;
-    margin: 0;
-    text-decoration: none
-} */
-
-.hexo-douban-pagnum {
+.hexo-douban-pagenumfont {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
     line-height: 1.7;
     font-size: 13px;
     font-weight: 800;
     letter-spacing: 1px;
 }
-
-/* .hexo-douban-button {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
-    line-height: 1.7;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 0;
-    text-decoration: none
-} */
-
-/* .hexo-douban-button:hover {
-    background: #0085a1;
-    color: #fff;
-    text-decoration: none;
-} */
-
-/* .hexo-douban-button > a{
-    color: #404040;
-}
-
-.hexo-douban-button:focus,
-.hexo-douban-button:hover {
-    color: white;
-    background-color: #0085a1;
-    border: 1px solid #0085a1;
-    text-decoration: none;
-} */
 
 .hexo-douban-hide {
     display: none;
@@ -186,21 +138,11 @@ permalink: /talk/
     <!-- 说说000结束 -->
 
     <!-- 分页 开始 -->
-    <!-- <div class="hexo-douban-pagination"> -->
-    <!-- <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;"> Newest</a> -->
-    <!-- <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">Newer Talks</a>
-    <span class="hexo-douban-pagenum">2 / 3</span>
-    <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">Older Talks</a> -->
-    <!-- <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">Oldest</a> -->
-    <!-- </div> -->
-    <!-- 分页 结束 -->
-
-    <!-- 分页 开始 -->
     <ul class="pager">
         <li class="previous">
             <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">Newer Talks</a>
         </li>
-        <span class="hexo-douban-pagenum">2 / 3</span>
+        <span class="hexo-douban-pagenum hexo-douban-pagenumfont">2 / 3</span>
         <li class="next">
             <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">Older Talks</a>
         </li>
@@ -227,9 +169,6 @@ permalink: /talk/
 
 <!-- 标签切换脚本 -->
 <script>
-    /**
- * Created by myths on 18-2-8.
- */
 
 Element.prototype.siblings = function () {
     var siblingElement = [];
@@ -242,27 +181,20 @@ Element.prototype.siblings = function () {
     return siblingElement;
 };
 
-// var firstpages = document.getElementsByClassName("hexo-douban-firstpage");
+var firstpages = document.getElementsByClassName("hexo-douban-firstpage");
 var previouspages = document.getElementsByClassName("hexo-douban-previouspage");
 var nextpages = document.getElementsByClassName("hexo-douban-nextpage");
-// var lastpages = document.getElementsByClassName("hexo-douban-lastpage");
 var pagenums = document.getElementsByClassName("hexo-douban-pagenum");
 
 function makePageNum(num, arr) {
-    return (num + 1) + ' / ' + (Math.ceil(arr.length / 10 === 0 ? 1 : Math.ceil(arr.length / 10)));
+    return (num + 1) + ' / ' + (Math.ceil(arr.length / 5 === 0 ? 1 : Math.ceil(arr.length / 5)));
 }
-
-// function firstBtn() {
-//     var sibs = this.parentNode.siblings();
-//     displayPage(sibs, 0);
-//     this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText = makePageNum(0, sibs);
-// }
 
 function previousBtn() {
     var sibs = this.parentNode.siblings();
     var currNum = this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText;
     currNum = currNum.substr(0, currNum.indexOf('/') - 1);
-    currNum = parseInt(currNum, 10) - 1;
+    currNum = parseInt(currNum, 5) - 1;
     if (currNum > 0) {
         currNum--;
     }
@@ -274,23 +206,17 @@ function nextBtn() {
     var sibs = this.parentNode.siblings();
     var currNum = this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText;
     currNum = currNum.substr(0, currNum.indexOf('/') - 1);
-    currNum = parseInt(currNum, 10) - 1;
-    if (currNum < Math.ceil(sibs.length / 10) - 1) {
+    currNum = parseInt(currNum, 5) - 1;
+    if (currNum < Math.ceil(sibs.length / 5) - 1) {
         currNum++;
     }
     displayPage(sibs, currNum);
     this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText = makePageNum(currNum, sibs);
 }
 
-// function lastBtn() {
-//     var sibs = this.parentNode.siblings();
-//     displayPage(sibs, Math.ceil(sibs.length / 10) - 1);
-//     this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText = makePageNum(Math.ceil(sibs.length / 10) - 1 === -1 ? 0 : Math.ceil(sibs.length / 10) - 1, sibs);
-// }
-
 function displayPage(arr, num) {
     for (var i = 0; i < arr.length; i++) {
-        if (Math.floor(i / 10) === num) {
+        if (Math.floor(i / 5) === num) {
             arr[i].classList.remove('hexo-douban-hide');
             var img = arr[i].getElementsByTagName('img')[0];
         } else {
@@ -302,14 +228,12 @@ function displayPage(arr, num) {
 for (var i = 0; i < firstpages.length; i++) {
 
     //add listener
-    // firstpages[i].onclick = firstBtn;
     previouspages[i].onclick = previousBtn;
     nextpages[i].onclick = nextBtn;
-    // lastpages[i].onclick = lastBtn;
 
     //set page num
     var size = pagenums[i].parentNode.siblings().length;
-    pagenums[i].innerText = '1 / ' + (Math.ceil(size / 10) === 0 ? 1 : Math.ceil(size / 10));
+    pagenums[i].innerText = '1 / ' + (Math.ceil(size / 5) === 0 ? 1 : Math.ceil(size / 5));
     firstpages[i].click();
 }
     
