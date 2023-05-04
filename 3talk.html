@@ -56,7 +56,15 @@ permalink: /talk/
     text-decoration: none
 } */
 
-.hexo-douban-button {
+.hexo-douban-pagnum {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    line-height: 1.7;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* .hexo-douban-button {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
     line-height: 1.7;
     text-transform: uppercase;
@@ -67,7 +75,7 @@ permalink: /talk/
     background-color: white;
     border-radius: 0;
     text-decoration: none
-}
+} */
 
 /* .hexo-douban-button:hover {
     background: #0085a1;
@@ -75,7 +83,7 @@ permalink: /talk/
     text-decoration: none;
 } */
 
-.hexo-douban-button > a{
+/* .hexo-douban-button > a{
     color: #404040;
 }
 
@@ -85,7 +93,7 @@ permalink: /talk/
     background-color: #0085a1;
     border: 1px solid #0085a1;
     text-decoration: none;
-}
+} */
 
 .hexo-douban-hide {
     display: none;
@@ -178,13 +186,25 @@ permalink: /talk/
     <!-- 说说000结束 -->
 
     <!-- 分页 开始 -->
-    <div class="hexo-douban-pagination">
+    <!-- <div class="hexo-douban-pagination"> -->
     <!-- <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;"> Newest</a> -->
-    <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">Newer Talks</a>
+    <!-- <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">Newer Talks</a>
     <span class="hexo-douban-pagenum">2 / 3</span>
-    <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">Older Talks</a>
+    <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">Older Talks</a> -->
     <!-- <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">Oldest</a> -->
-    </div>
+    <!-- </div> -->
+    <!-- 分页 结束 -->
+
+    <!-- 分页 开始 -->
+    <ul class="pager">
+        <li class="previous">
+            <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">Newer Talks</a>
+        </li>
+        <span class="hexo-douban-pagenum">2 / 3</span>
+        <li class="next">
+            <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">Older Talks</a>
+        </li>
+    </ul>
     <!-- 分页 结束 -->
 
     <!-- talk end -->
