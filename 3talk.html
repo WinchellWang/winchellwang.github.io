@@ -8,7 +8,9 @@ permalink: /talk/
 
 <!-- Main Content Start-->
 <style>
-    .hexo-douban-item {
+    .hexo-talk-item {
+        display: none;
+        overflow: hidden;
         position: relative;
         clear: both;
         min-height: 100px;
@@ -17,22 +19,26 @@ permalink: /talk/
         border-bottom: 1px #ddd solid;
     }
     
+    .hexo-talk-item.active {
+        display: block;
+    }
+
     @media screen and (max-width: 600px) {
-        .hexo-douban-item {
+        .hexo-talk-item {
             width: 100%;
         }
     }
     
-    .hexo-douban-info {
+    .hexo-talk-info {
         padding-left: 70px;
     }
     
-    .hexo-douban-title {
+    .hexo-talk-title {
         font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
         color: #404040;
     }
     
-    .hexo-douban-meta {
+    .hexo-talk-meta {
         font-family: 'Lora', 'Times New Roman', serif;
         font-size: 87%;
         font-style: italic;
@@ -70,32 +76,68 @@ permalink: /talk/
     }
 </style>
 
-<div id="hexo-douban-item">
-    {% for talk in site.data.talks %}
-    <div class="hexo-douban-item">
-        <div class="page-action-calendar">
-            <div class="sub-month">{{ talk.talkdate | date: "%b %Y" }}</div>
-            <div class="sub-day">{{ talk.talkdate | date: "%-d" }}</div>
-        </div>
-        <div class="hexo-douban-info">
-            <div class="hexo-douban-title">{{ talk.mytalk }}</div>
-            <div class="hexo-douban-meta">Posted by Moax.Wang on {{ talk.talkdate | date: "%B %-d, %Y" }}</a></div>
-        </div>
+{% for talk in site.data.talks %}
+<div class="hexo-talk-item">
+    <div class="page-action-calendar">
+        <div class="sub-month">{{ talk.talkdate | date: "%b %Y" }}</div>
+        <div class="sub-day">{{ talk.talkdate | date: "%-d" }}</div>
     </div>
-    {% endfor %}
+    <div class="hexo-talk-info">
+        <div class="hexo-talk-title">{{ talk.mytalk }}</div>
+        <div class="hexo-talk-meta">Posted by Moax.Wang on {{ talk.talkdate | date: "%B %-d, %Y" }}</a></div>
+    </div>
 </div>
+{% endfor %}
 <!-- Main Content end-->
 
 <!-- Pager -->
 <ul class="pager">
-    {% if paginator.previous_page %}
     <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+        <button class="prev_btn">&larr; Newer Talks</button>
     </li>
-    {% endif %}
-    {% if paginator.next_page %}
+    <li>
+        <button class="btn">1</button>
+    </li>
     <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+        <button class="nxt_btn">Older Talks &rarr;</button>
     </li>
-    {% endif %}
 </ul>
+
+<script>
+function toggle(eles, active) {
+    //封装函数、图片显示的部分、传入获取到的div，和被点击的序号
+    for (var i = eles.length; i--;) {
+        eles[i].className = "hexo-talk-item"; //先让所有div隐藏
+    }
+    eles[active].className = "hexo-talk-item active"; //再让被点击的序号对应的div 显示
+}
+
+var aBtn = document.getElementsByClassName('btn');
+var aIem = document.getElementsByClassName('hexo-talk-item');
+var prev = document.getElementsByClassName('prev_btn');
+var next = document.getElementsByClassName('nxt_btn');
+var nowPage = 0;
+
+for(var i =aBtn.length; i--;) {
+    aBtn[i].tab = i;
+    aBtn[i].onclick = function(){
+        toggle(aIem,this.tab);
+        nowPage = this.tab;
+    }
+}
+
+next[0].onclick = function() {
+    nowPage++;
+    nowPage %= aBtn.length;
+    toggle(aIem,nowPage);
+}
+
+prev[0].onclick = function() {
+    nowPage--;
+    if(nowPage == -1){
+        nowPage = aBtn.length-1
+    }
+    toggle(aIem,nowPage);
+}
+
+</script>
