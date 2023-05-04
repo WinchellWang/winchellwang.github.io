@@ -93,10 +93,16 @@ permalink: /talk/
         margin-top: 15px;
     }
 
-.hexo-douban-tab {
-    padding: 5px;
-}
+    .hexo-douban-tab {
+        padding: 5px;
+    }
 </style>
+
+<div class="hexo-douban-tabs">
+    <a class="hexo-douban-tab" id="hexo-douban-tab1" rel="external"></a>
+    <a class="hexo-douban-tab" id="hexo-douban-tab2" rel="external"></a>
+    <a class="hexo-douban-tab" id="hexo-douban-tab3" rel="external"></a>
+</div>
 
 <div id="my_talk">
     {% for talk in site.data.talks %}
@@ -118,7 +124,7 @@ permalink: /talk/
     <li class="previous">
         <a class="hexo-douban-previouspage" href="javascript:;">&larr; Newer Talks</a>
     </li>
-    <li style="margin: 0; margin-bottom: 5px; line-height: 2; margin-top: 20px;">
+    <li style="margin: 20px 0 0;;line-height: 1.7; font-size: 13px; font-weight: 800; letter-spacing: 1px; padding: 10px; border-radius: 0;">
         Moax.Wang has 
         <script language="JavaScript">
             var numitem3 = document.getElementById('my_talk').getElementsByClassName('hexo-talk-item').length;
