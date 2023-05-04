@@ -17,17 +17,12 @@ permalink: /talk/
     color: #fff;
 }
 
-.hexo-talk-active:hover{
-    background: #657b83;
-    color: red;
-}
-
 .hexo-talk-item {
+    padding-top: 20px;
     padding-bottom: 10px;
     position: relative;
     clear: both;
-    min-height: 170px;
-    padding: 10px 0;
+    min-height: 100px;
     border-bottom: 1px #ddd solid;
 }
 
@@ -122,10 +117,6 @@ permalink: /talk/
     color: #fff;
 }
 
-.copy {
-    height: 0.01px;
-    width: 0.01px;
-}
 </style>
 
 <div style="display: none;">
@@ -136,9 +127,9 @@ permalink: /talk/
 
 <div>
     <!--      已读 start      -->
-    <!-- <div id="hexo-talk-item1"> -->
+    <div id="hexo-talk-item1">
     <!-- 已读000开始 -->
-    <!-- {% for talk in site.data.talks2 %}
+    {% for talk in site.data.talks2 %}
     <div class="hexo-talk-item">
         <div class="page-action-calendar">
             <div class="sub-month">{{ talk.talkdate | date: "%b %Y" }}</div>
@@ -149,7 +140,7 @@ permalink: /talk/
             <div class="hexo-talk-meta">Posted by Moax.Wang on {{ talk.talkdate | date: "%B %-d, %Y" }}</div>
         </div>
     </div>
-    {% endfor %} -->
+    {% endfor %}
     <!-- 已读000结束 -->
     
     <!-- 分页 开始 -->
@@ -163,9 +154,9 @@ permalink: /talk/
     <!-- 分页 结束 -->
     
     <!--      已读 start      -->
-    <!-- <div id="hexo-talk-item2"> -->
+    <div id="hexo-talk-item2">
     <!-- 已读000开始 -->
-    <!-- {% for talk in site.data.talks2 %}
+    {% for talk in site.data.talks2 %}
     <div class="hexo-talk-item">
         <div class="page-action-calendar">
             <div class="sub-month">{{ talk.talkdate | date: "%b %Y" }}</div>
@@ -176,7 +167,7 @@ permalink: /talk/
             <div class="hexo-talk-meta">Posted by Moax.Wang on {{ talk.talkdate | date: "%B %-d, %Y" }}</div>
         </div>
     </div>
-    {% endfor %} -->
+    {% endfor %}
     <!-- 已读000结束 -->
     
     <!-- 分页 开始 -->
