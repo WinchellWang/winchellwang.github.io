@@ -251,7 +251,7 @@ var lastpages = document.getElementsByClassName("hexo-talk-lastpage");
 var pagenums = document.getElementsByClassName("hexo-talk-pagenum");
 
 function makePageNum(num, arr) {
-    return (num + 1) + ' / ' + (Math.ceil(arr.length / 10 === 0 ? 1 : Math.ceil(arr.length / 10)));
+    return (num + 1) + ' / ' + (Math.ceil(arr.length / 5 === 0 ? 1 : Math.ceil(arr.length / 5)));
 }
 
 function firstBtn() {
@@ -264,7 +264,7 @@ function previousBtn() {
     var sibs = this.parentNode.siblings();
     var currNum = this.parentNode.getElementsByClassName('hexo-talk-pagenum')[0].innerText;
     currNum = currNum.substr(0, currNum.indexOf('/') - 1);
-    currNum = parseInt(currNum, 10) - 1;
+    currNum = parseInt(currNum, 5) - 1;
     if (currNum > 0) {
         currNum--;
     }
@@ -276,8 +276,8 @@ function nextBtn() {
     var sibs = this.parentNode.siblings();
     var currNum = this.parentNode.getElementsByClassName('hexo-talk-pagenum')[0].innerText;
     currNum = currNum.substr(0, currNum.indexOf('/') - 1);
-    currNum = parseInt(currNum, 10) - 1;
-    if (currNum < Math.ceil(sibs.length / 10) - 1) {
+    currNum = parseInt(currNum, 5) - 1;
+    if (currNum < Math.ceil(sibs.length / 5) - 1) {
         currNum++;
     }
     displayPage(sibs, currNum);
@@ -286,13 +286,13 @@ function nextBtn() {
 
 function lastBtn() {
     var sibs = this.parentNode.siblings();
-    displayPage(sibs, Math.ceil(sibs.length / 10) - 1);
-    this.parentNode.getElementsByClassName('hexo-talk-pagenum')[0].innerText = makePageNum(Math.ceil(sibs.length / 10) - 1 === -1 ? 0 : Math.ceil(sibs.length / 10) - 1, sibs);
+    displayPage(sibs, Math.ceil(sibs.length / 5) - 1);
+    this.parentNode.getElementsByClassName('hexo-talk-pagenum')[0].innerText = makePageNum(Math.ceil(sibs.length / 5) - 1 === -1 ? 0 : Math.ceil(sibs.length / 5) - 1, sibs);
 }
 
 function displayPage(arr, num) {
     for (var i = 0; i < arr.length; i++) {
-        if (Math.floor(i / 10) === num) {
+        if (Math.floor(i / 5) === num) {
             arr[i].classList.remove('hexo-talk-hide');
         } else {
             arr[i].classList.add('hexo-talk-hide');
@@ -310,7 +310,7 @@ for (var i = 0; i < firstpages.length; i++) {
 
     //set page num
     var size = pagenums[i].parentNode.siblings().length;
-    pagenums[i].innerText = '1 / ' + (Math.ceil(size / 10) === 0 ? 1 : Math.ceil(size / 10));
+    pagenums[i].innerText = '1 / ' + (Math.ceil(size / 5) === 0 ? 1 : Math.ceil(size / 5));
     firstpages[i].click();
 }
     
