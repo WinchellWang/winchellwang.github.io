@@ -2,6 +2,9 @@
 # - mytalk: ""
 #   talkdate: "2023-04"
 
+- mytalk: "又作死折腾了好久talks的界面，终于终于终于弄的差不多了。再也不想折腾了，网页设计对我这种小白来说太难了QAQ"
+  talkdate: "2023-05-04"
+
 - mytalk: "Wastewater treatment can be divided into contaminant detection, contaminant filtering, and detoxification."
   talkdate: "2023-05-02"
 
@@ -16,27 +19,3 @@
 
 - mytalk: "Testing the system." # Talk Content
   talkdate: "2023-04-27" # Date Format
-
-- mytalk: "1."
-  talkdate: "2001-01-01"
-
-- mytalk: "2."
-  talkdate: "2001-01-02"
-
-- mytalk: "3."
-  talkdate: "2001-01-03"
-
-- mytalk: "4."
-  talkdate: "2001-01-04"
-
-- mytalk: "5."
-  talkdate: "2001-01-05"
-
-- mytalk: "6."
-  talkdate: "2001-01-06"
-
-- mytalk: "7."
-  talkdate: "2001-01-07"
-
-- mytalk: "8."
-  talkdate: "2001-01-08"
