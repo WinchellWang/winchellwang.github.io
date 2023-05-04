@@ -88,20 +88,21 @@ permalink: /talk/
 
     }
 
-    .hexo-douban-tabs {
+    .hexo-talk-tabs {
+        display: none;
         margin-bottom: 15px;
         margin-top: 15px;
     }
 
-    .hexo-douban-tab {
+    .hexo-talk-tab {
         padding: 5px;
     }
 </style>
 
-<div class="hexo-douban-tabs">
-    <a class="hexo-douban-tab" id="hexo-douban-tab1" rel="external"></a>
-    <a class="hexo-douban-tab" id="hexo-douban-tab2" rel="external"></a>
-    <a class="hexo-douban-tab" id="hexo-douban-tab3" rel="external"></a>
+<div class="hexo-talk-tabs">
+    <a class="hexo-talk-tab" id="hexo-talk-tab1" rel="external"></a>
+    <a class="hexo-talk-tab" id="hexo-talk-tab2" rel="external"></a>
+    <a class="hexo-talk-tab" id="hexo-talk-tab3" rel="external"></a>
 </div>
 
 <div id="my_talk">
@@ -124,7 +125,13 @@ permalink: /talk/
     <li class="previous">
         <a class="hexo-douban-previouspage" href="javascript:;">&larr; Newer Talks</a>
     </li>
-    <li style="margin: 20px 0 0;;line-height: 1.7; font-size: 13px; font-weight: 800; letter-spacing: 1px; padding: 10px; border-radius: 0;">
+    <li style="  line-height: 1.7;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-radius: 0;
+    padding: 15px 25px;">
         Moax.Wang has 
         <script language="JavaScript">
             var numitem3 = document.getElementById('my_talk').getElementsByClassName('hexo-talk-item').length;
@@ -167,7 +174,7 @@ function tabClick() {
         sibs[k].classList.add('hexo-talk-hide');
     }
 }
-var tabs = document.getElementsByClassName("hexo-douban-tab");
+var tabs = document.getElementsByClassName("hexo-talk-tab");
 for (var i = 0; i < tabs.length; i++) {
     tabs[i].onclick = tabClick;
     tabs[i].onclick.apply(tabs[i]);
