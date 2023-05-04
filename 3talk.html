@@ -9,8 +9,6 @@ permalink: /talk/
 <!-- Main Content Start-->
 <style>
     .hexo-talk-item {
-        display: none;
-        overflow: hidden;
         position: relative;
         clear: both;
         min-height: 100px;
@@ -18,11 +16,15 @@ permalink: /talk/
         padding-bottom: 10px;
         border-bottom: 1px #ddd solid;
     }
-    
-    .hexo-talk-item.active {
-        display: block;
+
+    .hexo-talk-hide {
+        display: none;
     }
 
+    .hexo-talk-show {
+        display: block;
+    }
+    
     @media screen and (max-width: 600px) {
         .hexo-talk-item {
             width: 100%;
@@ -76,64 +78,35 @@ permalink: /talk/
     }
 </style>
 
-{% for talk in site.data.talks %}
-<div class="hexo-talk-item">
-    <div class="page-action-calendar">
-        <div class="sub-month">{{ talk.talkdate | date: "%b %Y" }}</div>
-        <div class="sub-day">{{ talk.talkdate | date: "%-d" }}</div>
+<div id="my_talk">
+    {% for talk in site.data.talks %}
+    <div class="hexo-talk-item">
+        <div class="page-action-calendar">
+            <div class="sub-month">{{ talk.talkdate | date: "%b %Y" }}</div>
+            <div class="sub-day">{{ talk.talkdate | date: "%-d" }}</div>
+        </div>
+        <div class="hexo-talk-info">
+            <div class="hexo-talk-title">{{ talk.mytalk }}</div>
+            <div class="hexo-talk-meta">Posted by Moax.Wang on {{ talk.talkdate | date: "%B %-d, %Y" }}</a></div>
+        </div>
     </div>
-    <div class="hexo-talk-info">
-        <div class="hexo-talk-title">{{ talk.mytalk }}</div>
-        <div class="hexo-talk-meta">Posted by Moax.Wang on {{ talk.talkdate | date: "%B %-d, %Y" }}</a></div>
-    </div>
+    {% endfor %}
 </div>
-{% endfor %}
-<!-- Main Content end-->
 
 <!-- Pager -->
 <ul class="pager">
     <li class="previous">
-        <button class="previous prev_btn">&larr; Newer Talks</button>
+        <a class="hexo-douban-previouspage" href="javascript:;">&larr; Newer Talks</a>
     </li>
     <li class="next">
-        <button class="next nxt_btn">Older Talks &rarr;</button>
+        <a class="hexo-douban-nextpage" href="javascript:;">Older Talks &rarr;</a>
     </li>
 </ul>
 
-<script type="text/javascript">
-function toggle(eles, active) {
-    for (var i = eles.length; i--;) {
-        eles[i].className = "hexo-talk-item"; //先让所有div隐藏
-    }
-    eles[active].className = "hexo-talk-item active"; //再让被点击的序号对应的div 显示
-}
-
-var aBtn = 5;
-var aIem = document.getElementsByClassName('hexo-talk-item');
-var prev = document.getElementsByClassName('prev_btn');
-var next = document.getElementsByClassName('nxt_btn');
-var nowPage = 0;
-
-for(var i = aBtn.length; i--;) {
-    aBtn[i].tab = i;
-    aBtn[i].onclick = function(){
-        toggle(aIem,this.tab);
-        nowPage = this.tab;
-    }
-}
-
-next[0].onclick = function() {
-    nowPage++;
-    nowPage %= aBtn.length;
-    toggle(aIem,nowPage);
-}
-
-prev[0].onclick = function() {
-    nowPage--;
-    if(nowPage == -1){
-        nowPage = aBtn.length-1
-    }
-    toggle(aIem,nowPage);
-}
-
-</script>
+<div align="center">
+    Moax.Wang has 
+    <script language="JavaScript">
+        var numitem3 = document.getElementById('my_talk').getElementsByClassName('hexo-talk-item').length;
+        document.write(numitem3)
+    </script> talks.
+</div>
