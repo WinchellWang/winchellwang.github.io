@@ -93,16 +93,15 @@ permalink: /talk/
 <!-- Pager -->
 <ul class="pager">
     <li class="previous">
-        <button class="prev_btn">&larr; Newer Talks</button>
+        <button class="previous prev_btn">&larr; Newer Talks</button>
     </li>
     <li class="next">
-        <button class="nxt_btn">Older Talks &rarr;</button>
+        <button class="next nxt_btn">Older Talks &rarr;</button>
     </li>
 </ul>
 
 <script type="text/javascript">
 function toggle(eles, active) {
-    //封装函数、图片显示的部分、传入获取到的div，和被点击的序号
     for (var i = eles.length; i--;) {
         eles[i].className = "hexo-talk-item"; //先让所有div隐藏
     }
@@ -115,7 +114,7 @@ var prev = document.getElementsByClassName('prev_btn');
 var next = document.getElementsByClassName('nxt_btn');
 var nowPage = 0;
 
-for(var i =aBtn.length; i--;) {
+for(var i = aBtn.length; i--;) {
     aBtn[i].tab = i;
     aBtn[i].onclick = function(){
         toggle(aIem,this.tab);
