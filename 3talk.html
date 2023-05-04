@@ -1,22 +1,10 @@
 ---
 title: Talks
-layout: default
+layout: page_no_side
 description: Say Whatever I Want.
 header-img: "img/talk-bg.jpg"
 permalink: /talk/
 ---
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading" id="tag-heading">
-                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
-                    <span class="subheading">{{ page.description }}</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
 
 <style>
 .hexo-douban-item {
@@ -93,10 +81,8 @@ permalink: /talk/
 }
 </style>
 
-<!--      已读 start      -->
-<div id="hexo-douban-item1">
-    <!-- 已读000开始 -->
-    {% for talk in site.data.talks2 %}
+<div id="hexo-douban-item">
+    {% for talk in site.data.talks %}
     <div class="hexo-douban-item">
         <div class="page-action-calendar">
             <div class="sub-month">{{ talk.talkdate | date: "%b %Y" }}</div>
@@ -108,180 +94,20 @@ permalink: /talk/
         </div>
     </div>
     {% endfor %}
-    <!-- 已读000结束 -->
-    
-<!--      已读 start      -->
-<div id="hexo-douban-item2">
-    <!-- 已读000开始 -->
-    {% for talk in site.data.talks2 %}
-    <div class="hexo-douban-item">
-        <div class="page-action-calendar">
-            <div class="sub-month">{{ talk.talkdate | date: "%b %Y" }}</div>
-            <div class="sub-day">{{ talk.talkdate | date: "%-d" }}</div>
-        </div>
-        <div class="hexo-douban-info">
-            <div class="hexo-douban-title">{{ talk.mytalk }}</div>
-            <div class="hexo-douban-meta">Posted by Moax.Wang on {{ talk.talkdate | date: "%B %-d, %Y" }}</a></div>
-        </div>
-    </div>
-    {% endfor %}
-    <!-- 已读000结束 -->
-    
-    <div id="hexo-douban-item3">
-        <!-- 说说000开始 -->
-        {% for talk in site.data.talks %}
-        <div class="hexo-douban-item">
-            <div class="page-action-calendar">
-                <div class="sub-month">{{ talk.talkdate | date: "%b %Y" }}</div>
-                <div class="sub-day">{{ talk.talkdate | date: "%-d" }}</div>
-            </div>
-        <div class="hexo-douban-info">
-            <div class="hexo-douban-title">{{ talk.mytalk }}</div>
-            <div class="hexo-douban-meta">Posted by Moax.Wang on {{ talk.talkdate | date: "%B %-d, %Y" }}</a></div>
-        </div>
-        
-        </div>
-        {% endfor %}
-        <!-- 说说000结束 -->
-
-        <!-- 分页 开始 -->
-        <ul class="pager">
-            <li class="previous">
-                <a class="hexo-douban-previouspage" href="javascript:;">Newer Talks</a>
-            </li>
-            <span class="hexo-douban-pagenum" style="line-height: 13px; font-size: 13px">1 / 10</span>
-            <li class="next">
-                <a class="hexo-douban-nextpage" href="javascript:;">Older Talks</a>
-            </li>
-        </ul>
-        <!-- 分页 结束 -->
-
-    <!-- talk end -->
-    </div>
 </div>
 
-<!-- 说说统计 开始 -->
-<div align="center" style="line-height: 13px; font-size: 13px;">
-    Moax.Wang has  
-    <script language="JavaScript">
-    var numitem1 = document.getElementById('hexo-douban-item3').getElementsByClassName('hexo-douban-item').length;
-    document.write(numitem1)
-    </script> 
-    talks.
-</div>
-<!-- 说说统计 结束 -->
-
-</div>
 <!-- Main Content end-->
 
-<!-- 标签切换脚本 -->
-<script>
-
-Element.prototype.siblings = function () {
-    var siblingElement = [];
-    var sibs = this.parentNode.children;
-    for (var i = 0; i < sibs.length; i++) {
-        if (sibs[i] !== this) {
-            siblingElement.push(sibs[i]);
-        }
-    }
-    return siblingElement;
-};
-function tabClick() {
-    //修改标签样式
-    this.classList.add('hexo-douban-active');
-    var sibs = this.siblings();
-    for (var j = 0; j < sibs.length; j++) {
-        sibs[j].classList.remove('hexo-douban-active');
-    }
-    //显示对应板块
-    var itemId = this.id.replace('tab', 'item');
-    var target = document.getElementById(itemId);
-    target.classList.remove('hexo-douban-hide');
-    target.classList.add('hexo-douban-show');
-    sibs = document.getElementById(itemId).siblings();
-    for (var k = 0; k < sibs.length; k++) {
-        sibs[k].classList.remove('hexo-douban-show');
-        sibs[k].classList.add('hexo-douban-hide');
-    }
-}
-var tabs = document.getElementsByClassName("hexo-douban-tab");
-for (var i = 0; i < tabs.length; i++) {
-    tabs[i].onclick = tabClick;
-    tabs[i].onclick.apply(tabs[i]);
-}
-tabs[2].click();
-
-var firstpages = document.getElementsByClassName("hexo-douban-firstpage");
-var previouspages = document.getElementsByClassName("hexo-douban-previouspage");
-var nextpages = document.getElementsByClassName("hexo-douban-nextpage");
-var lastpages = document.getElementsByClassName("hexo-douban-lastpage");
-var pagenums = document.getElementsByClassName("hexo-douban-pagenum");
-
-function makePageNum(num, arr) {
-    return (num + 1) + ' / ' + (Math.ceil(arr.length / 10 === 0 ? 1 : Math.ceil(arr.length / 10)));
-}
-
-function firstBtn() {
-    var sibs = this.parentNode.siblings();
-    displayPage(sibs, 0);
-    this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText = makePageNum(0, sibs);
-}
-
-function previousBtn() {
-    var sibs = this.parentNode.siblings();
-    var currNum = this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText;
-    currNum = currNum.substr(0, currNum.indexOf('/') - 1);
-    currNum = parseInt(currNum, 10) - 1;
-    if (currNum > 0) {
-        currNum--;
-    }
-    displayPage(sibs, currNum);
-    this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText = makePageNum(currNum, sibs);
-}
-
-function nextBtn() {
-    var sibs = this.parentNode.siblings();
-    var currNum = this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText;
-    currNum = currNum.substr(0, currNum.indexOf('/') - 1);
-    currNum = parseInt(currNum, 10) - 1;
-    if (currNum < Math.ceil(sibs.length / 10) - 1) {
-        currNum++;
-    }
-    displayPage(sibs, currNum);
-    this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText = makePageNum(currNum, sibs);
-}
-
-function lastBtn() {
-    var sibs = this.parentNode.siblings();
-    displayPage(sibs, Math.ceil(sibs.length / 10) - 1);
-    this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText = makePageNum(Math.ceil(sibs.length / 10) - 1 === -1 ? 0 : Math.ceil(sibs.length / 10) - 1, sibs);
-}
-
-function displayPage(arr, num) {
-    for (var i = 0; i < arr.length; i++) {
-        if (Math.floor(i / 10) === num) {
-            arr[i].classList.remove('hexo-douban-hide');
-            var img = arr[i].getElementsByTagName('img')[0];
-            img.src = img.getAttribute('data-src');
-        } else {
-            arr[i].classList.add('hexo-douban-hide');
-        }
-    }
-}
-
-for (var i = 0; i < firstpages.length; i++) {
-
-    //add listener
-    firstpages[i].onclick = firstBtn;
-    previouspages[i].onclick = previousBtn;
-    nextpages[i].onclick = nextBtn;
-    lastpages[i].onclick = lastBtn;
-
-    //set page num
-    var size = pagenums[i].parentNode.siblings().length;
-    pagenums[i].innerText = '1 / ' + (Math.ceil(size / 10) === 0 ? 1 : Math.ceil(size / 10));
-    firstpages[i].click();
-}
-    
-</script>
+<!-- Pager -->
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
