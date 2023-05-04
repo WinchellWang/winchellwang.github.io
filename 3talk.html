@@ -134,14 +134,14 @@ permalink: /talk/
                 <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">Newer Talks</a>
             </li>
             <!-- 说说统计 开始 -->
-            <a align="center">
+            <p align="center" style="line-height: 1.7; font-size: 13px;">
                 Moax.Wang has  
                 <script language="JavaScript">
                 var numitem1 = document.getElementById('hexo-douban-item3').getElementsByClassName('hexo-douban-item').length;
                 document.write(numitem1)
                 </script> 
                 talks.
-            </a>
+            </p>
             <!-- 说说统计 结束 -->
             <li class="next">
                 <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">Older Talks</a>
@@ -175,14 +175,14 @@ var nextpages = document.getElementsByClassName("hexo-douban-nextpage");
 var pagenums = document.getElementsByClassName("hexo-douban-pagenum");
 
 function makePageNum(num, arr) {
-    return (num + 1) + ' / ' + (Math.ceil(arr.length / 5 === 0 ? 1 : Math.ceil(arr.length / 5)));
+    return (num + 1) + ' / ' + (Math.ceil(arr.length / 10 === 0 ? 1 : Math.ceil(arr.length / 10)));
 }
 
 function previousBtn() {
     var sibs = this.parentNode.siblings();
     var currNum = this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText;
     currNum = currNum.substr(0, currNum.indexOf('/') - 1);
-    currNum = parseInt(currNum, 5) - 1;
+    currNum = parseInt(currNum, 10) - 1;
     if (currNum > 0) {
         currNum--;
     }
@@ -194,8 +194,8 @@ function nextBtn() {
     var sibs = this.parentNode.siblings();
     var currNum = this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText;
     currNum = currNum.substr(0, currNum.indexOf('/') - 1);
-    currNum = parseInt(currNum, 5) - 1;
-    if (currNum < Math.ceil(sibs.length / 5) - 1) {
+    currNum = parseInt(currNum, 10) - 1;
+    if (currNum < Math.ceil(sibs.length / 10) - 1) {
         currNum++;
     }
     displayPage(sibs, currNum);
@@ -221,7 +221,7 @@ for (var i = 0; i < firstpages.length; i++) {
 
     //set page num
     var size = pagenums[i].parentNode.siblings().length;
-    pagenums[i].innerText = '1 / ' + (Math.ceil(size / 5) === 0 ? 1 : Math.ceil(size / 5));
+    pagenums[i].innerText = '1 / ' + (Math.ceil(size / 10) === 0 ? 1 : Math.ceil(size / 10));
     firstpages[i].click();
 }
     
