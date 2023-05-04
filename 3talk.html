@@ -228,11 +228,9 @@ function lastBtn() {
 function displayPage(arr, num) {
     for (var i = 0; i < arr.length; i++) {
         if (Math.floor(i / 10) === num) {
-            arr[i].classList.remove('hexo-douban-hide');
-            var img = arr[i].getElementsByTagName('img')[0];
-            img.src = img.getAttribute('data-src');
+            arr[i].classList.remove('hexo-talk-hide');
         } else {
-            arr[i].classList.add('hexo-douban-hide');
+            arr[i].classList.add('hexo-talk-hide');
         }
     }
 }

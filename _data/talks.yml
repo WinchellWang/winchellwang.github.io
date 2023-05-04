@@ -32,7 +32,7 @@
 - mytalk: "Testing the system." # Talk Content
   talkdate: "2023-04-27" # Date Format
 
-  - mytalk: "Wastewater treatment can be divided into contaminant detection, contaminant filtering, and detoxification."
+- mytalk: "Wastewater treatment can be divided into contaminant detection, contaminant filtering, and detoxification."
   talkdate: "2023-05-02"
 
 - mytalk: "还是华硕的主板好！没有内存兼容性问题，而且提供软件修改BIOS Logo，被圈粉了！"
@@ -47,7 +47,7 @@
 - mytalk: "Testing the system." # Talk Content
   talkdate: "2023-04-27" # Date Format
 
-  - mytalk: "Wastewater treatment can be divided into contaminant detection, contaminant filtering, and detoxification."
+- mytalk: "Wastewater treatment can be divided into contaminant detection, contaminant filtering, and detoxification."
   talkdate: "2023-05-02"
 
 - mytalk: "还是华硕的主板好！没有内存兼容性问题，而且提供软件修改BIOS Logo，被圈粉了！"
