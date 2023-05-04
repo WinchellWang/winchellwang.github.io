@@ -6,196 +6,80 @@ header-img: "img/talk-bg.jpg"
 permalink: /talk/
 ---
 
+<!-- Main Content Start-->
 <style>
-.hexo-talk-tabs {
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-
-.hexo-talk-tab {
-    padding: 5px;
-}
-
-.hexo-talk-active {
-    background: #657b83;
-    color: #fff;
-}
-
-.hexo-talk-active:hover{
-    background: #657b83;
-    color: red;
-}
-
-.hexo-talk-item {
-    padding-bottom: 10px;
-    position: relative;
-    clear: both;
-    min-height: 170px;
-    padding: 10px 0;
-    border-bottom: 1px #ddd solid;
-}
-
-@media screen and (max-width: 600px) {
     .hexo-talk-item {
-        width: 100%;
+        position: relative;
+        clear: both;
+        min-height: 100px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px #ddd solid;
     }
-}
 
-.hexo-talk-picture {
-    position: absolute;
-    left: 0;
-    top: 10px;
-    width: 1px;
-}
+    .hexo-talk-hide {
+        display: none;
+    }
 
-.hexo-talk-info {
-    padding-left: 120px;
-}
+    .hexo-talk-show {
+        display: block;
+    }
 
-.hexo-talk-title {
-    font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
-    color: #404040;
-}
+    @media screen and (max-width: 600px) {
+        .hexo-talk-item {
+            width: 100%;
+        }
+    }
+    
+    .hexo-talk-info {
+        padding-left: 70px;
+    }
+    
+    .hexo-talk-title {
+        font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+        color: #404040;
+    }
+    
+    .hexo-talk-meta {
+        font-family: 'Lora', 'Times New Roman', serif;
+        font-size: 87%;
+        font-style: italic;
+        color: #808080;
+        padding-right: 10px;
+    }
+    
+    .page-action-calendar {
+        width: 60px;
+        height: 60px;
+        background-color: #0085a1;
+        border: 1px solid #0085a1;
+        border-radius: 5px;
+        float: left;
+        margin-right: 5px;
+    }
+    
+    .page-action-calendar .sub-month {
+        background-color: #404040;
+        color: #fff;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        font-size: 9px !important;
+        text-align: center;
+        height: 20px;
+        line-height: 20px;
+        margin: -1px -1px 0px -1px;
+    }
+    
+    .page-action-calendar .sub-day {
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        color: #fff;
+    }
 
-.hexo-talk-meta {
-    font-family: 'Lora', 'Times New Roman', serif;
-    font-size: 87%;
-    font-style: italic;
-    color: #808080;
-    padding-right: 10px;
-}
-
-.hexo-talk-comments {
-    font-size: 12px;
-}
-
-.hexo-talk-pagination {
-    margin-top: 15px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.hexo-talk-button {
-    padding: 5px;
-}
-
-.hexo-talk-button:hover {
-    background: #657b83;
-    color: #fff;
-}
-
-.hexo-talk-hide {
-    display: none;
-}
-
-.hexo-talk-show {
-    display: block;
-}
-
-.hexo-talk-picture img{
-    width:1px;
-    height:1px
-}
-
-.page-action-calendar {
-    width: 60px;
-    height: 60px;
-    background-color: #0085a1;
-    border: 1px solid #0085a1;
-    border-radius: 5px;
-    float: left;
-    margin-right: 5px;
-}
-
-.page-action-calendar .sub-month {
-    background-color: #404040;
-    color: #fff;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    font-size: 9px !important;
-    text-align: center;
-    height: 20px;
-    line-height: 20px;
-    margin: -1px -1px 0px -1px;
-}
-
-.page-action-calendar .sub-day {
-    font-size: 30px;
-    line-height: 36px;
-    text-align: center;
-    color: #fff;
-}
-
-.copy {
-    height: 0.01px;
-    width: 0.01px;
-}
 </style>
 
-<div class="hexo-talk-tabs">
-    <a class="hexo-talk-tab" id="hexo-talk-tab1" rel="external">hexo-talk-tab1</a>
-    <a class="hexo-talk-tab" id="hexo-talk-tab2" rel="external">hexo-talk-tab2</a>
-    <a class="hexo-talk-tab" id="hexo-talk-tab3" href="javascript:;" rel="external">hexo-talk-tab3</a>
-</div>
-
-<div>
-    <!--      已读 start      -->
-    <div id="hexo-talk-item1">
-    <!-- 已读000开始 -->
-    {% for talk in site.data.talks2 %}
-    <div class="hexo-talk-item">
-        <div class="page-action-calendar">
-            <div class="sub-month">{{ talk.talkdate | date: "%b %Y" }}</div>
-            <div class="sub-day">{{ talk.talkdate | date: "%-d" }}</div>
-        </div>
-        <div class="hexo-talk-info">
-            <div class="hexo-talk-title"><a style="text-decoration: none">{{ talk.mytalk }}</a></div>
-            <div class="hexo-talk-meta">Posted by Moax.Wang on {{ talk.talkdate | date: "%B %-d, %Y" }}</div>
-        </div>
-    </div>
-    {% endfor %}
-    <!-- 已读000结束 -->
-    
-    <!-- 分页 开始 -->
-    <div class="hexo-talk-pagination">
-        <a class="hexo-talk-button hexo-talk-firstpage" href="javascript:;"> -</a>
-        <a class="hexo-talk-button hexo-talk-previouspage" href="javascript:;">-</a>
-        <span class="hexo-talk-pagenum">-</span>
-        <a class="hexo-talk-button hexo-talk-nextpage" href="javascript:;">-</a>
-        <a class="hexo-talk-button hexo-talk-lastpage" href="javascript:;">-</a>
-    </div>
-    <!-- 分页 结束 -->
-    
-    <!--      已读 start      -->
-    <div id="hexo-talk-item2">
-    <!-- 已读000开始 -->
-    {% for talk in site.data.talks2 %}
-    <div class="hexo-talk-item">
-        <div class="page-action-calendar">
-            <div class="sub-month">{{ talk.talkdate | date: "%b %Y" }}</div>
-            <div class="sub-day">{{ talk.talkdate | date: "%-d" }}</div>
-        </div>
-        <div class="hexo-talk-info">
-            <div class="hexo-talk-title"><a style="text-decoration: none">{{ talk.mytalk }}</a></div>
-            <div class="hexo-talk-meta">Posted by Moax.Wang on {{ talk.talkdate | date: "%B %-d, %Y" }}</div>
-        </div>
-    </div>
-    {% endfor %}
-    <!-- 已读000结束 -->
-    
-    <!-- 分页 开始 -->
-    <div class="hexo-talk-pagination">
-        <a class="hexo-talk-button hexo-talk-firstpage" href="javascript:;"> -</a>
-        <a class="hexo-talk-button hexo-talk-previouspage" href="javascript:;">-</a>
-        <span class="hexo-talk-pagenum">-</span>
-        <a class="hexo-talk-button hexo-talk-nextpage" href="javascript:;">-</a>
-        <a class="hexo-talk-button hexo-talk-lastpage" href="javascript:;">-</a>
-    </div>
-    <!-- 分页 结束 -->
-    
-    <!--      我的说说 start      -->
-    <div id="hexo-talk-item3">
-    <!-- 说说000开始 -->
+<div id="my_talk">
     {% for talk in site.data.talks %}
     <div class="hexo-talk-item">
         <div class="page-action-calendar">
@@ -208,48 +92,26 @@ permalink: /talk/
         </div>
     </div>
     {% endfor %}
-    <!-- 说说000结束 -->
-    
-    <!-- 分页 开始 -->
-    <div class="hexo-talk-pagination">
-        <a class="hexo-talk-button hexo-talk-firstpage" href="javascript:;"> 首页</a>
-        <a class="hexo-talk-button hexo-talk-previouspage" href="javascript:;">上一页</a>
-        <span class="hexo-talk-pagenum">2 / 3</span>
-        <a class="hexo-talk-button hexo-talk-nextpage" href="javascript:;">下一页</a>
-        <a class="hexo-talk-button hexo-talk-lastpage" href="javascript:;">尾页</a>
-    </div>
-    <!-- 分页 结束 -->
-    
-    </div>
-    <!--      我的说说 end      -->
-    <!-- Pager -->
-    <ul class="pager">
-        <li class="previous">
-            <a class="hexo-talk-previouspage" href="javascript:;">&larr; Newer Talks</a>
-        </li>
-        <li style="line-height: 1.7;">
-            Moax.Wang has 
-            <script language="JavaScript">
-                var numitem3 = document.getElementById('hexo-talk-item3').getElementsByClassName('hexo-talk-item').length;
-                document.write(numitem3)
-            </script> talks.
-        </li>
-        <li class="next">
-            <a class="hexo-talk-nextpage" href="javascript:;">Older Talks &rarr;</a>
-        </li>
-    </ul>
-
 </div>
 
+<!-- Pager -->
+<ul class="pager">
+    <li class="previous">
+        <a class="hexo-talk-previouspage" href="javascript:;">&larr; Newer Talks</a>
+    </li>
+    <li style="line-height: 1.7;">
+        Moax.Wang has 
+        <script language="JavaScript">
+            var numitem3 = document.getElementById('my_talk').getElementsByClassName('hexo-talk-item').length;
+            document.write(numitem3)
+        </script> talks.
+    </li>
+    <li class="next">
+        <a class="hexo-talk-nextpage" href="javascript:;">Older Talks &rarr;</a>
+    </li>
+</ul>
 
-<!-- Main Content end-->
-
-
-<!-- 标签切换脚本 -->
 <script>
-    /**
- * Created by myths on 18-2-8.
- */
 
 Element.prototype.siblings = function () {
     var siblingElement = [];
@@ -261,6 +123,7 @@ Element.prototype.siblings = function () {
     }
     return siblingElement;
 };
+
 function tabClick() {
     //修改标签样式
     this.classList.add('hexo-talk-active');
@@ -279,17 +142,10 @@ function tabClick() {
         sibs[k].classList.add('hexo-talk-hide');
     }
 }
-var tabs = document.getElementsByClassName("hexo-talk-tab");
-for (var i = 0; i < tabs.length; i++) {
-    tabs[i].onclick = tabClick;
-    tabs[i].onclick.apply(tabs[i]);
-}
-tabs[2].click();
 
 var firstpages = document.getElementsByClassName("hexo-talk-firstpage");
 var previouspages = document.getElementsByClassName("hexo-talk-previouspage");
 var nextpages = document.getElementsByClassName("hexo-talk-nextpage");
-var lastpages = document.getElementsByClassName("hexo-talk-lastpage");
 var pagenums = document.getElementsByClassName("hexo-talk-pagenum");
 
 function makePageNum(num, arr) {
@@ -299,7 +155,6 @@ function makePageNum(num, arr) {
 function firstBtn() {
     var sibs = this.parentNode.siblings();
     displayPage(sibs, 0);
-    this.parentNode.getElementsByClassName('hexo-talk-pagenum')[0].innerText = makePageNum(0, sibs);
 }
 
 function previousBtn() {
@@ -311,7 +166,6 @@ function previousBtn() {
         currNum--;
     }
     displayPage(sibs, currNum);
-    this.parentNode.getElementsByClassName('hexo-talk-pagenum')[0].innerText = makePageNum(currNum, sibs);
 }
 
 function nextBtn() {
@@ -323,13 +177,11 @@ function nextBtn() {
         currNum++;
     }
     displayPage(sibs, currNum);
-    this.parentNode.getElementsByClassName('hexo-talk-pagenum')[0].innerText = makePageNum(currNum, sibs);
 }
 
 function lastBtn() {
     var sibs = this.parentNode.siblings();
     displayPage(sibs, Math.ceil(sibs.length / 10) - 1);
-    this.parentNode.getElementsByClassName('hexo-talk-pagenum')[0].innerText = makePageNum(Math.ceil(sibs.length / 10) - 1 === -1 ? 0 : Math.ceil(sibs.length / 10) - 1, sibs);
 }
 
 function displayPage(arr, num) {
