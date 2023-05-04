@@ -125,9 +125,8 @@ permalink: /talk/
     <a class="hexo-talk-tab" id="hexo-talk-tab3" href="javascript:;" rel="external"></a>
 </div>
 
-<div>
     <!--      已读 start      -->
-    <div id="hexo-talk-item1">
+<div id="hexo-talk-item1">
     <!-- 已读000开始 -->
     {% for talk in site.data.talks2 %}
     <div class="hexo-talk-item">
@@ -144,95 +143,92 @@ permalink: /talk/
     <!-- 已读000结束 -->
     
     <!-- 分页 开始 -->
-    <div class="hexo-talk-pagination">
-        <a class="hexo-talk-button hexo-talk-firstpage" href="javascript:;"> -</a>
-        <a class="hexo-talk-button hexo-talk-previouspage" href="javascript:;">-</a>
+    <div>
+        <a class="hexo-talk-firstpage" href="javascript:;">-</a>
+        <a class="hexo-talk-previouspage" href="javascript:;">-</a>
         <span class="hexo-talk-pagenum">-</span>
-        <a class="hexo-talk-button hexo-talk-nextpage" href="javascript:;">-</a>
-        <a class="hexo-talk-button hexo-talk-lastpage" href="javascript:;">-</a>
+        <a class="hexo-talk-nextpage" href="javascript:;">-</a>
+        <a class="hexo-talk-lastpage" href="javascript:;">-</a>
     </div>
     <!-- 分页 结束 -->
     
     <!--      已读 start      -->
     <div id="hexo-talk-item2">
-    <!-- 已读000开始 -->
-    {% for talk in site.data.talks2 %}
-    <div class="hexo-talk-item">
-        <div class="page-action-calendar">
-            <div class="sub-month">{{ talk.talkdate | date: "%b %Y" }}</div>
-            <div class="sub-day">{{ talk.talkdate | date: "%-d" }}</div>
+        <!-- 已读000开始 -->
+        {% for talk in site.data.talks2 %}
+        <div class="hexo-talk-item">
+            <div class="page-action-calendar">
+                <div class="sub-month">{{ talk.talkdate | date: "%b %Y" }}</div>
+                <div class="sub-day">{{ talk.talkdate | date: "%-d" }}</div>
+            </div>
+            <div class="hexo-talk-info">
+                <div class="hexo-talk-title"><a style="text-decoration: none">{{ talk.mytalk }}</a></div>
+                <div class="hexo-talk-meta">Posted by Moax.Wang on {{ talk.talkdate | date: "%B %-d, %Y" }}</div>
+            </div>
         </div>
-        <div class="hexo-talk-info">
-            <div class="hexo-talk-title"><a style="text-decoration: none">{{ talk.mytalk }}</a></div>
-            <div class="hexo-talk-meta">Posted by Moax.Wang on {{ talk.talkdate | date: "%B %-d, %Y" }}</div>
-        </div>
-    </div>
-    {% endfor %}
-    <!-- 已读000结束 -->
+        {% endfor %}
+        <!-- 已读000结束 -->
     
-    <!-- 分页 开始 -->
-    <div class="hexo-talk-pagination">
-        <a class="hexo-talk-button hexo-talk-firstpage" href="javascript:;"> -</a>
-        <a class="hexo-talk-button hexo-talk-previouspage" href="javascript:;">-</a>
-        <span class="hexo-talk-pagenum">-</span>
-        <a class="hexo-talk-button hexo-talk-nextpage" href="javascript:;">-</a>
-        <a class="hexo-talk-button hexo-talk-lastpage" href="javascript:;">-</a>
-    </div>
-    <!-- 分页 结束 -->
-    
-    <!--      我的说说 start      -->
-    <div id="hexo-talk-item3">
-    <!-- 说说000开始 -->
-    {% for talk in site.data.talks %}
-    <div class="hexo-talk-item">
-        <div class="page-action-calendar">
-            <div class="sub-month">{{ talk.talkdate | date: "%b %Y" }}</div>
-            <div class="sub-day">{{ talk.talkdate | date: "%-d" }}</div>
+        <!-- 分页 开始 -->
+        <div>
+            <a class="hexo-talk-firstpage" href="javascript:;">-</a>
+            <a class="hexo-talk-previouspage" href="javascript:;">-</a>
+            <span class="hexo-talk-pagenum">-</span>
+            <a class="hexo-talk-nextpage" href="javascript:;">-</a>
+            <a class="hexo-talk-lastpage" href="javascript:;">-</a>
         </div>
-        <div class="hexo-talk-info">
-            <div class="hexo-talk-title"><a style="text-decoration: none">{{ talk.mytalk }}</a></div>
-            <div class="hexo-talk-meta">Posted by Moax.Wang on {{ talk.talkdate | date: "%B %-d, %Y" }}</div>
-        </div>
-    </div>
-    {% endfor %}
-    <!-- 说说000结束 -->
+        <!-- 分页 结束 -->
     
-    <!-- 分页 开始 -->
-    <div class="hexo-talk-pagination">
-        <a class="hexo-talk-button hexo-talk-firstpage" href="javascript:;"> 首页</a>
-        <a class="hexo-talk-button hexo-talk-previouspage" href="javascript:;">上一页</a>
-        <span class="hexo-talk-pagenum">2 / 3</span>
-        <a class="hexo-talk-button hexo-talk-nextpage" href="javascript:;">下一页</a>
-        <a class="hexo-talk-button hexo-talk-lastpage" href="javascript:;">尾页</a>
-    </div>
-    <!-- 分页 结束 -->
+        <!--      我的说说 start      -->
+        <div id="hexo-talk-item3">
+            <!-- 说说000开始 -->
+            {% for talk in site.data.talks %}
+            <div class="hexo-talk-item">
+                <div class="page-action-calendar">
+                    <div class="sub-month">{{ talk.talkdate | date: "%b %Y" }}</div>
+                    <div class="sub-day">{{ talk.talkdate | date: "%-d" }}</div>
+                </div>
+                <div class="hexo-talk-info">
+                    <div class="hexo-talk-title"><a style="text-decoration: none">{{ talk.mytalk }}</a></div>
+                    <div class="hexo-talk-meta">Posted by Moax.Wang on {{ talk.talkdate | date: "%B %-d, %Y" }}</div>
+                </div>
+            </div>
+            {% endfor %}
+            <!-- 说说000结束 -->
+    
+            <!-- 分页 开始 -->
+            <!-- <div class="hexo-talk-pagination">
+                <a class="hexo-talk-button hexo-talk-firstpage" href="javascript:;"> 首页</a>
+                <a class="hexo-talk-button hexo-talk-previouspage" href="javascript:;">上一页</a>
+                <span class="hexo-talk-pagenum">2 / 3</span>
+                <a class="hexo-talk-button hexo-talk-nextpage" href="javascript:;">下一页</a>
+                <a class="hexo-talk-button hexo-talk-lastpage" href="javascript:;">尾页</a>
+            </div> -->
+            <!-- 分页 结束 -->
 
-    <ul class="pager">
-        <li class="previous">
-            <a class="hexo-talk-previouspage" href="javascript:;">&larr; Newer Talks</a>
-        </li>
-        <li style="line-height: 1.7;">
-            Moax.Wang has 
-            <script language="JavaScript">
-                var numitem3 = document.getElementById('hexo-talk-item3').getElementsByClassName('hexo-talk-item').length;
-                document.write(numitem3)
-            </script> talks.
-        </li>
-        <li class="next">
-            <a class="hexo-talk-nextpage" href="javascript:;">Older Talks &rarr;</a>
-        </li>
-    </ul>
-    
+            <ul class="pager">
+                <li class="previous">
+                    <a class="hexo-talk-previouspage" href="javascript:;">&larr; Newer Talks</a>
+                </li>
+                <a class="hexo-talk-firstpage" href="javascript:;"> 首页</a>
+                <span class="hexo-talk-pagenum" style="line-height: 1.7">2 / 3</span>
+                <a class="hexo-talk-lastpage" href="javascript:;">尾页</a>
+                <li class="next">
+                    <a class="hexo-talk-nextpage" href="javascript:;">Older Talks &rarr;</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <!--      我的说说 end      -->
-    <!-- Pager -->
-    
-
 </div>
 
-
+<div align='center' style="line-height: 1.3">
+    Moax.Wang has 
+    <script language="JavaScript">
+        var numitem3 = document.getElementById('hexo-talk-item3').getElementsByClassName('hexo-talk-item').length;
+        document.write(numitem3)
+    </script> talks.
+</div>
 <!-- Main Content end-->
-
 
 <!-- 标签切换脚本 -->
 <script>
