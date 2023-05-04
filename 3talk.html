@@ -25,16 +25,6 @@ permalink: /talk/
         display: block;
     }
 
-    .hexo-talk-active {
-        background: #657b83;
-        color: #fff;
-    }
-
-    .hexo-talk-active:hover{
-        background: #657b83;
-        color: red;
-
-    }
     @media screen and (max-width: 600px) {
         .hexo-talk-item {
             width: 100%;
@@ -86,6 +76,26 @@ permalink: /talk/
         text-align: center;
         color: #fff;
     }
+
+    .hexo-talk-active {
+        background: #657b83;
+        color: #fff;
+    }
+
+    .hexo-talk-active:hover{
+        background: #657b83;
+        color: red;
+
+    }
+
+    .hexo-douban-tabs {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+.hexo-douban-tab {
+    padding: 5px;
+}
 </style>
 
 <div id="my_talk">
@@ -108,8 +118,7 @@ permalink: /talk/
     <li class="previous">
         <a class="hexo-douban-previouspage" href="javascript:;">&larr; Newer Talks</a>
     </li>
-    <li style="margin: 0;
-    margin-bottom: 5px;">
+    <li style="margin: 0; margin-bottom: 5px; line-height: 2; margin-top: 20px;">
         Moax.Wang has 
         <script language="JavaScript">
             var numitem3 = document.getElementById('my_talk').getElementsByClassName('hexo-talk-item').length;
