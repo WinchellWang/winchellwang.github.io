@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 这算水逆不？
+title: 这算水逆不
 subtitle: 4月末5月初的诸多不顺，但整理心情还要继续前行
 date: 2023-04-17
 author: Moax.Wang
