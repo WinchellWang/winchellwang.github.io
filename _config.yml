@@ -11,7 +11,7 @@ github_repo: "https://github.com/MoaxWang/moaxwang.github.io.git" # you code rep
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Just a student.<br>Interested in photography.<br>✉️: moax.wang@outlook.com<br>📷: https://pixelfed.social/moax"
+sidebar-about-description: "Just a student.<br>Interested in photography.<br>✉️: moax.wang@outlook.com<br>📷: pixelfed.social/moax"
 sidebar-avatar: /img/avatar.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # SNS settings
