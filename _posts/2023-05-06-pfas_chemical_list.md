@@ -34,3 +34,15 @@ Name: Perfluorooctane sulfonic acid
 Keywords: Hydrophobic Interactions, Long Chain, adsorbents with amine groups, the most representative PFAS.
 
 ![PFOS](https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=74483&t=l)
+
+# PFHxS
+
+Name: Perfluorohexane sulfonic acid
+
+|CAS|Formula|Solubility in water (mg/L)|pKa|
+|:-:|:-:|:-:|:-:|
+|355-46-4|C<sub>6</sub>F<sub>13</sub>SO<sub>3</sub>H|6.2(at 25°C)|0.14|
+
+Keywords: Long Chain
+
+![img](https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=67734&t=l)
