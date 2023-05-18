@@ -28,11 +28,11 @@ Keywords: Hydrophobic Interactions, Long Chain, adsorbents with amine groups, th
 ![PFOA](https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=9554&t=l)
 
 
-## PFSAs
+# PFSAs
 
 Perfluoroalkyl sulfonic acids
 
-# PFOS
+## PFOS
 
 Name: Perfluorooctane sulfonic acid
 
@@ -44,7 +44,7 @@ Keywords: Hydrophobic Interactions, Long Chain, adsorbents with amine groups, th
 
 ![PFOS](https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=74483&t=l)
 
-# PFHxS
+## PFHxS
 
 Name: Perfluorohexane sulfonic acid
 
