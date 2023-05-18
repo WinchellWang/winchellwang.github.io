@@ -11,7 +11,11 @@ header-mask: 0.1
 catalog: true
 ---
 
-# PFOA
+# PFCAs
+
+Perfluoroalkyl carboxylic acids
+
+## PFOA
 
 Name: Perfluorooctanoic acid
 
@@ -22,6 +26,11 @@ Name: Perfluorooctanoic acid
 Keywords: Hydrophobic Interactions, Long Chain, adsorbents with amine groups, the most representative PFAS.
 
 ![PFOA](https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=9554&t=l)
+
+
+## PFSAs
+
+Perfluoroalkyl sulfonic acids
 
 # PFOS
 
