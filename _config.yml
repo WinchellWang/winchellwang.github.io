@@ -74,10 +74,13 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "Martin Thissen",
-        href: "https://medium.com/@martin-thissen"
+      title: "Martin Thissen",
+      href: "https://medium.com/@martin-thissen"
     },{
-        title: "哲科文",
-        href: "http://jerkwin.github.io"
+      title: "哲科文",
+      href: "http://jerkwin.github.io"
+    },{
+      title: "Meta AI",
+      herf: "https://ai.facebook.com/results/?amp%3Bsort_by=most_recent&content_types%5B0%5D=publication"
     }
 ]
