@@ -81,6 +81,6 @@ friends: [
       href: "http://jerkwin.github.io"
     },{
       title: "Meta AI",
-      herf: "https://ai.facebook.com/results/?amp%3Bsort_by=most_recent&content_types%5B0%5D=publication"
+      href: "https://ai.facebook.com/results/?amp%3Bsort_by=most_recent&content_types%5B0%5D=publication"
     }
 ]
