@@ -74,16 +74,10 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "Huxpro",
-        href: "http://huangxuan.me/"
+        title: "Martin Thissen",
+        href: "https://medium.com/@martin-thissen"
     },{
-        title: "Qiubaiying",
-        href: "https://qiubaiying.github.io/"
-    },{
-        title: "Duter2016",
-        href: "https://duter2016.github.io"
-    },{
-        title: "Richardurben",
-        href: "https://richardurben.github.io"
+        title: "哲科文",
+        href: "http://jerkwin.github.io"
     }
 ]
