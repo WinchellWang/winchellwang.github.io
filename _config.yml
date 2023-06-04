@@ -1,22 +1,22 @@
 # Site settings
-title: Moax Wang
-SEOTitle: Moax.Wang Blog
+title: Winchell Wang
+SEOTitle: Winchell.Wang Blog
 header-img: img/home-bg.jpg
-email: moax.wang@outlook.com
-description: "Moax Wang Personal Blog"
-keyword: "Moax, moax.wang, moaxwang, Moax.Wang Blog, moaxwang blog, chemcial engineering"
-url: "https://moaxwang.github.io/"          # your host, for absolute URL
+email: winchell.wang@outlook.com
+description: "Winchell Wang Personal Blog"
+keyword: "Winchell, winchell.wang, winchellwang, Winchell.Wang Blog, winchellwang blog, chemcial engineering"
+url: "https://winchellwang.github.io/"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/MoaxWang/moaxwang.github.io.git" # you code repository
+github_repo: "https://github.com/winchellwang/winchellwang.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Just a student.<br>Interested in photography.<br>✉️ moax.wang@outlook.com<br>📷 pixelfed.social/moax"
+sidebar-about-description: "Just a student.<br>Interested in photography.<br>✉️ winchell.wang@outlook.com<br>📷 pixelfed.social/moax"
 sidebar-avatar: /img/avatar.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # SNS settings
 RSS: true
-github_username: MoaxWang
+github_username: WinchellWang
 #linkedin_username: None
 
 # Build settings
@@ -42,7 +42,7 @@ kramdown:
 # giscus
 giscus:
     enable: true #是否开启giscus评论
-    repo: MoaxWang/moaxwang.github.io #仓库名称
+    repo: WinchellWang/winchellwang.github.io #仓库名称
     repo-id: R_kgDOHnDuaQ #仓库ID
     category: General #评论默认类别
     category-id: DIC_kwDOHnDuac4CWMWd #分类ID
@@ -52,9 +52,9 @@ gitalk:
   enable: false    #是否开启Gitalk评论
   clientID:                             #生成的clientID
   clientSecret:     #生成的clientSecret
-  repo: moaxwang.github.io    #仓库名称
-  owner: moaxwang    #github用户名
-  admin: moaxwang
+  repo: winchellwang.github.io    #仓库名称
+  owner: winchellwang    #github用户名
+  admin: winchellwang
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 

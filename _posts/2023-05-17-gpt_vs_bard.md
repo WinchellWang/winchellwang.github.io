@@ -3,7 +3,7 @@ layout: post
 title: Bard与ChatGPT对比
 subtitle: 来自Transformer鼻祖Google的奋力一击
 date: 2023-05-17
-author: Moax.Wang
+author: Winchell.Wang
 header-img: "img/post-bg-tech.jpg"
 tags:
    - Technology
@@ -15,11 +15,11 @@ catalog: true
 
 # 1.1 Bard的自我介绍
 
-![bard_intro](https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/_post_image/2023-05-17/bard_intro.png)
+![bard_intro](https://cdn.jsdelivr.net/gh/winchellwang/winchellwang.github.io/img/_post_image/2023-05-17/bard_intro.png)
 
 # 1.2 ChatGPT-3.5的自我介绍
 
-![gpt_intro](https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/_post_image/2023-05-17/gpt_intro.png)
+![gpt_intro](https://cdn.jsdelivr.net/gh/winchellwang/winchellwang.github.io/img/_post_image/2023-05-17/gpt_intro.png)
 
 # 2. 文本对话能力
 

@@ -3,7 +3,7 @@ layout: post
 title: Change MSI X570 BIOS Logo
 subtitle: A method to replace the logo in BIOS during lanuch
 date: 2023-04-23
-author: Moax.Wang
+author: Winchell.Wang
 header-img: "img/post-bg-tech.jpg"
 tags:
    - Computer
@@ -15,21 +15,21 @@ catalog: true
 
 There are two softwares have the capacity to replace the logo, but only one that I have tried.
 
-- [UEFITool](https://github.com/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/releases/tag/ChangeLogo)
+- [UEFITool](https://github.com/winchellwang/Logo-Change-MSI-X570-Gaming-Plus/releases/tag/ChangeLogo)
 
-- [AMI ChangeLogo Tool](https://github.com/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/releases/tag/ChangeLogo) **(Did not Test)**
+- [AMI ChangeLogo Tool](https://github.com/winchellwang/Logo-Change-MSI-X570-Gaming-Plus/releases/tag/ChangeLogo) **(Did not Test)**
 
 # Procedure
 
 1. Download bios file from [MSI website](https://us.msi.com/Motherboard/MPG-X570-GAMING-PLUS/support), and extract it. **BIOS file usually have AE0, AJ0... as the suffix.**
 
-2. Extract the ROM by [AMI ChangeLogo Tool](https://github.com/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/releases/tag/ChangeLogo)
+2. Extract the ROM by [AMI ChangeLogo Tool](https://github.com/winchellwang/Logo-Change-MSI-X570-Gaming-Plus/releases/tag/ChangeLogo)
 
     2.1 Load ROM
 
     Please change the 'Files of type' to 'All Files (\*.*)', if thr ROM does shows up in the selection.
 
-    ![open_changelogo](https://cdn.jsdelivr.net/gh/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/jpg/open_changelogo.jpg)
+    ![open_changelogo](https://cdn.jsdelivr.net/gh/winchellwang/Logo-Change-MSI-X570-Gaming-Plus/jpg/open_changelogo.jpg)
 
     2.2 Extract logo
 
@@ -37,11 +37,11 @@ There are two softwares have the capacity to replace the logo, but only one that
 
     Just need to chose the first one with suffix, and click "Save Logo". The image usually will converted to jpg type.
 
-    ![check_img_type](https://cdn.jsdelivr.net/gh/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/jpg/check_img_type.jpg)
+    ![check_img_type](https://cdn.jsdelivr.net/gh/winchellwang/Logo-Change-MSI-X570-Gaming-Plus/jpg/check_img_type.jpg)
 
     Default BIOS logo extracted from ROM. <mark>(The actual format is bmp in this ROM)</mark>
 
-    ![splash](https://cdn.jsdelivr.net/gh/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/jpg/splash.jpg)
+    ![splash](https://cdn.jsdelivr.net/gh/winchellwang/Logo-Change-MSI-X570-Gaming-Plus/jpg/splash.jpg)
 
 3. Modify Logo
 
@@ -49,13 +49,13 @@ There are two softwares have the capacity to replace the logo, but only one that
 
     Here I changed it to a Microsoft logo as an example.
 
-    ![img_save](https://cdn.jsdelivr.net/gh/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/jpg/img_save.jpg)
+    ![img_save](https://cdn.jsdelivr.net/gh/winchellwang/Logo-Change-MSI-X570-Gaming-Plus/jpg/img_save.jpg)
 
     Then export the image as bmp. It would be fine if just keep the default setting when save the image.
 
-    ![exp_opt](https://cdn.jsdelivr.net/gh/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/jpg/exp_opt.jpg)
+    ![exp_opt](https://cdn.jsdelivr.net/gh/winchellwang/Logo-Change-MSI-X570-Gaming-Plus/jpg/exp_opt.jpg)
 
-4. Replace the logo in ROM by [UEFITool](https://github.com/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/releases/tag/ChangeLogo)
+4. Replace the logo in ROM by [UEFITool](https://github.com/winchellwang/Logo-Change-MSI-X570-Gaming-Plus/releases/tag/ChangeLogo)
 
     4.1 Load ROM
 
@@ -69,7 +69,7 @@ There are two softwares have the capacity to replace the logo, but only one that
 
     Ctrl + F to open the search box, and switch to Text option. Search 'logo', and it will show you all the logo files location.
 
-    ![uefi_logo_search](https://cdn.jsdelivr.net/gh/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/jpg/uefi_logo_search.jpg)
+    ![uefi_logo_search](https://cdn.jsdelivr.net/gh/winchellwang/Logo-Change-MSI-X570-Gaming-Plus/jpg/uefi_logo_search.jpg)
 
     4.3 Replace the images in ROM
 
@@ -77,11 +77,11 @@ There are two softwares have the capacity to replace the logo, but only one that
 
     Double click each line in Messages box to jump into the files location, as we are looking for the file which has a section named 'Raw' OR 'Freeform subtype GUID'
 
-    ![rpl_rom_img_1](https://cdn.jsdelivr.net/gh/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/jpg/rpl_rom_img_1.jpg)
+    ![rpl_rom_img_1](https://cdn.jsdelivr.net/gh/winchellwang/Logo-Change-MSI-X570-Gaming-Plus/jpg/rpl_rom_img_1.jpg)
 
     Then right click the section, and replace the body to your logo.bmp. The software will show something like Rebuild, Remove, and Replace in the section you are changing at the Section column.
 
-    ![rpl_rom_img_2](https://cdn.jsdelivr.net/gh/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/jpg/rpl_rom_img_2.jpg)
+    ![rpl_rom_img_2](https://cdn.jsdelivr.net/gh/winchellwang/Logo-Change-MSI-X570-Gaming-Plus/jpg/rpl_rom_img_2.jpg)
 
     There are 4 images should be replaced in the ROM, if you are changing the logo for MSI X570 Gaming Plus. 
 
@@ -101,4 +101,4 @@ There are two softwares have the capacity to replace the logo, but only one that
 
 My new logo :D
 
-![launch](https://cdn.jsdelivr.net/gh/MoaxWang/Logo-Change-MSI-X570-Gaming-Plus/jpg/launch.gif)
+![launch](https://cdn.jsdelivr.net/gh/winchellwang/Logo-Change-MSI-X570-Gaming-Plus/jpg/launch.gif)

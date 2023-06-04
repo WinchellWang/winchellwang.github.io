@@ -3,7 +3,7 @@ layout: post
 title: Point of Zero Charge
 subtitle: A brief explanation of pzc and the concept of zeta potential
 date: 2023-04-24
-author: Moax.Wang
+author: Winchell.Wang
 header-img: "img/post-bg-tech.jpg"
 tags:
    - Chemistry
@@ -36,7 +36,7 @@ We should notice that the reason of ions stay on the surface is not only electro
 
 ## 1.2 What is Zeta Potential
 
-![EDL](https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/_post_image/2023-04-24/fig1.svg)
+![EDL](https://cdn.jsdelivr.net/gh/winchellwang/winchellwang.github.io/img/_post_image/2023-04-24/fig1.svg)
 
 Based on the previous discussion, we know that the solid surface, stern layer, slipping plane shares different value of potential as the distance is various. Therefore, we define the electrical potential on the solid surface is the **surface potential**, and the potential on stern layer is the **stern potential**. **Zeta potential** is the potential on the slipping plane.
 
@@ -64,7 +64,7 @@ Zeta-potential can be changed by adjusting the pH of liquid. The surface ionizat
 
 How we do it? One of the approach is pH. We can add alkaline or acid in liquid to adjust the ionization, hence, to change the the zeta-potential. A typical pH-Zeta Potential relationship like the figure show below. It should be noticed that the correlation may various based on the ionization reaction, and the core concepte of this is control the ionization by adjusting the pH.
 
-![pzc](https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/_post_image/2023-04-24/fig2.jpg)
+![pzc](https://cdn.jsdelivr.net/gh/winchellwang/winchellwang.github.io/img/_post_image/2023-04-24/fig2.jpg)
 
 ## 2.2 How to Use Point of Zero Charge
 

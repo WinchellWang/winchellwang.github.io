@@ -3,7 +3,7 @@ layout: post
 title: Docker部署Clash实现透明网关
 subtitle: 在Ubuntu Server 20.04上利用Docker部署Clash对网络进行接管并实现透明代理
 date: 2022-06-30
-author: Moax.Wang
+author: Winchell.Wang
 header-img: "img/post-bg-tech.jpg"
 tags: 
   - Technology
@@ -120,7 +120,7 @@ docker run --name clash \
 
 如果配置文件设置无误的话，可以在Dashboard页面输入服务器地址与端口，链接到Clash进行设置了。
 
-![Clash_Dashboard](https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/_post_image/2022-06-30/Clash_Dashboard.jpg)
+![Clash_Dashboard](https://cdn.jsdelivr.net/gh/winchellwang/winchellwang.github.io/img/_post_image/2022-06-30/Clash_Dashboard.jpg)
 
 >**Tips:**
 Dashboard支持对链接添加参数，具体设置可以参考[此链接](https://github.com/haishanh/yacd)。
@@ -206,7 +206,7 @@ sudo netfilter-persistent save
 
 打开网络代理设置，将服务器地址填入，并在端口中输入7890（Socks代理则在端口中输入7891）。
 
-![Screenshoot_1](https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/_post_image/2022-06-30/Screenshoot_1.jpeg)
+![Screenshoot_1](https://cdn.jsdelivr.net/gh/winchellwang/winchellwang.github.io/img/_post_image/2022-06-30/Screenshoot_1.jpeg)
 
 此种方式为终端设备主动寻求流量接管。优点是如果服务器宕机，局域网里的其他联网设备不受影响。缺点是每一个需要接管的设备都需要手动设置，较为麻烦。
 
@@ -215,10 +215,10 @@ sudo netfilter-persistent save
 手动设置需要被接管流量的终端设备的IP地址，将网关地址与DNS服务器地址设置为你部署clash的服务器地址。
 
 网关：
-![Screenshoot_2](https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/_post_image/2022-06-30/Screenshoot_2.jpeg)
+![Screenshoot_2](https://cdn.jsdelivr.net/gh/winchellwang/winchellwang.github.io/img/_post_image/2022-06-30/Screenshoot_2.jpeg)
 
 DNS：
-![Screenshoot_3](https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/_post_image/2022-06-30/Screenshoot_3.jpeg)
+![Screenshoot_3](https://cdn.jsdelivr.net/gh/winchellwang/winchellwang.github.io/img/_post_image/2022-06-30/Screenshoot_3.jpeg)
 
 ## 4.2 侵入式
 
@@ -241,14 +241,14 @@ network:
 
 在路由器中，在内网DHCP配置页面，将网关与DNS服务器都设置为clash服务器的IP地址。
 
-![Router](https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/_post_image/2022-06-30/Router.jpg)
+![Router](https://cdn.jsdelivr.net/gh/winchellwang/winchellwang.github.io/img/_post_image/2022-06-30/Router.jpg)
 
 这样设置下，由主路由器分发给所有终端设备clash服务器的地址作为网关与dns解析接口。Clash服务器处理完数据包之后发送回主路由器，并由主路由器向上送至光猫。此时网络才是通的，实现的是旁路由的原理。
 
 这种方法将由clash服务器全权接管局域网内的所有流量。好处是在局域网覆盖范围内只要接入，直接走代理，不需要进行任何设置。缺点是一旦服务器宕机，整个局域网就瘫痪了。
 
 最终效果：
-![Screenshoot_4](https://cdn.jsdelivr.net/gh/MoaxWang/moaxwang.github.io/img/_post_image/2022-06-30/Screenshoot_4.jpeg)
+![Screenshoot_4](https://cdn.jsdelivr.net/gh/winchellwang/winchellwang.github.io/img/_post_image/2022-06-30/Screenshoot_4.jpeg)
 
 >**Tips：**
 打通整个网络，除了配置要没有错误之外，以下三点要反复确认:<br>docker里的clash在运行状态<br>路由表配置完毕<br>clash服务器网关地址指向主路由器

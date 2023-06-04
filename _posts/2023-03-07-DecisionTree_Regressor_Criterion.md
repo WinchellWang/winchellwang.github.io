@@ -3,7 +3,7 @@ layout: post
 title: 回归树的评价指标
 subtitle: Sklearn中Decision Tree在回归模型中的评价指标
 date: 2023-03-07
-author: Moax.Wang
+author: Winchell.Wang
 header-img: "img/post-bg-tech.jpg"
 tags:
    - Technology

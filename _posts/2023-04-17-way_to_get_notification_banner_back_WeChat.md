@@ -3,7 +3,7 @@ layout: post
 title: 恢复微信通知
 subtitle: iPhone上微信/WeChat的通知无法收到如何解决
 date: 2023-04-17
-author: Moax.Wang
+author: Winchell.Wang
 header-img: "img/post-bg-life.jpg"
 tags:
     - Blog
