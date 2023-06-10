@@ -58,7 +58,7 @@ permalink: /talk/
     letter-spacing: 1px;
     padding: 10px;
     background-color: white;
-    border: 1px solid #c0c0c0;
+    border: 1px solid #dddddd;
     text-decoration: none;
 }
 
@@ -188,7 +188,9 @@ permalink: /talk/
             <!-- 分页 开始 -->
             <div style="margin-top: 10px; text-align: center;">
                 <a class="hexo-talk-firstpage" href="javascript:;" style="display: none"></a>
-                <a class="hexo-talk-button hexo-talk-previouspage" href="javascript:;" style="float: left">&larr; Newer Talks</a>
+                {% if paginator.previous_page %}
+                    <a class="hexo-talk-button hexo-talk-previouspage" href="javascript:;" style="float: left">&larr; Newer Talks</a>
+                {% endif %}
                 <span class="hexo-talk-pagenum" style="line-height: 2.8">2 / 3</span>
                 <a class="hexo-talk-button hexo-talk-nextpage" href="javascript:;" style="float: right">Older Talks &rarr;</a>
                 <a class="hexo-talk-lastpage" href="javascript:;" style="display: none"></a>
