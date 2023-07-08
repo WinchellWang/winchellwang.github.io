@@ -53,7 +53,7 @@ bash Miniconda3-py310_23.3.1-0-Linux-x86_64.sh
 
 Then following the instruction for installation.
 
-> Please chose yes for init during conda installation.
+> Please chose <mark>yes</mark> for init during conda installation.
 
 Conda activation.
 
@@ -79,7 +79,7 @@ Please check the CUDA availability by following command.
 python -c "import torch; print(torch.cuda.is_available())"
 ```
 
-It should return ==True==, if all things are correctly installed.
+It should return <mark>True</mark>, if all things are correctly installed.
 
 ## 3.3 Model Weight Download
 
