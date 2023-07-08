@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deploy Vicuna-13B Locally
-subtitle: To have your own ChatBot powered by AI, Install large language model on a computer.
+subtitle: To have my personal ChatBot powered by AI.
 date: 2023-07-08
 author: Winchell.Wang
 header-img: "img/post-bg-tech.jpg"
