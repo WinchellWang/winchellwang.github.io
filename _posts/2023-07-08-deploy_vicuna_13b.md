@@ -105,7 +105,7 @@ python3 -m fastchat.serve.cli --model-path vicuna-13b/ --num-gpus 2
 If the screen shows following things, it means the chatbot runs successfully. You can talk with her by input message in terminal.
 
 ```shell
-Loading checkpoint shards: 100%|██████████████████████████████████████████████████████████████████████| 3/3 [00:30<00:00, 10.27s/it]
+Loading checkpoint shards: 100%|██████| 3/3 [00:30<00:00, 10.27s/it]
 USER:
 ```
 
