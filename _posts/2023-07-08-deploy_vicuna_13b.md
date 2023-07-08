@@ -16,7 +16,7 @@ catalog: true
 
 ![Vicuna](https://toursinsalta.com/wp-content/uploads/2017/05/vicunas-puna-argentina.jpg)
 
-Vicuña is a domesticated species of South American camelid (just kidding). [Vicuña](https://lmsys.org/blog/2023-03-30-vicuna/) is a large language model (LLM) developed by UCB, based on the open-source LLM model called [LLaMA](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/), which was developed by Meta. The team behind this model states that Vicuña-13B performs at 90% of the level of GPT-4. Considering that ChatGPT is a business product running on their servers, with no guarantee of data privacy, there is value in running a chatbot locally.
+Vicuña is a domesticated species of South American camelid (just kidding). [Vicuña](https://lmsys.org/blog/2023-03-30-vicuna/) is a large language model (LLM) developed by UCB, based on the open-source LLM model called [LLaMA](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/), which was developed by Meta. **The team behind this model states that Vicuña-13B performs at 90% of the level of GPT-4**. Considering that ChatGPT is a business product running on their servers, with no guarantee of data privacy, there is value in running a chatbot locally.
 
 # 2. Hardware & Software Requirement
 
@@ -81,5 +81,34 @@ python -c "import torch; print(torch.cuda.is_available())"
 
 It should return <mark>True</mark>, if all things are correctly installed.
 
-## 3.3 Model Weight Download
+## 3.3 Model Weight
 
+[Vicuna-13B model weight can be downloaded from this website.](https://huggingface.co/lmsys/vicuna-13b-v1.3/tree/main)
+
+Download all files in one folder (recommend to name it as vicuna-13b).
+
+Start using the Chatbot by following command.
+
+```shell
+python3 -m fastchat.serve.cli --model-path vicuna-13b/ --num-gpus 2
+```
+
+>|Utilized Hardware|Command|
+>|-|-|
+>|Single GPU|python3 -m fastchat.serve.cli --model-path /path/to/vicuna-13b/|
+>|Multiple GPUs|python3 -m fastchat.serve.cli --model-path /path/to/vicuna-13b/ --num-gpus 2|
+>|CPU Only (RAM>60GB)|python3 -m fastchat.serve.cli --model-path /path/to/vicuna-13b --device cpu|
+>|Mac|python3 -m fastchat.serve.cli --model-path /path/to/vicuna-13b --device mps --load-8bit|
+>
+>load-8bit is used to reduce the memory usage as most of Mac does not have enough RAM to run it. It will slightly decrease the performances.
+
+If the screen shows following things, it means the chatbot runs successfully. You can talk with her by input message in terminal.
+
+```shell
+Loading checkpoint shards: 100%|██████████████████████████████████████████████████████████████████████| 3/3 [00:30<00:00, 10.27s/it]
+USER:
+```
+
+# 4. Personalize the Chatbot Only for You
+
+Will update soon.
