@@ -57,31 +57,44 @@ class LinkedList:
             node = node.next
 
 # build a single linked list
+
 list = LinkedList(["12", "99", "37"])
 list
 # output
+
 # 12 -> 99 -> 37 -> None
 
 # loop to extract elements in list
+
 for node in list:
    print(node)
 # output
+
 # 12
+
 # 99
+
 # 37
 
+
 # current node and move to next node
+
 node = list.val
 print(node)
 node = node.next
 print(node)
 # output
+
 # 12
+
 # 99
 
+
 # return after the last node
+
 node = list.val.next.next.next
 print(node)
 # output
+
 # None
 ```
