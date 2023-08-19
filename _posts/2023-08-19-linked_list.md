@@ -64,6 +64,7 @@ list
 
 # 12 -> 99 -> 37 -> None
 
+
 # loop to extract elements in list
 
 for node in list:
