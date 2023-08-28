@@ -27,6 +27,17 @@ Keywords: Hydrophobic Interactions, Long Chain, adsorbents with amine groups, th
 
 ![PFOA](https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=9554&t=l)
 
+## PFHxA
+
+Name: [Perfluorohexanoic acid](https://pubchem.ncbi.nlm.nih.gov/compound/67542)
+
+|CAS|Formula|Solubility in water (mg/L)|pKa|
+|:-:|:-:|:-:|:-:|
+|307-24-4|C<sub>5</sub>F<sub>11</sub>COOH|15700 (RT)|-0.16|
+
+Keywords: Hydrophobic Interactions, Short Chain.
+
+![PFHxA](https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=67542&t=l)
 
 ## PFBA
 
@@ -66,7 +77,7 @@ Name: [Perfluorohexane sulfonic acid](https://pubchem.ncbi.nlm.nih.gov/compound/
 
 Keywords: Long Chain
 
-![img](https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=67734&t=l)
+![PFHxS](https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=67734&t=l)
 
 ## PFBS
 
@@ -78,4 +89,4 @@ Name: [Perfluorobutanesulfonic acid](https://pubchem.ncbi.nlm.nih.gov/compound/6
 
 Keywords: Short Chain
 
-![img](https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=67815&t=l)
+![PFBS](https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=67815&t=l)
