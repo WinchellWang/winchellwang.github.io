@@ -28,6 +28,16 @@ Keywords: Hydrophobic Interactions, Long Chain, adsorbents with amine groups, th
 ![PFOA](https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=9554&t=l)
 
 
+## PFBA
+
+Name: [Perfluorobutanoic acid/Heptafluorobutyric acid](https://pubchem.ncbi.nlm.nih.gov/compound/9777)
+
+|CAS|Formula|Solubility in water (mg/L)|pKa|
+|:-:|:-:|:-:|:-:|
+|375-22-4|C<sub>3</sub>F<sub>7</sub>COOH|N/A|1.07|
+
+![PFBA](https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=9777&t=l)
+
 # PFSAs
 
 Perfluoroalkyl sulfonic acids
