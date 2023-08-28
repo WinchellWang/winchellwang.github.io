@@ -39,6 +39,18 @@ Keywords: Hydrophobic Interactions, Short Chain.
 
 ![PFHxA](https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=67542&t=l)
 
+## PFHpA
+
+Name: [Perfluoroheptanoic acid](https://pubchem.ncbi.nlm.nih.gov/compound/67818)
+
+|CAS|Formula|Solubility in water (mg/L)|pKa|
+|:-:|:-:|:-:|:-:|
+|375-85-9|C<sub>6</sub>F<sub>13</sub>COOH|3.65(at 25°C)|-2.29|
+
+Keywords: Hydrophobic Interactions, Long Chain.
+
+![PFHpA](https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=67818&t=l)
+
 ## PFBA
 
 Name: [Perfluorobutanoic acid/Heptafluorobutyric acid](https://pubchem.ncbi.nlm.nih.gov/compound/9777)
