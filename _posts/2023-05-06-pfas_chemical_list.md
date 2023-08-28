@@ -17,7 +17,7 @@ Perfluoroalkyl carboxylic acids
 
 ## PFOA
 
-Name: (Perfluorooctanoic acid)[https://pubchem.ncbi.nlm.nih.gov/compound/9554]
+Name: [Perfluorooctanoic acid](https://pubchem.ncbi.nlm.nih.gov/compound/9554)
 
 |CAS|Formula|Solubility in water (mg/L)|pKa|
 |:-:|:-:|:-:|:-:|
@@ -46,7 +46,7 @@ Perfluoroalkyl sulfonic acids
 
 ## PFOS
 
-Name: (Perfluorooctane sulfonic acid)[https://pubchem.ncbi.nlm.nih.gov/compound/74483]
+Name: [Perfluorooctane sulfonic acid](https://pubchem.ncbi.nlm.nih.gov/compound/74483)
 
 |CAS|Formula|Solubility in water (mg/L)|pKa|
 |:-:|:-:|:-:|:-:|
@@ -58,7 +58,7 @@ Keywords: Hydrophobic Interactions, Long Chain, adsorbents with amine groups, th
 
 ## PFHxS
 
-Name: (Perfluorohexane sulfonic acid)[https://pubchem.ncbi.nlm.nih.gov/compound/67734]
+Name: [Perfluorohexane sulfonic acid](https://pubchem.ncbi.nlm.nih.gov/compound/67734)
 
 |CAS|Formula|Solubility in water (mg/L)|pKa|
 |:-:|:-:|:-:|:-:|
@@ -70,7 +70,7 @@ Keywords: Long Chain
 
 ## PFBS
 
-Name: (Perfluorobutanesulfonic acid)[https://pubchem.ncbi.nlm.nih.gov/compound/67815]
+Name: [Perfluorobutanesulfonic acid](https://pubchem.ncbi.nlm.nih.gov/compound/67815)
 
 |CAS|Formula|Solubility in water (mg/L)|pKa|
 |:-:|:-:|:-:|:-:|
