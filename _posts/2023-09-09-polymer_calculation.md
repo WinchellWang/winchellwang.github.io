@@ -40,7 +40,7 @@ $$
 
 # 3. Polydispersity Index
 
-Polydispersity index (PDI) is a measure of the distribution of molecular mass in a given polymer sample. The PDI value always greater than 1, but as the polymer chains approach uniform chain length, the PDI approaches unity (1).
+Polydispersity index (PDI) is a measure of the distribution of molecular mass in a given polymer sample. The PDI value is always greater than 1, but as the polymer chains approach a uniform chain length, the PDI converges to 1.
 
 $$
 PDI=\dfrac{\overline{M}_w}{\overline{M}_n}
