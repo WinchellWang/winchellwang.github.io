@@ -91,3 +91,11 @@ $$
 |Pound (lb)|453.592g|16oz|
 |Ounce (oz)|28.350g|1/16lb|
 |Carat (c)|0.2g|0.00705oz|
+
+# 2. Bed volume
+
+A term to describe the volume of incoming feedwater in gallons or liters, equal to the volume of the filter media in column or tank including voids.
+
+$$
+Bed volume (L) = \dfrac{Bed height(cm)*Column\ crossectional\ area(cm^2)}{1000}
+$$
