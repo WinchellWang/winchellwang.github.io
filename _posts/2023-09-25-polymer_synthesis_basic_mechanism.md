@@ -29,7 +29,8 @@ catalog: true
 # 1.1 Initiator Decomposition
 
 $$
-I\xrightarrow{k_d}2fI^* \\
+I\xrightarrow{k_d}2fI^*
+\\
 R_{d} = 2fk_d[I]
 $$
 
