@@ -29,7 +29,7 @@ catalog: true
 # 1.1 Initiator Decomposition
 
 $$
-I\xrightarrow{k_d}2fI^*\\
+I\xrightarrow{k_d}2fI^* \\
 R_{d} = 2fk_d[I]
 $$
 
@@ -57,8 +57,7 @@ $$
 As QSSA in the hypothesis, the consumption of free radical equals to the generation of it.
 
 $$
-R_{I^*}\approx 0\\
-2fk_d[I]=k_{init}[I^*][M]
+R_{I^*}\approx 2fk_d[I]=k_{init}[I^*][M]
 $$
 
 According to the reaction of chain initiation,
