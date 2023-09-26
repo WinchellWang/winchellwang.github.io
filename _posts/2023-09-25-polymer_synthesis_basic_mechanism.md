@@ -30,7 +30,9 @@ catalog: true
 
 $$
 I\xrightarrow{k_d}2fI^*
-\\
+$$
+
+$$
 R_{d} = 2fk_d[I]
 $$
 
