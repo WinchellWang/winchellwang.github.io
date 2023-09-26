@@ -42,7 +42,7 @@ Where $I$ stands for initiator, $I^*$ is the primary radicals, $f$ is initiation
 
 Now, let's assume that there is a batch reactor which has constant volume.
 
-As ${d[I]\over dt}=-k_d[I]$, and assume $[I]|_{t=0}=[I]_0$, then:
+As ${d[I]\over dt}=-k_d[I]$, and assume $[I]\mid _{t=0}=[I]_0$, then:
 
 $$
 \begin{align}
@@ -55,7 +55,7 @@ Denote\ e^C\ as\ another\ constant\ value\ A: [I]&=A\cdot e^{-k_dt}
 \end{align}
 $$
 
-As $[I]|_{t=0}=[I]_0$:
+As $[I]\mid _{t=0}=[I]_0$:
 
 $$
 \begin{align}
