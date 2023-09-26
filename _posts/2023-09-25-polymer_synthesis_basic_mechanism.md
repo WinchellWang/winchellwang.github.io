@@ -72,7 +72,7 @@ $$
 
 The decomposition kinetics is often expressed by the half-life of the initiator, the time needed for the concentration to decrease to half of its initial value.
 
-Assume $[I]=1/2[I]_0$ at $t_{1/2}$, then:
+Assume $[I]=1/2[I]_0$ at half-life, then:
 
 $$
 \begin{align}
