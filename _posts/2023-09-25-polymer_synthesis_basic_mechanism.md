@@ -18,7 +18,7 @@ catalog: true
 
 2) Quasi-Steady-State Assumption (***QSSA***): With a continuous source of new radicals in the system, an equilibrium is achieved instantaneously between radical generation and consumption, such that $R_{init}=R_{term}$.
 
-3) The small radical species $I^*,\ M^*\ and\ S^*$ are not consumed by side reactions and do not accumulate in the system, but are converted to polymeric radicals with 100% efficiency. Thus, the total rate of polymer radical formation is given by ($R_{init}=R_{tran}$). The net formation of polymeric radicals is $R_{init}$, since transfer events both consume and create a polymeric radical species.
+3) The small radical species $I^*$, M* and S* are not consumed by side reactions and do not accumulate in the system, but are converted to polymeric radicals with 100% efficiency. Thus, the total rate of polymer radical formation is given by ($R_{init}=R_{tran}$). The net formation of polymeric radicals is $R_{init}$, since transfer events both consume and create a polymeric radical species.
 
 4) The rates of propagation, transfer, and termination reactions are independent of n, the length(s) of radical(s) involved.
 
@@ -81,7 +81,7 @@ $$
 
 # 2. Propagation
 
-In propagation, we have a chain propagation, such as:
+For a chain propagation, such as:
 
 $$
 P_1+M\rightarrow P_2\Rightarrow P_2+M\rightarrow P_3 \Rightarrow ...
