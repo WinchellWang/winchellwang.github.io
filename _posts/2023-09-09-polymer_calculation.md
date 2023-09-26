@@ -18,13 +18,13 @@ $$
 \overline{M}_n=\dfrac{\sum{n(D_n+P_n)}}{\sum{D_n+P_n}}w_m
 $$
 
-where $D_n$ and $P_n$ are the number of moles of dead and growing polymer chains of degree of polymerization n (number of repeated units in the chain, also called length), and $w_m$ is the molecular weight of the repeated unit.
+Where $D_n$ and $P_n$ are the number of moles of dead and growing polymer chains of degree of polymerization n (number of repeated units in the chain, also called length), and $w_m$ is the molecular weight of the repeated unit.
 
 > Example:
 >
 > 4 moles polyethylene in a bulk. The chain length is 5, 3, and 10. Each have 1, 2, and 1 mole.
 >
->$w_m=28$, $D_n+P_n=3,5,10$, $n=2,1,1$
+>$w_m=28$, $n=3,5,10$, $D_n+P_n=2,1,1$
 >
 >$$\overline{M}_n=\dfrac{2*3+5+10}{2+1+1}*28=147$$
 

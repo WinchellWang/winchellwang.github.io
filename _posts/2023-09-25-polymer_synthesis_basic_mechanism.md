@@ -36,9 +36,54 @@ $$
 R_{d}=2fk_d[I]
 $$
 
-Where $I$ stands for initiator, $I^*$ is the primary radicals, $f$ is initiation efficiency ($0.4<f<1.0$), $k_d$ is the rate coefficient value, and $R$ is the reaction rate ($mol\over{L\cdot S}$).
+Where $I$ stands for initiator, $I^*$ is the primary radicals, $f$ is initiation efficiency (typically $0.6<f<0.8$), $k_d$ is the rate coefficient value, and $R$ is the reaction rate ($mol\over{L\cdot S}$).
 
-# 1.2 Chain Initiation
+# 1.2 Half-Life
+
+Now, let's assume that there is a batch reactor which has constant volume.
+
+As ${d[I]\over dt}=-k_d[I]$, and assume $[I]|_{t=0}=[I]_0$, then:
+
+$$
+\begin{align}
+d[I]\over dt&=-k_d[I]\\
+d[I]\over [I]&=-k_ddt\\
+Integration: \int{1\over [I]}d[I]&=\int{-k_d}dt\\
+\ln [I]&=-k_dt+C\\
+Exponentiate\ both\ side: [I]&=e^{-k_dt+C}\\
+Denote\ e^C\ as\ another\ constant\ value\ A: [I]&=A\cdot e^{-k_dt}
+\end{align}
+$$
+
+As $[I]|_{t=0}=[I]_0$:
+
+$$
+\begin{align}
+[I]_0&=A\cdot e^0\\
+A&=[I]_0
+\end{align}
+$$
+
+Therefore:
+
+$$
+[I]=[I]_0\cdot e^{-k_dt}
+$$
+
+The decomposition kinetics is often expressed by the half-life of the initiator, the time needed for the concentration to decrease to half of its initial value.
+
+Assume $[I]=1/2[I]_0$ at $t_{1/2}$, then:
+
+$$
+\begin{align}
+1/2[I]_0&=[I]_0e^{-k_dt_{1/2}}\\
+\ln 1/2&=-k_dt_{1/2}\\
+-\ln 2&=-k_dt_{1/2}\\
+t_{1/2}&={\ln 2\over k_d} 
+\end{align}
+$$
+
+# 1.3 Chain Initiation
 
 Assume primary radicals react with monomer, and we will have:
 
@@ -150,7 +195,7 @@ $$
 R^{radical\ loss}_{term}=k_t[P_{tot}]^2=(k_{t,c}+k_{t,d})[P_{tot}]^2
 $$
 
-As mentioned in the hypothesis, the consumption of radicals is equal to the generation of radicals (QSSA),
+As mentioned in the hypothesis, the consumption of radicals is equal to the generation of radicals (QSSA), we can conclude that:
 
 $$
 \begin{align}
@@ -158,4 +203,24 @@ R_d&=R^{radical\ loss}_{term}\\
 2fk_d[I]&=k_t[P_{tot}]^2\\
 [P_{tot}]&=\sqrt{2fk_d[I]\over k_t}
 \end{align}
+$$
+
+As $[P_{tot}]$ is proportional to $[I]^{1/2}$, an increase in $[I]$ would result in a higher concentration of radicals in the system, leading to a greater volume of polymers. However, $[M]$ remains a fixed value, indicating that the chain length would decrease with an increasing number of radicals. This can also be explained by experiments, as short-chain polymers are more prone to termination with each other.
+
+# 4. Transfer
+
+Radicals can react with monomers or solvent transferring their radicals to the other.
+
+$$
+Monomer:\ P_n+M\xrightarrow{k^{mon}_{tr}}D_n+P_1
+$$
+
+$$
+Solvent:\ P_n+S\xrightarrow{k^{sol}_{tr}}D_n+P_1
+$$
+
+The total transfer rate is:
+
+$$
+R_{tr}=k^{mon}_{tr}[M][P_{tot}]+k^{sol}_{tr}[S][P_{tot}]
 $$
