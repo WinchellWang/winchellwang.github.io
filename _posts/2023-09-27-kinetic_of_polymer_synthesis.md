@@ -40,7 +40,7 @@ $$
 KCL={R_{prop}\over R_{chain}}
 $$
 
-Since both of the chain transfer and termination would create the dead chain,
+Since both of the chain transfer and termination would create the dead polymer,
 
 $$
 R_{chain}=R_{term}+R_{tr}
@@ -70,7 +70,7 @@ $$
 
 **Additionally**, apply [SSH](https://winchellwang.github.io/2023/09/25/polymer_synthesis_basic_mechanism/), where transfer is negligible.
 
-As [$R^{radical\ loss}_{term}=k_t[P_{tot}]^2$, and $[P_{tot}]=\sqrt{2fk_d[I]\over k_t}$](https://winchellwang.github.io/2023/09/25/polymer_synthesis_basic_mechanism/#3-termination),
+[As](https://winchellwang.github.io/2023/09/25/polymer_synthesis_basic_mechanism/#3-termination) $R^{radical\ loss}_{term}=k_t[P_{tot}]^2$, and $[P_{tot}]=\sqrt{2fk_d[I]\over k_t}$,
 
 $$
 \begin{align}
