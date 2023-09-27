@@ -68,7 +68,7 @@ $$
 KCL={k_p[M]\over (k_{t,c}+k_{t,d})[P_{tot}]+k^{mon}_{tr}[M]+k^{sol}_{tr}[S]}
 $$
 
-**Additionally**, apply [SSH](https://winchellwang.github.io/2023/09/25/polymer_synthesis_basic_mechanism/), where transfer is negligible.
+**Additionally**, apply [LCH](https://winchellwang.github.io/2023/09/25/polymer_synthesis_basic_mechanism/), where transfer is negligible.
 
 [As](https://winchellwang.github.io/2023/09/25/polymer_synthesis_basic_mechanism/#3-termination) $R^{radical\ loss}_{term}=k_t[P_{tot}]^2$, and $[P_{tot}]=\sqrt{2fk_d[I]\over k_t}$,
 
