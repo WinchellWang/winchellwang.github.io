@@ -129,6 +129,8 @@ DP^{inst}_{n}&={R_{prop}\over R_{dead\ chain}}\\
 \end{align}
 $$
 
-# References:
+# 4. Radical Life
+
+# References
 
 [1] https://www.chemeurope.com/en/encyclopedia/Kinetic_chain_length.html
