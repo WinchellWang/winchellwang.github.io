@@ -148,7 +148,13 @@ $$
 
 Since $R_{prop}=k_p[M][P_{tot}]$,
 
-And apply QSSA, $R_{init}=R^{radical\ loss}_{term}=k_t[P_{tot}]^2$,
+And apply QSSA, 
+
+$$
+R_{init}=R^{radical\ loss}_{term}=k_t[P_{tot}]^2
+$$
+
+Therefore,
 
 $$
 \begin{align}
@@ -165,7 +171,8 @@ $$
 Radical\ Lifetime={[P_{tot}]\over R^{radical\ loss}_{term}}
 $$
 
-Apply QSSA, $R^{radical\ loss}_{term}=R_d=2fk_d[I]$.
+Apply QSSA, 
+$R^{radical\ loss}_{term}=R_d=2fk_d[I]$.
 
 And
 
