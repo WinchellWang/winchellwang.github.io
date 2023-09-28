@@ -109,7 +109,7 @@ $$
 Instantaneous degree of polymerization ($DP^{inst}_{n}$), also called instantaneous number-average chain length of dead polymer chains, is the average number of monomer units on a dead polymer chain formed at any instant. It is related to the average number of monomer units on a "dead" or "terminated" polymer chain formed at that instant due to polymerization reactions. 
 
 $$
-DP^{inst}_{n}={R_{prop}\over R_{dead\ chain}}
+DP^{inst}_n={R_{prop}\over R_{dead\ chain}}
 $$
 
 The rate of dead polymer can be defined as the dead polymer generated in the system, which includes termination and transfer. It should be noted that termination by combination only creates 1 dead chain from 2 radicals.
@@ -122,7 +122,7 @@ Therefore,
 
 $$
 \begin{align}
-DP^{inst}_{n}&={R_{prop}\over R_{dead\ chain}}\\
+DP^{inst}_n&={R_{prop}\over R_{dead\ chain}}\\
 &={k_p[M][P_{tot}]\over {1\over 2}k_{t,c}[P_{tot}]^2+k_{t,d}[P_{tot}]^2+k^{mon}_{tr}[M][P_{tot}]+k^{sol}_{tr}[S][P_{tot}]}\\
 &={k_p[M]\over {1\over 2}k_{t,c}[P_{tot}]+k_{t,d}[P_{tot}]+k^{mon}_{tr}[M]+k^{sol}_{tr}[S]}\\
 &={k_p[M]\over ({1\over 2}k_{t,c}+k_{t,d})[P_{tot}]+k^{mon}_{tr}[M]+k^{sol}_{tr}[S]}
@@ -134,7 +134,7 @@ $$
 Instantaneous degree of radicals ($DP^{rad}_{n}$) is the number-average chain length of radicals.
 
 $$
-DP^{rad}_{n}={R_{prop}\over R_{radical\ generate}}
+DP^{rad}_n={R_{prop}\over R_{radical\ generate}}
 $$
 
 Both of the initiation and transfer would generate radicals, so:
@@ -158,7 +158,7 @@ Therefore,
 
 $$
 \begin{align}
-DP^{rad}_{n}&={k_p[M][P_{tot}]\over k_t[P_{tot}]^2+k^{mon}_{tr}[M][P_{tot}]+k^{sol}_{tr}[S][P_{tot}]}\\
+DP^{rad}_n&={k_p[M][P_{tot}]\over k_t[P_{tot}]^2+k^{mon}_{tr}[M][P_{tot}]+k^{sol}_{tr}[S][P_{tot}]}\\
 &={k_p[M]\over k_t[P_{tot}]+k^{mon}_{tr}[M]+k^{sol}_{tr}[S]}
 \end{align}
 $$
@@ -192,7 +192,116 @@ $$
 
 # 6. Monomer Concentration
 
+$$
+{d[M]\over dt}=R_{mon}=-k_p[M][P_{tot}]
+$$
 
+Since
+
+$$
+[P_{tot}]=\sqrt{2fk_d[I]\over k_t}
+$$
+
+And
+
+$$
+[I]=[I]_0\cdot e^{-k_dt}
+$$
+
+Assume $[M]\mid _{t=0}=[M]_0$, then
+
+$$
+\begin{align}
+{d[M]\over dt}&=-k_p[M]\sqrt{2fk_d[I]\over k_t}\\
+{d[M]\over [M]}&=-k_p\sqrt{2fk_d[I]\over k_t}dt\\
+{d[M]\over [M]}&=-k_p\sqrt{2fk_d[I]_0\cdot e^{-k_dt}\over k_t}dt\\
+{d[M]\over [M]}&=-k_p\sqrt{2fk_d[I]_0\over k_t}{e^{-k_dt\over 2}}dt\\
+Intergration:\int{1\over [M]}d[M]&=\int{-k_p\sqrt{2fk_d[I]_0\over k_t}{e^{-k_dt\over 2}}}dt\\
+\int{1\over [M]}d[M]&=-k_p\sqrt{2fk_d[I]_0\over k_t}\int{{(e^{-k_d\over 2})}^t}dt\\
+\ln [M]&=-k_p\sqrt{2fk_d[I]_0\over k_t}({e^{-k_dt\over 2}\over {-k_d\over 2}}+C)\\
+\ln [M]&=2k_p\sqrt{2f[I]_0\over k_dk_t}e^{-k_dt\over 2}-Ck_p\sqrt{2fk_d[I]_0\over k_t}\\
+Exponentiate\ both\ side:[M]&=e^{2k_p\sqrt{2f[I]_0\over k_dk_t}e^{-k_dt\over 2}-Ck_p\sqrt{2fk_d[I]_0\over k_t}}\\
+Denote\ e^{-Ck_p\sqrt{2fk_d[I]_0\over k_t}} as\ another\ constant\ value\ A:[M]&=A\cdot e^{2k_p\sqrt{2f[I]_0\over k_dk_t}e^{-k_dt\over 2}}
+\end{align}
+$$
+
+As $[M]\mid _{t=0}=[M]_0$:
+
+$$
+\begin{align}
+[M]_0&=A\cdot e^{2k_p\sqrt{2f[I]_0\over k_dk_t}}\\
+A&=[M]_0e^{-2k_p\sqrt{2f[I]_0\over k_dk_t}}
+\end{align}
+$$
+
+Therefore,
+
+$$
+\begin{align}
+[M]&=[M]_0e^{-2k_p\sqrt{2f[I]_0\over k_dk_t}}e^{2k_p\sqrt{2f[I]_0\over k_dk_t}e^{-k_dt\over 2}}\\
+[M]&=[M]_0e^{2k_p\sqrt{2f[I]_0\over k_dk_t}(e^{-k_dt\over 2}-1)}
+\end{align}
+$$
+
+# 7. Instantaneous Weight-Average Chain Length of Radicals
+
+As
+
+$$
+DP^{rad}_n={R_{prop}\over R_{init}+R_{tr}}
+$$
+
+Here we define:
+
+$$
+DP^{rad}_n={1\over \tau +\beta}
+$$
+
+Where
+
+$$
+\tau ={k_{t,d}[P]_{tot}+k^{mon}_{tr}[M]+k^{sol}_{tr}[S]\over k_p[M]}
+$$
+
+And
+
+$$
+\beta ={k_{t,c}[P]_{tot}\over k_p[M]}
+$$
+
+Hence,
+
+$$
+DP^{inst}_n={1\over \tau +{1\over 2}\beta}
+$$
+
+**AND**
+
+$$
+DP^{rad}_w={2\over \tau +\beta}
+$$
+
+>Polymer Dispersity: $PDI^{rad}={DP^{rad}_w\over DP^{rad}_n}=2$
+
+# 8. Schulz-Flory Distribution
+
+As
+
+$$
+DP_n={1\over 1-P}
+$$
+
+Where P stands for the probability of propagation.
+
+$$
+P = {1\over 1+\tau +\beta}
+$$
+
+Then, the live radical distribution will be
+
+$$
+{P_n\over P_{tot}}=({1\over {1+\tau +\beta}})^n(\tau +\beta)
+$$
 
 # References
 
