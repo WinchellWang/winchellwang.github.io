@@ -217,7 +217,7 @@ $$
 {d[M]\over [M]}&=-k_p\sqrt{2fk_d[I]_0\cdot e^{-k_dt}\over k_t}dt\\
 {d[M]\over [M]}&=-k_p\sqrt{2fk_d[I]_0\over k_t}{e^{-k_dt\over 2}}dt\\
 Intergration:\int{1\over [M]}d[M]&=\int{-k_p\sqrt{2fk_d[I]_0\over k_t}{e^{-k_dt\over 2}}}dt\\
-\int{1\over [M]}d[M]&=-k_p\sqrt{2fk_d[I]_0\over k_t}\int{{(e^{-k_d\over 2})}^t}dt\\
+\int{1\over [M]}d[M]&=-k_p\sqrt{2fk_d[I]_0\over k_t}\int{(e^{-k_d\over 2})^t}dt\\
 \ln [M]&=-k_p\sqrt{2fk_d[I]_0\over k_t}({e^{-k_dt\over 2}\over {-k_d\over 2}}+C)\\
 \ln [M]&=2k_p\sqrt{2f[I]_0\over k_dk_t}e^{-k_dt\over 2}-Ck_p\sqrt{2fk_d[I]_0\over k_t}\\
 Exponentiate\ both\ side:[M]&=e^{2k_p\sqrt{2f[I]_0\over k_dk_t}e^{-k_dt\over 2}-Ck_p\sqrt{2fk_d[I]_0\over k_t}}\\
