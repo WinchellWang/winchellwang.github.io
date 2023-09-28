@@ -106,7 +106,7 @@ $$
 
 # 3. Instantaneous Degree of Polymerization
 
-Instantaneous degree of polymerization ($DP^{inst}_{n}$) is the average number of monomer units on a dead polymer chain formed at any instant. It is related to the average number of monomer units on a "dead" or "terminated" polymer chain formed at that instant due to polymerization reactions. 
+Instantaneous degree of polymerization ($DP^{inst}_{n}$), also called instantaneous number-average chain length of dead polymer chains, is the average number of monomer units on a dead polymer chain formed at any instant. It is related to the average number of monomer units on a "dead" or "terminated" polymer chain formed at that instant due to polymerization reactions. 
 
 $$
 DP^{inst}_{n}={R_{prop}\over R_{dead\ chain}}
@@ -129,7 +129,63 @@ DP^{inst}_{n}&={R_{prop}\over R_{dead\ chain}}\\
 \end{align}
 $$
 
-# 4. Radical Life
+# 4. Instantaneous Degree of Radicals
+
+Instantaneous degree of radicals ($DP^{rad}_{n}$) is the number-average chain length of radicals.
+
+$$
+DP^{rad}_{n}={R_{prop}\over R_{radical\ generate}}
+$$
+
+Both of the initiation and transfer would generate radicals, so:
+
+$$
+\begin{align}
+R_{radical\ generate}&=R_{init}+R_{tr}\\
+&=R_{init}+k^{mon}_{tr}[M][P_{tot}]+k^{sol}_{tr}[S][P_{tot}]
+\end{align}
+$$
+
+Since $R_{prop}=k_p[M][P_{tot}]$,
+
+And apply QSSA, $R_{init}=R^{radical\ loss}_{term}=k_t[P_{tot}]^2$,
+
+$$
+\begin{align}
+DP^{rad}_{n}&={k_p[M][P_{tot}]\over k_t[P_{tot}]^2+k^{mon}_{tr}[M][P_{tot}]+k^{sol}_{tr}[S][P_{tot}]}\\
+&={k_p[M]\over k_t[P_{tot}]+k^{mon}_{tr}[M]+k^{sol}_{tr}[S]}
+\end{align}
+$$
+
+# 5. Radical Lifetime
+
+The radical lifetime is equal to the concentration of total radicals divided by the termination rate.
+
+$$
+Radical\ Lifetime={[P_{tot}]\over R^{radical\ loss}_{term}}
+$$
+
+Apply QSSA, $R^{radical\ loss}_{term}=R_d=2fk_d[I]$.
+
+And
+
+$$
+[P_{tot}]=\sqrt{2fk_d[I]\over k_t}
+$$
+
+Therefore,
+
+$$
+\begin{align}
+Radical\ Lifetime&={\sqrt{2fk_d[I]\over k_t}\over 2fk_d[I]}\\
+&=\sqrt{2fk_d[I]\over 4f^2{k_d}^2[I]^2k_t}\\
+&={1\over \sqrt{2fk_d[I]k_t}}
+\end{align}
+$$
+
+# 6. Monomer Concentration
+
+
 
 # References
 
