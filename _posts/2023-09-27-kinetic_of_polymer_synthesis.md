@@ -37,13 +37,7 @@ $$
 Kinetic chain length (KCL) is the average number of monomer units on a living chain. In principle, it is the ratio of the chain propagation rate to the chain initiation rate.
 
 $$
-KCL={R_{prop}\over R_{chain}}
-$$
-
-In the consideration of chain transfer, another atom (often hydrogen) is transferred from a molecule in the system to the polymer radical. The original polymer chain is terminated, and a new one is initiated. As a result, the kinetic chain length is shortened. Thus, the $R_{chain}$ is redefined as:
-
-$$
-R_{chain}=R_{init}+R_{tr}
+KCL={R_{prop}\over R_{init}}
 $$
 
 Apply [QSSA](https://winchellwang.github.io/2023/09/25/polymer_synthesis_basic_mechanism/):
@@ -52,17 +46,13 @@ $$
 R_{init}=R_{term}
 $$
 
-$$
-R_{chain}=R_{term}+R_{tr}
-$$
-
 Then:
 
 $$
 \begin{align}
-KCL&={R_{prop}\over R_{term}+R_{tr}}\\
-&={k_p[M][P_{tot}]\over k_t[P_{tot}]^2+k^{mon}_{tr}[M][P_{tot}]+k^{sol}_{tr}[S][P_{tot}]}\\
-&={k_p[M]\over k_t[P_{tot}]+k^{mon}_{tr}[M]+k^{sol}_{tr}[S]}
+KCL&={R_{prop}\over R_{term}}\\
+&={k_p[M][P_{tot}]\over k_t[P_{tot}]^2}\\
+&={k_p[M]\over k_t[P_{tot}]}
 \end{align}
 $$
 
@@ -75,18 +65,10 @@ $$
 Therefore:
 
 $$
-KCL={k_p[M]\over (k_{t,c}+k_{t,d})[P_{tot}]+k^{mon}_{tr}[M]+k^{sol}_{tr}[S]}
+KCL={k_p[M]\over (k_{t,c}+k_{t,d})[P_{tot}]}
 $$
-
-**Additionally**, apply [LCH](https://winchellwang.github.io/2023/09/25/polymer_synthesis_basic_mechanism/), where transfer is negligible.
 
 [As](https://winchellwang.github.io/2023/09/25/polymer_synthesis_basic_mechanism/#3-termination)
-
-$$
-R^{radical\ loss}_{term}=k_t[P_{tot}]^2
-$$
-
-and
 
 $$
 [P_{tot}]=\sqrt{2fk_d[I]\over k_t}
@@ -96,9 +78,7 @@ Therefore:
 
 $$
 \begin{align}
-KCL&={R_{prop}\over R^{radical\ loss}_{term}}\\
-&={k_p[M][P_{tot}]\over k_t[P_{tot}]^2}\\
-&={k_p[M]\over k_t[P_{tot}]}\\
+KCL&={k_p[M]\over k_t[P_{tot}]}\\
 &={k_p[M]\over {k_t}\sqrt{2fk_d[I]\over k_t}}\\
 &={k_p[M]\over \sqrt{2fk_d[I]k_t}}
 \end{align}
@@ -278,10 +258,10 @@ $$
 **AND**
 
 $$
-DP^{rad}_w={2\over \tau +\beta}
+DP^{rad}_w={2(\tau +{3\over 2}\beta)\over (\tau +\beta)^2}
 $$
 
->Polymer Dispersity: $PDI^{rad}={DP^{rad}_w\over DP^{rad}_n}=2$
+>Polymer Dispersity: $PDI^{rad}={DP^{rad}_w\over DP^{rad}_n}={(2\tau +3\beta)(2\tau +\beta)\over 2(\tau +\beta)^2}$, when β = 0 (no termination by combination), PDI<sup>rad</sup> = 2.
 
 # 8. Schulz-Flory Distribution
 
