@@ -258,10 +258,10 @@ $$
 **AND**
 
 $$
-DP^{rad}_w={2(\tau +{3\over 2}\beta)\over (\tau +\beta)^2}
+DP^{inst}_w={2(\tau +{3\over 2}\beta)\over (\tau +\beta)^2}
 $$
 
->Polymer Dispersity: $PDI^{rad}={DP^{rad}_w\over DP^{rad}_n}={(2\tau +3\beta)(2\tau +\beta)\over 2(\tau +\beta)^2}$, when β = 0 (no termination by combination), PDI<sup>rad</sup> = 2.
+>Polymer Dispersity: $PDI^{inst}={DP^{inst}_w\over DP^{inst}_n}={(2\tau +3\beta)(2\tau +\beta)\over 2(\tau +\beta)^2}$, when β = 0 (no termination by combination), PDI<sup>inst</sup> = 2.
 
 # 8. Schulz-Flory Distribution
 
