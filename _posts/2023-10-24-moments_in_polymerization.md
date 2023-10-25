@@ -300,7 +300,7 @@ DP^{rad}_{w}=&{1+P\over 1-P}
 \end{align}
 $$
 
-If P is approaching 1,
+If P is approaching to 1,
 
 $$
 PDI={DP^{rad}_{w}\over DP^{rad}_{n}}={1+P\over 1}=2
