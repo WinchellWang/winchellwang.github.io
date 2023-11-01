@@ -239,7 +239,7 @@ $$
 DP^{rad}_{n}={\tau +\beta +1\over \tau +\beta}
 $$
 
-And apply [LCH](https://winchellwang.github.io/2023/09/25/polymer_synthesis_basic_mechanism/), where is The consumption of monomer by chain-initiation or transfer events is negligible compared to that by propagation:
+And apply [LCH](https://winchellwang.github.io/2023/09/25/polymer_synthesis_basic_mechanism/) that the consumption of monomer by chain-initiation or transfer events is negligible compared to that by propagation:
 
 $$
 \begin{align}
