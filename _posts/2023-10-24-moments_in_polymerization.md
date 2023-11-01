@@ -183,7 +183,7 @@ R(\lambda_2)=&1^2R(P_1)+2^2R(P_2)+\dots+(n-1)^2R(P_{n-1})+n^2R(P_n)\\
 &+k_p[M](\sum^\infty_{n=1}{(n+1)^2P_n}-\sum^\infty_{n=1}{n^2P_n})\\
 =&2fk_d[I]+k^{mon}_{tr}[M]\lambda_0+k^{sol}_{tr}[S]\lambda_0-(k_t\lambda_0-k^{mon}_{tr}[M]-k^{sol}_{tr}[S])\lambda_2\\
 &+k_p[M](\sum^\infty_{n=1}{n^2P_n}+2\sum^\infty_{n=1}{nP_n}+\sum^\infty_{n=1}{P_n}-\sum^\infty_{n=1}{n^2P_n})\\
-R(\lambda_2)=&2fk_d[I]+k^{mon}_{tr}[M]\lambda_0+k^{sol}_{tr}[S]\lambda_0+k_p[M](2\lambda_1+\lambda_0)-(k_t\lambda_0-k^{mon}_{tr}[M]-k^{sol}_{tr}[S])\lambda_2
+R(\lambda_2)=&2fk_d[I]+k^{mon}_{tr}[M]\lambda_0+k^{sol}_{tr}[S]\lambda_0+k_p[M](2\lambda_1+\lambda_0)-(k_t\lambda_0+k^{mon}_{tr}[M]+k^{sol}_{tr}[S])\lambda_2
 \end{align}
 $$
 
