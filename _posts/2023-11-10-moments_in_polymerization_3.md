@@ -33,5 +33,6 @@ Where D<sub>n</sub> is the concentration of dead chain with chain length n in ce
 $$
 \begin{align}
 R(D_1)=&k_{t,d}\lambda_0 P_1+k^{sol}_{tr}[S]P_1+k^{mon}_{tr}[M]P_1\\
+R(D_n)=&\overbrace{k_{t,d}\lambda_0P_n}^{term\ by\ dispropotion}+\overbrace{k^{sol}_{tr}[S]P_n}^{sol\ trans}
 \end{align}
 $$
