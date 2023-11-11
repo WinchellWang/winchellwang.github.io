@@ -61,7 +61,6 @@ R(\mu_0)=&R(D_1)+R(D_2)+R(D_3)+\dots+R(D_{n-1})+R(D_n)+\dots\\
 &\vdots\\
 =&k_{t,d}\lambda_0^2+k^{sol}_{tr}[S]\lambda_0+k^{mon}_{tr}[M]\lambda_0\\
 &+0.5k_{t,c}[P_1P_1+\\
-&\qquad \qquad P_1P_2+P_2P_1+
 \end{align}
 $$
 
