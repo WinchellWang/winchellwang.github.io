@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Method of Moments in Polymerization Reaction2
+title: The Method of Moments in Polymerization Reaction
 subtitle: The application of MoM in describing the basic kinetic mechanism of polymerization reaction
 date: 2023-10-24
 author: Winchell.Wang
