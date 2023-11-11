@@ -58,8 +58,7 @@ R(\mu_0)=&R(D_1)+R(D_2)+R(D_3)+\dots+R(D_{n-1})+R(D_n)+\dots\\
 &\vdots\\
 &+k_{t,d}\lambda_0P_{n-1}+k^{sol}_{tr}[S]P_{n-1}+k^{mon}_{tr}[M]P_{n-1}+0.5k_{t,c}\sum^{{n-1}}_{m=1}{P_mP_{n-1-m}}\\
 &+k_{t,d}\lambda_0P_n+k^{sol}_{tr}[S]P_n+k^{mon}_{tr}[M]P_n+0.5k_{t,c}\sum^{n}_{m=1}{P_mP_{n-m}}\\
-&\vdots\\
-=&k_{t,d}\lambda_0^2+k^{sol}_{tr}[S]\lambda_0+k^{mon}_{tr}[M]\lambda_0
+&\vdots
 \end{align}
 $$
 
