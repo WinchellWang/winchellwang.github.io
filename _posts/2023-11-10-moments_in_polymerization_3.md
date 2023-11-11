@@ -56,6 +56,19 @@ R(\mu_0)=&R(D_1)+R(D_2)+R(D_3)+\dots+R(D_{n-1})+R(D_n)+\dots\\
 &+k_{t,d}\lambda_0P_2+k^{sol}_{tr}[S]P_2+k^{mon}_{tr}[M]P_2+0.5k_{t,c}\sum^{2}_{m=1}{P_mP_{2-m}}\\
 &+k_{t,d}\lambda_0P_3+k^{sol}_{tr}[S]P_3+k^{mon}_{tr}[M]P_3+0.5k_{t,c}\sum^{3}_{m=1}{P_mP_{3-m}}\\
 &\vdots\\
+&+k_{t,d}\lambda_0P_{n-1}+k^{sol}_{tr}[S]P_{n-1}+k^{mon}_{tr}[M]P_{n-1}+0.5k_{t,c}\sum^{n-1}_{m=1}{P_mP_{n-1-m}}\\
+&+k_{t,d}\lambda_0P_n+k^{sol}_{tr}[S]P_n+k^{mon}_{tr}[M]P_n+0.5k_{t,c}\sum^{n}_{m=1}{P_mP_{n-m}}\\
+&\vdots\\
+=&k_{t,d}\lambda_0^2+k^{sol}_{tr}[S]\lambda_0+k^{mon}_{tr}[M]\lambda_0\\
+&+0.5k_{t,c}[P_1P_1+\\
+&\qquad\qquad P_1P_2+P_2P_1+\\
+&\qquad\qquad\vdots\\
+&\qquad\qquad P_1P_{n-2}+P_2P_{n-3}+\dots+P_{n-3}P_2+P_{n-2}P_1\\
+&\qquad\qquad P_1P_{n-1}+P_2P_{n-2}+P_3P_{n-3}+\dots+P_{n-3}P_3+P_{n-2}P_2+P_{n-1}P_1\\
+&\qquad\qquad \vdots\qquad]\\
+=&k_{t,d}\lambda_0^2+k^{sol}_{tr}[S]\lambda_0+k^{mon}_{tr}[M]\lambda_0\\
+&+0.5k_{t,c}(P_1\lambda_0+P_2\lambda_0+\dots P_{n-1}\lambda_0+P_n\lambda_0+\dots)\\
+R(\mu_0)=&k_{t,d}\lambda_0^2+k^{sol}_{tr}[S]\lambda_0+k^{mon}_{tr}[M]\lambda_0+0.5k_{t,c}\lambda_0^2
 \end{align}
 $$
 
@@ -68,7 +81,7 @@ R(\mu_1)=&1R(D_1)+2R(D_2)+3R(D_3)+\dots+(n-1)R(D_{n-1})+nR(D_n)+\dots\\
 &+2k_{t,d}\lambda_0P_2+2k^{sol}_{tr}[S]P_2+2k^{mon}_{tr}[M]P_2+2*0.5k_{t,c}\sum^{2}_{m=1}{P_mP_{2-m}}\\
 &+3k_{t,d}\lambda_0P_3+3k^{sol}_{tr}[S]P_3+3k^{mon}_{tr}[M]P_3+3*0.5k_{t,c}\sum^{3}_{m=1}{P_mP_{3-m}}\\
 &\vdots\\
-&+(n-1)k_{t,d}\lambda_0P_{n-1}+(n-1)k^{sol}_{tr}[S]P_{n-1}+(n-1)k^{mon}_{tr}[M]P_{n-1}+(n-1)0.5k_{t,c}\sum^{{n-1}}_{m=1}{P_mP_{n-1-m}}\\
+&+(n-1)k_{t,d}\lambda_0P_{n-1}+(n-1)k^{sol}_{tr}[S]P_{n-1}+(n-1)k^{mon}_{tr}[M]P_{n-1}+(n-1)0.5k_{t,c}\sum^{n-1}_{m=1}{P_mP_{n-1-m}}\\
 &+nk_{t,d}\lambda_0P_n+nk^{sol}_{tr}[S]P_n+nk^{mon}_{tr}[M]P_n+n0.5k_{t,c}\sum^{n}_{m=1}{P_mP_{n-m}}\\
 &\vdots\\
 =&k_{t,d}\lambda_0\lambda_1+k^{sol}_{tr}[S]\lambda_1+k^{mon}_{tr}[M]\lambda_1\\
@@ -85,7 +98,7 @@ R(\mu_1)=&1R(D_1)+2R(D_2)+3R(D_3)+\dots+(n-1)R(D_{n-1})+nR(D_n)+\dots\\
 &\qquad\qquad P_{n-1}(nP_1+(n+1)P_2+\dots+(2n-1)P_n)+\\
 &\qquad\qquad \vdots\qquad]\\
 =&k_{t,d}\lambda_0\lambda_1+k^{sol}_{tr}[S]\lambda_1+k^{mon}_{tr}[M]\lambda_1\\
-&+0.5k_{t,c}(P_1\sum^\infty_{n=1}{(n+1)P_n}+P_2\sum^\infty_{n=1}{(n+2)P_n}+\dots+P_m\sum^\infty_{n=1}{(n+m)P_n}+\dots)\\
+&+0.5k_{t,c}(P_1\sum^{\infty}_{n=1}{(n+1)P_n}+P_2\sum^{\infty}_{n=1}{(n+2)P_n}+\dots+P_m\sum^{\infty}_{n=1}{(n+m)P_n}+\dots)\\
 =&k_{t,d}\lambda_0\lambda_1+k^{sol}_{tr}[S]\lambda_1+k^{mon}_{tr}[M]\lambda_1+0.5k_{t,c}(\lambda_0\lambda_1+\lambda_1\lambda_0)\\
 R(\mu_1)=&k_{t,d}\lambda_0\lambda_1+k^{sol}_{tr}[S]\lambda_1+k^{mon}_{tr}[M]\lambda_1+k_{t,c}\lambda_0\lambda_1\\
 \end{align}
@@ -96,7 +109,7 @@ $$
 $$
 \begin{align}
 R(\mu_2)=&1R(D_1)+2^2R(D_2)+3^2R(D_3)+\dots+(n-1)^2R(D_{n-1})+n^2R(D_n)+\dots\\
-=&k_{t,d}\lambda_0\lambda_2+k^{sol}_{tr}[S]\lambda_2+k^{mon}_{tr}[M]\lambda_2+0.5k_{t,c}\sum^\infty_{n=1}{n^2\sum^{n-m}_{m=1}{P_mP_{n-m}}}\\
+=&k_{t,d}\lambda_0\lambda_2+k^{sol}_{tr}[S]\lambda_2+k^{mon}_{tr}[M]\lambda_2+0.5k_{t,c}\sum^{\infty}_{n=1}{n^2\sum^{n-m}_{m=1}{P_mP_{n-m}}}\\
 R(\mu_2)=&k_{t,d}\lambda_0\lambda_2+k^{sol}_{tr}[S]\lambda_2+k^{mon}_{tr}[M]\lambda_2+0.5k_{t,c}(\lambda_0\lambda_2+\lambda_1^2)
 \end{align}
 $$
