@@ -59,16 +59,6 @@ R(\mu_0)=&R(D_1)+R(D_2)+R(D_3)+\dots+R(D_{n-1})+R(D_n)+\dots\\
 &+k_{t,d}\lambda_0P_{n-1}+k^{sol}_{tr}[S]P_{n-1}+k^{mon}_{tr}[M]P_{n-1}+0.5k_{t,c}\sum^{{n-1}}_{m=1}{P_mP_{n-1-m}}\\
 &+k_{t,d}\lambda_0P_n+k^{sol}_{tr}[S]P_n+k^{mon}_{tr}[M]P_n+0.5k_{t,c}\sum^{n}_{m=1}{P_mP_{n-m}}\\
 &\vdots\\
-=&k_{t,d}\lambda_0^2+k^{sol}_{tr}[S]\lambda_0+k^{mon}_{tr}[M]\lambda_0\\
-&+0.5k_{t,c}[P_1P_1+\\
-&\qquad\qquad P_1P_2+P_2P_1+\\
-&\qquad\qquad\vdots\\
-&\qquad\qquad P_1P_{n-2}+P_2P_{n-3}+\dots+P_{n-3}P_2+P_{n-2}P_1\\
-&\qquad\qquad P_1P_{n-1}+P_2P_{n-2}+P_3P_{n-3}+\dots+P_{n-3}P_3+P_{n-2}P_2+P_{n-1}P_1\\
-&\qquad\qquad \vdots\qquad]\\
-=&k_{t,d}\lambda_0^2+k^{sol}_{tr}[S]\lambda_0+k^{mon}_{tr}[M]\lambda_0\\
-&+0.5k_{t,c}(P_1\lambda_0+P_2\lambda_0+\dots P_{n-1}\lambda_0+P_n\lambda_0+\dots)\\
-R(\mu_0)=&k_{t,d}\lambda_0^2+k^{sol}_{tr}[S]\lambda_0+k^{mon}_{tr}[M]\lambda_0+0.5k_{t,c}\lambda_0^2
 \end{align}
 $$
 
@@ -180,7 +170,7 @@ $$
 \end{align}
 $$
 
-<mark>Apply **LCH** to the equation:</mark>
+<mark>Apply LCH to the equation:</mark>
 
 $$
 {DP}_n^{inst}\approx {1\over \tau+0.5\beta}
@@ -218,7 +208,7 @@ $$
 \end{align}
 $$
 
-<mark>Apply **LCH** to the equation:</mark>
+<mark>Apply LCH to the equation:</mark>
 
 $$
 \begin{align}
