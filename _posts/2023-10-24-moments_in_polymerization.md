@@ -577,8 +577,7 @@ $$
 
 $$
 \begin{align}
-{DP}_w^{inst}\approx&{2+\tau+\beta\over \tau+\beta}+{1+\tau+\beta\over \tau+\beta}*{\beta\over \tau+\beta}\\
-=&{2\over \tau+\beta}+{\beta\over (\tau+\beta)^2}\\
+{DP}_w^{inst}\approx&{2\over \tau+\beta}+{\beta\over (\tau+\beta)^2}\\
 =&{2\tau+3\beta\over (\tau+\beta)^2}
 \end{align}
 $$
