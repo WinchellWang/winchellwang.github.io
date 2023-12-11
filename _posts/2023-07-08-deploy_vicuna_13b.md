@@ -108,7 +108,3 @@ If the screen shows following things, it means the chatbot runs successfully. Yo
 Loading checkpoint shards: 100%|██████| 3/3 [00:30<00:00, 10.27s/it]
 USER:
 ```
-
-# 4. Personalize the Chatbot Only for You
-
-Will update soon.
