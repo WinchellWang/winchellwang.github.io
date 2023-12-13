@@ -33,7 +33,7 @@ rm -rf /var/MobileSoftwareUpdate/MobileAsset/AssetsV2/* && chflags schg,schange,
 
 Then, you should get something like that, if you check the updates again.
 
-![ota_block](https://cdn.jsdelivr.net/gh/winchellwang/winchellwang.github.io/img/_post_image/https://cdn.jsdelivr.net/gh/winchellwang/winchellwang.github.io/img/_post_image/2023-12-13/ota_block.jpg)
+![ota_block](https://cdn.jsdelivr.net/gh/winchellwang/winchellwang.github.io/img/_post_image/2023-12-13/ota_block.jpg)
 
 # 4. Enable Update
 
