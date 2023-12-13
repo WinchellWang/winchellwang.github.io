@@ -6,7 +6,6 @@ date: 2023-07-08
 author: Winchell.Wang
 header-img: "img/post-bg-tech.jpg"
 tags:
-   - Technology
    - Computer
 header-mask: 0.1
 catalog: true
