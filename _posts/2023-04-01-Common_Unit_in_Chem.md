@@ -6,7 +6,6 @@ date: 2023-04-01
 author: Winchell.Wang
 header-img: "img/post-bg-tech.jpg"
 tags:
-   - Technology
    - Chemistry
 header-mask: 0.1
 catalog: true
