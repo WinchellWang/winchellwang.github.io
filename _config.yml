@@ -4,14 +4,14 @@ SEOTitle: Winchell.Wang Blog
 header-img: img/home-bg.jpg
 email: winchell.wang@outlook.com
 description: "Winchell Wang Personal Blog"
-keyword: "Winchell, winchell.wang, winchellwang, Winchell.Wang Blog, winchellwang blog, chemcial engineering"
+keyword: "Winchell, winchell.wang, winchellwang, Winchell.Wang Blog, winchellwang blog, engineering"
 url: "https://winchellwang.github.io/"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/winchellwang/winchellwang.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Just a student.<br>Interested in photography.<br>✉️ winchell.wang@outlook.com<br>📷 pixelfed.social/moax"
+sidebar-about-description: "🇨🇳 🇦🇺 🇺🇸 🇨🇦<br>📷 pixelfed.social/moax"
 sidebar-avatar: /img/avatar.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # SNS settings
