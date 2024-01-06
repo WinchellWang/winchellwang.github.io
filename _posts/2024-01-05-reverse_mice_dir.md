@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reverse Mouse Wheel Direction on Win10
-subtitle: A method that reverse the mouse wheel direction maintaining a similar feel to that on Mac.
+subtitle: An approach to reverse the direction of the mouse wheel to give Windows a similar feel to Mac.
 date: 2024-01-05
 author: Winchell.Wang
 header-img: "img/post-bg-tech.jpg"
