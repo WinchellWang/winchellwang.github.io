@@ -91,6 +91,18 @@ Keywords: Long Chain
 
 ![PFHxS](https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=67734&t=l)
 
+## 6:2 FTSA
+
+Name: [1-Octanesulfonic acid, 6:2 FTSA](https://pubchem.ncbi.nlm.nih.gov/compound/119688)
+
+|CAS|Formula|Solubility in water (mg/L)|pKa|
+|:-:|:-:|:-:|:-:|
+|27619-97-2|C<sub>8</sub>H<sub>5</sub>F<sub>13</sub>O<sub>3</sub>S|58000(at 20°C)|1.31|
+
+![6:2_FTSA](https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=119688&t=l)
+
+Keywords: Long Chain, Similar to PFOS
+
 ## PFBS
 
 Name: [Perfluorobutanesulfonic acid](https://pubchem.ncbi.nlm.nih.gov/compound/67815)
