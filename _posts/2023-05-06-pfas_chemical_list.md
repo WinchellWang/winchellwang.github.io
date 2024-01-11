@@ -45,7 +45,7 @@ Name: [Perfluoroheptanoic acid](https://pubchem.ncbi.nlm.nih.gov/compound/67818)
 
 |CAS|Formula|Solubility in water (mg/L)|pKa|
 |:-:|:-:|:-:|:-:|
-|375-85-9|C<sub>6</sub>F<sub>13</sub>COOH|3.65(at 25°C)|-2.29|
+|375-85-9|C<sub>6</sub>F<sub>13</sub>COOH|3.65 (at 25°C)|-2.29|
 
 Keywords: Hydrophobic Interactions, Long Chain.
 
@@ -73,7 +73,7 @@ Name: [Perfluorooctane sulfonic acid](https://pubchem.ncbi.nlm.nih.gov/compound/
 
 |CAS|Formula|Solubility in water (mg/L)|pKa|
 |:-:|:-:|:-:|:-:|
-|1763-23-1|C<sub>8</sub>F<sub>17</sub>SO<sub>3</sub>H|3.2x10<sup>-3</sup>(at 25°C)|<1.0|
+|1763-23-1|C<sub>8</sub>F<sub>17</sub>SO<sub>3</sub>H|3.2x10<sup>-3</sup> (at 25°C)|<1.0|
 
 Keywords: Hydrophobic Interactions, Long Chain, adsorbents with amine groups, the most representative PFAS.
 
@@ -85,23 +85,11 @@ Name: [Perfluorohexane sulfonic acid](https://pubchem.ncbi.nlm.nih.gov/compound/
 
 |CAS|Formula|Solubility in water (mg/L)|pKa|
 |:-:|:-:|:-:|:-:|
-|355-46-4|C<sub>6</sub>F<sub>13</sub>SO<sub>3</sub>H|6.2(at 25°C)|0.14|
+|355-46-4|C<sub>6</sub>F<sub>13</sub>SO<sub>3</sub>H|6.2 (at 25°C)|0.14|
 
 Keywords: Long Chain
 
 ![PFHxS](https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=67734&t=l)
-
-## 6:2 FTSA
-
-Name: [1-Octanesulfonic acid, 6:2 FTSA](https://pubchem.ncbi.nlm.nih.gov/compound/119688)
-
-|CAS|Formula|Solubility in water (mg/L)|pKa|
-|:-:|:-:|:-:|:-:|
-|27619-97-2|C<sub>8</sub>H<sub>5</sub>F<sub>13</sub>O<sub>3</sub>S|58000(at 20°C)|1.31|
-
-![6:2_FTSA](https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=119688&t=l)
-
-Keywords: Long Chain, Similar to PFOS
 
 ## PFBS
 
@@ -109,8 +97,32 @@ Name: [Perfluorobutanesulfonic acid](https://pubchem.ncbi.nlm.nih.gov/compound/6
 
 |CAS|Formula|Solubility in water (mg/L)|pKa|
 |:-:|:-:|:-:|:-:|
-|375-73-5|C<sub>4</sub>F<sub>9</sub>SO<sub>3</sub>H|344(at 25°C)|-3.31|
+|375-73-5|C<sub>4</sub>F<sub>9</sub>SO<sub>3</sub>H|344 (at 25°C)|-3.31|
 
 Keywords: Short Chain
 
 ![PFBS](https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=67815&t=l)
+
+## 6:2 FTSA
+
+Name: [1-Octanesulfonic acid, 6:2 FTSA](https://pubchem.ncbi.nlm.nih.gov/compound/119688)
+
+|CAS|Formula|Solubility in water (mg/L)|pKa|
+|:-:|:-:|:-:|:-:|
+|27619-97-2|C<sub>8</sub>H<sub>5</sub>F<sub>13</sub>O<sub>3</sub>S|58000 (at 20°C)|1.31|
+
+![6:2_FTSA](https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=119688&t=l)
+
+Keywords: Long Chain, Similar to PFOS
+
+## 6:2 FTSAB
+
+Name: [1-Propanaminium, 6:2 FTSAB](https://pubchem.ncbi.nlm.nih.gov/compound/118691)
+
+|CAS|Formula|Solubility in water (mg/L)|pKa|
+|:-:|:-:|:-:|:-:|
+|34455-29-3|C<sub>15</sub>H<sub>19</sub>F<sub>13</sub>N<sub>2</sub>O<sub>4</sub>S|50 (at 20°C)|N/A|
+
+![6:2_FTSAB](https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=118691&t=l)
+
+Keywords: Long Chain, Betaine
