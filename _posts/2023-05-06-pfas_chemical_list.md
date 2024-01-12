@@ -105,7 +105,7 @@ Keywords: Short Chain
 
 ## 6:2 FTSA
 
-Name: [1-Octanesulfonic acid, 6:2 FTSA](https://pubchem.ncbi.nlm.nih.gov/compound/119688)
+Name: [1-Octanesulfonic acid, 6:2 FTSA, H4PFOS](https://pubchem.ncbi.nlm.nih.gov/compound/119688)
 
 |CAS|Formula|Solubility in water (mg/L)|pKa|
 |:-:|:-:|:-:|:-:|
