@@ -78,16 +78,19 @@ def main():
     players = [Player("Player 1"), Player("Player 2"), Player("Player 3"), Player("Player 4")]
 
     # Deal two cards to each player
+
     for _ in range(2):
         for player in players:
             player.add_card_to_hand(deck.deal_card())
 
     # Display initial hands
+
     for player in players:
         print_hand(player)
         print()
 
     # Players take turns to hit or stand
+
     for player in players:
         while True:
             choice = input(f"{player.name}, do you want to hit or stand? (h/s): ").lower()
@@ -103,6 +106,7 @@ def main():
                 print("Invalid choice, please enter 'h' for hit or 's' for stand.")
 
     # Determine winner
+
     winners = []
     highest_score = 0
     for player in players:
@@ -114,6 +118,7 @@ def main():
                 winners.append(player)
 
     # Print winners
+
     if len(winners) == 0:
         print("No winners.")
     else:
@@ -125,7 +130,9 @@ if __name__ == "__main__":
     main()
 
 # OR 
+
 # main()
+
 # depends on how you use it.
 ```
 
@@ -134,25 +141,32 @@ if __name__ == "__main__":
 Add the following codes.
 
 ```python
-
 # existing code
+
 
 def main():
 
     # existing code
+
 
     def cards_left(deck):
         return [str(card) for card in deck.cards]
     
     # existing code
 
+
     # Players take turns to hit or stand
+
     for player in players:
         while True:
             print(cards_left(deck)) # OR any other ways that you like to obtain the list.
+
+
             # existing code
     
+
     # existing code
+
 
 # existing code
 ```
