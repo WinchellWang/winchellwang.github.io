@@ -159,10 +159,15 @@ def main():
 
     for player in players:
         while True:
-            print(cards_left(deck)) # OR any other ways that you like to obtain the list.
 
 
             # existing code
+
+
+            print(cards_left(deck)) # OR any other ways that you like to obtain the list.
+
+
+            
     
 
     # existing code
