@@ -245,7 +245,7 @@ def continue_training(model, x, y, num_epochs=200):
         if loss_save > train_loss.item():
             neural_model_save = neural_model.state_dict().copy()
             loss_save = train_loss.item()  
-    return model
+    return neural_model_save
 ```
 
 # 定义对抗方法
