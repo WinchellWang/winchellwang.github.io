@@ -75,6 +75,7 @@ class Player:
 
 def scoreboard(players):
     # current score
+
     player_score = pd.DataFrame({'Score':[0.0,0.0,0.0,0.0],'Distance':[21.0,21.0,21.0,21.0],'Reward':[0.0,0.0,0.0,0.0]})
     for player in players:
         player_score.loc[player.name,'Score'] = player.hand_value()
@@ -84,6 +85,7 @@ def scoreboard(players):
 
 def hand(players):
     # cards on hand
+
     player_cards = pd.DataFrame(columns=[0,1,2,3,4,5,6,7,8], index=range(4))
     for player in players:
         m = 0
@@ -94,6 +96,7 @@ def hand(players):
 
 def deckcard(players):
     # cards on deck (possible_from_single_player_view)
+
     deck_cards = pd.DataFrame(columns=['2', '3', '4', '5', '6', '7', '8', '9', '10', 'JQK', 'Ace'], index=['num', 'percent'])
     deck_cards.loc['num',:] = 4
     deck_cards.loc['num', 'JQK'] = 12
@@ -124,10 +127,12 @@ def reward(player_score):
 
 def game_init():
     # initialize game
+
     deck = Deck()
     deck.shuffle()
     players = [Player(0), Player(1), Player(2), Player(3)]
-    # Deal two cards to each player
+    # deal two cards to each player
+
     for _ in range(2):
         for player in players:
             player.add_card_to_hand(deck.deal_card())
@@ -180,16 +185,22 @@ def model_training(x,y,num_epochs=50):
     y,x = torch.from_numpy(y.astype(np.float32)).to(device),torch.from_numpy(x.astype(np.float32)).to(device)
     for epoch in range(num_epochs):
         # forward path and loss
+
         y_pred = neural_model(x)
         train_loss = criterion(y_pred,y)
         # backward pass
+
         train_loss.backward()
         # update
+
         optimizer.step()
         # empty gradient
+
         optimizer.zero_grad()
         # if (epoch+1) % 100 == 0:
+
         #     print(f'[Neural Model]: epoch {epoch+1}, training_loss = {train_loss.item():.4f}')
+
         if loss_save > train_loss.item():
             neural_model_save = neural_model.state_dict().copy()
             loss_save = train_loss.item()     
@@ -214,13 +225,17 @@ def continue_training(model, x, y, num_epochs=200):
     loss_save = criterion(neural_model(torch.from_numpy(x.astype(np.float32)).to(device)), torch.from_numpy(y.astype(np.float32)).to(device)).item()
     for epoch in range(num_epochs):
         # forward path and loss
+
         y_pred = neural_model(torch.from_numpy(x.astype(np.float32)).to(device))
         train_loss = criterion(y_pred, torch.from_numpy(y.astype(np.float32)).to(device))
         # backward pass
+
         train_loss.backward()
         # update
+
         optimizer.step()
         # empty gradient
+
         optimizer.zero_grad()
         if train_loss.item() < loss_save:
             model = neural_model.state_dict().copy()
@@ -250,6 +265,7 @@ def ai_game(model, loop_num = 500):
         for player in players:
             while player.hand_value() <= 21:
                 # update log
+
                 player_score = scoreboard(players)
                 player_score = reward(player_score)
                 log.loc[row,'num'] = game_round
@@ -261,13 +277,21 @@ def ai_game(model, loop_num = 500):
                 log.loc[row,'hold'] = 0
                 pred_input = np.array([[
                     log.loc[row,'distance'], # distance
+
                     log.loc[row,'reward'], # reward
+
                     np.nan, # o0_distance
+
                     np.nan, # o0_reward /10
+
                     np.nan, # o1_distance
+
                     np.nan, # o1_reward /10
+
                     np.nan, # o2_distance
+
                     np.nan, # o2_reward /10
+
                     ]])
                 o_player = 0
                 for other_player in players:
@@ -304,6 +328,7 @@ def ai_game(model, loop_num = 500):
                         o_player += 1
                 row += 1
         # winner 1, loser 0
+
         final = reward(scoreboard(players))
         winner_list = final.loc[final['Reward'] == 10].index.to_list()
         for winner in winner_list:
@@ -367,6 +392,7 @@ def init_training():
         for player in players:
             for _ in range(14):
                 # update log
+
                 player_score = scoreboard(players)
                 player_score = reward(player_score)
                 log.loc[row,'num'] = game_round
@@ -387,6 +413,7 @@ def init_training():
                     row += 1
                     break
                 # 1 hit, 0 stand
+
                 if random.randrange(2) == 1:
                     log.loc[row,'hit'] = 1
                     player.add_card_to_hand(deck.deal_card())
@@ -435,8 +462,10 @@ torch.save(model, 'model_init.pt')
 model = torch.load('model_init.pt')
 for _ in range(10000):
     # game rounds after each training
+
     log = ai_game(model,loop_num=200)
     # update model
+
     model = ai_update(model,log,epochs=2000)
 torch.save(model, 'model.pt')
 ```
@@ -452,6 +481,7 @@ def calculate_games_won(log):
 init_model = torch.load('model_init.pt')
 update_model = torch.load('model.pt')
 # the first two players are using the updated model, while the last two players are using the initial model
+
 model = {0:update_model[0], 1:update_model[1], 2:init_model[0], 3:init_model[1]}
 log = ai_game(model,loop_num=1000)
 calculate_games_won(log)
