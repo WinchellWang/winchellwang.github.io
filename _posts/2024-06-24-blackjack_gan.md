@@ -222,12 +222,13 @@ def continue_training(model, x, y, num_epochs=200):
     neural_model.load_state_dict(model)
     optimizer = torch.optim.SGD(neural_model.parameters(), lr=0.005)
     criterion = nn.L1Loss()
-    loss_save = criterion(neural_model(torch.from_numpy(x.astype(np.float32)).to(device)), torch.from_numpy(y.astype(np.float32)).to(device)).item()
+    loss_save = 99999
+    y,x = torch.from_numpy(y.astype(np.float32)).to(device),torch.from_numpy(x.astype(np.float32)).to(device)
     for epoch in range(num_epochs):
         # forward path and loss
 
-        y_pred = neural_model(torch.from_numpy(x.astype(np.float32)).to(device))
-        train_loss = criterion(y_pred, torch.from_numpy(y.astype(np.float32)).to(device))
+        y_pred = neural_model(x)
+        train_loss = criterion(y_pred,y)
         # backward pass
 
         train_loss.backward()
@@ -237,9 +238,13 @@ def continue_training(model, x, y, num_epochs=200):
         # empty gradient
 
         optimizer.zero_grad()
-        if train_loss.item() < loss_save:
-            model = neural_model.state_dict().copy()
-            loss_save = train_loss.item()
+        # if (epoch+1) % 100 == 0:
+        
+        #     print(f'[Neural Model]: epoch {epoch+1}, training_loss = {train_loss.item():.4f}')
+        
+        if loss_save > train_loss.item():
+            neural_model_save = neural_model.state_dict().copy()
+            loss_save = train_loss.item()  
     return model
 ```
 
