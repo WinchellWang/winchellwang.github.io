@@ -18,6 +18,7 @@ catalog: true
 # 重写游戏代码
 
 > 以21点扑克游戏为例
+> 相关代码已开源在 [https://github.com/WinchellWang/ai_blackjack](https://github.com/WinchellWang/ai_blackjack)
 
 这里需要对[21点的游戏脚本](https://winchellwang.github.io/2024/04/15/blackjack_py_code/#python-code)做一定程度的重写使之适合电脑自己玩。
 
