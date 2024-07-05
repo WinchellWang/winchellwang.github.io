@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 修复EPUB电子书
-subtitle: 修复Mac的Books中导出的Epub文件不能被Calibre识别的问题
+subtitle: 修复Mac的Books中导出的EPUB文件不能被Calibre识别的问题
 date: 2024-07-05
 author: Winchell.Wang
 header-img: "img/post-bg-tech.jpg"
