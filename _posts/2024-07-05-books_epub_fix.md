@@ -13,7 +13,7 @@ catalog: true
 
 # 问题简述
 
-Mac的Books应用可以由外部导入书籍，但是如果导入一个正常的Epub书后再导出到外面，会发现比如像Calibre等其他的常用书籍管理软件无法正常导入，并显示文件错误。
+Mac的Books应用可以由外部导入书籍，但是如果导入一个正常的epub书后再导出到外面，会发现比如像Calibre等其他的常用书籍管理软件无法正常导入，并显示文件错误。
 
 ![calibre_error](https://cdn.jsdelivr.net/gh/winchellwang/winchellwang.github.io/img/_post_image/2024-07-05/calibre_error.jpg)
 
@@ -34,7 +34,7 @@ Traceback (most recent call last):
 IsADirectoryError: [Errno 21] Is a directory: '/Book/from_books.epub'
 ```
 
-经过排查发现，Mac系统对epub采用了一种非常“别具一格”的解码方式。当epub文件导入到Books后，Epub文件会被解压为以“.epub”为尾缀的**文件夹**，例如book.epub/，并在文件夹中写入一些参数文件方便Books应用读取。然而，当把epub书从Books中导出时，Mac并不会反向将epub文件重压缩，而是原封不动的把这个挂着.epub尾缀的文件夹复制出来。并且，Mac系统中强制识别以.epub结尾的文件夹是书籍文件，也就是说这个由Books导出的“epub”能且仅能被Mac的Books重新导入。然而在别的正常的读书软件中无法识别一个.epub后缀的文件夹是正常的epub书籍。
+经过排查发现，Mac系统对epub采用了一种非常“别具一格”的解码方式。当epub文件导入到Books后，epub文件会被解压为以“.epub”为尾缀的**文件夹**，例如book.epub/，并在文件夹中写入一些参数文件方便Books应用读取。然而，当把epub书从Books中导出时，Mac并不会反向将epub文件重压缩，而是原封不动的把这个挂着.epub尾缀的文件夹复制出来。并且，Mac系统中强制识别以.epub结尾的文件夹是书籍文件，也就是说这个由Books导出的“epub”能且仅能被Mac的Books重新导入。然而在别的正常的读书软件中无法识别一个.epub后缀的文件夹是正常的epub书籍。
 
 ![epub_before_after_books](https://cdn.jsdelivr.net/gh/winchellwang/winchellwang.github.io/img/_post_image/2024-07-05/epub_before_after_books.jpg)
 
