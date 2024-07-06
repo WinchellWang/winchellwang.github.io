@@ -42,9 +42,7 @@ IsADirectoryError: [Errno 21] Is a directory: '/Book/from_books.epub'
 
 # 解决方法
 
-既然明白了问题来源在于Books导出的epub是伪装成epub的文件夹，那么只需要正确的将这个文件夹内容重新压缩为epub文件就可以被其他的读书软件导入。在Books导出的书籍所在文件夹打开终端（terminal），并输入如下指令：
-
-相关命令如下
+既然明白了问题来源在于Books导出的epub是伪装成epub的文件夹，那么只需要正确的将这个文件夹内容重新压缩为epub文件就可以被其他的读书软件导入。在Books导出的书籍所在文件夹打开终端（terminal），并输入如下命令：
 
 ```shell
 # 进入books导出的epub文件夹内部，文件夹名应该与书名相同
@@ -54,6 +52,6 @@ cd broken.epub
 zip -Xr9D ../fixed.epub mimetype * -x  .DS_Store -x iTunesMetadata.plist -x iTunesMetadata-original.plist -x OEBPS/.DS_Store
 ```
 
-此外，如果不善于使用命令的话，只需要下载我写好的软件，打开运行选择相应的书籍处理即可，修复好的fixed.epub文件会导出在桌面上。
+此外，如果不善于使用命令的话，只需要下载我写好的软件，运行并选择相应的书籍即可，修复好的fixed.epub文件会导出在桌面上。
 
 [软件链接在此](https://github.com/WinchellWang/S0ftwaR3_L1b/releases/download/epub_fix/fix_epub.zip)
