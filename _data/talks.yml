@@ -2,9 +2,6 @@
 # - mytalk: ""
 #   talkdate: "2023-05"
 
-- mytalk: "命令行检查当前系统是否可以使用cuda或mps加速。python -c "import torch; print('cuda' if torch.cuda.is_available() else 'mps' if torch.backends.mps.is_available() else 'cpu')"]"
-  talkdate: "2024-07-14"
-
 - mytalk: "分词(tokenization)是NLP中的一个基本步骤。将句子，段落，文章等长文本分解为以字词为单位的数据结构。"
   talkdate: "2024-07-13"
 
