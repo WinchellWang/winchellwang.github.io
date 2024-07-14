@@ -17,9 +17,9 @@ catalog: true
 
 > conda is a tool for managing and deploying applications, environments and packages.
 
-**conda常用命令如下：**
+# 帮助手册
 
-# conda -h
+conda -h
 
 该命令是conda命令帮助手册，通过`conda -h`我们可以知晓conda所支持的子命令。
 
@@ -35,7 +35,9 @@ conda常用的子命令有env, create, list, install, remove, update, activate, 
 (base) C:\Users\admin>conda create -h
 ```
 
-# conda -V
+# 查看版本
+
+conda -V
 
 该命令用于获取conda的版本号，等同于`conda --version`。
 
@@ -47,7 +49,9 @@ conda 4.12.0
 conda 4.12.0
 ```
 
-# conda env list
+# 列出环境
+
+conda env list
 
 该命令用于展示当前已有的环境。命令执行结果里，第一列是环境名称，第二列是环境所在的路径。
 
@@ -66,7 +70,9 @@ test_pandas              C:\Users\admin\Anaconda3\envs\test_pandas
 
 `(base) C:\Users\admin>conda env list`最前面的`(base)`就表示当前处于base环境。
 
-# conda create 
+# 创建新环境
+
+conda create 
 
 该命令用于创建新的环境。
 
@@ -110,7 +116,9 @@ The following NEW packages will be INSTALLED:
 
   克隆已有环境exist_env_name到新环境new_env_name，新环境new_env_name的python版本和python库与被clone的环境exist_env_name保持一致。
 
-# conda activate
+# 切换环境
+
+conda activate
 
 该命令用于切换到新环境。
 
@@ -126,7 +134,9 @@ The following NEW packages will be INSTALLED:
 (test_pandas) C:\Users\admin>
 ```
 
-# conda deactivate
+# 退出环境
+
+conda deactivate
 
 该命令用于退出当前环境到上一级环境，和栈的逻辑一样。
 
@@ -144,7 +154,9 @@ The following NEW packages will be INSTALLED:
 C:\Users\admin>
 ```
 
-# conda list
+# 已安装库
+
+conda list
 
 该命令用于展示当前环境下的包(packages)，有时候想要查看当前环境是否有安装某个包时，可以使用该命令。
 
@@ -173,7 +185,9 @@ xz                        5.2.5                h8cc25b3_1
 zlib                      1.2.12               h8cc25b3_2
 ```
 
-# conda install
+# 安装新库
+
+conda install
 
 该命令用于给指定环境安装包。
 
@@ -186,7 +200,9 @@ zlib                      1.2.12               h8cc25b3_2
 
   在当前环境安装scipy。
 
-# conda update
+# 更新库
+
+conda update
 
 该命令用于给指定环境更新包到最新的兼容版本。
 
@@ -206,7 +222,9 @@ zlib                      1.2.12               h8cc25b3_2
 
   更新当前环境的scipy包到最新版本。
 
-## conda remove
+# 删除库/环境
+
+conda remove
 
 该命令用于删除指定环境的指定包或者所有包，如果使用`--all`移除所有包，那这个环境也被删除了。
 
