@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pytorch计算加速
+title: 检查是否可以加速计算
 subtitle: 检查已安装的Pytorch是否可以使用GPU加速
 date: 2024-07-14
 author: Winchell.Wang
