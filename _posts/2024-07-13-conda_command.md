@@ -41,11 +41,9 @@ conda常用的子命令有env, create, list, install, remove, update, activate, 
 
 ```bash
 (base) C:\Users\admin>conda -V
-
 conda 4.12.0
 
 (base) C:\Users\admin>conda --version
-
 conda 4.12.0
 ```
 
@@ -57,13 +55,10 @@ conda 4.12.0
 (base) C:\Users\admin>conda env list
 
 # conda environments:
-
 #
 
 base                  *  C:\Users\jczha\Anaconda3
-
 test_no_pandas           C:\Users\admin\Anaconda3\envs\test_no_pandas
-
 test_pandas              C:\Users\admin\Anaconda3\envs\test_pandas
 ```
 
@@ -91,39 +86,23 @@ test_pandas              C:\Users\admin\Anaconda3\envs\test_pandas
 Collecting package metadata (current_repodata.json): done
 
 Solving environment: done
-
 ## Package Plan ##
-
   environment location: C:\Users\admin\Anaconda3\envs\test_create
-
   added / updated specs:
     - python=3.9
 
-
 The following NEW packages will be INSTALLED:
-
   ca-certificates    pkgs/main/win-64::ca-certificates-2022.4.26-haa95532_0
-
   certifi            pkgs/main/win-64::certifi-2021.10.8-py39haa95532_2
-
   openssl            pkgs/main/win-64::openssl-1.1.1o-h2bbff1b_0
-
   pip                pkgs/main/win-64::pip-21.2.4-py39haa95532_0
-
   python             pkgs/main/win-64::python-3.9.12-h6244533_0
-
   setuptools         pkgs/main/win-64::setuptools-61.2.0-py39haa95532_0
-
   sqlite             pkgs/main/win-64::sqlite-3.38.3-h2bbff1b_0
-  
   tzdata             pkgs/main/noarch::tzdata-2022a-hda174b7_0
-  
   vc                 pkgs/main/win-64::vc-14.2-h21ff451_1
-  
   vs2015_runtime     pkgs/main/win-64::vs2015_runtime-14.27.29016-h5e58377_2
-  
   wheel              pkgs/main/noarch::wheel-0.37.1-pyhd3eb1b0_0
-  
   wincertstore       pkgs/main/win-64::wincertstore-0.2-py39haa95532_2
 ```
 
@@ -135,7 +114,7 @@ The following NEW packages will be INSTALLED:
 
 该命令用于切换到新环境。
 
-` conda activate [-h] [--[no-]stack] [env_name_or_prefix]`
+```conda activate [-h] [--[no-]stack] [env_name_or_prefix]```
 
 一般activate后面跟的是环境名称，示例如下：
 
@@ -173,43 +152,24 @@ C:\Users\admin>
 (test_no_pandas) C:\Users\admin>conda list
 
 # packages in environment at C:\Users\jczha\Anaconda3\envs\test_no_pandas:
-
 #
-
 # Name                    Version                   Build  Channel
-
 bzip2                     1.0.8                he774522_0
-
 ca-certificates           2022.4.26            haa95532_0
-
 certifi                   2020.6.20          pyhd3eb1b0_3
-
 libffi                    3.4.2                h604cdb4_1
-
 openssl                   1.1.1o               h2bbff1b_0
-
 pip                       21.2.4          py310haa95532_0
-
 python                    3.10.4               hbb2ffb3_0
-
 setuptools                61.2.0          py310haa95532_0
-
 sqlite                    3.38.3               h2bbff1b_0
-
 tk                        8.6.11               h2bbff1b_1
-
 tzdata                    2022a                hda174b7_0
-
 vc                        14.2                 h21ff451_1
-
 vs2015_runtime            14.27.29016          h5e58377_2
-
 wheel                     0.37.1             pyhd3eb1b0_0
-
 wincertstore              0.2             py310haa95532_2
-
 xz                        5.2.5                h8cc25b3_1
-
 zlib                      1.2.12               h8cc25b3_2
 ```
 
