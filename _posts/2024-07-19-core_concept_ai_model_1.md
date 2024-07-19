@@ -2,7 +2,7 @@
 layout: post
 title: 术之根本，AI建模三大核心之一：数据
 subtitle: 永远绕不开的话题：数据，特征，和调参
-date: 2024-07-18
+date: 2024-07-19
 author: Winchell.Wang
 header-img: "img/post-bg-tech.jpg"
 tags:
@@ -11,7 +11,7 @@ header-mask: 0.1
 catalog: true
 ---
 
-人工智能（AI），在我的概念中泛指任何在计算机上构建符合人类知识的模型结构然后以输入的数据为基础不断优化模型参数进而使模型能够以输入数据为本，生成期望的数据结果。这个概念下，线性回归，二分类，多分类，神经网络，甚至是以数学，物理学，生物学公理为基础的建模都可以归纳为人工智能。而随时代进步，人工智能被细化为机器学习和深度学习。其中**机器学习**的模型结构更为固定，如线性回归，树分类等。而神经网络则因为由基础的神经单元拼搭而成，模型结构更具弹性且往往具备包含输入输出隐含层在内的多层结构，因而从机器学习中区别出来独称**深度学习**。
+人工智能（AI），在我的概念中泛指任何在计算机上构建符合人类知识的模型结构然后以输入的数据为基础不断优化模型参数进而使模型能够以输入数据为本，生成期望的数据结果。这个概念下，线性回归，二分类，多分类，神经网络，甚至是以数学，物理学，生物学公理为基础的建模都可以归纳为人工智能。而随时代进步，人工智能被细化为机器学习和深度学习。其中**机器学习**的模型结构更为固定，如线性回归，树分类等。而神经网络则因为由基础的神经单元拼搭而成，模型结构更具弹性且往往具备包含输入层，输出层，和隐含层在内的多层结构，因而从机器学习中区别出来独称**深度学习**。
 
 不论是所谓的机器学习，或是深度学习，在建模中却有共通之处。即在我看来，其核心都是包括“数据管理”，“特征工程”，以及“模型调参”。每一步都对最后的建模表现至关重要。
 
@@ -33,12 +33,15 @@ catalog: true
 
 ```python
 # 数据预处理函数 (清洗有一个语言为空的数据)
+
 def preprocess_data(en_data: List[str], zh_data: List[str]) -> List[Tuple[List[str], List[str]]]:
     processed_data = []
     for en, zh in zip(en_data, zh_data):
-        en_tokens = en_tokenizer(en.lower())[:MAX_LENGTH] # 英文全部小写
+        en_tokens = en_tokenizer(en.lower())[:MAX_LENGTH]
         zh_tokens = zh_tokenizer(zh)[:MAX_LENGTH]
-        if en_tokens and zh_tokens:  # 确保两个序列都不为空
+        # 确保两个序列都不为空
+
+        if en_tokens and zh_tokens:
             processed_data.append((en_tokens, zh_tokens))
     return processed_data
 ```
@@ -51,9 +54,12 @@ def preprocess_data(en_data: List[str], zh_data: List[str]) -> List[Tuple[List[s
 
 ```python
 # 定义一个数据扩增展示函数
+
 # img为图像，aug为扩增方法
+
 def apply(img, aug, num_rows=2, num_cols=4, scale=1.5):
     # 扩增后的样本 list
+
     Y = [aug(img) for _ in range(num_rows * num_cols)]
     
     plt.figure(figsize=(10, 5))
@@ -76,6 +82,7 @@ from sklearn.model_selection import KFold
 import lightgbm as lgb
 
 # 做三次交叉验证，并随机打乱数据
+
 kf = KFold(n_splits=3, shuffle=True, random_state=2024)
 
 cv_scores = []
