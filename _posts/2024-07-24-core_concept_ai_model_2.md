@@ -88,7 +88,7 @@ import numpy as np
 
 # 当前日期前7日，30日，90日的耗电量做计算，扩充特征值（x）
 
-for window in [7, 30，90]:
+for window in [7, 30, 90]:
     data[f'win{window}_mean_target'] = data.groupby(['id'])['target'].rolling(window=window).mean().reset_index(drop=True)
     data[f'win{window}_std_target'] = data.groupby(['id'])['target'].rolling(window=window).std().reset_index(drop=True)
     data[f'win{window}_median_target'] = data.groupby(['id'])['target'].rolling(window=window).median().reset_index(drop=True)
