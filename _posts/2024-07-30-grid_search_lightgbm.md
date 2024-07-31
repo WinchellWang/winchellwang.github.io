@@ -234,7 +234,7 @@ And predict the value of the yield for each reaction by
 
 ```python
 def load_test():
-    DATA = pd.read_csv('task1_test_data.csv')
+    DATA = pd.read_csv('test_data.csv')
     DATA_rct1_smi = DATA['Reactant1'].to_list()
     DATA_rct2_smi = DATA['Reactant2'].to_list()
     DATA_add_smi = DATA['Additive'].to_list()
@@ -244,7 +244,6 @@ def load_test():
     DATA_add_fp = vec_cpd_lst(DATA_add_smi)
     DATA_sol_fp = vec_cpd_lst(DATA_sol_smi)
     DATA_X = np.concatenate([DATA_rct1_fp,DATA_rct2_fp,DATA_add_fp,DATA_sol_fp],axis=1)
-    np.save('test_X.npy', DATA_X)
     return DATA_X
 
 DATA_X = load_test()
