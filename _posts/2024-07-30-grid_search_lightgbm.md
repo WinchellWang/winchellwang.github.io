@@ -40,7 +40,9 @@ As the structure of molecule is just a bunch of string value which cannot be und
 ```python
 import pandas as pd
 from tqdm import tqdm # progress bar
+
 from rdkit.Chem import rdMolDescriptors # convert molecule to number
+
 from rdkit import RDLogger,Chem
 import lightgbm as lgb
 from sklearn.model_selection import train_test_split
@@ -49,24 +51,11 @@ import numpy as np
 import warnings
 import optuna # hyperparameter optimizier
 
+
 RDLogger.DisableLog('rdApp.*')
 warnings.filterwarnings('ignore')
 
 def mfgen(mol,nBits=2048, radius=2):
-   '''
-   Parameters
-   ----------
-   mol : mol
-      RDKit mol object.
-   nBits : int
-      Number of bits for the fingerprint.
-   radius : int
-      Radius of the Morgan fingerprint.
-   Returns
-   -------
-   mf_desc_map : ndarray
-      ndarray of molecular fingerprint descriptors.
-   '''
    fp = rdMolDescriptors.GetMorganFingerprintAsBitVect(
       mol,
       radius=radius,
