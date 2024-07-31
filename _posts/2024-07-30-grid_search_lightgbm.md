@@ -21,7 +21,7 @@ There are many ways to optimize the hyperparameters, including manual adjustment
 
 # Code Example
 
-Here is an example that we use ```optuna``` to optimize the hyperparameters.
+Here is an example where we use ```optuna``` to optimize the hyperparameters.
 
 Assume that we have data like:
 
@@ -31,7 +31,7 @@ Assume that we have data like:
 |c1ccc2c(c1)Nc1ccccc1O2|Brc1ccccc1I|Brc1ccccc1N1c2ccccc2Oc2ccccc21|C1COCCOCCOCCOCCOCCO1.O=C([O-])[O-].[Cu+].[I-].[K+].[K+]|Clc1ccccc1Cl|0.9|
 |...|...|...|...|...|...|
 
-Here we want to predict the yield ratio of product based on the reaction equation and conditions.
+Here we want to predict the yield of the product based on the reaction equation and conditions.
 
 ## Feature Engineering
 
