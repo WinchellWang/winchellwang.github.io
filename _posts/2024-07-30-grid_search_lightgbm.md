@@ -33,7 +33,7 @@ Assume that we have data like:
 
 Here we want to predict the yield ratio of product based on the reaction equation and conditions.
 
-## Data Processing
+## Feature Engineering
 
 As the structure of molecule is just a bunch of string value which cannot be understood and processed by computer, we need to convert it into a series of number which can be done in many ways. Here we use ```rdkit``` to convert it to [MorganFingerprint](https://www.rdkit.org/docs/source/rdkit.Chem.rdMolDescriptors.html).
 
