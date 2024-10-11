@@ -11,7 +11,7 @@ github_repo: "https://github.com/winchellwang/winchellwang.github.io.git" # you 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "🇨🇳 🇦🇺 🇺🇸 🇨🇦<br><img class='body' src='/img/logo/instagram.svg' alt='instagram' width='13' height='13'> <a href='https://www.instagram.com/winchellwang'>instagram.com/winchellwang</a><br>📸 <a href='http://pixelfed.social/moax'>pixelfed.social/moax</a><br><a href='https://podcasts.apple.com/tw/podcast/%E5%A4%A7%E9%B5%9D22-goose22/id1724645271'>大鵝22 Goose22</a>"
+sidebar-about-description: "🇨🇳 🇦🇺 🇺🇸 🇨🇦<br><img src='/img/logo/instagram.svg' alt='instagram' width='13' height='13'> <a href='https://www.instagram.com/winchellwang'>instagram.com/winchellwang</a><br>📸 <a href='http://pixelfed.social/moax'>pixelfed.social/moax</a><br><a href='https://podcasts.apple.com/tw/podcast/%E5%A4%A7%E9%B5%9D22-goose22/id1724645271'>大鵝22 Goose22</a>"
 sidebar-avatar: /img/avatar.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # SNS settings
