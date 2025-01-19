@@ -74,9 +74,6 @@ service-worker: true
 # Friends
 friends: [
     {
-      title: "Martin Thissen",
-      href: "https://medium.com/@martin-thissen"
-    },{
       title: "哲科文",
       href: "http://jerkwin.github.io"
     },{
