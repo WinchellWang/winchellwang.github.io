@@ -74,6 +74,9 @@ service-worker: true
 # Friends
 friends: [
     {
+      title: "De France Lab",
+      href: "https://www.defrancelab.ca"
+    },{
       title: "哲科文",
       href: "http://jerkwin.github.io"
     },{
