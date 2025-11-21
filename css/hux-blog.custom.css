@@ -256,13 +256,6 @@
 /* Mobile adjustments for back to top button */
 @media (max-width: 768px) {
     .back-to-top {
-        bottom: 0;
-        right: auto;
-        left: 0;
-        width: 100%;
-        height: 40px;
-        border-radius: 0;
-        font-size: 16px;
-        z-index: 20;
+        display: none !important;
     }
 }

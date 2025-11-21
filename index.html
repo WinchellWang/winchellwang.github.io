@@ -3,6 +3,8 @@ layout: page
 description: "Blog For A Reckless Man"
 ---
 
+<script src="{{ site.baseurl }}/js/jquery.min.js"></script>
+
 {% include paginated_list.html items=site.posts per_page=20 list_id="home-posts" show_excerpt=true excerpt_length=200 show_tags=false show_author=true show_calendar=false bold_title=true %}
 
 <script src="{{ site.baseurl }}/js/pagination.js"></script>
