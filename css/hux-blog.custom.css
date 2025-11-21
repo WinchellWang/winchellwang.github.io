@@ -244,10 +244,10 @@
     font-size: 12px;
     cursor: pointer;
     display: none;
-    z-index: 1000;
+    z-index: 10;
     transition: background-color 0.3s;
 }
 
 .back-to-top:hover {
-    background-color: #666666;
+    background-color: #0085a1;
 }
