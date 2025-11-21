@@ -22,10 +22,8 @@
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">
 
-    <!-- Custom CSS -->
-  <link rel="stylesheet" href="{{ "/css/hux-blog.min.css" | prepend: site.baseurl }}">
-  <!-- Custom overrides loaded after the main CSS so they take precedence -->
-  <link rel="stylesheet" href="{{ "/css/hux-blog.custom.css" | prepend: site.baseurl }}">
+    <!-- Hux bundled CSS (merged main + overrides) -->
+  <link rel="stylesheet" href="{{ "/css/hux-blog.css" | prepend: site.baseurl }}">
 
     <!-- Pygments Github CSS -->
     <link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.baseurl }}">
