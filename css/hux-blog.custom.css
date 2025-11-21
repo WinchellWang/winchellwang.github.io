@@ -256,6 +256,6 @@
 /* Mobile adjustments for back to top button */
 @media (orientation: portrait) {
     .back-to-top {
-        display: none;
+        display: none !important;
     }
 }
