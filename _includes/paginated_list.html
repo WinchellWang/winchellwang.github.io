@@ -145,6 +145,12 @@ This include is intentionally flexible: it will render either talk-like objects
     }
     */
   }
+
+  /* Ensure article links are above the back-to-top button */
+  .paginated-list .post-preview a {
+    position: relative;
+    z-index: 3;
+  }
   </style>
   {% assign per_page = include.per_page | default: 10 %}
   {% for item in include.items %}
