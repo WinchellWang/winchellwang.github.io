@@ -21,7 +21,7 @@ html {
 .comment #ds-thread #ds-reset .ds-gradient-bg, .comment #ds-thread #ds-reset .ds-textarea-wrapper, .navbar-custom {
     background: 0 0;
 }
-@media (min-width:991px) {
+@media (min-width:1200px) {
     .post-container, .sidebar-container {
     padding-right: 5%}
 }
@@ -244,7 +244,7 @@ pre code {
     width: 100%;
     min-width: 120px;
 }
-@media (orientation: portrait) {
+@media (max-width:1200px) {
     .navbar-default .navbar-collapse {
     position: absolute;
     right: 0;
@@ -253,7 +253,7 @@ pre code {
     box-shadow: 0 5px 10px 2px rgba(0, 0, 0, .2);
     box-shadow: rgba(0, 0, 0, .117647) 0 1px 6px, rgba(0, 0, 0, .239216) 0 1px 4px;
     border-radius: 2px;
-    width: 170px;
+    width: 130px;
 }
 #huxblog_navbar {
     opacity: 0;
@@ -352,7 +352,7 @@ pre code {
 .navbar-custom .nav li a:active {
     background: rgba(0, 0, 0, .12);
 }
-@media only screen and (orientation: landscape) {
+@media only screen and (min-width: 1200px) {
     .navbar-custom {
     -webkit-transition: background-color .3s;
     -moz-transition: background-color .3s;
@@ -399,7 +399,7 @@ pre code {
     padding: 85px 0 55px;
     color: #fff;
 }
-@media only screen and (orientation: landscape) {
+@media only screen and (min-width: 1200px) {
     .navbar-custom, .navbar-custom .nav li a: active {
     background: 0 0;
 }
@@ -1141,7 +1141,7 @@ img::-moz-selection {
 }
 
 /* Bootstrap navbar responsive breakpoints for override */
-@media (orientation: portrait) {
+@media (max-width: 1200px) {
   .navbar-toggle {
     display: block !important;
     float: right !important;
