@@ -309,6 +309,9 @@ pre code {
 	 * Since V1.6 we use absolute positioning to prevent to expand container-fluid
 	 * which would cover tags. A absolute positioning make a new layer.
 	 */
+  .sidebar-container {
+    display: none;
+  }
   .navbar-default .navbar-collapse {
     position: absolute;
     right: 0;
@@ -382,7 +385,7 @@ pre code {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 10;
   /* Hux learn from
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
