@@ -252,3 +252,15 @@
 .back-to-top:hover {
     background-color: #0085a1;
 }
+
+/* Fix layout issues on mobile */
+@media (orientation: portrait) {
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .post-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
