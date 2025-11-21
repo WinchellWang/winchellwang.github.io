@@ -1,1 +1,5 @@
 .*
+# Local debugging files
+Dockerfile
+docker-compose.yml
+_site
