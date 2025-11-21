@@ -22,7 +22,7 @@ linkedin_username: wenqiangwang-winchell
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 permalink: pretty
-paginate: 10
+# paginate: 10
 exclude: ["Blog"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
