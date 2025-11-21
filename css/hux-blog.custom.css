@@ -264,3 +264,18 @@
         padding-right: 0;
     }
 }
+
+/* Footer: align "Theme on GitHub" and GitHub star button on one baseline */
+.footer-theme-line {
+  display: inline-flex;
+  align-items: center; /* vertical center */
+  justify-content: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+.footer-star-wrap,
+.footer-theme-line a.github-button {
+  display: inline-flex;
+  align-items: center;
+}
+.footer-theme-sep { opacity: 0.85; }

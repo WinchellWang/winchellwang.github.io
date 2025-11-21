@@ -48,7 +48,13 @@
                 <p class="copyright text-muted">
                     Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
                     <br>
-                    <span style="display: block; text-align: center;">Theme on <a href="{{ site.github_repo }}">GitHub</a> | <a class="github-button" href="https://github.com/{{ site.github_username }}/winchellwang.github.io" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="small" data-show-count="false" aria-label="Star {{ site.github_username }}/winchellwang.github.io on GitHub" style="vertical-align: middle;">Star</a></span>
+                    <!-- keep Theme and Star on one line and vertically center the star button -->
+                    <span class="footer-theme-line">Theme on <a href="{{ site.github_repo }}">GitHub</a>
+                        <span class="footer-theme-sep">&nbsp;|&nbsp;</span>
+                        <span class="footer-star-wrap">
+                            <a class="github-button" href="https://github.com/{{ site.github_username }}/winchellwang.github.io" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="small" data-show-count="false" aria-label="Star {{ site.github_username }}/winchellwang.github.io on GitHub">Star</a>
+                        </span>
+                    </span>
                 </p>
                 <script async defer src="https://buttons.github.io/buttons.js"></script>
             </div>
