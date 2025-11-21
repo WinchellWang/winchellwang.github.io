@@ -1121,18 +1121,3 @@ img::-moz-selection {
 .footer-theme-line .github-button iframe {
   transform: translateY(0) !important;
 }
-
-/* AnchorJS link positioning */
-@media all and (min-width: 800px) {
-    .anchorjs-link {
-        position: absolute;
-        left: -0.75em;
-        font-size: 1.1em;
-        margin-top: -0.1em;
-    }
-}
-
-/* Archive page styles */
-.archive_meta {
-	font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
-}

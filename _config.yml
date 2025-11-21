@@ -6,7 +6,6 @@ email: winchell.wang@outlook.com
 description: "Winchell Wang Personal Blog"
 keyword: "Winchell, winchell.wang, winchellwang, Winchell.Wang Blog, winchellwang blog, engineering"
 url: "https://winchellwang.github.io/"          # your host, for absolute URL
-baseurl: "/home"      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/winchellwang/winchellwang.github.io.git" # you code repository
 
 # Sidebar settings
