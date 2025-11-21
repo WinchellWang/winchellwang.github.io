@@ -12,6 +12,7 @@
 
     {% include footer.html %}
 
+    <button id="back-to-top" class="back-to-top">TOP</button>
 
 <!-- Image to hack wechat -->
 <img src="/pwa/icons/512.png" width="0" height="0" />
@@ -39,6 +40,20 @@
         }
         lastScrollTop = scrollTop;
     });
+
+    // Back to top button
+    var backToTopBtn = document.getElementById('back-to-top');
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 200) {
+            backToTopBtn.style.display = 'block';
+        } else {
+            backToTopBtn.style.display = 'none';
+        }
+    });
+    backToTopBtn.addEventListener('click', function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+
 </script>
 
 </body>
