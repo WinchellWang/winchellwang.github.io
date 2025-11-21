@@ -256,10 +256,8 @@
 /* Mobile adjustments for back to top button */
 @media (max-width: 768px) {
     .back-to-top {
-        top: 70px;
-        bottom: auto;
+        bottom: 10px;
         right: 10px;
-        left: auto;
         width: 40px;
         height: 40px;
         font-size: 10px;
