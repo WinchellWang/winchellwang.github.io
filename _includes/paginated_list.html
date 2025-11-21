@@ -218,8 +218,8 @@ This include is intentionally flexible: it will render either talk-like objects
        Use the same pager markup/styling as Home (.pager). We only render
        controls via JS when the list contains more than 10 items.
   -->
-  {% assign prev_label = include.prev_label | default: '&larr; Newer Posts' %}
-  {% assign next_label = include.next_label | default: 'Older Posts &rarr;' %}
+  {% assign prev_label = include.prev_label | default: '&larr; Newer' %}
+  {% assign next_label = include.next_label | default: 'Older &rarr;' %}
   <ul class="pager pagination-controls js-only" data-per-page="{{ per_page }}" style="margin-top: 10px; display: none;">
     <li class="previous" style="display:none"><a class="pag-prev" href="javascript:;"><span>{{ prev_label }}</span></a></li>
     <li class="next" style="display:none"><a class="pag-next" href="javascript:;"><span>{{ next_label }}</span></a></li>

@@ -50,7 +50,7 @@ and then render a paginated list for each year using `paginated_list.html`.
 			<span class="tag-text">{{ year.name }}</span>
 		</span>
 	{% assign year_items = year.items %}
-	{% include paginated_list.html items=year_items per_page=10 show_excerpt=false show_tags=true excerpt_length=200 show_author=false bold_title=false container_class="small-title-list" %}
+	{% include paginated_list.html items=year_items show_excerpt=false show_tags=true excerpt_length=200 show_author=false bold_title=false container_class="small-title-list" %}
 	</div>
 {% endfor %}
 

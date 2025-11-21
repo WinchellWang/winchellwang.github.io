@@ -5,6 +5,9 @@
 article, body {
     overflow-x: hidden;
 }
+html {
+    overflow-x: hidden;
+}
 .navbar-custom, body {
     line-height: 1.7;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
@@ -216,15 +219,7 @@ pre code {
 .post-container ol, .post-container ul {
     margin-bottom: 40px;
 }
-@media screen and (max-width:768px) {
-    .post-container ol, .post-container ul {
-    padding-left: 30px;
-}
-}@media screen and (max-width:500px) {
-    .post-container ol, .post-container ul {
-    padding-left: 20px;
-}
-}.post-container ol ol, .post-container ol ul, .post-container ul ol, .post-container ul ul {
+.post-container ol ol, .post-container ol ul, .post-container ul ol, .post-container ul ul {
     margin-bottom: 5px;
 }
 .post-container li p {
@@ -235,21 +230,16 @@ pre code {
     margin-top: 20px;
 }
 .post-container .pager li {
-    width: 48%}
-.post-container .pager li.next {
-    float: right;
+    flex: 1;
 }
 .post-container .pager li.previous {
-    float: left;
+    margin-right: 1%;
 }
 .post-container .pager li>a {
-    width: 100%}
-.post-container .pager li>a>span {
-    color: grey;
-    font-weight: 400;
-    letter-spacing: .5px;
+    width: 100%;
+    min-width: 120px;
 }
-@media only screen and (max-width:767px) {
+@media (orientation: portrait) {
     .navbar-default .navbar-collapse {
     position: absolute;
     right: 0;
@@ -305,6 +295,32 @@ pre code {
     transition: opacity 450ms cubic-bezier(.23,  1,  .32,  1) 205ms;
     -webkit-transition: opacity 450ms cubic-bezier(.23,  1,  .32,  1) 205ms;
 }
+    .post-container ol, .post-container ul {
+    padding-left: 30px;
+}
+    .post-container ol, .post-container ul {
+    padding-left: 20px;
+}
+    .post-container .pager {
+        display: flex;
+        justify-content: space-between;
+    }
+    .post-container .pager li {
+        width: auto;
+        float: none;
+    }
+    .post-container .pager li>a {
+        width: auto;
+        min-width: 120px;
+    }
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .post-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }.navbar-custom {
     border: none;
     position: absolute;
@@ -373,6 +389,7 @@ pre code {
     -moz-background-size: cover;
     -o-background-size: cover;
     margin-bottom: 0;
+    z-index: 1;
 }
 .intro-header .page-heading, .intro-header .post-heading, .intro-header .site-heading {
     padding: 85px 0 55px;
@@ -574,6 +591,7 @@ form .row:first-child .floating-label-form-group {
 .pager {
     margin: 20px 0 0!important;
     padding: 0!important;
+    display: flex;
 }
 .pager li>a, .pager li>span {
     font-size: 13px;
@@ -924,34 +942,23 @@ img::-moz-selection {
   margin: 30px auto 0 auto;
   padding: 0;
   list-style: none;
-  overflow: hidden; /* contain floats */
+  display: flex;
   box-sizing: border-box;
 }
 .paginated-list .pager li {
-  display: block;
+  flex: 1;
 }
-.paginated-list .pager li{width:48%;}
-.paginated-list .pager li a{width:100%;display:inline-block;}
 .paginated-list .pager li.previous {
-  float: left;
+  margin-right: 1%;
 }
-.paginated-list .pager li.next {
-  float: right;
+.paginated-list .pager li a{
+  width: 100%;
+  min-width: 120px;
+  display: inline-block;
 }
 .paginated-list .pager li a {
   /* Use same button appearance as Home (buttons styled by main CSS) */
   display: inline-block;
-}
-
-/* Ensure mobile layout keeps buttons full-width stacked if desired */
-@media (max-width: 480px) {
-  /* on very small screens we keep floats but allow links to remain fully tappable */
-  .paginated-list .pager li.previous,
-  .paginated-list .pager li.next {
-    float: left; /* keep floats */
-    width: 48%;
-  }
-  .paginated-list .pager li.next { float: right; }
 }
 
 /* Match Home pager button sizing/appearance exactly */
@@ -1060,12 +1067,14 @@ img::-moz-selection {
     background-color: #999999;
     color: white;
     border: none;
-    font-size: 12px;
+    font-size: 250%;
     font-weight: bold;
     cursor: pointer;
     display: none;
     z-index: 20;
     transition: background-color 0.3s;
+    text-align: center;
+    line-height: 50px;
 }
 
 .back-to-top:hover {
