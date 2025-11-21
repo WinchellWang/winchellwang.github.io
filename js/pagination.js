@@ -76,8 +76,8 @@
     var prevBtn = controls.querySelector('.pag-prev');
     var nextBtn = controls.querySelector('.pag-next');
 
-    function onPrev()  { goTo(state.current - 1); }
-    function onNext()  { goTo(state.current + 1); }
+    function onPrev()  { goTo(state.current - 1); window.scrollTo(0,0); }
+    function onNext()  { goTo(state.current + 1); window.scrollTo(0,0); }
 
     if (prevBtn) prevBtn.addEventListener('click', onPrev);
     if (nextBtn) nextBtn.addEventListener('click', onNext);

@@ -21,11 +21,16 @@ html {
 .comment #ds-thread #ds-reset .ds-gradient-bg, .comment #ds-thread #ds-reset .ds-textarea-wrapper, .navbar-custom {
     background: 0 0;
 }
-@media (min-width:1200px) {
+@media (min-width:991px) {
     .post-container, .sidebar-container {
     padding-right: 5%}
 }
-@media (min-width:768px) {
+@media (min-width:1400px) {
+    .container {
+        width: 1400px;
+    }
+}
+@media (orientation: landscape) {
     .post-container {
     padding-right: 5%}
 }
@@ -303,14 +308,13 @@ pre code {
 }
     .post-container .pager {
         display: flex;
-        justify-content: space-between;
     }
     .post-container .pager li {
-        width: auto;
+        flex: 1;
         float: none;
     }
     .post-container .pager li>a {
-        width: auto;
+        width: 100%;
         min-width: 120px;
     }
     .container-fluid {
@@ -348,7 +352,7 @@ pre code {
 .navbar-custom .nav li a:active {
     background: rgba(0, 0, 0, .12);
 }
-@media only screen and (min-width:1170px) {
+@media only screen and (orientation: landscape) {
     .navbar-custom {
     -webkit-transition: background-color .3s;
     -moz-transition: background-color .3s;
@@ -395,7 +399,7 @@ pre code {
     padding: 85px 0 55px;
     color: #fff;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (orientation: landscape) {
     .navbar-custom, .navbar-custom .nav li a: active {
     background: 0 0;
 }
@@ -604,6 +608,12 @@ form .row:first-child .floating-label-form-group {
     background-color: #0085a1;
     border: 1px solid #0085a1;
 }
+.pager li>a span {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .pager .disabled>a, .pager .disabled>a:focus, .pager .disabled>a:hover, .pager .disabled>span {
     color: grey;
     background-color: #404040;
@@ -703,7 +713,7 @@ img::-moz-selection {
     font-size: 12px;
     line-height: 12px;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (orientation: landscape) {
     .intro-header .site-heading {
     padding: 150px 0;
 }
@@ -848,7 +858,7 @@ img::-moz-selection {
   font-weight: 300;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (orientation: landscape) {
   .paginated-list .post-title,
   .paginated-list .hexo-talk-title,
   .one-tag-list .post-preview > a .post-title {
@@ -938,7 +948,7 @@ img::-moz-selection {
 /* Position pager buttons at the two column ends to match Home page layout */
 .paginated-list .pager {
   width: 100%;
-  max-width: 760px; /* limit pager width to match main content column */
+  max-width: 1000px; /* limit pager width to match main content column */
   margin: 30px auto 0 auto;
   padding: 0;
   list-style: none;
@@ -1032,7 +1042,7 @@ img::-moz-selection {
 
 /* Page hero subtitle for Talks page */
 .page-hero-subtitle {
-  max-width: 760px;
+  max-width: 1000px;
   margin: 12px auto 24px auto;
   color: #000;
   font-size: 16px;
@@ -1081,15 +1091,14 @@ img::-moz-selection {
     background-color: #0085a1;
 }
 
-/* Fix layout issues on mobile */
 @media (orientation: portrait) {
     .container-fluid {
         padding-left: 15px;
         padding-right: 15px;
     }
     .post-container {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 
@@ -1129,4 +1138,16 @@ img::-moz-selection {
 }
 .footer-theme-line .github-button iframe {
   transform: translateY(0) !important;
+}
+
+/* Bootstrap navbar responsive breakpoints for override */
+@media (orientation: portrait) {
+  .navbar-toggle {
+    display: block !important;
+    float: right !important;
+    position: absolute !important;
+    right: 15px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+  }
 }

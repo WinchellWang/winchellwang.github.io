@@ -62,7 +62,7 @@ layout: default
                     <li class="previous">
                         <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
                         Previous<br>
-                        <span>{{page.previous.title}}</span>
+                        <span>{{ page.previous.title }}</span>
                         </a>
                     </li>
                     {% endif %}
@@ -70,7 +70,7 @@ layout: default
                     <li class="next">
                         <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
                         Next<br>
-                        <span>{{page.next.title}}</span>
+                        <span>{{ page.next.title }}</span>
                         </a>
                     </li>
                     {% endif %}
@@ -104,7 +104,7 @@ layout: default
                 <!-- Featured Tags -->
                 {% if site.featured-tags %}
                 <section>
-                    <hr class="hidden-sm hidden-xs">
+                    <hr>
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
         				{% for tag in site.tags %}
@@ -146,6 +146,28 @@ layout: default
     }
 </script>
 <!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    function truncatePagerTitles() {
+        const isPortrait = window.innerHeight > window.innerWidth;
+        const maxLength = isPortrait ? 10 : 24;
+        const spans = document.querySelectorAll('.pager li a span');
+        spans.forEach(span => {
+            if (!span.dataset.original) {
+                span.dataset.original = span.textContent;
+            }
+            const original = span.dataset.original;
+            const arrow = original.includes('→') ? ' →' : original.includes('←') ? '← ' : '';
+            const title = original.replace(/[←→]/g, '').trim();
+            if (title.length > maxLength) {
+                span.textContent = arrow.replace(' ', '') + title.substring(0, maxLength) + '...' + (arrow.includes('→') ? '→' : '');
+            } else {
+                span.textContent = arrow + title;
+            }
+        });
+    }
+    window.addEventListener('load', truncatePagerTitles);
+    window.addEventListener('resize', truncatePagerTitles);
+</script>
 <script>
     async("https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js",function(){
         anchors.add('h1, h2, h3, h4, h5, h6').remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');

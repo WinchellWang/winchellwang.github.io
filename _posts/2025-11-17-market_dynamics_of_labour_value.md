@@ -6,7 +6,6 @@ date: 2025-11-16
 author: Winchell.Wang
 header-img: "img/post-bg-life.jpg"
 tags:
-   - Life Tips
    - Blog
 header-mask: 0.1
 catalog: true
