@@ -23,6 +23,10 @@ This include is intentionally flexible: it will render either talk-like objects
 <div id="{{ lid }}" class="paginated-list post-container {{ include.container_class }}" {% if first_year %}data-list-year="{{ first_year }}"{% endif %}>
   <style>
   /* Mobile-first tweaks for paginated lists */
+  .paginated-list {
+    position: relative;
+    z-index: 5;
+  }
   .paginated-list .hexo-talk-item,
   .paginated-list .paginated-item {
     display: flex;
