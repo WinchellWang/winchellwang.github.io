@@ -1,0 +1,73 @@
+---
+title: Archive
+layout: page_no_side
+description: What Did I Do in Last Year?
+header-img: "img/archive-bg.jpg"
+permalink: /archive/
+---
+
+<style>
+.archive_meta {
+	font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+}
+
+.archive_tag {
+	font-size: 70%;
+	display: inline-block;
+	background: #0085a1;
+	border: 0px solid #0085a1;
+	color: #fff;
+	border-radius: 999em;
+	padding: 0 10px;
+	line-height: 16px;
+	margin: 0 0px;
+	margin-bottom: 0px;
+}
+
+.archive_tag:hover{
+	text-decoration: none;
+	background: #0085a1;
+	color: #fff;
+}
+</style>
+<!-- Use unified paginated list to render posts (10 per page) -->
+{% comment %}
+Render posts grouped by year. We create a year tag bar at the top (links to anchors)
+and then render a paginated list for each year using `paginated_list.html`.
+{% endcomment %}
+
+{% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+{% assign posts_by_year = posts_by_year | sort: "name" | reverse %}
+
+<!-- Year selector (like tags) -->
+<!-- Use the same id and structure as the tags page so tagcloud.js can initialize it -->
+<div id="tag_cloud" class="tags">
+	{% for year in posts_by_year %}
+		<a class="archive_tag" href="#year-{{ year.name }}" title="{{ year.name }}" rel="{{ year.items | size }}">{{ year.name }}</a>
+	{% endfor %}
+</div>
+
+<!-- Per-year lists -->
+{% for year in posts_by_year %}
+	<div class="one-year-list">
+		<span class="fa fa-tag listing-seperator" id="year-{{ year.name }}" aria-hidden="true">
+			<span class="tag-text">{{ year.name }}</span>
+		</span>
+	{% assign year_items = year.items %}
+	{% include paginated_list.html items=year_items per_page=10 show_excerpt=false show_tags=true excerpt_length=200 show_author=false bold_title=false container_class="small-title-list" %}
+	</div>
+{% endfor %}
+
+<!-- initialize pagination for all year lists -->
+<script src="{{ site.baseurl }}/js/pagination.js"></script>
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		{% for year in posts_by_year %}
+			(function(y){
+				// find the paginated list element that published items for this year (paginated_list sets data-list-year)
+				var el = document.querySelector('[data-list-year="{{ year.name }}"]');
+				if (el && window.initPaginatedList) window.initPaginatedList(el.id);
+			})('{{ year.name }}');
+		{% endfor %}
+	});
+</script>

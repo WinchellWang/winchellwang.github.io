@@ -17,6 +17,30 @@
 <img src="/pwa/icons/512.png" width="0" height="0" />
 <!-- Migrate from head to bottom, no longer block render and still work -->
 
+<script>
+    // Smart Header
+    var lastScrollTop = 0;
+    var navbar = document.querySelector('.navbar-custom');
+    var header = document.querySelector('header.intro-header');
+    var headerHeight = header ? header.offsetHeight : 0;
+
+    window.addEventListener('scroll', function() {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop && scrollTop > headerHeight) {
+            // Scroll Down
+            navbar.classList.remove('is-visible');
+            navbar.classList.add('is-fixed');
+        } else {
+            // Scroll Up
+            if (scrollTop + window.innerHeight < document.body.scrollHeight) {
+                navbar.classList.add('is-visible');
+            }
+        }
+        lastScrollTop = scrollTop;
+    });
+</script>
+
 </body>
 
 </html>

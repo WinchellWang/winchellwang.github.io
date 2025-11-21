@@ -1,0 +1,83 @@
+---
+title: Talks
+layout: page_no_side
+description: Say Whatever I Want
+header-img: "img/talk-bg.jpg"
+permalink: /talk/
+---
+
+<style>
+/* Styles specific to the tab functionality on this page */
+.hexo-talk-tab {
+    padding: 5px;
+}
+.hexo-talk-active {
+    display: none;
+}
+.hexo-talk-meta {
+    font-family: 'Lora', 'Times New Roman', serif;
+    font-size: 87%;
+    font-style: italic;
+    color: #808080;
+    padding-right: 10px;
+}
+.hexo-talk-hide {
+    display: none;
+}
+.hexo-talk-show {
+    display: block;
+}
+</style>
+
+<div style="display: none;">
+    <a class="hexo-talk-tab" id="hexo-talk-tab1" rel="external"></a>
+    <a class="hexo-talk-tab" id="hexo-talk-tab2" rel="external"></a>
+    <a class="hexo-talk-tab" id="hexo-talk-tab3" href="javascript:;" rel="external"></a>
+</div>
+
+<!-- Paginated Lists -->
+{% include paginated_list.html items=site.data.talks2 per_page=100 list_id="hexo-talk-item1" prev_label="&larr; Newer Talks" next_label="Older Talks &rarr;" container_class="talks-title-list" %}
+{% include paginated_list.html items=site.data.talks2 per_page=100 list_id="hexo-talk-item2" prev_label="&larr; Newer Talks" next_label="Older Talks &rarr;" container_class="talks-title-list" %}
+{% include paginated_list.html items=site.data.talks per_page=100 list_id="hexo-talk-item3" prev_label="&larr; Newer Talks" next_label="Older Talks &rarr;" container_class="talks-title-list" %}
+
+<!-- Scripts -->
+<script src="{{ site.baseurl }}/js/pagination.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Init paginated lists
+        ['hexo-talk-item1', 'hexo-talk-item2', 'hexo-talk-item3'].forEach(function(id) {
+            if (window.initPaginatedList) {
+                window.initPaginatedList(id);
+            }
+        });
+
+        // Tab functionality
+        function tabClick() {
+            var tabs = document.querySelectorAll('.hexo-talk-tab');
+            tabs.forEach(function(t) { t.classList.remove('hexo-talk-active'); });
+            this.classList.add('hexo-talk-active');
+
+            var itemId = this.id.replace('tab', 'item');
+            var allLists = document.querySelectorAll('[id^="hexo-talk-item"]');
+            allLists.forEach(function(list) {
+                if (list.id === itemId) {
+                    list.classList.remove('hexo-talk-hide');
+                    list.classList.add('hexo-talk-show');
+                } else {
+                    list.classList.remove('hexo-talk-show');
+                    list.classList.add('hexo-talk-hide');
+                }
+            });
+        }
+
+        var tabs = document.querySelectorAll('.hexo-talk-tab');
+        tabs.forEach(function(tab) {
+            tab.onclick = tabClick;
+        });
+
+        // Activate the last tab by default
+        if (tabs.length > 2) {
+            tabs[2].click();
+        }
+    });
+</script>

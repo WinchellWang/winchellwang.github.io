@@ -1,0 +1,231 @@
+/* Custom overrides to align Tags/Archive title & subtitle with Home */
+.paginated-list .post-title,
+.paginated-list .hexo-talk-title,
+.one-tag-list .post-preview > a .post-title {
+  font-size: 21px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.paginated-list .post-subtitle,
+.one-tag-list .post-preview > a .post-subtitle {
+  font-size: 15px;
+  line-height: 1.3;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) {
+  .paginated-list .post-title,
+  .paginated-list .hexo-talk-title,
+  .one-tag-list .post-preview > a .post-title {
+    font-size: 26px;
+  }
+  .paginated-list .post-subtitle,
+  .one-tag-list .post-preview > a .post-subtitle {
+    font-size: 16px;
+  }
+}
+
+/* selected tag appearance */
+.tags a.selected,
+.tags .tag.selected,
+#tag_cloud a.selected,
+#tag_cloud .tag.selected {
+  background-color: #0085a1 !important;
+  color: #ffffff !important;
+  border-color: #0085a1 !important;
+}
+
+/* Make Archive year tags and headings match Tags styling (icon + text) */
+#tag_cloud a .listing-seperator,
+#tag_cloud a .fa-tag {
+  margin-right: 6px;
+  color: #0085a1; /* icon color to match selected state accent */
+}
+
+.one-year-list .listing-seperator,
+.one-year-list .fa-tag {
+  color: #0085a1;
+  font-size: 21px !important;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.one-year-list .tag-text {
+  /* Match .one-tag-list .tag-text from main stylesheet */
+  font-weight: 200;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  line-height: 1.7;
+  /* do not force font-size here so it inherits the same size as Tags */
+  vertical-align: middle;
+}
+
+/* Ensure the archive tag cloud anchors keep tag-like padding and look */
+#tag_cloud a.archive_tag {
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 999em;
+  background: #d6d6d6;
+  color: #fff;
+  line-height: 28px;
+  font-size: 14px;
+  margin: 0 2px 8px;
+  text-decoration: none;
+}
+
+#tag_cloud a.archive_tag:hover {
+  background-color: #0085a1 !important;
+  color: #fff !important;
+}
+
+/* Ensure post-level tags (generated in paginated_list item-tags) use the same pill styling */
+.archive_tag,
+.item-tags a.archive_tag {
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 999em;
+  background: #d6d6d6;
+  color: #ffffff;
+  line-height: 24px;
+  font-size: 12px;
+  margin: 0 2px 8px;
+  text-decoration: none;
+}
+.archive_tag:hover,
+.item-tags a.archive_tag:hover {
+  background-color: #0085a1 !important;
+  color: #fff !important;
+}
+
+/* Position pager buttons at the two column ends to match Home page layout */
+.paginated-list .pager {
+  width: 100%;
+  max-width: 760px; /* limit pager width to match main content column */
+  margin: 30px auto 0 auto;
+  padding: 0;
+  list-style: none;
+  overflow: hidden; /* contain floats */
+  box-sizing: border-box;
+}
+.paginated-list .pager li {
+  display: block;
+}
+.paginated-list .pager li{width:48%;}
+.paginated-list .pager li a{width:100%;display:inline-block;}
+.paginated-list .pager li.previous {
+  float: left;
+}
+.paginated-list .pager li.next {
+  float: right;
+}
+.paginated-list .pager li a {
+  /* Use same button appearance as Home (buttons styled by main CSS) */
+  display: inline-block;
+}
+
+/* Ensure mobile layout keeps buttons full-width stacked if desired */
+/* Keep floats for previous/next across breakpoints to match Home behavior */
+@media (max-width: 480px) {
+  /* on very small screens we keep floats but allow links to remain fully tappable */
+  .paginated-list .pager li.previous,
+  .paginated-list .pager li.next {
+    float: left; /* keep floats */
+    width: 48%;
+  }
+  .paginated-list .pager li.next { float: right; }
+}
+
+/* Match Home pager button sizing/appearance exactly */
+.paginated-list .pager li a {
+  font-size: 14px !important;
+  padding: 15px 25px !important;
+  background-color: #fff !important;
+  border: 1px solid #dddddd !important;
+  text-transform: uppercase !important;
+  font-weight: 800 !important;
+  letter-spacing: 1px !important;
+  color: #404040 !important;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.paginated-list .pager li a:focus,
+.paginated-list .pager li a:hover {
+  color: #fff !important;
+  background-color: #0085a1 !important;
+  border: 1px solid #0085a1 !important;
+}
+
+/* Home uses a span inside the anchor for the visible label; match that selector so
+   color and weight are identical to Home's .post-container .pager li>a>span */
+.paginated-list .pager li > a > span {
+  color: #808080 !important;
+  font-weight: normal !important;
+  letter-spacing: 0.5px !important;
+}
+.paginated-list .pager li > a:focus > span,
+.paginated-list .pager li > a:hover > span {
+  color: #fff !important;
+}
+
+/* Make paginated text (title/subtitle) use black and non-bold where requested */
+.paginated-list.post-container .post-title,
+.paginated-list.post-container .hexo-talk-title,
+.one-tag-list .post-preview > a .post-title {
+  color: #000 !important;
+  font-weight: 400 !important;
+}
+.paginated-list.post-container .post-subtitle,
+.one-tag-list .post-preview > a .post-subtitle {
+  color: #333 !important;
+  font-weight: 300 !important;
+}
+
+/* Title/subtitle spacing: make subtitle appear directly beneath title with minimal gap */
+.paginated-list .post-title,
+.paginated-list .hexo-talk-title {
+  display: block;
+  margin: 0 0 2px 0; /* small gap between title and subtitle */
+}
+.paginated-list .post-subtitle {
+  display: block;
+  margin: 0 0 6px 0;
+  font-weight: 300 !important;
+}
+
+/* Hover/focus behavior for title links: match Home's .post-preview hover color */
+.paginated-list a:hover .post-title,
+.paginated-list a:focus .post-title {
+  color: #0085a1 !important;
+}
+
+/* Also change subtitle when the link is hovered/focused so title+subtitle act as one unit */
+.paginated-list a:hover .post-subtitle,
+.paginated-list a:focus .post-subtitle {
+  color: #0085a1 !important;
+}
+
+/* Page hero subtitle for Talks page */
+.page-hero-subtitle {
+  max-width: 760px;
+  margin: 12px auto 24px auto;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Ensure month/day content is centered inside calendar (individual rules live in the include) */
+.paginated-list .page-action-calendar .sub-month,
+.paginated-list .page-action-calendar .sub-day {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/* Make talk/post meta match Home's .post-preview>.post-meta (italic & grey) */
+.paginated-list .hexo-talk-meta,
+.paginated-list .post-meta {
+  font-style: italic;
+  color: #808080;
+  font-size: 14px;
+  margin: 6px 0 0 0;
+}

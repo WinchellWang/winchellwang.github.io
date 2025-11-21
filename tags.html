@@ -1,0 +1,36 @@
+---
+title: Tags
+layout: page_no_side
+description: Just Remind Me What I Posted
+header-img: "img/tag-bg.jpg"
+permalink: /tags/
+---
+
+	<div id='tag_cloud' class="tags">
+		{% for tag in site.tags %}
+		<a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+		{% endfor %}
+	</div>
+
+	{% for tag in site.tags %}
+	<div class="one-tag-list">
+		<span class="fa fa-tag listing-seperator" id="{{ tag[0] }}">
+			<span class="tag-text">{{ tag[0] }}</span>
+		</span>
+		<!-- Use paginated_list for posts under this tag (5 per page) -->
+		{% assign tag_items = tag[1] %}
+		{% assign tag_slug = tag[0] | slugify %}
+		{% assign tag_lid = 'tag-' | append: tag_slug %}
+	{% include paginated_list.html items=tag_items per_page=10 list_id=tag_lid show_excerpt=false show_tags=false show_author=false bold_title=false container_class="small-title-list" %}
+	</div>
+	{% endfor %}
+
+<!-- load pagination helper and init all tag lists -->
+<!-- <script src="{{ site.baseurl }}/js/pagination.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    {% for tag in site.tags %}
+      if (window.initPaginatedList) window.initPaginatedList('tag-{{ tag[0] | slugify }}');
+    {% endfor %}
+  });
+</script> -->

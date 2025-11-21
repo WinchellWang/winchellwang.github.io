@@ -1,0 +1,226 @@
+{% comment %}
+Include parameters:
+ - items: the iterable (e.g. site.data.talks or site.posts)
+ - per_page: items per page (default 5)
+ - list_id: DOM id for the container (optional)
+If `list_id` is not provided, this include will attempt to generate a stable id
+based on the first item's date (e.g. year-2023) so callers don't need to pass it.
+This include is intentionally flexible: it will render either talk-like objects
+(with `talkdate`/`mytalk`) or post-like objects (with `date`/`title`/`url`).
+{% endcomment %}
+
+{% assign lid = include.list_id %}
+{% if lid == nil or lid == '' %}
+  {% assign first_item = include.items | first %}
+  {% if first_item and first_item.date %}
+    {% assign first_year = first_item.date | date: '%Y' %}
+    {% assign lid = 'year-' | append: first_year %}
+  {% else %}
+    {% assign lid = 'paginated-' | append: site.time | date: '%s' %}
+  {% endif %}
+{% endif %}
+
+<div id="{{ lid }}" class="paginated-list post-container {{ include.container_class }}" {% if first_year %}data-list-year="{{ first_year }}"{% endif %}>
+  <style>
+  /* Mobile-first tweaks for paginated lists */
+  .paginated-list .hexo-talk-item,
+  .paginated-list .post-preview,
+  .paginated-list .paginated-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 12px 6px;
+    border-bottom: 1px solid #eee;
+  }
+
+  /* Restore the Home-style calendar: teal square with a dark month bar on top
+     and a large white day number centered. This matches Old_Blog's Talks look. */
+  .paginated-list .page-action-calendar {
+      width: 60px;
+      height: 60px;
+      background-color: #0085a1;
+      border-radius: 5px;
+      float: left;
+      margin-right: 5px;
+      overflow: hidden; 
+      display: flex;
+      flex-direction: column; 
+      flex-shrink: 0;
+      align-self: flex-start;
+  }
+
+  /* Position the month bar absolutely so it cleanly overlays the top edge
+     and fully covers the border area (avoids a visible teal seam). */
+  .paginated-list .page-action-calendar .sub-month {
+      background-color: #404040;
+      color: #fff;
+      font-size: 9px !important;
+      text-align: center;
+      height: 20px;
+      line-height: 20px;
+      width: 100%; 
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      margin: 0;
+  }
+
+  .paginated-list .page-action-calendar .sub-day {
+      font-size: 26px;
+      color: #fff;
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 1; 
+      text-align: initial;
+  }
+
+  .paginated-list .hexo-talk-info {
+    padding-left: 0;
+    flex: 1 1 auto;
+  }
+
+  .paginated-list .hexo-talk-title,
+  .paginated-list .post-title {
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0 0 6px 0;
+    line-height: 1.2;
+  }
+
+  .small-title-list .post-title {
+    font-size: 22px;
+  }
+
+  .talks-title-list .post-title {
+    font-size: 16px;
+  }
+
+  .paginated-list .post-content-preview a {
+    color: #999999;
+    text-decoration: none;
+  }
+
+  .paginated-list .post-content-preview a:hover {
+    color: #0085a1;
+  }
+
+  /* Narrow screens: stack vertically */
+  @media screen and (max-width: 600px) {
+    .paginated-list .hexo-talk-item,
+    .paginated-list .post-preview,
+    .paginated-list .paginated-item {
+      flex-direction: row;
+      padding: 10px 4px;
+    }
+
+    .paginated-list .page-action-calendar {
+      width: 46px;
+      height: 46px;
+      margin-right: 12px; /* Increased margin */
+    }
+
+    .paginated-list .hexo-talk-title,
+    .paginated-list .post-title {
+      font-size: 22px; /* Larger base title size for mobile */
+      font-weight: 800; /* Ensure titles are bold */
+    }
+
+    .small-title-list .post-title {
+      font-size: 17px; /* Smaller titles for Archive/Tags */
+    }
+
+    .talks-title-list .post-title {
+      font-size: 16px; /* Specific title size for Talks page */
+    }
+
+    .paginated-list .hexo-talk-meta {
+      font-size: 12px;
+      color: #888;
+    }
+
+    /*
+    .paginated-list .pagination-controls {
+      font-size: 14px;
+      padding: 6px 0;
+    }
+    */
+  }
+  </style>
+  {% assign per_page = include.per_page | default: 10 %}
+  {% for item in include.items %}
+  <div class="hexo-talk-item paginated-item">
+    {% if include.show_calendar != false %}
+    <div class="page-action-calendar">
+      <div class="sub-month">
+        {% if item.talkdate %}{{ item.talkdate | date: "%b %Y" }}{% else %}{{ item.date | date: "%b %Y" }}{% endif %}
+      </div>
+      <div class="sub-day">{% if item.talkdate %}{{ item.talkdate | date: "%-d" }}{% else %}{{ item.date | date: "%-d" }}{% endif %}</div>
+    </div>
+    {% endif %}
+  <div class="hexo-talk-info">
+      <div class="hexo-talk-title">
+        {% assign show_link = include.show_link | default: true %}
+        {% assign excerpt_len = include.excerpt_length | default: 200 %}
+        {% if show_link and item.url %}
+          <a style="text-decoration: none" href="{{ item.url | prepend: site.baseurl }}">
+            <h2 class="post-title">
+              {% if include.bold_title %}
+                <strong>{% if item.mytalk %}{{ item.mytalk }}{% else %}{{ item.title }}{% endif %}</strong>
+              {% else %}
+                {% if item.mytalk %}{{ item.mytalk }}{% else %}{{ item.title }}{% endif %}
+              {% endif %}
+            </h2>
+            {% if item.subtitle %}
+              <h3 class="post-subtitle">{{ item.subtitle }}</h3>
+            {% endif %}
+          </a>
+        {% else %}
+          <a style="text-decoration: none">
+            <h2 class="post-title">
+              {% if include.bold_title %}
+                <strong>{% if item.mytalk %}{{ item.mytalk }}{% else %}{{ item.title }}{% endif %}</strong>
+              {% else %}
+                {% if item.mytalk %}{{ item.mytalk }}{% else %}{{ item.title }}{% endif %}
+              {% endif %}
+            </h2>
+            {% if item.subtitle %}
+              <h3 class="post-subtitle">{{ item.subtitle }}</h3>
+            {% endif %}
+          </a>
+        {% endif %}
+      </div>
+  {% if include.show_excerpt or include.show_excerpt == nil %}
+      <div class="post-content-preview">
+        <a href="{{ item.url | prepend: site.baseurl }}">
+          {% if item.content %}{{ item.content | strip_html | truncate:excerpt_len }}{% endif %}
+        </a>
+      </div>
+      {% endif %}
+      
+  <!-- per-item meta: keep consistent with the site-wide post-meta format -->
+      {% if include.show_author != false %}
+      <p class="post-meta hexo-talk-meta">Posted by {% if item.author %}{{ item.author }}{% else %}{{ site.title }}{% endif %} on {% if item.talkdate %}{{ item.talkdate | date: "%B %-d, %Y" }}{% else %}{{ item.date | date: "%B %-d, %Y" }}{% endif %}</p>
+      {% endif %}
+      {% if include.show_tags and item.tags %}
+      <div class="item-tags">
+        {% for tag in item.tags %}
+          <a class="archive_tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+
+  <!-- Pagination controls (hidden by default; shown when JS initializes).
+       Use the same pager markup/styling as Home (.pager). We only render
+       controls via JS when the list contains more than 10 items.
+  -->
+  {% assign prev_label = include.prev_label | default: '&larr; Newer Posts' %}
+  {% assign next_label = include.next_label | default: 'Older Posts &rarr;' %}
+  <ul class="pager pagination-controls js-only" data-per-page="{{ per_page }}" style="margin-top: 10px; display: none;">
+    <li class="previous" style="display:none"><a class="pag-prev" href="javascript:;"><span>{{ prev_label }}</span></a></li>
+    <li class="next" style="display:none"><a class="pag-next" href="javascript:;"><span>{{ next_label }}</span></a></li>
+  </ul>
+
+</div>
