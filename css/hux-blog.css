@@ -321,6 +321,7 @@ pre code {
     box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.239216) 0px 1px 4px;
     border-radius: 2px;
     width: 170px;
+    z-index: 100;
   }
   /**
 	 * Animation
@@ -385,7 +386,7 @@ pre code {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 20;
+  z-index: 3;
   /* Hux learn from
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
