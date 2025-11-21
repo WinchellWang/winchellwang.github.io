@@ -252,10 +252,3 @@
 .back-to-top:hover {
     background-color: #0085a1;
 }
-
-/* Mobile adjustments for back to top button */
-@media (orientation: portrait) {
-    .back-to-top {
-        display: none !important;
-    }
-}

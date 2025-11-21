@@ -25,6 +25,14 @@
     var header = document.querySelector('header.intro-header');
     var headerHeight = header ? header.offsetHeight : 0;
 
+    // Remove back-to-top button on portrait orientation
+    if (window.innerHeight > window.innerWidth) {
+        var backToTopBtn = document.getElementById('back-to-top');
+        if (backToTopBtn) {
+            backToTopBtn.remove();
+        }
+    }
+
     window.addEventListener('scroll', function() {
         var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
