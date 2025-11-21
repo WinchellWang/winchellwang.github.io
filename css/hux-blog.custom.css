@@ -280,6 +280,32 @@
 }
 .footer-theme-sep { opacity: 0.85; }
 
+/* Tighter alignment for GitHub buttons.js output (iframe or button) */
+.footer-theme-line {
+  line-height: 28px; /* baseline for text and control */
+}
+.footer-theme-line .github-button,
+.footer-star-wrap .github-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  vertical-align: middle !important;
+  height: auto !important;
+}
+.footer-theme-line .github-button *,
+.footer-theme-line .github-button iframe {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: auto !important;
+}
+.footer-theme-line .github-button iframe {
+  transform: translateY(0) !important;
+}
+
+/* If the injected iframe has extra top padding, nudge it slightly — tiny safe offset */
+.footer-theme-line .github-button iframe { margin-top: 1px !important; }
+
 /* Strong override: ensure navbar and its dropdown are on top of all content
    Some browsers create unexpected stacking contexts; make navbar fixed and
    push it above everything with very high z-index, and ensure page sections
