@@ -147,14 +147,8 @@ layout: default
 </script>
 <!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
 <script>
-    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
-        // BY Fix:去除标题前的‘#’ issues:<https://github.com/qiubaiying/qiubaiying.github.io/issues/137>
-        // anchors.options = {
-        //   visible: 'always',
-        //   placement: 'right',
-        //   icon: '#'
-        // };
-        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    async("https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js",function(){
+        anchors.add('h1, h2, h3, h4, h5, h6').remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
     })
 </script>
 <style>

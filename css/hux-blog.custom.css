@@ -254,7 +254,7 @@
 }
 
 /* Mobile adjustments for back to top button */
-@media (max-width: 768px) {
+@media (orientation: portrait) {
     .back-to-top {
         display: none;
     }
