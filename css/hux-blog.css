@@ -1110,8 +1110,8 @@ img::-moz-selection {
 .tags .tag.selected,
 #tag_cloud a.selected,
 #tag_cloud .tag.selected {
-  background-color: #0085a1 !important;
-  color: #ffffff !important;
-  border-color: #0085a1 !important;
+  background-color: #0085a1;
+  color: #ffffff;
+  border-color: #0085a1;
 }
 
