@@ -218,14 +218,24 @@ layout: default
             
             function fixSidebar() {
                 var scrollTop = $(window).scrollTop();
-                // The stop point is the bottom of the post container minus the sidebar height
-                var stopPoint = $postContainer.offset().top + $postContainer.height() - $sidebar.height();
-
-                // Check if we should fix the sidebar
-                if (scrollTop > top - 80 && scrollTop < stopPoint) {
-                    $sidebar.addClass('fixed');
+                var windowHeight = $(window).height();
+                var sidebarHeight = $sidebar.height();
+                var postBottom = $postContainer.offset().top + $postContainer.height();
+                
+                // Calculate the maximum top position to prevent sidebar from going below viewport
+                var maxTop = windowHeight - sidebarHeight;
+                
+                if (scrollTop > top - 80) {
+                    if (scrollTop + windowHeight < postBottom) {
+                        // Normal fixed position
+                        $sidebar.addClass('fixed').css('top', '-21px');
+                    } else {
+                        // Adjust position to not exceed post container bottom
+                        var adjustedTop = Math.min(-21, postBottom - scrollTop - sidebarHeight);
+                        $sidebar.addClass('fixed').css('top', adjustedTop + 'px');
+                    }
                 } else {
-                    $sidebar.removeClass('fixed');
+                    $sidebar.removeClass('fixed').css('top', '');
                 }
             }
 
