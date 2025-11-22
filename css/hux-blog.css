@@ -1106,7 +1106,7 @@ img::-moz-selection {
 .footer-theme-line {
   display: inline-flex;
   align-items: center; /* vertical center */
-  justify-content: center;
+  /* justify-content: center; */
   gap: 6px;
   white-space: nowrap;
 }
