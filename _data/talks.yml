@@ -1,6 +1,10 @@
 # Template
 # - mytalk: ""
-#   talkdate: "2023-05"
+#   talkdate: "2026-05"
+
+- mytalk: "CGRS-D application is failed."
+  talkdate: "2025-11-26"
+
 - mytalk: "岗村拓朗《PDCA循环工作法》"
   talkdate: "2025-11-01"
 
