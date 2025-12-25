@@ -1,5 +1,7 @@
 .*
 # Local debugging files
-Dockerfile
+Gemfile.lock
+Gemfile
 docker-compose.yml
 _site
+.dockerignore
