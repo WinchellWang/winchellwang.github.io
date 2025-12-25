@@ -58,6 +58,21 @@
 
 </script>
 
+<!-- Register Service Worker for PWA -->
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/js/sw.js')
+      .then(function(registration) {
+        console.log('SW registered: ', registration);
+      })
+      .catch(function(registrationError) {
+        console.log('SW registration failed: ', registrationError);
+      });
+  });
+}
+</script>
+
 </body>
 
 </html>

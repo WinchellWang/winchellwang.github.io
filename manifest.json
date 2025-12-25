@@ -1,0 +1,15 @@
+{
+  "name": "Winchell Wang Blog",
+  "short_name": "WinchellBlog",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#333333",
+  "icons": [
+    {
+      "src": "/img/apple.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
