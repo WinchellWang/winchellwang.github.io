@@ -8,7 +8,7 @@ header-img: "img/post-bg-tech.jpg"
 tags:
    - Blog
    - Computer
-header-mask: 0.1
+header-mask: 0.2
 catalog: true
 ---
 # 1. Bard与ChatGPT

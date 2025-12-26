@@ -7,7 +7,7 @@ author: Winchell.Wang
 header-img: "img/post-bg-life.jpg"
 tags:
    - Blog
-header-mask: 0.1
+header-mask: 0.2
 catalog: true
 ---
 
