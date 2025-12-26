@@ -50,4 +50,4 @@ To add the PWA to your device, you can follow these steps:
 
 Then you will have an APP icon on your home screen that you can open as a native app.
 
-![PWA](https://cdn.jsdelivr.net/gh/winchellwang/winchellwang.github.io/img/_post_image/2025-12-25/PWA.jpg)
+![PWA](https://cdn.jsdelivr.net/gh/winchellwang/winchellwang.github.io/img/_post_image/2025-12-25/AS_APP.jpg)
