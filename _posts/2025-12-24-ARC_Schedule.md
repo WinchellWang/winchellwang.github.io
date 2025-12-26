@@ -48,6 +48,6 @@ To add the PWA to your device, you can follow these steps:
 
 2. For iOS devices, tap the "Share" button in Safari and select "Add to Home Screen". For Android devices, tap the menu button in Chrome and select "Add to Home Screen".
 
-Then you will have a APP icon on your home screen, and you can open it like a native app.
+Then you will have an APP icon on your home screen that you can open as a native app.
 
 ![Add_PWA](https://cdn.jsdelivr.net/gh/winchellwang/winchellwang.github.io/img/_post_image/2025-12-25/Add_PWA.jpg)
