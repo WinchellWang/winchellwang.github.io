@@ -112,4 +112,4 @@ data['quarter'] = pd.to_datetime(data['dt'],unit='D',origin=pd.Timestamp('2022-2
 
 总之，特征工程就是在翻译和解释数据给计算机，让他更好的理解数据的关系，从而建立更准确的模型。特征工程就是汤师爷，在给县长翻译翻译什么叫惊喜。
 
-![wut_is_suprise?!](https://cdn.jsdelivr.net/gh/winchellwang/winchellwang.github.io/img/_post_image/2024-07-24/wut_is_suprise.gif)
+![wut_is_suprise?!](/img/post_image/2024-07-24/wut_is_suprise.gif)

@@ -274,4 +274,4 @@ for epoch in range(num_epochs):
 
    > 衡量两个概率分布之间的差异，常用于生成模型。
 
-调整超参是一个反复试验的过程，需要根据具体的数据集和任务进行多次尝试，以找到最佳的超参组合。当超参的可选组合非常多时，人工一个个测试就会显得相当的麻烦，此时我们就可以使用Grid Search或Random Search，[由电脑自己寻找最佳的超参设置](https://winchellwang.github.io/2024/07/30/hyperparam_optim_lightgbm/)，省却我们的烦恼。
+调整超参是一个反复试验的过程，需要根据具体的数据集和任务进行多次尝试，以找到最佳的超参组合。当超参的可选组合非常多时，人工一个个测试就会显得相当的麻烦，此时我们就可以使用Grid Search或Random Search，[由电脑自己寻找最佳的超参设置]({% post_url 2024-07-30-hyperparam_optim_lightgbm %})，省却我们的烦恼。
