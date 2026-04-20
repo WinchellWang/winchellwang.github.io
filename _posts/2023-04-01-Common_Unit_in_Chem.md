@@ -11,8 +11,6 @@ header-mask: 0.2
 catalog: true
 ---
 
-**NOT Finish yet, Still drafting.**
-
 # 1. Weight
 
 ## 1.1 Weight Percent
