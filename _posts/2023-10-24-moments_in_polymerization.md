@@ -364,7 +364,7 @@ $$
 f(n)={P_n\over \lambda_0}=P^{n-1}(1-P)
 $$
 
-![fn_n](https://cdn.jsdelivr.net/gh/winchellwang/winchellwang.github.io/img/_post_image/2023-10-24/fn_n.svg)
+![fn_n](/img/post_image/2023-10-24/fn_n.svg)
 
 # 4. Product
 

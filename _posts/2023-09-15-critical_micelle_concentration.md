@@ -29,7 +29,7 @@ It is important to notice that the length of the non-polar tail, the nature and 
 
 The aggregation of micelles only forms when the concentration of the amphipathic lipid reaches a given concentration called the critical micelle concentration (CMC). This condition is monitored by the sudden change in the chemical and physical properties of the solution. In other words, micelles would not form below the CMC.
 
-![Formation_of_Micelle](https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/CMC.pdf/page1-269px-CMC.pdf.jpg)
+![Formation_of_Micelle](https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/CMC.pdf/page1-330px-CMC.pdf.jpg)
 
 As shown in the figure, the surface tension would decrease when adding the amphipathic lipid molecules, as the lipids would stay on the surface to reduce the surface free energy. Upon reaching the CMC, additional surfactants would only aggregate to form micelles, and the surface tension would remain relatively constant or change slightly. Therefore, the CMC is the critical point where the surfactants start aggregating to form micelle in solution.
 

@@ -13,7 +13,7 @@ catalog: true
 
 # 1. Rate of Polymerization
 
-[Since:](https://winchellwang.github.io/2023/09/25/polymer_synthesis_basic_mechanism/#2-propagation)
+[Since:]({% post_url 2023-09-25-polymer_synthesis_basic_mechanism %}#2-propagation)
 
 $$
 R_{prop}=k_p[M][P_{tot}]
@@ -39,7 +39,7 @@ $$
 KCL={R_{prop}\over R_{init}}
 $$
 
-Apply [QSSA](https://winchellwang.github.io/2023/09/25/polymer_synthesis_basic_mechanism/):
+Apply [QSSA]({% post_url 2023-09-25-polymer_synthesis_basic_mechanism %}):
 
 $$
 R_{init}=R_{term}
@@ -55,7 +55,7 @@ KCL&={R_{prop}\over R_{term}}\\
 \end{align}
 $$
 
-[Since:](https://winchellwang.github.io/2023/09/25/polymer_synthesis_basic_mechanism/#3-termination)
+[Since:]({% post_url 2023-09-25-polymer_synthesis_basic_mechanism %}#3-termination)
 
 $$
 k_t=k_{t,c}+k_{t,d}
@@ -67,7 +67,7 @@ $$
 KCL={k_p[M]\over (k_{t,c}+k_{t,d})[P_{tot}]}
 $$
 
-[As](https://winchellwang.github.io/2023/09/25/polymer_synthesis_basic_mechanism/#3-termination)
+[As]({% post_url 2023-09-25-polymer_synthesis_basic_mechanism %}#3-termination)
 
 $$
 [P_{tot}]=\sqrt{2fk_d[I]\over k_t}
