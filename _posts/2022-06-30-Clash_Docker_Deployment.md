@@ -247,7 +247,7 @@ network:
 这种方法将由clash服务器全权接管局域网内的所有流量。好处是在局域网覆盖范围内只要接入，直接走代理，不需要进行任何设置。缺点是一旦服务器宕机，整个局域网就瘫痪了。
 
 最终效果：
-![Screenshoot_4]({{ site.baseurl }}/img/_post_image/2022-06-30/Screenshoot_4.jpeg)
+![Screenshoot_4](/img/_post_image/2022-06-30/Screenshoot_4.jpeg)
 
 >**Tips：**
 打通整个网络，除了配置要没有错误之外，以下三点要反复确认:<br>docker里的clash在运行状态<br>路由表配置完毕<br>clash服务器网关地址指向主路由器
