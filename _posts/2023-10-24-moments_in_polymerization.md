@@ -207,7 +207,7 @@ $$
 \end{align}
 $$
 
-**If we apply [QSSA](https://winchellwang.github.io/2023/09/25/polymer_synthesis_basic_mechanism/) to get the differentiation equation:**
+**If we apply [QSSA]({% post_url 2023-09-25-polymer_synthesis_basic_mechanism %}) to get the differentiation equation:**
 
 Since QSSA, $R(\lambda_0)=R(\lambda_1)=R(\lambda_2)=0$,
 
@@ -245,7 +245,7 @@ $$
 DP^{rad}_{n}={\tau +\beta +1\over \tau +\beta}
 $$
 
-And apply [LCH](https://winchellwang.github.io/2023/09/25/polymer_synthesis_basic_mechanism/), where is The consumption of monomer by chain-initiation or transfer events is negligible compared to that by propagation:
+And apply [LCH]({% post_url 2023-09-25-polymer_synthesis_basic_mechanism %}), where is The consumption of monomer by chain-initiation or transfer events is negligible compared to that by propagation:
 
 $$
 \begin{align}
@@ -283,7 +283,7 @@ $$
 DP^{rad}_{w}={2+\tau +\beta \over \tau +\beta}
 $$
 
-And apply [LCH](https://winchellwang.github.io/2023/09/25/polymer_synthesis_basic_mechanism/),
+And apply [LCH]({% post_url 2023-09-25-polymer_synthesis_basic_mechanism %}),
 
 $$
 DP^{rad}_{w}={2\over \tau +\beta}
@@ -318,7 +318,7 @@ $$
 R(P_n)_{n>1}=k_p[M]P_{n-1}-k_p[M]P_n-k_t[P_{tot}]P_n-k^{mon}_{tr}[M]P_n-k^{sol}_{tr}[S]P_n
 $$
 
-Apply [QSSA](https://winchellwang.github.io/2023/09/25/polymer_synthesis_basic_mechanism/),
+Apply [QSSA]({% post_url 2023-09-25-polymer_synthesis_basic_mechanism %}),
 
 $$
 \begin{align}
