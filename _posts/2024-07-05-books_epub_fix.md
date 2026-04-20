@@ -15,7 +15,7 @@ catalog: true
 
 Mac的Books应用可以由外部导入书籍，但是如果导入一个正常的epub书后再导出到外面，会发现比如像Calibre等其他的常用书籍管理软件无法正常导入，并显示文件错误。
 
-![calibre_error](/img/_post_image/2024-07-05/calibre_error.jpg)
+![calibre_error](/img/post_image/2024-07-05/calibre_error.jpg)
 
 
 报错详情：
