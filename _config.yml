@@ -55,6 +55,9 @@ gitalk:
   admin: winchellwang
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
+# Tracker
+google_analytics: G-19VG3KHRSW #google analytics tracking ID
+
 
 # Featured Tags
 featured-tags: true                     # 是否使用首页标签
