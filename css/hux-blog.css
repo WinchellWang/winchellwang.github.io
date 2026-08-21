@@ -31,6 +31,38 @@ html {
     }
     .post-container {
     padding-right: 5%}
+
+    .home-content-column,
+    .post-content-column.with-catalog {
+        float: left;
+        width: 66.66666667%;
+        margin-left: 8.33333333%;
+    }
+    .home-sidebar {
+        display: block;
+        float: left;
+        width: 25%;
+        margin-left: 0;
+    }
+    .home-sidebar .visible-md,
+    .home-sidebar .visible-lg {
+        display: block !important;
+    }
+    .bottom-sidebar {
+        display: none !important;
+    }
+    .post-content-column.without-catalog,
+    .post-bottom-sidebar {
+        float: left;
+        width: 83.33333333%;
+        margin-left: 8.33333333%;
+    }
+    .post-catalog-column {
+        display: block !important;
+        float: left;
+        width: 16.66666667%;
+        margin-left: 0;
+    }
 }
 @media (orientation: portrait) {
     .container {
@@ -45,6 +77,21 @@ html {
     .post-container {
         padding-left: 5px;
         padding-right: 5px;
+    }
+    .home-content-column,
+    .bottom-sidebar,
+    .post-content-column,
+    .post-bottom-sidebar {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+    }
+    .home-sidebar,
+    .post-catalog-column {
+        display: none !important;
+    }
+    .bottom-sidebar {
+        display: block !important;
     }
 }
 .sidebar-container {
@@ -792,8 +839,15 @@ img::-moz-selection {
 }
 }.post-container img {
     max-width: 100%;
+    max-height: min(80vh, 1000px);
     height: auto;
+    object-fit: contain;
+    object-position: center;
     margin: 1.5em auto 1.6em;
+}
+.post-container img:not([width]):not([height]) {
+    display: block;
+    width: auto;
 }
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: inherit;

@@ -51,6 +51,8 @@ layout: default
             <div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
+                post-content-column
+                {% if page.catalog %}with-catalog{% else %}without-catalog{% endif %}
                 post-container">
 
 				{{ content }}
@@ -84,6 +86,7 @@ layout: default
                 col-lg-2 col-lg-offset-0
                 visible-lg-block
                 sidebar-container
+                post-catalog-column
                 catalog-container">
                 <div class="side-catalog">
                     <hr class="hidden-sm hidden-xs">
@@ -99,6 +102,7 @@ layout: default
             <div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
+                post-bottom-sidebar
                 sidebar-container">
 
                 <!-- Featured Tags -->
