@@ -29,16 +29,20 @@ html {
         padding-right: 15px;
         padding-left: 15px;
     }
-    .home-content-column,
+    .home-content-column {
+        float: left;
+        width: calc(83.33333333% - 285px);
+        margin-left: 8.33333333%;
+    }
     .post-content-column.with-catalog {
         float: left;
-        width: 66.66666667%;
+        width: calc(83.33333333% - 182px);
         margin-left: 8.33333333%;
     }
     .home-sidebar {
         display: block;
         float: left;
-        width: 16.66666667%;
+        width: 285px;
         margin-left: 0;
     }
     .home-sidebar .visible-md,
@@ -50,7 +54,7 @@ html {
     }
     .post-content-column.without-catalog {
         float: left;
-        width: 66.66666667%;
+        width: 83.33333333%;
         margin-left: 8.33333333%;
     }
     .post-bottom-sidebar,
@@ -71,7 +75,7 @@ html {
     .post-catalog-column {
         display: block !important;
         float: left;
-        width: 16.66666667%;
+        width: 182px;
         margin-left: 0;
     }
 }
@@ -141,6 +145,11 @@ html {
 .sidebar-container .short-about .list-inline>li {
     padding-left: 0;
 }
+.home-sidebar .short-about .list-inline {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+}
 .catalog-container {
     padding: 0;
 }
@@ -160,10 +169,10 @@ html {
     top: -21px;
 }
 .home-sidebar .side-catalog.fixed {
-    width: calc(15.66666667vw - 30px);
+    width: 255px;
 }
 .post-catalog-column .side-catalog.fixed {
-    width: 15.66666667vw;
+    width: 182px;
 }
 .sidebar-container .short-about img {
     max-width: 195px;
@@ -185,6 +194,9 @@ html {
     padding-left: 0;
     padding-right: 5px;
     text-indent: 0;
+}
+.post-catalog-column .catalog-body {
+    padding-right: 0;
 }
 .side-catalog .catalog-body li a {
     padding-left: 10px;
