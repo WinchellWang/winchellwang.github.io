@@ -71,6 +71,10 @@ html {
 .catalog-container {
     padding: 0;
 }
+.catalog-container > .side-catalog {
+    width: 240px;
+    overflow-x: hidden;
+}
 .side-catalog {
     display: block;
     overflow: auto;
