@@ -25,14 +25,27 @@ html {
     .post-container, .sidebar-container {
     padding-right: 5%}
 }
-@media (orientation: landscape) and (min-width:1200px) {
-    .container {
-        width: max(1170px, 85%);
-    }
-}
 @media (orientation: landscape) {
+    .container {
+        width: 94%;
+    }
     .post-container {
     padding-right: 5%}
+}
+@media (orientation: portrait) {
+    .container {
+        width: auto;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .post-container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
 .sidebar-container {
     color: #bfbfbf;
@@ -935,11 +948,10 @@ img::-moz-selection {
   color: #fff !important;
 }
 
-/* Position pager buttons at the two column ends to match Home page layout */
+/* Keep list pagination aligned with its responsive content container. */
 .paginated-list .pager {
   width: 100%;
-  max-width: 1000px; /* limit pager width to match main content column */
-  margin: 30px auto 0 auto;
+  max-width: none;
   padding: 0;
   list-style: none;
   display: flex;
@@ -1079,17 +1091,6 @@ img::-moz-selection {
 
 .back-to-top:hover {
     background-color: #0085a1;
-}
-
-@media (orientation: portrait) {
-    .container-fluid {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .post-container {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
 }
 
 /* Footer: align "Theme on GitHub" and GitHub star button on one baseline */
