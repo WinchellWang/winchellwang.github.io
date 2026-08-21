@@ -8,18 +8,6 @@ article, body {
 html {
     overflow-x: hidden;
 }
-:root {
-    /* About width = 5 gaps (two outer + three inner) + 4 buttons. */
-    --about-social-gap: 24px;
-    --about-social-button-width: 38px;
-    --about-sidebar-width: calc(
-        var(--about-social-gap) + var(--about-social-gap) +
-        var(--about-social-gap) + var(--about-social-gap) +
-        var(--about-social-gap) +
-        var(--about-social-button-width) + var(--about-social-button-width) +
-        var(--about-social-button-width) + var(--about-social-button-width)
-    );
-}
 .navbar-custom, body {
     line-height: 1.7;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
@@ -43,7 +31,7 @@ html {
     }
     .home-content-column {
         float: left;
-        width: calc(83.33333333% - var(--about-sidebar-width));
+        width: calc(83.33333333% - 200px);
         margin-left: 8.33333333%;
     }
     .post-content-column.with-catalog {
@@ -54,7 +42,7 @@ html {
     .home-sidebar {
         display: block;
         float: left;
-        width: var(--about-sidebar-width);
+        width: 200px;
         margin-left: 0;
         padding-left: 0;
         padding-right: 0;
@@ -157,28 +145,19 @@ html {
     margin-bottom: 20px;
 }
 .sidebar-container .short-about .list-inline>li {
-    padding-left: 0;
+    padding: 0;
 }
 .home-sidebar .short-about .list-inline {
     display: flex;
-    justify-content: center;
-    gap: var(--about-social-gap);
+    justify-content: space-evenly;
     width: 100%;
-    margin-left: 0;
-    padding-right: var(--about-social-gap);
-    padding-left: var(--about-social-gap);
-    box-sizing: border-box;
-}
-.home-sidebar .short-about .list-inline > li {
-    flex: 0 0 var(--about-social-button-width);
-    width: var(--about-social-button-width);
-    padding-right: 0;
+    margin: 0;
+    padding: 0;
 }
 .catalog-container {
     padding: 0;
 }
 .catalog-container > .side-catalog {
-    width: 100%;
     overflow-x: hidden;
 }
 .side-catalog {
@@ -193,13 +172,10 @@ html {
     top: -21px;
 }
 .home-sidebar .side-catalog.fixed {
-    width: var(--about-sidebar-width);
+    width: 200px;
 }
 .post-catalog-column .side-catalog.fixed {
     width: 182px;
-}
-.sidebar-container .short-about img {
-    max-width: 195px;
 }
 .side-catalog.fold .catalog-toggle::before {
     content: "+"}
@@ -423,9 +399,6 @@ pre code {
     -webkit-transition: opacity 450ms cubic-bezier(.23,  1,  .32,  1) 205ms;
 }
     .post-container ol, .post-container ul {
-    padding-left: 30px;
-}
-    .post-container ol, .post-container ul {
     padding-left: 20px;
 }
     .post-container .pager {
@@ -438,14 +411,6 @@ pre code {
     .post-container .pager li>a {
         width: 100%;
         min-width: 120px;
-    }
-    .container-fluid {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .post-content-column.post-container {
-        padding-left: 15px;
-        padding-right: 15px;
     }
 }.navbar-custom {
     border: none;
@@ -1071,10 +1036,6 @@ img::-moz-selection {
 .paginated-list .pager li a{
   width: 100%;
   min-width: 120px;
-  display: inline-block;
-}
-.paginated-list .pager li a {
-  /* Use same button appearance as Home (buttons styled by main CSS) */
   display: inline-block;
 }
 
