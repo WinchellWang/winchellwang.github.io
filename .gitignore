@@ -1,7 +1,0 @@
-.*
-# Local debugging files
-Gemfile.lock
-Gemfile
-docker-compose.yml
-_site
-.dockerignore
