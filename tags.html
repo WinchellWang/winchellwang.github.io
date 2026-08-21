@@ -21,7 +21,7 @@ permalink: /tags/
 		{% assign tag_items = tag[1] %}
 		{% assign tag_slug = tag[0] | slugify %}
 		{% assign tag_lid = 'tag-' | append: tag_slug %}
-	{% include paginated_list.html items=tag_items list_id=tag_lid show_pagination=false show_excerpt=false show_author=false bold_title=true %}
+	{% include paginated_list.html items=tag_items list_id=tag_lid show_pagination=false show_excerpt=false show_author=false bold_title=false %}
 	</div>
 	{% endfor %}
 		<ul class="pager pagination-controls js-only" data-grouped-pagination-controls data-per-page="20" style="margin-top: 10px; display: none;">

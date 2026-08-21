@@ -29,10 +29,6 @@ html {
         padding-right: 15px;
         padding-left: 15px;
     }
-    .sidebar-container {
-        padding-right: 5%;
-    }
-
     .home-content-column,
     .post-content-column.with-catalog {
         float: left;
@@ -86,8 +82,8 @@ html {
         padding-right: 15px;
     }
     .post-content-column.post-container {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 55px;
+        padding-right: 55px;
     }
     .home-content-column,
     .bottom-sidebar,
@@ -145,7 +141,7 @@ html {
     padding: 0;
 }
 .catalog-container > .side-catalog {
-    width: 240px;
+    width: 100%;
     overflow-x: hidden;
 }
 .side-catalog {
@@ -153,11 +149,20 @@ html {
     overflow: auto;
     height: 100%;
     padding-bottom: 40px;
-    width: 195px;
+    width: 100%;
 }
 .side-catalog.fixed {
     position: fixed;
     top: -21px;
+}
+.home-sidebar .side-catalog.fixed {
+    width: calc(15.66666667vw - 30px);
+}
+.post-catalog-column .side-catalog.fixed {
+    width: 15.66666667vw;
+}
+.sidebar-container .short-about img {
+    max-width: 195px;
 }
 .side-catalog.fold .catalog-toggle::before {
     content: "+"}
@@ -400,8 +405,8 @@ pre code {
         padding-right: 15px;
     }
     .post-content-column.post-container {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 55px;
+        padding-right: 55px;
     }
 }.navbar-custom {
     border: none;

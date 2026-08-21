@@ -171,13 +171,30 @@
       if (!group) return;
       var firstItem = group.getElementsByClassName('paginated-item')[0];
       var itemIndex = items.indexOf(firstItem);
-      if (itemIndex >= 0) goTo(Math.floor(itemIndex / perPage), false);
+      if (itemIndex >= 0) {
+        goTo(Math.floor(itemIndex / perPage), false);
+        // Native fragment navigation runs while paginated targets may still be
+        // hidden. Scroll after the target page has been revealed so one click
+        // performs both pagination and positioning.
+        window.requestAnimationFrame(function () {
+          var targetTop = target.getBoundingClientRect().top + window.pageYOffset - 20;
+          window.scrollTo(0, targetTop);
+        });
+      }
     }
 
     var prevBtn = controls.querySelector('.pag-prev');
     var nextBtn = controls.querySelector('.pag-next');
+    var tagCloud = document.getElementById('tag_cloud');
     if (prevBtn) prevBtn.addEventListener('click', function () { goTo(current - 1, true); });
     if (nextBtn) nextBtn.addEventListener('click', function () { goTo(current + 1, true); });
+    if (tagCloud) {
+      tagCloud.addEventListener('click', function () {
+        // Wait for the clicked fragment to become window.location.hash, then
+        // reveal and position its paginated group even when the hash repeats.
+        window.setTimeout(goToHash, 0);
+      });
+    }
     window.addEventListener('hashchange', goToHash);
 
     goTo(0, false);
