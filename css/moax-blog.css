@@ -31,18 +31,18 @@ html {
     }
     .home-content-column {
         float: left;
-        width: calc(83.33333333% - 200px);
-        margin-left: 8.33333333%;
+        width: calc(84% - 180px);
+        margin-left: 9%;
     }
     .post-content-column.with-catalog {
         float: left;
-        width: calc(83.33333333% - 182px);
-        margin-left: 8.33333333%;
+        width: calc(84% - 182px);
+        margin-left: 9%;
     }
     .home-sidebar {
         display: block;
         float: left;
-        width: 200px;
+        width: 180px;
         margin-left: 0;
         padding-left: 0;
         padding-right: 0;
@@ -56,23 +56,23 @@ html {
     }
     .post-content-column.without-catalog {
         float: left;
-        width: 83.33333333%;
-        margin-left: 8.33333333%;
+        width: 84%;
+        margin-left: 9%;
     }
     .post-bottom-sidebar,
     .full-content-column {
         float: left;
-        width: 83.33333333%;
-        margin-left: 8.33333333%;
+        width: 84%;
+        margin-left: 9%;
     }
     .full-content-column.compact-index-column {
-        width: 41.66666667%;
-        margin-left: 29.16666667%;
+        width: 42%;
+        margin-left: 30%;
     }
     .hero-content-column {
         float: left;
-        width: 66.66666667%;
-        margin-left: 16.66666667%;
+        width: 67%;
+        margin-left: 17%;
     }
     .post-catalog-column {
         display: block !important;
@@ -172,7 +172,7 @@ html {
     top: -21px;
 }
 .home-sidebar .side-catalog.fixed {
-    width: 200px;
+    width: 180px;
 }
 .post-catalog-column .side-catalog.fixed {
     width: 182px;
@@ -353,7 +353,7 @@ pre code {
     border-radius: 2px;
     width: 130px;
 }
-#huxblog_navbar {
+#moaxblog_navbar {
     opacity: 0;
     transform: scaleX(0);
     transform-origin: top right;
@@ -362,11 +362,11 @@ pre code {
     -webkit-transform-origin: top right;
     -webkit-transition: .2s cubic-bezier(.47,  0,  .4,  .99);
 }
-#huxblog_navbar a {
+#moaxblog_navbar a {
     font-size: 13px;
     line-height: 28px;
 }
-#huxblog_navbar .navbar-collapse {
+#moaxblog_navbar .navbar-collapse {
     height: 0;
     transform: scaleY(0);
     transform-origin: top right;
@@ -375,25 +375,25 @@ pre code {
     -webkit-transform-origin: top right;
     -webkit-transition: -webkit-transform .4s cubic-bezier(.32,  1,  .23,  1);
 }
-#huxblog_navbar li {
+#moaxblog_navbar li {
     opacity: 0;
     transition: opacity .1s cubic-bezier(.23,  1,  .32,  1);
     -webkit-transition: opacity .1s cubic-bezier(.23,  1,  .32,  1);
 }
-#huxblog_navbar.in {
+#moaxblog_navbar.in {
     transform: scaleX(1);
     -webkit-transform: scaleX(1);
     opacity: 1;
     transition: 250ms cubic-bezier(.23,  1,  .32,  1);
     -webkit-transition: 250ms cubic-bezier(.23,  1,  .32,  1);
 }
-#huxblog_navbar.in .navbar-collapse {
+#moaxblog_navbar.in .navbar-collapse {
     transform: scaleY(1);
     -webkit-transform: scaleY(1);
     transition: transform .5s cubic-bezier(.23,  1,  .32,  1);
     -webkit-transition: -webkit-transform .5s cubic-bezier(.23,  1,  .32,  1);
 }
-#huxblog_navbar.in li {
+#moaxblog_navbar.in li {
     opacity: 1;
     transition: opacity 450ms cubic-bezier(.23,  1,  .32,  1) 205ms;
     -webkit-transition: opacity 450ms cubic-bezier(.23,  1,  .32,  1) 205ms;
@@ -990,10 +990,6 @@ img::-moz-selection {
 
 .one-year-list .tag-text {
   font-weight: 700;
-  /* Hux learn from
-     *     TypeIsBeautiful,
-     *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
-     */
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
   /* do not force font-size here so it inherits the same size as Tags */
@@ -1064,7 +1060,7 @@ img::-moz-selection {
 .paginated-list .pager li > a > span {
   color: #808080 !important;
   font-weight: 800 !important;
-  letter-spacing: 0.5px !important;
+  letter-spacing: 1px !important;
 }
 .paginated-list .pager li > a:focus > span,
 .paginated-list .pager li > a:hover > span {
@@ -1159,44 +1155,6 @@ img::-moz-selection {
     background-color: #0085a1;
 }
 
-/* Footer: align "Theme on GitHub" and GitHub star button on one baseline */
-.footer-theme-line {
-  display: inline-flex;
-  align-items: center; /* vertical center */
-  /* justify-content: center; */
-  gap: 6px;
-  white-space: nowrap;
-}
-.footer-star-wrap,
-.footer-theme-line a.github-button {
-  display: inline-flex;
-  align-items: center;
-}
-.footer-theme-sep { opacity: 0.85; }
-
-/* Tighter alignment for GitHub buttons.js output (iframe or button) */
-.footer-theme-line {
-  line-height: 28px; /* baseline for text and control */
-}
-.footer-theme-line .github-button,
-.footer-star-wrap .github-button {
-  display: inline-flex !important;
-  align-items: center !important;
-  vertical-align: middle !important;
-  height: auto !important;
-}
-.footer-theme-line .github-button *,
-.footer-theme-line .github-button iframe {
-  display: inline-block !important;
-  vertical-align: middle !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  height: auto !important;
-}
-.footer-theme-line .github-button iframe {
-  transform: translateY(0) !important;
-}
-
 /* Keep navigation mode synchronized with the page orientation. */
 @media (orientation: portrait) {
   .navbar-toggle {
@@ -1215,14 +1173,14 @@ img::-moz-selection {
   .navbar-header {
     float: left;
   }
-  #huxblog_navbar,
-  #huxblog_navbar.in {
+  #moaxblog_navbar,
+  #moaxblog_navbar.in {
     display: block !important;
     opacity: 1;
     transform: none;
   }
-  #huxblog_navbar .navbar-collapse,
-  #huxblog_navbar.in .navbar-collapse {
+  #moaxblog_navbar .navbar-collapse,
+  #moaxblog_navbar.in .navbar-collapse {
     display: block !important;
     position: static;
     width: auto;
@@ -1234,15 +1192,15 @@ img::-moz-selection {
     background: transparent;
     transform: none;
   }
-  #huxblog_navbar li,
-  #huxblog_navbar.in li {
+  #moaxblog_navbar li,
+  #moaxblog_navbar.in li {
     opacity: 1;
   }
-  #huxblog_navbar .navbar-nav {
+  #moaxblog_navbar .navbar-nav {
     float: right !important;
     margin: 0;
   }
-  #huxblog_navbar .navbar-nav > li {
+  #moaxblog_navbar .navbar-nav > li {
     float: left;
   }
 }

@@ -1,9 +1,9 @@
 // Service Worker for PWA
-const CACHE_NAME = 'winchell-blog-v2';
+const CACHE_NAME = 'winchell-blog-v3';
 const urlsToCache = [
   '/',
   '/css/bootstrap.min.css',
-  '/css/hux-blog.css',
+  '/css/moax-blog.css',
   '/css/syntax.css',
   '/js/prism.js',
   '/img/favicon.ico'
