@@ -21,16 +21,15 @@ html {
 .comment #ds-thread #ds-reset .ds-gradient-bg, .comment #ds-thread #ds-reset .ds-textarea-wrapper, .navbar-custom {
     background: 0 0;
 }
-@media (min-width:1200px) {
-    .post-container, .sidebar-container {
-    padding-right: 5%}
-}
 @media (orientation: landscape) {
     .container {
         width: 94%;
     }
     .post-container {
     padding-right: 5%}
+    .sidebar-container {
+        padding-right: 5%;
+    }
 
     .home-content-column,
     .post-content-column.with-catalog {
@@ -75,7 +74,7 @@ html {
         padding-right: 15px;
     }
     .post-container {
-        padding-left: 5px;
+        padding-left: 44px;
         padding-right: 5px;
     }
     .home-content-column,
@@ -192,11 +191,7 @@ html {
     border-radius: 4px;
     background-color: #f5f5f5;
 }
-@media (max-width:1200px) {
-    .side-catalog {
-    display: none;
-}
-}body {
+body {
     font-size: 16px;
 }
 p {
@@ -312,7 +307,7 @@ pre code {
     width: 100%;
     min-width: 120px;
 }
-@media (max-width:1200px) {
+@media (orientation: portrait) {
     .navbar-default .navbar-collapse {
     position: absolute;
     right: 0;
@@ -390,8 +385,8 @@ pre code {
         padding-right: 15px;
     }
     .post-container {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 44px;
+        padding-right: 5px;
     }
 }.navbar-custom {
     border: none;
@@ -420,7 +415,7 @@ pre code {
 .navbar-custom .nav li a:active {
     background: rgba(0, 0, 0, .12);
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (orientation: landscape) {
     .navbar-custom {
     -webkit-transition: background-color .3s;
     -moz-transition: background-color .3s;
@@ -467,7 +462,7 @@ pre code {
     padding: 85px 0 55px;
     color: #fff;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (orientation: landscape) {
     .navbar-custom, .navbar-custom .nav li a: active {
     background: 0 0;
 }
@@ -1185,8 +1180,8 @@ img::-moz-selection {
   transform: translateY(0) !important;
 }
 
-/* Bootstrap navbar responsive breakpoints for override */
-@media (max-width: 1200px) {
+/* Keep navigation mode synchronized with the page orientation. */
+@media (orientation: portrait) {
   .navbar-toggle {
     display: block !important;
     float: right !important;
@@ -1194,5 +1189,43 @@ img::-moz-selection {
     right: 15px !important;
     top: 50% !important;
     transform: translateY(-50%) !important;
+  }
+}
+@media (orientation: landscape) {
+  .navbar-toggle {
+    display: none !important;
+  }
+  .navbar-header {
+    float: left;
+  }
+  #huxblog_navbar,
+  #huxblog_navbar.in {
+    display: block !important;
+    opacity: 1;
+    transform: none;
+  }
+  #huxblog_navbar .navbar-collapse,
+  #huxblog_navbar.in .navbar-collapse {
+    display: block !important;
+    position: static;
+    width: auto;
+    height: auto !important;
+    padding-right: 15px;
+    padding-left: 15px;
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+    transform: none;
+  }
+  #huxblog_navbar li,
+  #huxblog_navbar.in li {
+    opacity: 1;
+  }
+  #huxblog_navbar .navbar-nav {
+    float: right !important;
+    margin: 0;
+  }
+  #huxblog_navbar .navbar-nav > li {
+    float: left;
   }
 }

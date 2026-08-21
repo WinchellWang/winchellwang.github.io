@@ -106,8 +106,8 @@ This include is intentionally flexible: it will render either talk-like objects
     color: #0085a1;
   }
 
-  /* Narrow screens: stack vertically */
-  @media screen and (max-width: 600px) {
+  /* Keep list sizing synchronized with the site's portrait layout. */
+  @media screen and (orientation: portrait) {
     .paginated-list .hexo-talk-item,
     .paginated-list .post-preview,
     .paginated-list .paginated-item {
