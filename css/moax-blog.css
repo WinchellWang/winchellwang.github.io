@@ -5,6 +5,9 @@
 article, body {
     overflow-x: hidden;
 }
+html, body {
+    overscroll-behavior: none;
+}
 html {
     overflow-x: hidden;
 }
