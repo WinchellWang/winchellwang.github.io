@@ -49,13 +49,13 @@ layout: default
                 </section>
                 {% endif %}
 
-                <!-- Friends Blog -->
-                {% if site.friends %}
+                <!-- Related Links -->
+                {% if site.related_links %}
                 <hr>
-                <h5>FRIENDS</h5>
+                <h5>RELATED LINKS</h5>
                 <ul class="list-inline">
-                    {% for friend in site.friends %}
-                        <li><a href="{{friend.href}}">{{friend.title}}</a></li>
+                    {% for related_link in site.related_links %}
+                        <li><a href="{{related_link.href}}" target="_blank" rel="noopener noreferrer">{{related_link.title}}</a></li>
                     {% endfor %}
                 </ul>
                 {% endif %}
@@ -152,14 +152,14 @@ layout: default
                         </div>
                     </section>
                     {% endif %}
-                    <!-- Friends Blog -->
-                    {% if site.friends %}
+                    <!-- Related Links -->
+                    {% if site.related_links %}
                     <section class="visible-md visible-lg">
                         <hr>
-                        <h5>FRIENDS</h5>
+                        <h5>RELATED LINKS</h5>
                         <ul class="list-inline">
-                            {% for friend in site.friends %}
-                                <li><a href="{{friend.href}}">{{friend.title}}</a></li>
+                            {% for related_link in site.related_links %}
+                                <li><a href="{{related_link.href}}" target="_blank" rel="noopener noreferrer">{{related_link.title}}</a></li>
                             {% endfor %}
                         </ul>
                     </section>
@@ -192,13 +192,13 @@ layout: default
                 </section>
                 {% endif %}
 
-                <!-- Friends Blog -->
-                {% if site.friends %}
+                <!-- Related Links -->
+                {% if site.related_links %}
                 <hr>
-                <h5>FRIENDS</h5>
+                <h5>RELATED LINKS</h5>
                 <ul class="list-inline">
-                    {% for friend in site.friends %}
-                        <li><a href="{{friend.href}}">{{friend.title}}</a></li>
+                    {% for related_link in site.related_links %}
+                        <li><a href="{{related_link.href}}" target="_blank" rel="noopener noreferrer">{{related_link.title}}</a></li>
                     {% endfor %}
                 </ul>
                 {% endif %}
@@ -209,7 +209,7 @@ layout: default
 
 {% if page.url == "/" %}
 <script>
-    $(document).ready(function () {
+    document.addEventListener('DOMContentLoaded', function () {
         var $sidebar = $('.side-catalog');
         if ($sidebar.length > 0) {
             var $postContainer = $('.postlist-container');
@@ -221,9 +221,6 @@ layout: default
                 var windowHeight = $(window).height();
                 var sidebarHeight = $sidebar.height();
                 var postBottom = $postContainer.offset().top + $postContainer.height();
-                
-                // Calculate the maximum top position to prevent sidebar from going below viewport
-                var maxTop = windowHeight - sidebarHeight;
                 
                 if (scrollTop > top - 80) {
                     if (scrollTop + windowHeight < postBottom) {

@@ -56,6 +56,23 @@
         });
     }
 
+    // Open every external web link in a new tab. Same-origin links, page
+    // anchors, mail links and other non-HTTP actions keep their normal behavior.
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function(link) {
+        var url;
+        try {
+            url = new URL(link.getAttribute('href'), window.location.href);
+        } catch (error) {
+            return;
+        }
+
+        if ((url.protocol === 'http:' || url.protocol === 'https:') &&
+            url.origin !== window.location.origin) {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener noreferrer');
+        }
+    });
+
 </script>
 
 <!-- Register Service Worker for PWA -->

@@ -12,6 +12,7 @@ permalink: /tags/
 		{% endfor %}
 	</div>
 
+	<div id="tag-posts" class="paginated-list grouped-paginated-list">
 	{% for tag in site.tags %}
 	<div class="one-tag-list">
 		<span class="fa fa-tag listing-seperator" id="{{ tag[0] }}">
@@ -20,6 +21,23 @@ permalink: /tags/
 		{% assign tag_items = tag[1] %}
 		{% assign tag_slug = tag[0] | slugify %}
 		{% assign tag_lid = 'tag-' | append: tag_slug %}
-	{% include paginated_list.html items=tag_items list_id=tag_lid show_excerpt=false show_tags=false show_author=false bold_title=false container_class="small-title-list" %}
+	{% include paginated_list.html items=tag_items list_id=tag_lid show_pagination=false show_excerpt=false show_tags=false show_author=false bold_title=false container_class="small-title-list" %}
 	</div>
 	{% endfor %}
+		<ul class="pager pagination-controls js-only" data-grouped-pagination-controls data-per-page="20" style="margin-top: 10px; display: none;">
+			<li class="previous" style="display:none"><a class="pag-prev" href="javascript:;"><span>&larr; Newer</span></a></li>
+			<li class="next" style="display:none"><a class="pag-next" href="javascript:;"><span>Older &rarr;</span></a></li>
+		</ul>
+	</div>
+
+<script src="{{ site.baseurl }}/js/pagination.js"></script>
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		if (window.initGroupedPaginatedList) {
+			window.initGroupedPaginatedList('tag-posts', {
+				perPage: 20,
+				groupSelector: '.one-tag-list'
+			});
+		}
+	});
+</script>

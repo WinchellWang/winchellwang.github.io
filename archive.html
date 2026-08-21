@@ -26,7 +26,7 @@ permalink: /archive/
 	color: #fff;
 }
 </style>
-<!-- Use unified paginated list to render posts (10 per page) -->
+<!-- Use unified paginated lists to render posts (20 per page) -->
 {% comment %}
 Render posts grouped by year. We create a year tag bar at the top (links to anchors)
 and then render a paginated list for each year using `paginated_list.html`.
@@ -43,27 +43,33 @@ and then render a paginated list for each year using `paginated_list.html`.
 	{% endfor %}
 </div>
 
-<!-- Per-year lists -->
+<!-- Per-year lists, paginated together in groups of 20 posts -->
+<div id="archive-posts" class="paginated-list grouped-paginated-list">
 {% for year in posts_by_year %}
 	<div class="one-year-list">
 		<span class="fa fa-tag listing-seperator" id="year-{{ year.name }}" aria-hidden="true">
 			<span class="tag-text">{{ year.name }}</span>
 		</span>
 	{% assign year_items = year.items %}
-	{% include paginated_list.html items=year_items show_excerpt=false show_tags=true excerpt_length=200 show_author=false bold_title=false container_class="small-title-list" %}
+	{% assign year_list_id = 'archive-' | append: year.name %}
+	{% include paginated_list.html items=year_items list_id=year_list_id show_pagination=false show_excerpt=false show_tags=true excerpt_length=200 show_author=false bold_title=false container_class="small-title-list" %}
 	</div>
 {% endfor %}
+	<ul class="pager pagination-controls js-only" data-grouped-pagination-controls data-per-page="20" style="margin-top: 10px; display: none;">
+		<li class="previous" style="display:none"><a class="pag-prev" href="javascript:;"><span>&larr; Newer</span></a></li>
+		<li class="next" style="display:none"><a class="pag-next" href="javascript:;"><span>Older &rarr;</span></a></li>
+	</ul>
+</div>
 
 <!-- initialize pagination for all year lists -->
 <script src="{{ site.baseurl }}/js/pagination.js"></script>
 <script>
 	document.addEventListener('DOMContentLoaded', function () {
-		{% for year in posts_by_year %}
-			(function(y){
-				// find the paginated list element that published items for this year (paginated_list sets data-list-year)
-				var el = document.querySelector('[data-list-year="{{ year.name }}"]');
-				if (el && window.initPaginatedList) window.initPaginatedList(el.id);
-			})('{{ year.name }}');
-		{% endfor %}
+		if (window.initGroupedPaginatedList) {
+			window.initGroupedPaginatedList('archive-posts', {
+				perPage: 20,
+				groupSelector: '.one-year-list'
+			});
+		}
 	});
 </script>

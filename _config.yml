@@ -24,10 +24,6 @@ permalink: pretty
 exclude: ["Blog"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
-# Gems
-# from PR#40, to support local preview for Jekyll 3.0
-plugins: [jekyll-paginate]
-
 # Markdown settings
 # replace redcarpet to kramdown,
 # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
@@ -45,16 +41,6 @@ giscus:
     category: General #评论默认类别
     category-id: DIC_kwDOHnDuac4CWMWd #分类ID
 
-# Gitalk
-gitalk:
-  enable: false    #是否开启Gitalk评论
-  clientID:                             #生成的clientID
-  clientSecret:     #生成的clientSecret
-  repo: winchellwang.github.io    #仓库名称
-  owner: winchellwang    #github用户名
-  admin: winchellwang
-  distractionFreeMode: true #是否启用类似FB的阴影遮罩
-
 # Tracker
 google_analytics: G-19VG3KHRSW #google analytics tracking ID
 
@@ -66,8 +52,8 @@ featured-condition-size: 2              # 相同标签数量大于这个数，�
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
 
-# Friends
-friends: [
+# Related links
+related_links: [
     {
       title: "De France Lab",
       href: "https://www.defrancelab.ca"

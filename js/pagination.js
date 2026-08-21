@@ -1,6 +1,6 @@
 /*
   Generic client-side pagination helper.
-  Usage: window.initPaginatedList(containerId, { perPage: 5 })
+  Usage: window.initPaginatedList(containerId, { perPage: 10 })
 
   This file fixes the original bugs in the old script:
   - always uses radix 10 for parseInt
@@ -12,10 +12,6 @@
   'use strict';
 
   var instances = {};
-
-  function makePageNum(currIdx, totalPages) {
-    return (currIdx + 1) + ' / ' + Math.max(1, totalPages);
-  }
 
   function displayPage(items, pageIndex, perPage) {
     for (var i = 0; i < items.length; i++) {
@@ -36,8 +32,8 @@
 
 
     var items = Array.prototype.slice.call(container.getElementsByClassName('paginated-item'));
-    // Only show pager if the full list length is > 10
-    if (items.length <= 10) {
+    // Only show pager when the list actually spans more than one page.
+    if (items.length <= perPage) {
       // leave the full list visible (no JS pagination)
       return null;
     }
@@ -112,6 +108,81 @@
       instances[containerId].destroy();
       delete instances[containerId];
     }
+  };
+
+  window.initGroupedPaginatedList = function (containerId, opts) {
+    var container = document.getElementById(containerId);
+    if (!container) return null;
+
+    var options = opts || {};
+    var controls = container.querySelector('[data-grouped-pagination-controls]');
+    if (!controls) return null;
+
+    var perPageAttr = controls.getAttribute('data-per-page');
+    var perPage = options.perPage || (perPageAttr ? parseInt(perPageAttr, 10) : 20);
+    var groupSelector = options.groupSelector || '.one-tag-list, .one-year-list';
+    var groups = Array.prototype.slice.call(container.querySelectorAll(groupSelector));
+    var items = Array.prototype.slice.call(container.getElementsByClassName('paginated-item'));
+    var totalPages = Math.max(1, Math.ceil(items.length / perPage));
+    var current = 0;
+
+    if (items.length <= perPage) return null;
+
+    controls.style.display = '';
+    container.classList.add('js-enabled');
+
+    function updateGroups() {
+      groups.forEach(function (group) {
+        var groupItems = Array.prototype.slice.call(group.getElementsByClassName('paginated-item'));
+        group.style.display = groupItems.some(function (item) {
+          return item.style.display !== 'none';
+        }) ? '' : 'none';
+      });
+    }
+
+    function updateControls() {
+      var prevLi = controls.querySelector('li.previous');
+      var nextLi = controls.querySelector('li.next');
+      if (prevLi) prevLi.style.display = current === 0 ? 'none' : 'inline-block';
+      if (nextLi) nextLi.style.display = current === totalPages - 1 ? 'none' : 'inline-block';
+    }
+
+    function goTo(pageIndex, shouldScroll) {
+      current = Math.max(0, Math.min(pageIndex, totalPages - 1));
+      displayPage(items, current, perPage);
+      updateGroups();
+      updateControls();
+      if (shouldScroll) {
+        window.scrollTo(0, container.getBoundingClientRect().top + window.pageYOffset - 20);
+      }
+    }
+
+    function goToHash() {
+      if (!window.location.hash) return;
+      var hashId;
+      try {
+        hashId = decodeURIComponent(window.location.hash.slice(1));
+      } catch (e) {
+        hashId = window.location.hash.slice(1);
+      }
+      var target = document.getElementById(hashId);
+      if (!target || !container.contains(target)) return;
+      var group = target.closest ? target.closest(groupSelector) : null;
+      if (!group) return;
+      var firstItem = group.getElementsByClassName('paginated-item')[0];
+      var itemIndex = items.indexOf(firstItem);
+      if (itemIndex >= 0) goTo(Math.floor(itemIndex / perPage), false);
+    }
+
+    var prevBtn = controls.querySelector('.pag-prev');
+    var nextBtn = controls.querySelector('.pag-next');
+    if (prevBtn) prevBtn.addEventListener('click', function () { goTo(current - 1, true); });
+    if (nextBtn) nextBtn.addEventListener('click', function () { goTo(current + 1, true); });
+    window.addEventListener('hashchange', goToHash);
+
+    goTo(0, false);
+    goToHash();
+    return { goTo: goTo };
   };
 
 })(window, document);
