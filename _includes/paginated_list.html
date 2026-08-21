@@ -203,13 +203,6 @@ This include is intentionally flexible: it will render either talk-like objects
       {% if include.show_author != false %}
       <p class="post-meta hexo-talk-meta">Posted by {% if item.author %}{{ item.author }}{% else %}{{ site.title }}{% endif %} on {% if item.talkdate %}{{ item.talkdate | date: "%B %-d, %Y" }}{% else %}{{ item.date | date: "%B %-d, %Y" }}{% endif %}</p>
       {% endif %}
-      {% if include.show_tags and item.tags %}
-      <div class="item-tags">
-        {% for tag in item.tags %}
-          <a class="archive_tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
-        {% endfor %}
-      </div>
-      {% endif %}
     </div>
   </div>
   {% endfor %}

@@ -7,9 +7,9 @@ permalink: /about/
 ---
 
 <!-- Language Selector -->
-<select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
-    <option value="0" selected> 中文 Chinese </option>
-    <option value="1"> 英文 English </option>
+<select class="sel-lang" onchange="onLanChange(this.value)">
+    <option value="en" selected> 英文 English </option>
+    <option value="zh"> 中文 Chinese </option>
 </select>
 
 <!-- Chinese Version -->
@@ -37,27 +37,21 @@ permalink: /about/
     // handle render
     function _render(){
         var _hash = window.location.hash;
-        // en
-        if(_hash == "#en"){
-            $select.selectedIndex = 1;
-            $en.style.display = "block";
-            $zh.style.display = "none";
-        // zh by default
-        }else{
-            // not trigger onChange, otherwise cause a loop call.
-            $select.selectedIndex = 0;
+        if(_hash == "#zh"){
+            $select.value = "zh";
             $zh.style.display = "block";
             $en.style.display = "none";
+        // English by default
+        }else{
+            $select.value = "en";
+            $en.style.display = "block";
+            $zh.style.display = "none";
         }
     }
 
     // handle select change
-    function onLanChange(index){
-        if(index == 0){
-            window.location.hash = "#zh"
-        }else{
-            window.location.hash = "#en"
-        }
+    function onLanChange(language){
+        window.location.hash = language;
     }
 
     // init

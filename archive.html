@@ -6,26 +6,6 @@ header-img: "img/archive-bg.jpg"
 permalink: /archive/
 ---
 
-<style>
-.archive_tag {
-	font-size: 70%;
-	display: inline-block;
-	background: #0085a1;
-	border: 0px solid #0085a1;
-	color: #fff;
-	border-radius: 999em;
-	padding: 0 10px;
-	line-height: 16px;
-	margin: 0 0px;
-	margin-bottom: 0px;
-}
-
-.archive_tag:hover{
-	text-decoration: none;
-	background: #0085a1;
-	color: #fff;
-}
-</style>
 <!-- Use unified paginated lists to render posts (20 per page) -->
 {% comment %}
 Render posts grouped by year. We create a year tag bar at the top (links to anchors)
@@ -52,7 +32,7 @@ and then render a paginated list for each year using `paginated_list.html`.
 		</span>
 	{% assign year_items = year.items %}
 	{% assign year_list_id = 'archive-' | append: year.name %}
-	{% include paginated_list.html items=year_items list_id=year_list_id show_pagination=false show_excerpt=false show_tags=true excerpt_length=200 show_author=false bold_title=false container_class="small-title-list" %}
+	{% include paginated_list.html items=year_items list_id=year_list_id show_pagination=false show_excerpt=false excerpt_length=200 show_author=false bold_title=false container_class="small-title-list" %}
 	</div>
 {% endfor %}
 	<ul class="pager pagination-controls js-only" data-grouped-pagination-controls data-per-page="20" style="margin-top: 10px; display: none;">

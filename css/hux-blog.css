@@ -27,7 +27,7 @@ html {
 }
 @media (orientation: landscape) and (min-width:1200px) {
     .container {
-        width: max(1170px, 75%);
+        width: max(1170px, 85%);
     }
 }
 @media (orientation: landscape) {
@@ -618,6 +618,7 @@ form .row:first-child .floating-label-form-group {
 }
 .pager li>a span {
     display: block;
+    font-weight: 800;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -673,6 +674,7 @@ img::-moz-selection {
 }
 #tag_cloud .tag, #tag_cloud a {
     font-size: 14px;
+    font-weight: 700;
     border: none;
     line-height: 28px;
     margin: 0 2px 8px;
@@ -695,7 +697,7 @@ img::-moz-selection {
     margin-right: 5px;
 }
 .one-tag-list .tag-text {
-    font-weight: 200;
+    font-weight: 700;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
     line-height: 1.7;
 }
@@ -904,8 +906,7 @@ img::-moz-selection {
 }
 
 .one-year-list .tag-text {
-  /* Match .one-tag-list .tag-text from main stylesheet */
-  font-weight: 200;
+  font-weight: 700;
   /* Hux learn from
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
@@ -930,25 +931,6 @@ img::-moz-selection {
 }
 
 #tag_cloud a.archive_tag:hover {
-  background-color: #0085a1 !important;
-  color: #fff !important;
-}
-
-/* Ensure post-level tags (generated in paginated_list item-tags) use the same pill styling */
-.archive_tag,
-.item-tags a.archive_tag {
-  display: inline-block;
-  padding: 0 10px;
-  border-radius: 999em;
-  background: #d6d6d6;
-  color: #ffffff;
-  line-height: 24px;
-  font-size: 12px;
-  margin: 0 2px 8px;
-  text-decoration: none;
-}
-.archive_tag:hover,
-.item-tags a.archive_tag:hover {
   background-color: #0085a1 !important;
   color: #fff !important;
 }
@@ -1003,7 +985,7 @@ img::-moz-selection {
    color and weight are identical to Home's .post-container .pager li>a>span */
 .paginated-list .pager li > a > span {
   color: #808080 !important;
-  font-weight: normal !important;
+  font-weight: 800 !important;
   letter-spacing: 0.5px !important;
 }
 .paginated-list .pager li > a:focus > span,
