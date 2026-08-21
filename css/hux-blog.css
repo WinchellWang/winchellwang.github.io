@@ -8,6 +8,18 @@ article, body {
 html {
     overflow-x: hidden;
 }
+:root {
+    /* About width = 5 gaps (two outer + three inner) + 4 buttons. */
+    --about-social-gap: 24px;
+    --about-social-button-width: 38px;
+    --about-sidebar-width: calc(
+        var(--about-social-gap) + var(--about-social-gap) +
+        var(--about-social-gap) + var(--about-social-gap) +
+        var(--about-social-gap) +
+        var(--about-social-button-width) + var(--about-social-button-width) +
+        var(--about-social-button-width) + var(--about-social-button-width)
+    );
+}
 .navbar-custom, body {
     line-height: 1.7;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
@@ -31,7 +43,7 @@ html {
     }
     .home-content-column {
         float: left;
-        width: calc(83.33333333% - 285px);
+        width: calc(83.33333333% - var(--about-sidebar-width));
         margin-left: 8.33333333%;
     }
     .post-content-column.with-catalog {
@@ -42,8 +54,10 @@ html {
     .home-sidebar {
         display: block;
         float: left;
-        width: 285px;
+        width: var(--about-sidebar-width);
         margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
     .home-sidebar .visible-md,
     .home-sidebar .visible-lg {
@@ -148,7 +162,17 @@ html {
 .home-sidebar .short-about .list-inline {
     display: flex;
     justify-content: center;
+    gap: var(--about-social-gap);
+    width: 100%;
     margin-left: 0;
+    padding-right: var(--about-social-gap);
+    padding-left: var(--about-social-gap);
+    box-sizing: border-box;
+}
+.home-sidebar .short-about .list-inline > li {
+    flex: 0 0 var(--about-social-button-width);
+    width: var(--about-social-button-width);
+    padding-right: 0;
 }
 .catalog-container {
     padding: 0;
@@ -169,7 +193,7 @@ html {
     top: -21px;
 }
 .home-sidebar .side-catalog.fixed {
-    width: 255px;
+    width: var(--about-sidebar-width);
 }
 .post-catalog-column .side-catalog.fixed {
     width: 182px;
