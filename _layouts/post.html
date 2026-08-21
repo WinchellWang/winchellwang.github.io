@@ -174,16 +174,9 @@ layout: default
 </script>
 <script>
     async("https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js",function(){
+        anchors.options.placement = 'right';
+        anchors.options.visible = 'hover';
         anchors.add('h1, h2, h3, h4, h5, h6').remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
     })
 </script>
-<style>
-    .anchorjs-link {
-        position: absolute;
-        left: -0.75em;
-        transform: translateX(-60%);
-        font-size: 1.1em;
-        margin-top: -0.1em;
-    }
-</style>
 {% endif %}

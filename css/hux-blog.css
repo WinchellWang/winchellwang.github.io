@@ -48,7 +48,11 @@ html {
     .bottom-sidebar {
         display: none !important;
     }
-    .post-content-column.without-catalog,
+    .post-content-column.without-catalog {
+        float: left;
+        width: 66.66666667%;
+        margin-left: 8.33333333%;
+    }
     .post-bottom-sidebar,
     .full-content-column {
         float: left;
@@ -82,8 +86,8 @@ html {
         padding-right: 15px;
     }
     .post-content-column.post-container {
-        padding-left: 55px;
-        padding-right: 55px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .home-content-column,
     .bottom-sidebar,
@@ -289,7 +293,6 @@ pre code {
 }
 .post-container h1, .post-container h2, .post-container h3, .post-container h4, .post-container h5, .post-container h6 {
     margin: 30px 0 10px;
-    position: relative;
 }
 .post-container h5 {
     font-size: 19px;
@@ -405,8 +408,8 @@ pre code {
         padding-right: 15px;
     }
     .post-content-column.post-container {
-        padding-left: 55px;
-        padding-right: 55px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }.navbar-custom {
     border: none;
@@ -1244,5 +1247,37 @@ img::-moz-selection {
   }
   #huxblog_navbar .navbar-nav > li {
     float: left;
+  }
+}
+
+/* Shared typography: Home is the reference for list and article headings. */
+.post-content-column.post-container h1,
+.post-content-column.post-container h2,
+.post-content-column.post-container h3,
+.post-content-column.post-container h4,
+.post-content-column.post-container h5,
+.post-content-column.post-container h6 {
+  font-family: inherit;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #000;
+}
+.talks-body-size .post-title,
+.talks-body-size .hexo-talk-title {
+  font-family: inherit;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.7;
+  color: #404040 !important;
+}
+@media (orientation: landscape) {
+  .post-content-column.post-container h1,
+  .post-content-column.post-container h2,
+  .post-content-column.post-container h3,
+  .post-content-column.post-container h4,
+  .post-content-column.post-container h5,
+  .post-content-column.post-container h6 {
+    font-size: 26px;
   }
 }

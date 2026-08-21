@@ -6,7 +6,7 @@ header-img: "img/talk-bg.jpg"
 permalink: /talk/
 ---
 
-{% include paginated_list.html items=site.data.talks per_page=20 list_id="talks-list" prev_label="&larr; Newer" next_label="Older &rarr;" bold_title=false %}
+{% include paginated_list.html items=site.data.talks per_page=20 list_id="talks-list" prev_label="&larr; Newer" next_label="Older &rarr;" bold_title=false container_class="talks-body-size" %}
 
 <!-- Scripts -->
 <script src="{{ site.baseurl }}/js/pagination.js"></script>
