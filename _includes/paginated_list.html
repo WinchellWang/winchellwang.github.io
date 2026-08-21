@@ -89,14 +89,6 @@ This include is intentionally flexible: it will render either talk-like objects
     line-height: 1.2;
   }
 
-  .small-title-list .post-title {
-    font-size: 22px;
-  }
-
-  .talks-title-list .post-title {
-    font-size: 16px;
-  }
-
   .paginated-list .post-content-preview a {
     color: #999999;
     text-decoration: none;
@@ -108,27 +100,23 @@ This include is intentionally flexible: it will render either talk-like objects
 
   /* Keep list sizing synchronized with the site's portrait layout. */
   @media screen and (orientation: portrait) {
-    .paginated-list:not(.small-title-list) .hexo-talk-item,
-    .paginated-list:not(.small-title-list) .post-preview,
-    .paginated-list:not(.small-title-list) .paginated-item {
+    .paginated-list .hexo-talk-item,
+    .paginated-list .post-preview,
+    .paginated-list .paginated-item {
       flex-direction: row;
       padding: 10px 4px;
     }
 
-    .paginated-list:not(.small-title-list) .page-action-calendar {
+    .paginated-list .page-action-calendar {
       width: 46px;
       height: 46px;
       margin-right: 12px; /* Increased margin */
     }
 
-    .paginated-list:not(.small-title-list) .hexo-talk-title,
-    .paginated-list:not(.small-title-list) .post-title {
+    .paginated-list .hexo-talk-title,
+    .paginated-list .post-title {
       font-size: 22px; /* Larger base title size for mobile */
       font-weight: 800; /* Ensure titles are bold */
-    }
-
-    .talks-title-list .post-title {
-      font-size: 16px; /* Specific title size for Talks page */
     }
 
     .paginated-list .hexo-talk-meta {

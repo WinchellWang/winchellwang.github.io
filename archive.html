@@ -32,7 +32,7 @@ and then render a paginated list for each year using `paginated_list.html`.
 		</span>
 	{% assign year_items = year.items %}
 	{% assign year_list_id = 'archive-' | append: year.name %}
-	{% include paginated_list.html items=year_items list_id=year_list_id show_pagination=false show_excerpt=false excerpt_length=200 show_author=false bold_title=false container_class="small-title-list" %}
+	{% include paginated_list.html items=year_items list_id=year_list_id show_pagination=false show_excerpt=false excerpt_length=200 show_author=false bold_title=true %}
 	</div>
 {% endfor %}
 	<ul class="pager pagination-controls js-only" data-grouped-pagination-controls data-per-page="20" style="margin-top: 10px; display: none;">
