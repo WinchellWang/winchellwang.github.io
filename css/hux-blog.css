@@ -25,8 +25,10 @@ html {
     .container {
         width: 94%;
     }
-    .post-container {
-    padding-right: 5%}
+    .post-content-column.post-container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
     .sidebar-container {
         padding-right: 5%;
     }
@@ -40,7 +42,7 @@ html {
     .home-sidebar {
         display: block;
         float: left;
-        width: 25%;
+        width: 16.66666667%;
         margin-left: 0;
     }
     .home-sidebar .visible-md,
@@ -51,16 +53,26 @@ html {
         display: none !important;
     }
     .post-content-column.without-catalog,
-    .post-bottom-sidebar {
+    .post-bottom-sidebar,
+    .full-content-column {
         float: left;
         width: 83.33333333%;
         margin-left: 8.33333333%;
+    }
+    .hero-content-column {
+        float: left;
+        width: 66.66666667%;
+        margin-left: 16.66666667%;
     }
     .post-catalog-column {
         display: block !important;
         float: left;
         width: 16.66666667%;
         margin-left: 0;
+    }
+    .home-sidebar > .side-catalog,
+    .post-catalog-column > .side-catalog {
+        margin-left: auto;
     }
 }
 @media (orientation: portrait) {
@@ -73,14 +85,16 @@ html {
         padding-left: 15px;
         padding-right: 15px;
     }
-    .post-container {
-        padding-left: 44px;
-        padding-right: 5px;
+    .post-content-column.post-container {
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .home-content-column,
     .bottom-sidebar,
     .post-content-column,
-    .post-bottom-sidebar {
+    .post-bottom-sidebar,
+    .full-content-column,
+    .hero-content-column {
         float: none;
         width: 100%;
         margin-left: 0;
@@ -384,9 +398,9 @@ pre code {
         padding-left: 15px;
         padding-right: 15px;
     }
-    .post-container {
-        padding-left: 44px;
-        padding-right: 5px;
+    .post-content-column.post-container {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }.navbar-custom {
     border: none;
@@ -725,7 +739,7 @@ img::-moz-selection {
     padding: 70px 0 60px;
 }
 #tag_cloud {
-    margin: 20px 0 15px;
+    margin: 20px 0 25px;
 }
 #tag_cloud .tag, #tag_cloud a {
     font-size: 14px;
@@ -747,6 +761,7 @@ img::-moz-selection {
 .listing-seperator {
     color: #0085a1;
     font-size: 21px!important;
+    line-height: 2!important;
 }
 .listing-seperator::before {
     margin-right: 5px;
@@ -818,12 +833,8 @@ img::-moz-selection {
 #tag-heading {
     padding: 55px 0;
 }
-#tag_cloud {
-    margin-bottom: 25px;
-}
 .listing-seperator {
     font-size: 20px!important;
-    line-height: 2!important;
 }
 .one-tag-list .post-preview {
     margin-left: 20px;

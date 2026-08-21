@@ -64,8 +64,11 @@ related_links: [
       title: "Meta AI",
       href: "https://ai.facebook.com/results/?amp%3Bsort_by=most_recent&content_types%5B0%5D=publication"
     },{
-      title: "国际象棋 Chess",
-      href: "https://winchellwang.github.io/chess/"
+      title: "Queen's ARC Schedule",
+      href: "https://winchellwang.github.io/Queens-ARC-Schedule/"
+    },{
+      title: "五子棋 Gomoku",
+      href: "https://winchellwang.github.io/gomoku/"
     },{
       title: "五子棋 Gomoku",
       href: "https://winchellwang.github.io/gomoku/"
