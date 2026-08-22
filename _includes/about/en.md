@@ -67,6 +67,5 @@ For the complete and continuously updated list, visit [Google Scholar](https://s
 - **Exploring Deep Learning for Predicting Cumulative Mass Recovery from Individual Extraction Wells during In-Situ Thermal Remediation** — International In-Situ Thermal Treatment Symposium, 2025.
 - **Surface Modification of Activated Carbon with Ozone Nanobubbles to Improve Contaminant Removal Performance in Water** — BWRC Research Day, 2024 (poster).
 - **Innovative Applications of Nanobubble Technology in Water Treatment: From Biofilm Removal to Dye Removal in Landfill Leachate** — Canadian Chemistry Conference and Exhibition, 2024.
-- **Coke Quality Prediction Based on Expert System with the Combination of Artificial Intelligence** — International Symposium on Clean Energy and Advanced Materials, 2022.
 
 I welcome conversations and collaborations in artificial intelligence, environmental engineering, advanced water treatment, and sustainable materials. A badminton or tennis invitation is also a perfectly valid opening message.
