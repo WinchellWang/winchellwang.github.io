@@ -12,13 +12,12 @@ When the experiments need a break, I am usually playing badminton, tennis, or wo
 
 ## Awards
 
-- **The Ian M. Drum Scholarship** — **CAD 15,000** (2 awards)
-- **The Huntley Macdonald Sinclair Travelling Scholarship** — **CAD 3,000**
-- **Graduate Student Conference Award** — **CAD 500**
 - **Stantec Scholarship** — **USD 10,000**
+- **The Ian M. Drum Scholarship** — **CAD 15,000** (2 awards)
 - **Mitacs Globalink Research Award** — **CAD 12,000**
-- **The Ian M. Drum Scholarship** — **CAD 15,000**
+- **The Huntley Macdonald Sinclair Travelling Scholarship** — **CAD 3,000**
 - **The Paul Semple Memorial Fellowship** — **CAD 2,000**
+- **Graduate Student Conference Award** — **CAD 500**
 - **Second Prize Scholarship** (3 awards)
 - **Third Prize Scholarship**
 - **Outstanding Student in University**

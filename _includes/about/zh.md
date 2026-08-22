@@ -12,13 +12,12 @@
 
 ## 奖项与荣誉
 
-- **The Ian M. Drum Scholarship** — **CAD 15,000** 两次
-- **The Huntley Macdonald Sinclair Travelling Scholarship** — **CAD 3,000**
-- **Graduate Student Conference Award** — **CAD 500**
 - **Stantec Scholarship** — **USD 10,000**
+- **The Ian M. Drum Scholarship** — **CAD 15,000** 两次
 - **Mitacs Globalink Research Award** — **CAD 12,000**
-- **The Ian M. Drum Scholarship** — **CAD 15,000**
+- **The Huntley Macdonald Sinclair Travelling Scholarship** — **CAD 3,000**
 - **The Paul Semple Memorial Fellowship** — **CAD 2,000**
+- **Graduate Student Conference Award** — **CAD 500**
 - **学习优秀二等奖** 三次
 - **学习优秀三等奖**
 - **校优秀学生**
