@@ -10,7 +10,7 @@ When the experiments need a break, I am usually playing badminton, tennis, or wo
 - **The University of Queensland** — Master of Engineering Science
 - **University of Shanghai for Science and Technology** — Bachelor of Applied Science in Chemistry; Bachelor of Business Administration
 
-## Awards and Funding
+## Awards
 
 - **The Ian M. Drum Scholarship** — **CAD 15,000** (2 awards)
 - **The Huntley Macdonald Sinclair Travelling Scholarship** — **CAD 3,000**
