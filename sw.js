@@ -1,16 +1,14 @@
 // PWA service worker for Winchell Wang Blog.
 // Home is cache-first; posts/comments are network-only; other pages are
 // network-first; static assets use stale-while-revalidate.
-const CACHE_VERSION = 'v6';
+const CACHE_VERSION = 'v7';
 const HOME_CACHE = `winchell-blog-home-${CACHE_VERSION}`;
 const PAGE_CACHE = `winchell-blog-pages-${CACHE_VERSION}`;
 const ASSET_CACHE = `winchell-blog-assets-${CACHE_VERSION}`;
 const CACHE_NAMES = new Set([HOME_CACHE, PAGE_CACHE, ASSET_CACHE]);
 const HOME_URL = new URL('./', self.registration.scope).href;
 const PRECACHE_URLS = [
-  './', './manifest.json', './css/bootstrap.min.css', './css/moax-blog.css',
-  './css/syntax.css', './css/prism.css', './js/prism.js',
-  './js/polyfill.min.js', './js/tex-mml-chtml.js', './js/pagination.js',
+  './', './manifest.json', './css/bootstrap.min.css', './css/moax-blog.css', './js/pagination.js',
   './js/jquery.min.js', './js/bootstrap.min.js', './js/moax-blog.min.js',
   './img/favicon.ico',
   './img/apple.png', './img/home-bg.jpg', './img/avatar.png'
