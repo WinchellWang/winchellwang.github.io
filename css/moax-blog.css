@@ -1380,3 +1380,21 @@ img::-moz-selection {
     color: #aebdce !important;
   }
 }
+
+/* Keep Home list interactions consistent with Tags, Archive, and Talks. */
+.paginated-list a:hover .post-title,
+.paginated-list a:focus .post-title,
+.paginated-list a:active .post-title,
+.paginated-list a:hover .post-title strong,
+.paginated-list a:focus .post-title strong,
+.paginated-list a:active .post-title strong,
+.paginated-list a:hover .post-subtitle,
+.paginated-list a:focus .post-subtitle,
+.paginated-list a:active .post-subtitle,
+.paginated-list .post-content-preview:hover,
+.paginated-list .post-content-preview:focus-within,
+.paginated-list .post-content-preview:hover a,
+.paginated-list .post-content-preview a:focus,
+.paginated-list .post-content-preview a:active {
+  color: #0085a1 !important;
+}

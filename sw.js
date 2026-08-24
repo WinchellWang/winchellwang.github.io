@@ -1,7 +1,7 @@
 // PWA service worker for Winchell Wang Blog.
 // Home is cache-first; posts/comments are network-only; other pages are
 // network-first; static assets use stale-while-revalidate.
-const CACHE_VERSION = 'v5';
+const CACHE_VERSION = 'v6';
 const HOME_CACHE = `winchell-blog-home-${CACHE_VERSION}`;
 const PAGE_CACHE = `winchell-blog-pages-${CACHE_VERSION}`;
 const ASSET_CACHE = `winchell-blog-assets-${CACHE_VERSION}`;
