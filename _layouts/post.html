@@ -173,7 +173,7 @@ layout: default
     window.addEventListener('resize', truncatePagerTitles);
 </script>
 <script>
-    async("/js/anchor.min.js",function(){
+    async("{{ '/js/anchor.min.js' | prepend: site.baseurl }}", function(){
         anchors.options.placement = 'right';
         anchors.options.visible = 'hover';
         anchors.add('h1, h2, h3, h4, h5, h6').remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
