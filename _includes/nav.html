@@ -69,23 +69,41 @@
         }
     }
 
+    // Grow the same circle while pressed; shrink it only after release.
+    function beginTogglePress(){
+        $toggle.classList.remove('is-releasing');
+        $toggle.classList.add('is-pressing');
+    }
+
+    function endTogglePress(){
+        if (!$toggle.classList.contains('is-pressing')) return;
+        $toggle.classList.remove('is-pressing');
+        $toggle.classList.add('is-releasing');
+    }
+
+    $toggle.addEventListener('pointerdown', beginTogglePress);
+    window.addEventListener('pointerup', endTogglePress);
+    window.addEventListener('pointercancel', endTogglePress);
+    $toggle.addEventListener('keydown', function(e){
+        if (e.key === 'Enter' || e.key === ' ') beginTogglePress();
+    });
+    $toggle.addEventListener('keyup', function(e){
+        if (e.key === 'Enter' || e.key === ' ') endTogglePress();
+    });
+    $toggle.addEventListener('transitionend', function(e){
+        if (e.pseudoElement === '::before' && !$toggle.classList.contains('is-pressing')) {
+            $toggle.classList.remove('is-releasing');
+        }
+    });
+
     // Bind Event
     $toggle.addEventListener('click', function(e){
-        // Restart the one-shot ripple for every open or close action.
-        $toggle.classList.remove('is-activating');
-        void $toggle.offsetWidth;
-        $toggle.classList.add('is-activating');
-
         if ($navbar.className.indexOf('in') > 0) {
             __MoaxNav__.close()
         }else{
             __MoaxNav__.open()
         }
     })
-
-    $toggle.addEventListener('animationend', function(){
-        $toggle.classList.remove('is-activating');
-    });
 
     // Keep clicks on the toggle inside the menu; other page clicks close it.
     document.addEventListener('click', function(e){

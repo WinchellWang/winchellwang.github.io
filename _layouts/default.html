@@ -19,6 +19,20 @@
 <!-- Migrate from head to bottom, no longer block render and still work -->
 
 <script>
+    // Hide while scrolling down and reveal when the user scrolls up.
+    var navbar = document.querySelector('.navbar-custom');
+    var lastScrollTop = Math.max(window.pageYOffset || 0, 0);
+
+    window.addEventListener('scroll', function() {
+        var scrollTop = Math.max(window.pageYOffset || document.documentElement.scrollTop, 0);
+        var delta = scrollTop - lastScrollTop;
+
+        if (Math.abs(delta) > 4) {
+            navbar.classList.toggle('is-hidden', delta > 0 && scrollTop > navbar.offsetHeight);
+            lastScrollTop = scrollTop;
+        }
+    }, { passive: true });
+
     // Back to top button
     var backToTopBtn = document.getElementById('back-to-top');
     if (backToTopBtn) {

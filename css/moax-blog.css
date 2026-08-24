@@ -1366,7 +1366,7 @@ img::-moz-selection {
   position: fixed;
   top: 0;
   min-height: calc(61px + env(safe-area-inset-top, 0px));
-  background-color: var(--nav-surface);
+  background-color: transparent;
   background-image: linear-gradient(
     to bottom,
     var(--nav-solid) 0,
@@ -1374,8 +1374,13 @@ img::-moz-selection {
     var(--nav-surface) 100%
   );
   border: 0;
-  transform: none;
-  transition: none;
+  transform: translateY(0);
+  transition: transform .3s ease;
+  will-change: transform;
+}
+
+.navbar-custom.is-hidden {
+  transform: translateY(-100%);
 }
 
 .navbar-custom > .container-fluid {
@@ -1399,7 +1404,10 @@ img::-moz-selection {
   background-color: var(--nav-foreground);
 }
 
-.navbar-default .navbar-toggle {
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:active {
   overflow: visible;
   background: transparent;
 }
@@ -1416,11 +1424,13 @@ img::-moz-selection {
   background-color: #0085a1;
   opacity: 0;
   transform: translate(-50%, -50%) scale(0);
+  transition: transform .2s ease-out, opacity .2s ease-out;
   pointer-events: none;
 }
 
-.navbar-default .navbar-toggle.is-activating::before {
-  animation: navbar-toggle-pulse .4s ease-in-out;
+.navbar-default .navbar-toggle.is-pressing::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -1433,22 +1443,8 @@ img::-moz-selection {
   background-color: #0085a1;
 }
 
-@keyframes navbar-toggle-pulse {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0);
-  }
-  50% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0);
-  }
-}
-
-.navbar-default .navbar-toggle.is-activating .icon-bar {
+.navbar-default .navbar-toggle.is-pressing .icon-bar,
+.navbar-default .navbar-toggle.is-releasing .icon-bar {
   background-color: #fff;
 }
 
