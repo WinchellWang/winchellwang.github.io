@@ -1307,3 +1307,76 @@ img::-moz-selection {
     }
   }
 }
+
+/* Dark-mode corrections for late-loaded syntax styles and list-specific rules. */
+@media (prefers-color-scheme: dark) {
+  .post-container pre,
+  .post-container .highlight pre,
+  .post-container pre[class*="language-"],
+  div.code-toolbar > pre[class*="language-"] {
+    color: #d7e0ea !important;
+    background: #0d1117 !important;
+    border-color: #30363d !important;
+    text-shadow: none !important;
+  }
+
+  .post-container :not(pre) > code,
+  .post-container p code,
+  .post-container li code,
+  .post-container td code {
+    color: #e6edf3 !important;
+    background: #30363d !important;
+    border: 1px solid #444c56;
+    text-shadow: none !important;
+  }
+
+  .post-container pre code,
+  .post-container pre[class*="language-"] code {
+    color: inherit !important;
+    background: transparent !important;
+    border: 0;
+  }
+
+  .paginated-list .pager li a,
+  .grouped-paginated-list .pager li a {
+    color: #d8dee6 !important;
+    background-color: #1a2129 !important;
+    border-color: #394552 !important;
+  }
+
+  .paginated-list .pager li > a > span,
+  .grouped-paginated-list .pager li > a > span {
+    color: #d8dee6 !important;
+  }
+
+  .paginated-list .pager li a:hover,
+  .paginated-list .pager li a:focus,
+  .grouped-paginated-list .pager li a:hover,
+  .grouped-paginated-list .pager li a:focus {
+    color: #fff !important;
+    background-color: #0085a1 !important;
+    border-color: #0085a1 !important;
+  }
+
+  .paginated-list.post-container .post-title,
+  .paginated-list.post-container .hexo-talk-title,
+  .one-tag-list .post-preview > a .post-title,
+  .paginated-list .post-title,
+  .paginated-list .hexo-talk-title,
+  .paginated-list .post-title strong {
+    color: #d8dee6 !important;
+  }
+
+  .paginated-list.post-container .post-subtitle,
+  .one-tag-list .post-preview > a .post-subtitle,
+  .paginated-list .post-subtitle,
+  .paginated-list .post-content-preview,
+  .paginated-list .post-content-preview a {
+    color: #9aa7b5 !important;
+  }
+
+  .paginated-list .hexo-talk-meta,
+  .paginated-list .post-meta {
+    color: #aebdce !important;
+  }
+}
