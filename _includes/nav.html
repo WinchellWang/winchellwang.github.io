@@ -71,12 +71,21 @@
 
     // Bind Event
     $toggle.addEventListener('click', function(e){
+        // Restart the one-shot ripple for every open or close action.
+        $toggle.classList.remove('is-activating');
+        void $toggle.offsetWidth;
+        $toggle.classList.add('is-activating');
+
         if ($navbar.className.indexOf('in') > 0) {
             __MoaxNav__.close()
         }else{
             __MoaxNav__.open()
         }
     })
+
+    $toggle.addEventListener('animationend', function(){
+        $toggle.classList.remove('is-activating');
+    });
 
     // Keep clicks on the toggle inside the menu; other page clicks close it.
     document.addEventListener('click', function(e){

@@ -1207,14 +1207,7 @@ img::-moz-selection {
 
 /* Follow the operating system theme; light mode remains the legacy fallback. */
 @media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-    --nav-solid: #000;
-    --nav-tint-strong: rgba(0, 0, 0, .96);
-    --nav-tint-medium: rgba(0, 0, 0, .72);
-    --nav-tint-clear: rgba(0, 0, 0, 0);
-    --nav-foreground: #d8dee6;
-  }
+  :root { color-scheme: dark; }
   html, body { background-color: #12171d; color: #d8dee6; }
   body, .pager li > a, .post-preview > a, .post-preview > .post-meta > a,
   .talks-body-size .post-title, .talks-body-size .hexo-talk-title { color: #d8dee6 !important; }
@@ -1365,9 +1358,7 @@ img::-moz-selection {
 /* Persistent notch-safe navigation tint in both orientations. */
 :root {
   --nav-solid: #fff;
-  --nav-tint-strong: rgba(255, 255, 255, .96);
-  --nav-tint-medium: rgba(255, 255, 255, .72);
-  --nav-tint-clear: rgba(255, 255, 255, 0);
+  --nav-surface: rgba(255, 255, 255, .9);
   --nav-foreground: #404040;
 }
 
@@ -1375,13 +1366,12 @@ img::-moz-selection {
   position: fixed;
   top: 0;
   min-height: calc(61px + env(safe-area-inset-top, 0px));
-  background-color: transparent;
+  background-color: var(--nav-surface);
   background-image: linear-gradient(
     to bottom,
     var(--nav-solid) 0,
-    var(--nav-tint-strong) calc(env(safe-area-inset-top, 0px) + 30px),
-    var(--nav-tint-medium) calc(env(safe-area-inset-top, 0px) + 50px),
-    var(--nav-tint-clear) 100%
+    var(--nav-solid) env(safe-area-inset-top, 0px),
+    var(--nav-surface) 100%
   );
   border: 0;
   transform: none;
@@ -1409,9 +1399,33 @@ img::-moz-selection {
   background-color: var(--nav-foreground);
 }
 
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-  background-color: rgba(0, 133, 161, .12);
+.navbar-default .navbar-toggle {
+  overflow: visible;
+  background: transparent;
+}
+
+.navbar-default .navbar-toggle::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #0085a1;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+  pointer-events: none;
+}
+
+.navbar-default .navbar-toggle.is-activating::before {
+  animation: navbar-toggle-pulse .4s ease-in-out;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  position: relative;
+  z-index: 1;
 }
 
 .navbar-default .navbar-toggle:hover .icon-bar,
@@ -1419,12 +1433,29 @@ img::-moz-selection {
   background-color: #0085a1;
 }
 
-.navbar-default .navbar-toggle:active,
-.navbar-default .navbar-toggle[aria-expanded="true"] {
-  background-color: #0085a1;
+@keyframes navbar-toggle-pulse {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
 }
 
-.navbar-default .navbar-toggle:active .icon-bar,
-.navbar-default .navbar-toggle[aria-expanded="true"] .icon-bar {
+.navbar-default .navbar-toggle.is-activating .icon-bar {
   background-color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --nav-solid: #000;
+    --nav-surface: rgba(18, 23, 29, .94);
+    --nav-foreground: #d8dee6;
+  }
 }
