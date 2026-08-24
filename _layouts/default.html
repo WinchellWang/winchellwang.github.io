@@ -79,7 +79,16 @@
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
-    navigator.serviceWorker.register('{{ "/js/sw.js" | prepend: site.baseurl }}')
+    // Remove the legacy /js/ scoped worker, which cannot control site pages.
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+      registrations.forEach(function(registration) {
+        if (/\/js\/$/.test(new URL(registration.scope).pathname)) {
+          registration.unregister();
+        }
+      });
+    });
+
+    navigator.serviceWorker.register('{{ "/sw.js" | prepend: site.baseurl }}', { scope: '{{ "/" | prepend: site.baseurl }}' })
       .then(function(registration) {
         console.log('SW registered: ', registration);
       })
