@@ -1239,3 +1239,71 @@ img::-moz-selection {
     font-size: 26px;
   }
 }
+
+/* Follow the operating system theme; light mode remains the legacy fallback. */
+@media (prefers-color-scheme: dark) {
+  :root { color-scheme: dark; }
+  html, body { background-color: #12171d; color: #d8dee6; }
+  body, .pager li > a, .post-preview > a, .post-preview > .post-meta > a,
+  .talks-body-size .post-title, .talks-body-size .hexo-talk-title { color: #d8dee6 !important; }
+  a, .post-container a, footer .copyright a, select { color: #71c7e3; }
+  .post-preview > .post-meta, .post-content-preview, .paginated-list .hexo-talk-meta,
+  .paginated-list .post-meta, blockquote, small.img-hint, .text-muted { color: #9aa7b5; }
+  .post-content-column.post-container h1, .post-content-column.post-container h2,
+  .post-content-column.post-container h3, .post-content-column.post-container h4,
+  .post-content-column.post-container h5, .post-content-column.post-container h6 { color: #f0f3f6; }
+  hr, .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th,
+  .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td,
+  .table td, .table th { border-color: #303943 !important; }
+  .table-striped > tbody > tr:nth-of-type(odd) { background-color: #192028; }
+  select, .pager li > a, .pager li > span,
+  .comment #ds-thread #ds-reset a.ds-like-thread-button,
+  .comment #ds-thread #ds-reset li.ds-tab a.ds-current,
+  .comment #ds-thread #ds-reset .ds-post-button {
+    background-color: #1a2129;
+    border-color: #394552;
+  }
+  .side-catalog .catalog-body .active { background-color: #222b34; }
+  .sidebar-container, .sidebar-container a, .sidebar-container h5,
+  .sidebar-container h5 a { color: #9aa7b5 !important; }
+  .sidebar-container .tags a { border-color: #5c6977; }
+  /* Preserve banner photography while reducing glare and lifting contrast. */
+  .intro-header {
+    background-color: rgba(5, 9, 13, .48) !important;
+    background-blend-mode: multiply;
+  }
+  .navbar-custom.is-fixed {
+    background-color: rgba(18, 23, 29, .94);
+    border-bottom-color: #303943;
+  }
+  .navbar-custom.is-fixed .nav li a,
+  .navbar-custom.is-fixed .navbar-brand { color: #d8dee6; }
+  pre, .highlight pre, :not(pre) > code[class*="language-"], pre[class*="language-"] {
+    color: #d7e0ea;
+    background: #0d1117;
+    border-color: #30363d;
+    text-shadow: none;
+  }
+  code { color: #e6a7bd; background-color: #202832; }
+  pre code, pre[class*="language-"] code { color: inherit; background: transparent; }
+  code[class*="language-"], pre[class*="language-"] { text-shadow: none; }
+  .token.comment, .token.prolog, .token.doctype, .token.cdata { color: #8b98a5; }
+  .token.punctuation { color: #b6c2cf; }
+  .token.property, .token.tag, .token.boolean, .token.number,
+  .token.constant, .token.symbol, .token.deleted { color: #ff7b72; }
+  .token.selector, .token.attr-name, .token.string, .token.char,
+  .token.builtin, .token.inserted { color: #a5d6ff; }
+  .token.operator, .token.entity, .token.url, .language-css .token.string,
+  .style .token.string { color: #d2a8ff; background: transparent; }
+  .token.atrule, .token.attr-value, .token.keyword { color: #ff7b72; }
+  .token.function, .token.class-name { color: #d2a8ff; }
+  .token.regex, .token.important, .token.variable { color: #ffa657; }
+  img.shadow { box-shadow: 0 2px 8px rgba(0, 0, 0, .65); }
+  .back-to-top { background-color: #394552; color: #f0f3f6; }
+  @media (orientation: portrait) {
+    .navbar-default .navbar-collapse {
+      background: #1a2129;
+      box-shadow: 0 5px 12px rgba(0, 0, 0, .45);
+    }
+  }
+}
