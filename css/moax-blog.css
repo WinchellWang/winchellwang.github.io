@@ -32,11 +32,16 @@ html {
         padding-right: 15px;
         padding-left: 15px;
     }
-    .home-content-column,
-    .full-content-column.compact-index-column {
+    .home-content-column {
         float: left;
         width: calc(84% - 180px);
         margin-left: 9%;
+    }
+    .full-content-column.compact-index-column {
+        float: none;
+        width: calc(84% - 180px);
+        margin-right: auto;
+        margin-left: auto;
     }
     .post-content-column.with-catalog {
         float: left;
