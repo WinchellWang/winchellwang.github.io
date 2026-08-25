@@ -32,7 +32,8 @@ html {
         padding-right: 15px;
         padding-left: 15px;
     }
-    .home-content-column {
+    .home-content-column,
+    .full-content-column.compact-index-column {
         float: left;
         width: calc(84% - 180px);
         margin-left: 9%;
@@ -67,10 +68,6 @@ html {
         float: left;
         width: 84%;
         margin-left: 9%;
-    }
-    .full-content-column.compact-index-column {
-        width: 42%;
-        margin-left: 30%;
     }
     .hero-content-column {
         float: left;
