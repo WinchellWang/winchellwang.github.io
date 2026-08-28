@@ -9,6 +9,7 @@ tags:
    - Chemistry
 header-mask: 0.2
 catalog: true
+mathjax: true
 ---
 
 # 1. Basic Reaction

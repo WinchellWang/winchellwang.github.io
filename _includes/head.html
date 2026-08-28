@@ -49,17 +49,16 @@
     <script defer src="{{ "/js/prism.js" | prepend: site.baseurl }}"></script>
     <link rel="stylesheet" href="{{ "/css/prism.css" | prepend: site.baseurl }}">
 
+    {% if page.mathjax %}
     <script>
         MathJax = {
           tex: {
             inlineMath: [['$', '$'], ['\\(', '\\)']]
-          },
-          chtml: {
-            fontURL: 'https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/output/chtml/fonts/woff-v2'
           }
         };
     </script>
-    <script id="MathJax-script" async src="{{ "/js/tex-mml-chtml.js" | prepend: site.baseurl }}"></script>
+    <script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+    {% endif %}
     {% endif %}
 
     <!-- Custom CSS (last so theme overrides vendor styles) -->

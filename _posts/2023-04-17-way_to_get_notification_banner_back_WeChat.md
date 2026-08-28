@@ -9,6 +9,7 @@ tags:
     - Life Tips
 header-mask: 0.2
 catalog: true
+mathjax: true
 ---
 
 最近学到了，也是腾讯自己修复了微信的这个bug吧。或者与其说是修复，不如说是提供给用户一种修复微信通知的工具。

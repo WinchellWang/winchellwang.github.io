@@ -9,6 +9,7 @@ tags:
    - Life Tips
 header-mask: 0.2
 catalog: true
+mathjax: true
 ---
 
 本文只是分享一些我道听途说来的关于减肥和健身的信息，结合我自身的减肥经验与大家浅谈一下。内容不保证科学，也并不对本文的信息准确性负责。

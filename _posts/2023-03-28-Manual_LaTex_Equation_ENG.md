@@ -9,6 +9,7 @@ tags:
    - Computer
 header-mask: 0.2
 catalog: true
+mathjax: true
 ---
 
 This document mainly copied the content from [this link](http://www.uinio.com/Math/LaTex/) to study the LaTex for mathmatic equation.

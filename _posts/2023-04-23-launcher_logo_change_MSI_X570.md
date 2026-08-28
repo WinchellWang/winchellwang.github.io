@@ -9,6 +9,7 @@ tags:
    - Computer
 header-mask: 0.2
 catalog: true
+mathjax: true
 ---
 
 # Software Requirements
