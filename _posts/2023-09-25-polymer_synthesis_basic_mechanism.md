@@ -4,7 +4,7 @@ title: Mechanism of Polymer Reaction
 subtitle: Basic mechanisms of polymer reactions under assumptions for a batch reactor in ideal conditions
 date: 2023-09-25
 author: Winchell.Wang
-header-img: "img/post-bg-tech.jpg"
+header-img: "img/backgrounds/post-bg-tech.jpg"
 tags:
    - Chemistry
 header-mask: 0.2

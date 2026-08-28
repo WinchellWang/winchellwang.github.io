@@ -4,7 +4,7 @@ title: Deploy Vicuna-13B Locally
 subtitle: To have my personal ChatBot powered by AI.
 date: 2023-07-08
 author: Winchell.Wang
-header-img: "img/post-bg-tech.jpg"
+header-img: "img/backgrounds/post-bg-tech.jpg"
 tags:
    - Computer
 header-mask: 0.2

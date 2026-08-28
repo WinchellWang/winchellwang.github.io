@@ -4,7 +4,7 @@ title: 训练21点AI专家
 subtitle: 以生成对抗网络培训21点扑克AI专家
 date: 2024-06-24
 author: Winchell.Wang
-header-img: "img/post-bg-tech.jpg"
+header-img: "img/backgrounds/post-bg-tech.jpg"
 tags:
    - Computer
 header-mask: 0.2

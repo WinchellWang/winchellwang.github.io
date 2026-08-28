@@ -4,7 +4,7 @@ title: 无氧和减肥
 subtitle: 减肥到底要不要做无氧运动
 date: 2024-03-11
 author: Winchell.Wang
-header-img: "img/post-bg-life.jpg"
+header-img: "img/backgrounds/post-bg-life.jpg"
 tags: 
    - Life Tips
 header-mask: 0.2

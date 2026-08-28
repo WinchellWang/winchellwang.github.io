@@ -4,7 +4,7 @@ title: 减肥入门
 subtitle: 一些基础的关于减肥经验和知识的分享
 date: 2024-03-10
 author: Winchell.Wang
-header-img: "img/post-bg-life.jpg"
+header-img: "img/backgrounds/post-bg-life.jpg"
 tags: 
    - Life Tips
 header-mask: 0.2

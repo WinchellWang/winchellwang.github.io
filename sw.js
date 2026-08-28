@@ -1,7 +1,7 @@
 // PWA service worker for Winchell Wang Blog.
 // Home is cache-first; posts/comments are network-only; other pages are
 // network-first; static assets use stale-while-revalidate.
-const CACHE_VERSION = 'v9';
+const CACHE_VERSION = 'v11';
 const HOME_CACHE = `winchell-blog-home-${CACHE_VERSION}`;
 const PAGE_CACHE = `winchell-blog-pages-${CACHE_VERSION}`;
 const ASSET_CACHE = `winchell-blog-assets-${CACHE_VERSION}`;
@@ -10,8 +10,8 @@ const HOME_URL = new URL('./', self.registration.scope).href;
 const PRECACHE_URLS = [
   './', './manifest.json', './css/bootstrap.min.css', './css/moax-blog.css', './js/pagination.js',
   './js/jquery.min.js', './js/bootstrap.min.js', './js/moax-blog.min.js',
-  './img/favicon.ico',
-  './img/avatar.png', './img/home-bg.jpg'
+  './img/profile/favicon.ico',
+  './img/profile/avatar.png', './img/backgrounds/home-bg.jpg'
 ];
 
 self.addEventListener('install', (event) => {

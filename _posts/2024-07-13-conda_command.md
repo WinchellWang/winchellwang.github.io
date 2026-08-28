@@ -4,7 +4,7 @@ title: conda基础操作手册
 subtitle: 操作conda的基础命令
 date: 2024-07-13
 author: Winchell.Wang
-header-img: "img/post-bg-tech.jpg"
+header-img: "img/backgrounds/post-bg-tech.jpg"
 tags:
    - Computer
 header-mask: 0.2

@@ -4,7 +4,7 @@ title: Common Units in Chemistry
 subtitle: A brief manual to conclude the common units in chemistry
 date: 2023-04-01
 author: Winchell.Wang
-header-img: "img/post-bg-tech.jpg"
+header-img: "img/backgrounds/post-bg-tech.jpg"
 tags:
    - Chemistry
 header-mask: 0.2

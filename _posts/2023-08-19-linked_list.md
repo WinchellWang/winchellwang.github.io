@@ -4,7 +4,7 @@ title: Linked List
 subtitle: A linked list is a linear data structure.
 date: 2023-08-19
 author: Winchell.Wang
-header-img: "img/post-bg-tech.jpg"
+header-img: "img/backgrounds/post-bg-tech.jpg"
 tags:
    - Computer
 header-mask: 0.2

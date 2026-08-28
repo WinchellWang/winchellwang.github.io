@@ -4,7 +4,7 @@ title: Blackjack Code
 subtitle: A python script for 4 player blackjack
 date: 2024-04-15
 author: Winchell.Wang
-header-img: "img/post-bg-tech.jpg"
+header-img: "img/backgrounds/post-bg-tech.jpg"
 tags:
    - Computer
 header-mask: 0.2

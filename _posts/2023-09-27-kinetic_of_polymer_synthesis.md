@@ -4,7 +4,7 @@ title: Kinetic of Polymer Reaction
 subtitle: Basic Kinetic of polymer reactions under assumptions for a batch reactor in ideal conditions
 date: 2023-09-27
 author: Winchell.Wang
-header-img: "img/post-bg-tech.jpg"
+header-img: "img/backgrounds/post-bg-tech.jpg"
 tags:
    - Chemistry
 header-mask: 0.2

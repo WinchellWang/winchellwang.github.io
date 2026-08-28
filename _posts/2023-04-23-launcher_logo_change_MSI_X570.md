@@ -4,7 +4,7 @@ title: Change MSI X570 BIOS Logo
 subtitle: A method to replace the logo in BIOS during lanuch
 date: 2023-04-23
 author: Winchell.Wang
-header-img: "img/post-bg-tech.jpg"
+header-img: "img/backgrounds/post-bg-tech.jpg"
 tags:
    - Computer
 header-mask: 0.2

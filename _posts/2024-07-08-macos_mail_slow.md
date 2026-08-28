@@ -4,7 +4,7 @@ title: 修复邮箱打开缓慢
 subtitle: 修复Macos 12.7 Monterey中邮箱应用打开极度缓慢的问题
 date: 2024-07-08
 author: Winchell.Wang
-header-img: "img/post-bg-tech.jpg"
+header-img: "img/backgrounds/post-bg-tech.jpg"
 tags:
   - Life Tips
 header-mask: 0.2

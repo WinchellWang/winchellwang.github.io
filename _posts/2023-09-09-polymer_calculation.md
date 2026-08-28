@@ -4,7 +4,7 @@ title: Molecular Weight Distribution
 subtitle: Calculation for Polymer
 date: 2023-09-09
 author: Winchell.Wang
-header-img: "img/post-bg-tech.jpg"
+header-img: "img/backgrounds/post-bg-tech.jpg"
 tags:
    - Chemistry
 header-mask: 0.2

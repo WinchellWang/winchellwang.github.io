@@ -4,7 +4,7 @@ title: Automatic Hyperparameter Optimization
 subtitle: Automatic Optimize LightGBM Parameters for Chemical Reaction Yield Prediction
 date: 2024-07-30
 author: Winchell.Wang
-header-img: "img/post-bg-tech.jpg"
+header-img: "img/backgrounds/post-bg-tech.jpg"
 tags:
    - Computer
 header-mask: 0.2

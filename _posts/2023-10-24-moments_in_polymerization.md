@@ -4,7 +4,7 @@ title: The Method of Moments in Polymerization Reaction
 subtitle: The application of MoM in describing the basic kinetic mechanism of polymerization reaction
 date: 2023-10-24
 author: Winchell.Wang
-header-img: "img/post-bg-tech.jpg"
+header-img: "img/backgrounds/post-bg-tech.jpg"
 tags:
    - Chemistry
 header-mask: 0.2
@@ -364,7 +364,7 @@ $$
 f(n)={P_n\over \lambda_0}=P^{n-1}(1-P)
 $$
 
-![fn_n](/img/post_image/2023-10-24/fn_n.svg)
+![fn_n](/img/posts/2023-10-24/fn_n.svg)
 
 # 4. Product
 

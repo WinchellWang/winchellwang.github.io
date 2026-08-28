@@ -4,7 +4,7 @@ title: 检查是否可以加速计算
 subtitle: 检查已安装的Pytorch是否可以使用GPU加速
 date: 2024-07-14
 author: Winchell.Wang
-header-img: "img/post-bg-tech.jpg"
+header-img: "img/backgrounds/post-bg-tech.jpg"
 tags:
    - Computer
 header-mask: 0.2

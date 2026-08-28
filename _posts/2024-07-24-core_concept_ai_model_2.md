@@ -4,7 +4,7 @@ title: 术之根本，AI建模三大核心之二：特征
 subtitle: 永远绕不开的话题：数据，特征，和调参
 date: 2024-07-24
 author: Winchell.Wang
-header-img: "img/post-bg-tech.jpg"
+header-img: "img/backgrounds/post-bg-tech.jpg"
 tags:
    - Computer
 header-mask: 0.2
@@ -112,4 +112,4 @@ data['quarter'] = pd.to_datetime(data['dt'],unit='D',origin=pd.Timestamp('2022-2
 
 总之，特征工程就是在翻译和解释数据给计算机，让他更好的理解数据的关系，从而建立更准确的模型。特征工程就是汤师爷，在给县长翻译翻译什么叫惊喜。
 
-![wut_is_suprise?!](/img/post_image/2024-07-24/wut_is_suprise.gif)
+![wut_is_suprise?!](/img/posts/2024-07-24/wut_is_suprise.gif)

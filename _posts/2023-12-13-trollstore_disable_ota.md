@@ -4,7 +4,7 @@ title: Disable iOS OTA Update
 subtitle: Only works for trollstore and jailbreak device.
 date: 2023-12-13
 author: Winchell.Wang
-header-img: "img/post-bg-tech.jpg"
+header-img: "img/backgrounds/post-bg-tech.jpg"
 tags:
    - Life Tips
 header-mask: 0.2
@@ -33,7 +33,7 @@ rm -rf /var/MobileSoftwareUpdate/MobileAsset/AssetsV2/* && chflags schg,schange,
 
 Then, you should get something like that, if you check the updates again.
 
-![ota_block](/img/post_image/2023-12-13/ota_block.jpg)
+![ota_block](/img/posts/2023-12-13/ota_block.jpg)
 
 # 4. Enable Update
 

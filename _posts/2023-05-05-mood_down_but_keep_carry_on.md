@@ -4,7 +4,7 @@ title: 这算水逆不
 subtitle: 4月末5月初的诸多不顺，但整理心情还要继续前行
 date: 2023-05-05
 author: Winchell.Wang
-header-img: "img/post-bg-life.jpg"
+header-img: "img/backgrounds/post-bg-life.jpg"
 tags:
     - Blog
 header-mask: 0.2

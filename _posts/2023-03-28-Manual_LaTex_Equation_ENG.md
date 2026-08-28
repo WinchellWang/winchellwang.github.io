@@ -4,7 +4,7 @@ title: General Manual for Mathematical Equations in LaTex
 subtitle: Brief manual for the code used in LaTex to generate equations
 date: 2023-03-28
 author: Winchell.Wang
-header-img: "img/post-bg-tech.jpg"
+header-img: "img/backgrounds/post-bg-tech.jpg"
 tags:
    - Computer
 header-mask: 0.2

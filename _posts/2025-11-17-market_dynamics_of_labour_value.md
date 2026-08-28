@@ -4,7 +4,7 @@ title: The Market Dynamics of Labour Value
 subtitle: How Risk and Complexity, Not Product Price, Define Worker Compensation
 date: 2025-11-16
 author: Winchell.Wang
-header-img: "img/post-bg-life.jpg"
+header-img: "img/backgrounds/post-bg-life.jpg"
 tags:
    - Blog
 header-mask: 0.2

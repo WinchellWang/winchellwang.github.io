@@ -4,7 +4,7 @@ title: 术之根本，AI建模三大核心之一：数据
 subtitle: 永远绕不开的话题：数据，特征，和调参
 date: 2024-07-19
 author: Winchell.Wang
-header-img: "img/post-bg-tech.jpg"
+header-img: "img/backgrounds/post-bg-tech.jpg"
 tags:
    - Computer
 header-mask: 0.2

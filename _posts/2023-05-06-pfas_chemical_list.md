@@ -4,7 +4,7 @@ title: List of PFAS Chemcials
 subtitle: PFAS Chemcial and their structure
 date: 2023-05-06
 author: Winchell.Wang
-header-img: "img/post-bg-tech.jpg"
+header-img: "img/backgrounds/post-bg-tech.jpg"
 tags:
    - Chemistry
 header-mask: 0.2

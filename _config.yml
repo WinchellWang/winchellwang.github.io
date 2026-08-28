@@ -1,7 +1,7 @@
 # Site settings
 title: Winchell Wang
 SEOTitle: Winchell.Wang Blog
-header-img: img/home-bg.jpg
+header-img: img/backgrounds/home-bg.jpg
 email: wq.w@outlook.my
 description: "Winchell Wang Personal Blog"
 keyword: "Winchell Wang, Winchell.Wang Blog, winchellwang, environmental engineering, water treatment, advanced oxidation processes, AOP, PFAS degradation, nanobubble, artificial intelligence, machine learning, chemical engineering, chemistry, Python, engineering, wen-qiang wang, wen-qiang, wenqiang wang, wenqiang, 环境工程, 水处理, 人工智能"
@@ -10,8 +10,8 @@ github_repo: "https://github.com/winchellwang/winchellwang.github.io.git" # you 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "🇨🇳 🇦🇺 🇺🇸 🇨🇦<br><img src='/img/logo/instagram.svg' alt='instagram' align='top' width='16' height='16'> <a href='https://www.instagram.com/winchellwang'>winchellwang</a><br><img src='/img/logo/podcast.svg' alt='apple_podcast' align='top' width='16' height='16'> <a href='https://podcasts.apple.com/tw/podcast/%E5%A4%A7%E9%B5%9D22-goose22/id1724645271'>Apple Podcast</a><br><img src='/img/logo/spotify.svg' alt='spotify' align='top' width='16' height='16'> <a href='https://open.spotify.com/show/4nRHx7jhfCPH2svTBwOvLC'>Spotify</a><br><img src='/img/logo/xyz.svg' alt='xiaoyuzhou' align='top' width='16' height='16'> <a href='https://www.xiaoyuzhoufm.com/podcast/69897df946063c1af55e4c92'>小宇宙</a>"
-sidebar-avatar: /img/avatar.png      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "🇨🇳 🇦🇺 🇺🇸 🇨🇦<br><img src='/img/icons/instagram.svg' alt='instagram' align='top' width='16' height='16'> <a href='https://www.instagram.com/winchellwang'>winchellwang</a><br><img src='/img/icons/podcast.svg' alt='apple_podcast' align='top' width='16' height='16'> <a href='https://podcasts.apple.com/tw/podcast/%E5%A4%A7%E9%B5%9D22-goose22/id1724645271'>Apple Podcast</a><br><img src='/img/icons/spotify.svg' alt='spotify' align='top' width='16' height='16'> <a href='https://open.spotify.com/show/4nRHx7jhfCPH2svTBwOvLC'>Spotify</a><br><img src='/img/icons/xyz.svg' alt='xiaoyuzhou' align='top' width='16' height='16'> <a href='https://www.xiaoyuzhoufm.com/podcast/69897df946063c1af55e4c92'>小宇宙</a>"
+sidebar-avatar: /img/profile/avatar.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # SNS settings
 RSS: true
@@ -21,6 +21,7 @@ linkedin_username: wenqiangwang-winchell
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 permalink: pretty
+include: ["_pages"]
 exclude: ["Blog"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 

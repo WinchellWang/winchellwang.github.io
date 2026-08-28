@@ -4,7 +4,7 @@ title: 将自己网状化
 subtitle: 以网状化的思维方式生活
 date: 2024-06-21
 author: Winchell.Wang
-header-img: "img/post-bg-life.jpg"
+header-img: "img/backgrounds/post-bg-life.jpg"
 tags:
    - Life Tips
    - Blog

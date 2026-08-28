@@ -1,1 +1,3 @@
-# [Personal Blog](https://moaxwang.github.io)
+# Winchell Wang Blog
+
+A Jekyll site published with GitHub Pages.
