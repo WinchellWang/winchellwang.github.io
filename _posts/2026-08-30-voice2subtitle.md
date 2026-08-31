@@ -4,7 +4,7 @@ title: SRT subtitle converter
 subtitle: A docker image and guidance on converting voice to subtitles.
 date: 2026-08-30
 author: Winchell.Wang
-header-img: "img/backgrounds/post-bg-life.jpg"
+header-img: "img/backgrounds/post-bg-tech.jpg"
 tags:
     - Computer
 header-mask: 0.2

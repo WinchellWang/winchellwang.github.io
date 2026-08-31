@@ -4,7 +4,7 @@ title: Download lyrics
 subtitle: A python script to download music lyrics.
 date: 2026-08-30
 author: Winchell.Wang
-header-img: "img/backgrounds/post-bg-life.jpg"
+header-img: "img/backgrounds/post-bg-tech.jpg"
 tags:
     - Computer
     - Life Tips
