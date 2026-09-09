@@ -1209,6 +1209,9 @@ img::-moz-selection {
   line-height: 1.7;
   color: #404040 !important;
 }
+.talks-body-size .hexo-talk-info {
+  align-self: center;
+}
 @media (orientation: landscape) {
   .post-content-column.post-container h1,
   .post-content-column.post-container h2,
