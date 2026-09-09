@@ -933,6 +933,19 @@ img::-moz-selection {
   }
 }
 
+/* Archive and Tags use slightly smaller article titles than other post lists. */
+#archive-posts .post-title,
+#tag-posts .post-title {
+  font-size: 19px;
+}
+
+@media only screen and (orientation: landscape) {
+  #archive-posts .post-title,
+  #tag-posts .post-title {
+    font-size: 24px;
+  }
+}
+
 /* selected tag appearance */
 .tags a.selected,
 .tags .tag.selected,
