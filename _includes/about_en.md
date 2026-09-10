@@ -31,17 +31,17 @@ When the experiments need a break, I am usually playing badminton, tennis, or wo
 - **Adelaide University | Visiting Researcher**
   Synthesized and characterized highly dispersed single-atom catalysts, investigated their performance and reaction pathways in PFAS degradation, and connected catalyst design with practical water-treatment applications.
 
-- **L'Oréal | Advanced Research Intern**
-  Conducted fundamental formulation research with novel active ingredients and evaluated their effects on stability, functionality, and consumer benefits.
-
 - **Monash University | Research Assistant and Teaching Assistant**
   Researched AI applications in chemical engineering, contributed to research proposals and graduate supervision, and taught Python-based engineering data analysis and transport-demand modelling.
+
+- **Wison Engineering | Contract Manager**
+  Managed EPC subcontracts with a combined value of approximately **USD 97 million** and handled cost control, changes, billing, progress tracking, and stakeholder coordination for an approximately **USD 2.6 million** engineering-design project.
 
 - **Beiersdorf | Formula Scientist**
   Led facial-cleanser development from formulation and pilot scale-up through ageing, microbiological, and clinical testing; coordinated with marketing, supply chain, manufacturing, and regulatory teams while evaluating new materials with global suppliers.
 
-- **Wison Engineering | Contract Manager**
-  Managed EPC subcontracts with a combined value of approximately **USD 97 million** and handled cost control, changes, billing, progress tracking, and stakeholder coordination for an approximately **USD 2.6 million** engineering-design project.
+- **L'Oréal | Advanced Research Intern**
+  Conducted fundamental formulation research with novel active ingredients and evaluated their effects on stability, functionality, and consumer benefits.
 
 ## Publications
 

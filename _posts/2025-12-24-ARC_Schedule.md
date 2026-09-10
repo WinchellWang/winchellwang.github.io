@@ -28,7 +28,7 @@ The PWA I created has the following features:
 
 - It allows you to add the event to your calendar with correct start and end time.
 
-- It supports double filtering by date and location, so you can easily find the events you are interested in. The settings can be perserved so you don't need to set them every time you open the app.
+- It supports double filtering by sport and location, so you can easily find the events you are interested in. The settings can be perserved so you don't need to set them every time you open the app.
 
 - The date will be back to today automatically when you open the app.
 
