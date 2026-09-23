@@ -79,6 +79,14 @@ html {
         width: 67%;
         margin-left: 17%;
     }
+    .post-hero-content-column.with-catalog {
+        width: calc(84% - 182px);
+        margin-left: 9%;
+    }
+    .post-hero-content-column.without-catalog {
+        width: 84%;
+        margin-left: 9%;
+    }
     .post-catalog-column {
         display: block !important;
         float: left;
