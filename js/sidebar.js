@@ -30,8 +30,10 @@
 
             // Short pages stay in normal flow; long sidebars can scroll inside
             // the viewport while their column retains its original height.
-            if (contentRect.height <= height || sidebarTop > 80) return;
-            column.style.minHeight = height + 'px';
+            // Enter fixed positioning exactly where normal scrolling places
+            // the sidebar, so the transition has no vertical jump.
+            if (contentRect.height <= height || sidebarTop > fixedTop) return;
+            column.style.minHeight = naturalHeight + 'px';
             sidebar.classList.add('fixed');
             sidebar.style.height = height + 'px';
             sidebar.style.top = Math.min(fixedTop, contentRect.bottom - height) + 'px';
