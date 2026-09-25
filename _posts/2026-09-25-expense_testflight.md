@@ -136,7 +136,7 @@ Replace `Transaction (Merchant)` in the final line with the actual **Merchant** 
 
 The numbered branches map responses `1` through `8` to the corresponding Expense categories. Keep **General** as the fallback for uncertain classifications. The screenshot uses numbered branches: when adapting the shortcut, also route empty or unexpected responses to General so an unmatched response does not skip logging. Model execution failures may still require a manual entry.
 
-![AI shortcut showing the merchant classification prompt and numbered category branches](https://github.com/WinchellWang/expense/raw/main/doc/iOS_27_AI_Shortcuts.jpg)
+> [**A more detailed setup method can be found here.**](https://github.com/WinchellWang/expense/blob/main/doc/AUTOMATION_GUIDE.md#%EF%B8%8F-ai-shortcut-setup)
 
 ## What to check after setup
 
