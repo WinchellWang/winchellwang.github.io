@@ -255,11 +255,7 @@ h4 {
 .floating-label-form-group-with-focus label, .post-container a:focus, .post-container a:hover, .post-content-preview:hover, a:focus, a:hover, footer .copyright a:focus, footer .copyright a:hover {
     color: #0085a1;
 }
-a img:focus, a img:hover {
-    cursor: zoom-in;
-}
-.sidebar-container .short-about > a img:focus,
-.sidebar-container .short-about > a img:hover {
+a[href] img {
     cursor: pointer;
 }
 blockquote {
