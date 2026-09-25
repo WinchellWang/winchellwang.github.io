@@ -89,7 +89,7 @@ For a fixed category instead, select a specific category in the trigger and choo
 
 ## Add AI classification
 
-<a href="https://www.icloud.com/shortcuts/373d0c7f43aa49b6ae3eabe7dcd0c82d"><img src="https://cdn.jim-nielsen.com/ios/512/shortcuts-2018-10-03.png" alt="Add the AI shortcut" width="64" height="64"> Download the AI shortcut</a>
+<a href="https://www.icloud.com/shortcuts/373d0c7f43aa49b6ae3eabe7dcd0c82d"><img src="https://cdn.jim-nielsen.com/ios/512/shortcuts-2018-10-03.png" alt="Add the AI shortcut" width="64" height="64" style="border-radius: 14px;"> Download the AI shortcut</a>
 
 1. Open the link on your iPhone and add the shared shortcut to Shortcuts.
 2. Create a **Transaction** automation with **Any Card → Any Category → Any Merchant**, and select **Run Immediately**.
