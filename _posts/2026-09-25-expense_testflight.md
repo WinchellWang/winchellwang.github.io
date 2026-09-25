@@ -25,7 +25,7 @@ That became **Expense - Easy Cost Tracker**.
 
 <a href="https://testflight.apple.com/join/Ea4FgKEF"><img src="https://raw.githubusercontent.com/WinchellWang/expense/main/icon/light_icon.png" width="128" height="128" alt="Expense App Icon" style="border-radius: 28px;">
 
-<a href="https://testflight.apple.com/join/Ea4FgKEF"><img src="https://testflight.apple.com/images/testflight-iOS-400x400_1x_40.png" width="48" height="48" alt="Expense App Icon" style="border-radius: 28px;">Try Expense on TestFlight</a>
+<a href="https://testflight.apple.com/join/Ea4FgKEF"><img src="https://testflight.apple.com/images/testflight-iOS-400x400_1x_40.png" width="48" height="48" alt="Expense App Icon" style="border-radius: 28px;"> Try Expense on TestFlight</a>
 
 # Keeping it simple
 
