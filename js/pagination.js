@@ -13,6 +13,12 @@
 
   var instances = {};
 
+  function finishPageClick(event) {
+    event.preventDefault();
+    // Client-side navigation keeps the link mounted; release its focus highlight.
+    event.currentTarget.blur();
+  }
+
   function displayPage(items, pageIndex, perPage) {
     for (var i = 0; i < items.length; i++) {
       if (Math.floor(i / perPage) === pageIndex) {
@@ -72,8 +78,8 @@
     var prevBtn = controls.querySelector('.pag-prev');
     var nextBtn = controls.querySelector('.pag-next');
 
-    function onPrev()  { goTo(state.current - 1); window.scrollTo(0,0); }
-    function onNext()  { goTo(state.current + 1); window.scrollTo(0,0); }
+    function onPrev(event) { goTo(state.current - 1); window.scrollTo(0,0); finishPageClick(event); }
+    function onNext(event) { goTo(state.current + 1); window.scrollTo(0,0); finishPageClick(event); }
 
     if (prevBtn) prevBtn.addEventListener('click', onPrev);
     if (nextBtn) nextBtn.addEventListener('click', onNext);
@@ -186,8 +192,8 @@
     var prevBtn = controls.querySelector('.pag-prev');
     var nextBtn = controls.querySelector('.pag-next');
     var tagCloud = document.getElementById('tag_cloud');
-    if (prevBtn) prevBtn.addEventListener('click', function () { goTo(current - 1, true); });
-    if (nextBtn) nextBtn.addEventListener('click', function () { goTo(current + 1, true); });
+    if (prevBtn) prevBtn.addEventListener('click', function (event) { goTo(current - 1, true); finishPageClick(event); });
+    if (nextBtn) nextBtn.addEventListener('click', function (event) { goTo(current + 1, true); finishPageClick(event); });
     if (tagCloud) {
       tagCloud.addEventListener('click', function () {
         // Wait for the clicked fragment to become window.location.hash, then
