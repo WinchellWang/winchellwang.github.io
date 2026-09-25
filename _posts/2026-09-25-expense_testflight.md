@@ -49,6 +49,10 @@ For me, the useful part is being able to spend more attention on how the app sho
 
 Once the official version is available on the App Store, I will open-source the code on GitHub. I hope it will be useful to people who want a simple tracker, or who want to build their own version around different needs.
 
+## Multilingual support
+
+I also wanted to make Expense accessible to more people in their own language. The original app supports English and Simplified Chinese, and my version adds Traditional Chinese, Spanish, French, and Japanese, bringing the total to six languages. The app follows your system language, so more people can use it comfortably from the start.
+
 # Apple Pay, Shortcuts, and AI
 
 Shortcuts is one of the additions I wanted most. With a Transaction automation, an Apple Pay tap payment can pass its amount and merchant name to Expense's **Add Expense** action.
