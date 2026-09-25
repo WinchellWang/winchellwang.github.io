@@ -21,9 +21,15 @@ By the time I started this project, it had been more than two years since its la
 
 I still liked the original design. So I decided to build my own app, taking inspiration from its simple layout and quick entry flow while adding the features I wanted for today's iPhone.
 
-That became **Expense**.
+That became **Expense - Easy Cost Tracker**.
 
-<img src="https://raw.githubusercontent.com/WinchellWang/expense/main/icon/light_icon.png" alt="Expense app icon" width="128" height="128"><a align="center" href="https://testflight.apple.com/join/Ea4FgKEF"><img src="https://testflight.apple.com/images/testflight-iOS-400x400_1x_40.png" width="48" height="48" alt="Expense App Icon" style="border-radius: 28px;" />
+<p>
+  <a align="center" href="https://testflight.apple.com/join/Ea4FgKEF">
+  <img src="https://raw.githubusercontent.com/WinchellWang/expense/main/icon/light_icon.png" width="128" height="128" alt="Expense App Icon" style="border-radius: 28px;" />
+  <a align="center" href="https://testflight.apple.com/join/Ea4FgKEF">
+  <img src="https://testflight.apple.com/images/testflight-iOS-400x400_1x_40.png" width="48" height="48" alt="Expense App Icon" style="border-radius: 28px;" />
+  </a>
+</p>
 
 [Try Expense on TestFlight](https://testflight.apple.com/join/Ea4FgKEF)
 
