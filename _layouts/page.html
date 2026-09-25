@@ -90,7 +90,7 @@ layout: default
                         <div class="short-about" style="white-space: nowrap;">
                             {% if site.sidebar-avatar %}
                                 <a href="{{ site.baseurl }}/about">
-                                    <img src="{{site.sidebar-avatar}}" width=80%>
+                                    <img class="sidebar-avatar" src="{{site.sidebar-avatar}}" alt="{{ site.title | escape }}">
                                 </a>
                             {% endif %}
                             {% if site.sidebar-about-description %}
