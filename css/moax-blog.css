@@ -1109,7 +1109,7 @@ img::-moz-selection {
 }
 
 /* Make talk/post meta match Home's .post-preview>.post-meta (italic & grey) */
-.paginated-list .hexo-talk-meta,
+.paginated-list .moax-talk-meta,
 .paginated-list .post-meta {
   font-style: italic;
   color: #808080;
@@ -1208,7 +1208,7 @@ img::-moz-selection {
 .talks-body-size .post-title {
   color: #404040 !important;
 }
-.talks-body-size .hexo-talk-info {
+.talks-body-size .moax-talk-info {
   align-self: center;
 }
 @media (orientation: landscape) {
@@ -1227,9 +1227,9 @@ img::-moz-selection {
   :root { color-scheme: dark; }
   html, body { background-color: #12171d; color: #d8dee6; }
   body, .pager li > a, .post-preview > a, .post-preview > .post-meta > a,
-  .talks-body-size .post-title, .talks-body-size .hexo-talk-title { color: #d8dee6 !important; }
+  .talks-body-size .post-title, .talks-body-size .moax-talk-title { color: #d8dee6 !important; }
   a, .post-container a, footer .copyright a, select { color: #71c7e3; }
-  .post-preview > .post-meta, .post-content-preview, .paginated-list .hexo-talk-meta,
+  .post-preview > .post-meta, .post-content-preview, .paginated-list .moax-talk-meta,
   .paginated-list .post-meta, blockquote, small.img-hint, .text-muted { color: #9aa7b5; }
   .post-content-column.post-container h1, .post-content-column.post-container h2,
   .post-content-column.post-container h3, .post-content-column.post-container h4,
@@ -1332,10 +1332,10 @@ img::-moz-selection {
   }
 
   .paginated-list.post-container .post-title,
-  .paginated-list.post-container .hexo-talk-title,
+  .paginated-list.post-container .moax-talk-title,
   .one-tag-list .post-preview > a .post-title,
   .paginated-list .post-title,
-  .paginated-list .hexo-talk-title,
+  .paginated-list .moax-talk-title,
   .paginated-list .post-title strong {
     color: #d8dee6 !important;
   }
@@ -1348,7 +1348,7 @@ img::-moz-selection {
     color: #9aa7b5 !important;
   }
 
-  .paginated-list .hexo-talk-meta,
+  .paginated-list .moax-talk-meta,
   .paginated-list .post-meta {
     color: #aebdce !important;
   }

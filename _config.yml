@@ -5,7 +5,7 @@ header-img: img/backgrounds/home-bg.jpg
 email: wq.w@outlook.my
 description: "Winchell Wang Personal Blog"
 keyword: "Winchell Wang, Winchell.Wang Blog, winchellwang, environmental engineering, water treatment, advanced oxidation processes, AOP, PFAS degradation, nanobubble, artificial intelligence, machine learning, chemical engineering, chemistry, Python, engineering, wen-qiang wang, wen-qiang, wenqiang wang, wenqiang, 环境工程, 水处理, 人工智能"
-url: "https://winchellwang.github.io/"          # your host, for absolute URL
+url: "https://winchellwang.github.io"          # your host, for absolute URL
 github_repo: "https://github.com/winchellwang/winchellwang.github.io.git" # you code repository
 
 # Sidebar settings
@@ -19,15 +19,12 @@ github_username: WinchellWang
 linkedin_username: wenqiangwang-winchell
 
 # Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 permalink: pretty
 include: ["_pages"]
 exclude: ["Blog"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 # Markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
 # document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
 highlighter: rouge

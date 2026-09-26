@@ -26,7 +26,7 @@ This include is intentionally flexible: it will render either talk-like objects
   .paginated-list {
     position: relative;
   }
-  .paginated-list .hexo-talk-item,
+  .paginated-list .moax-talk-item,
   .paginated-list .paginated-item {
     display: flex;
     align-items: flex-start;
@@ -76,7 +76,7 @@ This include is intentionally flexible: it will render either talk-like objects
       text-align: initial;
   }
 
-  .paginated-list .hexo-talk-info {
+  .paginated-list .moax-talk-info {
     padding-left: 0;
     flex: 1 1 auto;
   }
@@ -92,7 +92,7 @@ This include is intentionally flexible: it will render either talk-like objects
 
   /* Keep list sizing synchronized with the site's portrait layout. */
   @media screen and (orientation: portrait) {
-    .paginated-list .hexo-talk-item,
+    .paginated-list .moax-talk-item,
     .paginated-list .post-preview,
     .paginated-list .paginated-item {
       flex-direction: row;
@@ -105,7 +105,7 @@ This include is intentionally flexible: it will render either talk-like objects
       margin-right: 12px; /* Increased margin */
     }
 
-    .paginated-list .hexo-talk-meta {
+    .paginated-list .moax-talk-meta {
       font-size: 12px;
       color: #888;
     }
@@ -120,7 +120,7 @@ This include is intentionally flexible: it will render either talk-like objects
   </style>
   {% assign per_page = include.per_page | default: 10 %}
   {% for item in include.items %}
-  <div class="hexo-talk-item paginated-item">
+  <div class="moax-talk-item paginated-item">
     {% if include.show_calendar != false %}
     <div class="page-action-calendar">
       <div class="sub-month">
@@ -129,8 +129,8 @@ This include is intentionally flexible: it will render either talk-like objects
       <div class="sub-day">{% if item.talkdate %}{{ item.talkdate | date: "%-d" }}{% else %}{{ item.date | date: "%-d" }}{% endif %}</div>
     </div>
     {% endif %}
-  <div class="hexo-talk-info">
-      <div class="hexo-talk-title">
+  <div class="moax-talk-info">
+      <div class="moax-talk-title">
         {% assign show_link = include.show_link | default: true %}
         {% assign excerpt_len = include.excerpt_length | default: 200 %}
         {% if show_link and item.url %}
@@ -171,7 +171,7 @@ This include is intentionally flexible: it will render either talk-like objects
       
   <!-- per-item meta: keep consistent with the site-wide post-meta format -->
       {% if include.show_author != false %}
-      <p class="post-meta hexo-talk-meta">Posted by {% if item.author %}{{ item.author }}{% else %}{{ site.title }}{% endif %} on {% if item.talkdate %}{{ item.talkdate | date: "%B %-d, %Y" }}{% else %}{{ item.date | date: "%B %-d, %Y" }}{% endif %}</p>
+      <p class="post-meta moax-talk-meta">Posted by {% if item.author %}{{ item.author }}{% else %}{{ site.title }}{% endif %} on {% if item.talkdate %}{{ item.talkdate | date: "%B %-d, %Y" }}{% else %}{{ item.date | date: "%B %-d, %Y" }}{% endif %}</p>
       {% endif %}
     </div>
   </div>
