@@ -1,0 +1,66 @@
+---
+layout: post
+title: The Oriental Hotel
+subtitle: 5 years after another 5 years — How many more will there be?
+date: 2026-09-26
+author: Winchell.Wang
+header-img: "img/backgrounds/post-bg-life.jpg"
+tags:
+   - Blog
+header-mask: 0.2
+catalog: true
+---
+
+# Why we have a driver?
+
+There are many arguments about the current president of China. Some people say that he is bringing China down a dangerous path, while others believe that he is bringing China into a new era in which the world has to listen to China in a way it never did before, and that under his rule, people's living standards have continued to improve. Some people argue that China would be much better if he were not the president. Others argue that he is an exceptionally good leader for China. I think both sides may be telling the truth from their own perspectives. After all, a person can have both bright and dark sides at the same time. Furthermore, I think it is pointless to argue about what would have happened if history had taken a different path. It has already happened. When we look back at history, the most important thing is to learn from it rather than endlessly asking, "What if?"
+
+For me, the more important question is not whether a particular president has performed well or badly. A country with such a vast territory and such a large population will always be difficult to lead in a way that satisfies everyone. When billions of people have different interests, it is inevitable that some people's interests will conflict with others'. What concerns me much more is the limit of political power and the inheritance of that power.
+
+In the past, Mao did remarkable things during the early years of new China. China had suffered from foreign invasion, internal conflict, warlordism, and prolonged political instability. Mao played an important role in reunifying the country and bringing it into a new political era. Of course, this achievement was not his alone, but his contribution is undeniable. Yet later, terrible things happened. He remained at the top for too long. Gradually, he became increasingly disconnected from ordinary people. He listened to people close to him, made decisions from his office, and sometimes went into the field but only to see carefully prepared scenes rather than the reality people were living through. He no longer had reliable information on which to base reasonable decisions. He was getting older, yet he still held enormous power and continued to make decisions that affected the lives of hundreds of millions of people. The Great Leap Forward, the resulting famine, and later the Cultural Revolution followed, one after another. There was no effective institution capable of stopping him. Those who openly defied his wishes could face severe punishment.
+
+This is what unlimited power can become when the person at the top is treated almost like a god. **To prevent tragedies like these from happening again, China's political system introduced institutional constraints on leadership succession and terms of office during the reform era in 1982. However, term limits for the presidency were later removed from the Constitution in 2018.** We all know who was president at the time and who pushed for this to happen.
+
+China has a very unique political structure, where, on the surface, the president is the head of the government, while internally, the General Secretary of the only party with the right to govern and the Chairman of the Central Military Commission actually hold the real power. In the past, Deng and Jiang pushed to have these three positions held by the same person in order to maintain the authority of the government and increase the unity of the political system. However, there was a gap: only the presidency had a term limit, while the other two positions did not. This meant that there was still a possibility that the president could change while the actual decision-makers remained the same. It could also create conflicts simply because the three roles were held by three different people. **The solution they gave was not to set the same term limit for the other two positions, but instead to remove the restriction on the presidency.**
+
+In 2019, COVID-19 appeared, and China's initial response achieved remarkable results in limiting the spread of the virus. The strict zero-COVID policy, insisted by someone, was, for a time, widely seen as successful in minimizing the immediate damage caused by the pandemic. But the policy continued for years. Eventually, in 2022, and especially during the transition away from zero-COVID, the policy became a source of enormous social and economic disruption. What a coincidence! Just like what I mentioned above.
+
+In 2025, with the collapse of the real estate bubble and increasing friction in global politics, people started losing their jobs. Now, they are not allowed to be called unemployed, but are instead all considered freelancers. While there is huge inflation around the world, China is experiencing surprisingly strong deflation. Things have become cheaper and cheaper in some cities. Is that a good thing? All I know is that if prices go down, revenue goes down, salaries go down, and disposable income also goes down. This leads to even lower consumption, which leads to lower revenue, and the loop keeps going, with everything moving downward in each cycle. The cake stops growing and even starts shrinking, but the people who hold the knife to allocate the slices have an even bigger appetite than before. And guess how much would be left for the people who don't have a knife to take a slice of the cake? I would honestly say that China is in a recession. But did the man who holds all the power in one hand solve it properly? The answer really depends on whether you are holding the knife or not.
+
+I genuinely believe that leaders, including those who hold enormous amounts of power, want to make their country better, both while they are in power and after they leave it. So why do situations like this keep happening? I think the answer is already contained in what I wrote above.
+
+When too much power is concentrated in one person, we eventually face a fundamental problem: that person is still human. People grow old. People make mistakes. People become isolated from reality. People die.
+
+So what happens when the person at the top can no longer lead? Perhaps they will choose someone they trust. Perhaps they will choose someone they like. But where is the people's voice? Where is the country's future path? Should one leader decide the direction, while everyone else works to make that direction possible? OR should the people decide the direction, and then choose a leader to take the wheel and guide the country there? I will leave that question here for you to think about.
+
+# Is democracy possible?
+
+On the land we now call China, there is a history of more than 5,000 years. For much of that history, people were ruled by centralized authority. For more than 2,000 years, imperial dynasties governed China, with the emperor holding enormous political power and succession generally determined within the imperial system. Ordinary people could offer suggestions or petitions, but they did not have the political mechanism to choose the direction of the country. People became accustomed to this system, and the ruling families became very good at maintaining it.
+
+Then the twentieth century arrived. Democratic ideas had spread across the Western world and were introduced to China. Revolution followed. The Qing dynasty collapsed, and a new republic was established. But the new system did not immediately produce the democracy that many had imagined. China experienced warlordism, civil war, and eventually another centralized political system. A government could have a modern structure on the outside while remaining highly centralized on the inside. Then another new China took control of the mainland and declared that it would represent and listen to the people. It was, in some ways, a significant change. At least they started listening. That itself was a huge leap.
+
+But where is democracy? Is democracy possible on the land of China? People can argue about how efficient it is to put enormous power into the hands of one person. They can even sincerely support such a system because they believe it produces stability, order, or rapid progress. And yes, there are benefits to almost everything. We know alcohol is harmful to physical health, but people still enjoy drinking because the experience can bring pleasure, relaxation, or social connection. The question is not whether a centralized system can sometimes produce good results. The question is whether people should ultimately have the right to decide the direction of their own country.
+
+Could people on this land choose their own path rather than being told what that path should be by the people at the top? I will leave that question here, too. But I also know that there is a small island where people speak Chinese, celebrate many of the same traditional festivals, and share a deeply connected history with mainland China. Its history has also been complicated and painful. Yet its people elect their government, vote by vote.
+
+# Die in slience
+
+Nowadays, talking about topics like this can be extremely dangerous in China and on Chinese social media. Even writing something as superficial as this can carry risks. But I know I am not alone. I know there are people who have thought about the same questions. Some of them have spoken. Some have stood in front of everyone else and refused to remain silent. And some of them may have disappeared afterward, forced to sit down and become silent again.
+
+Eventually, we will all die. It does not matter whether we die in silence or speak like a cicada until the very end.
+
+We are small. Our voices may be tiny compared with the enormous machinery of a country. But being small does not mean we should remain silent. **Unless we are willing to die in a slient way.**
+
+# 一个小故事
+
+有一个全球著名的大酒楼叫东方红。它里面曾经出的菜香飘四海，客人尝了无不举手称赞。但是东方红这个酒楼的地方很特殊，方圆二十公里，只有他一家饭店，这旁边的人也都自己不做饭，天天都是来这里吃饭。酒楼虽然长久，但是里面的厨子员工当然是在流动的，里面的主厨时至今日已经换了5个了，当然各个都是一顶一的世界级大厨。
+
+最早饭店刚成立的时候，那时周围的住户还是有相当多的人自己做饭吃。饭店为了拉拢顾客，第一个大厨于是宣称自己是非盈利饭店。什么意思呢？就是我这个酒楼一分钱不赚，旁边的住户你拿东西进来，拿给我什么我给你做什么，我分文不取！住户一听还有这种好事，不用自己做饭就能吃上，于是纷纷来带上自己的鱼肉米面来让大厨帮忙做。大厨的厨艺没得说，烧得一手好菜，住户们吃的都津津有味。久而久之，大家都习惯带自己的菜来酒楼做了吃。大厨为了方便大家不要天天带着食材来回奔波，就又宣布大家可以把食材一次买够寄存在酒楼，进来店直接点菜吃就行了，还是免费！大家心想这不是更方便了吗？没有人不愿意把自己的菜寄放在酒楼里的。随着酒楼的名声越来越大，周围越来越多、越来越远的人都慕名而来请大厨做饭吃。可是客人太多了，酒楼的人手，器具都不够了。于是大厨请求大家来一些人帮忙，并且希望大家能捐一些餐具厨具给酒楼，这样酒楼才能忙得过来给大家端上菜。住户们平常都已经不再自己做饭了，餐具厨具留在自己家里也没用，放在酒楼还能用上自己的餐具吃饭，于是十分乐意都捐给酒楼。于是，住户们的厨房和餐桌变得越来越空，酒楼里的东西就变得越来越多了。再后来，主厨想这么多人在我这里存着这么多食材，乱七八糟，我的冰库也放不下啊，于是又宣布，从今天开始不再接受大家分开各自带食材了，酒楼将自己开设农庄生产食材，方便管理，但是因为人手不够，所以希望大家都来帮忙。住户们一想也是啊，我之前寄存的鱼肉因为酒楼放不下冰库，都在外面坏了结果也没吃上，直接吃酒楼种的还新鲜好吃。于是住户们都在大厨的命令下各自组成了不同的农业部门负责计划生产各种大家需要吃的食材，甚至还组织了工厂专门供应和修复酒楼里的器具。于是，这方圆二十公里内所有的住户都不自己做饭了，他们只要放心的做主厨交待的工作就能天天吃上好吃的了。
+
+可是主厨随着年纪变大了，渐渐的力不从心了，没有办法再一个人炒出来这么多人要吃的完全不一样的菜了。主厨于是宣布，为了提高做饭效率，每餐吃什么将都由主厨决定。住户们一听起初有些怨言，觉得没吃到自己想要的不开心。也有人建议主厨说，那为什么主厨不把厨艺交给更多人呢，这样三四个厨子一起炒菜不就解决问题了吗。但是主厨说，不可以，我对饭菜的质量要求很高，如果不是我亲自把控全部的东西，我放不下心。炒的菜必须要我满意了，才能放心给你们吃。住户有点怨言，但是又转念一想，自己家已经没有厨房了，自己也做不了菜，主厨的厨艺这么好，炒什么应该也都不难吃，大部分人也就接受了。可是有一天，主厨说，我今天拿猪肉的时候，感觉这个肉有点硬，我不喜欢，所以今天我不做有肉的菜了。好多人一时群情激愤，嚷嚷着让主厨今天必须给他们端上来一份肉菜。主厨两眼一瞪说，今天酒楼里任何人谁要是有不满，那大家谁今天都别想吃到一口饭！有人一听怕了，立马老老实实坐下来等着上饭，也有人还是不服气一直在叫嚣。别的住户看不下去了，把叫嚷的人架了出去，也有性情急的，两拳抡倒他们，三下五除二，没有人再抱怨了。主厨看了一眼，满意得点点头回去做饭了，并为大家端上了炒青菜盖饭。没有人再说话，大家都低头默默地吃了起来，当然这份炒青菜也自然是放眼全球顶尖的炒青菜。时光流转，大厨有时脾气上来了，会教训一下大家饿个两三天，有时又性情温和了下来，便会摆出三菜一汤，两荤一素，让大家吃个爽快。突然有一天，大家等着上菜的时候，后厨一个配菜师傅走了出来给大家说，主厨在炒菜时过世了。大家心情有所触动，回想起曾经吃过的那些顶级菜肴，即便偶尔被饿几顿也不过是小事罢了，没有大厨怎么能吃到这种美味珍馐，纷纷感伤起来。
+
+但饭总还是要有人做的，大厨没了，大家手忙脚乱的从一群帮厨中挑出了切丝最细的那个出来，就让他当主厨了。这位二代大厨细究过往种种，想起来这酒楼盖起来的初衷是为了让大家都吃上自己想吃的好吃的饭。于是把规矩也又改了回去，说你们想吃什么就点什么。酒楼里，客人是上帝，厨子要服务客人。于是乎大家也又都能吃上自己想吃的饭了，只是厨子变得更加忙碌了。后来厨子年纪大了，想起来老前辈后来干过的糊涂事，觉得自己不能重蹈覆辙，于是定下规矩说，主厨最多只能干十年，下一个厨子我们就从帮厨中挑选培养。大家都很不舍这个优秀大厨，但是大厨急流勇退，还是坚决在十年后辞去了职务，也坐在饭桌边吃饭了。后面的第三代大厨，第四代大厨也都遵从前辈意志，内部选拔内部培养，十年下任。住户们在这期间又能吃上自己想吃的好吃饭菜了。可是住户们不知道的是，这酒楼的运营却越来越岌岌可危。酒楼的产业太大，人手众多，东西一路从生产到运到酒楼端上桌，总有人手脚不干净从中间小偷小摸拿点东西带回自己家，更有甚者甚至在夜深人静的时候偷跑进厨房偷偷给自己炒菜吃。酒楼的运营损耗太高，马上就要支持不下去了，
+
+此时，恰逢第五代大厨上任，大厨回望过去，发现酒楼亏空太大是因为前面三代主厨说话的分量都不如第一代那么重，训话教导员工，大家阳奉阴违。于是厉行法制，成立了一个内部纠察小组，专门把手脚不干净的人揪出来施以鞭刑。大家一看大厨手段这么狠厉，一时噤若寒蝉，人人自危，不敢再做这种小偷小摸了，酒楼的运营也因此重回正轨。这位大厨千好万好，把酒楼的运营搞得井井有条，但他唯独有一点问题，就是不太会做菜。他只会做一道世界顶级的开水白菜，其他的菜都不算好吃。可这也没办法解决，从第一任主厨开始就定下了规矩，主厨统管酒楼所有事物，并且掌勺的就只能有主厨一人。他也只能硬着头皮上场，边干边学。但是住户们受不了了，当时愿意在酒楼里吃就是因为这里好吃，现在天天吃的饭菜味同嚼蜡，要么就是一道开水白菜翻来覆去的吃，时间一长还怎么吃的下去啊，住户们也都日渐消瘦。主厨一看，他忧心住户们的身体，但是也知道自己的做饭水平有限。他左思右想，想到一个办法，成立宣传大队和吃饭委员会。宣传大队专门宣传自己的饭菜用料有多么好，自己做饭的时候有多么用心，应该理解他的辛苦，认真吃完他倾尽心血做的饭。吃饭委员会则是让住户们互相监督，每十户成立一个委员会，如果谁没把饭吃完，那委员会中的其他人就必须要监督他吃完，否则被发现的话，这个委员会内的所有人都要被罚禁食十日。可是这么一弄，更多人不吃了，主厨一看，怎么大家都不好好吃饭呢，觉得自己有着巨大的责任要让全部人都吃上好饭，于是宣布他将取消以前订下的规矩，一直坚守主厨岗位，直到解决了大家的吃饭问题，他才会心满意足，放心的把主厨这个重担交给下一任。住户们叫苦不迭，赶忙都说换个大厨就好了，我们想选个自己喜欢的厨子。第五代大厨一听，更加生气了，心想我为了你们想让你们吃的更好，你们却让我下去换上别人给你们做饭，我的责任心是有保证的，万一换上来别人做的还不如我那你们多难受啊，我必须要在这个位置上认真做，直到把这个事做好，做到你们满意。
+
+住户们低头了，因为他们发现，酒楼里换什么厨子，换不换厨子，有几个厨子，不是他们说了算，而他们的家里，也没有了能做饭的任何东西。
