@@ -43,13 +43,13 @@ But where is democracy? Is democracy possible on the land of China? People can a
 
 Could people on this land choose their own path rather than being told what that path should be by the people at the top? I will leave that question here, too. But I also know that there is a small island where people speak Chinese, celebrate many of the same traditional festivals, and share a deeply connected history with mainland China. Its history has also been complicated and painful. Yet its people elect their government, vote by vote.
 
-# Die in slience
+# Die in silence
 
 Nowadays, talking about topics like this can be extremely dangerous in China and on Chinese social media. Even writing something as superficial as this can carry risks. But I know I am not alone. I know there are people who have thought about the same questions. Some of them have spoken. Some have stood in front of everyone else and refused to remain silent. And some of them may have disappeared afterward, forced to sit down and become silent again.
 
 Eventually, we will all die. It does not matter whether we die in silence or speak like a cicada until the very end.
 
-We are small. Our voices may be tiny compared with the enormous machinery of a country. But being small does not mean we should remain silent. **Unless we are willing to die in a slient way.**
+We are small. Our voices may be tiny compared with the enormous machinery of a country. But being small does not mean we should remain silent. **Unless we are willing to die in a silent way.**
 
 # 一个小故事
 
