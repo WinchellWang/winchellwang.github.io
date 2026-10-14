@@ -5,7 +5,11 @@
 article, body {
     overflow-x: hidden;
 }
-html, body {
+/* Only the root controls viewport overscroll. Body is its own scroll
+   container here (overflow-x: hidden on both html and body), so setting
+   overscroll-behavior on it stops Firefox from chaining wheel scrolls
+   up to the page. */
+html {
     overscroll-behavior: none;
 }
 html {
