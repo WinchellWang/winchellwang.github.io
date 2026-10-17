@@ -47,12 +47,13 @@
 
 完整且持续更新的列表见 [Google Scholar](https://scholar.google.ca/citations?user=xWAkkB0AAAAJ&hl=en)
 
+- [Enabling Aqueous Ozonation via Ozone Nanobubbles: Oxidative Modification of Activated Carbon and Its Performance and Economic Implications](https://doi.org/10.1021/acsestwater.6c00596)
 - [The Role of Gas Composition in Nanobubbles: Generation, Characterization, Applications, and Future Directions for Sustainable Technologies](https://doi.org/10.1016/j.jwpe.2025.109287)
-- [Cross-Linkable Protein Nanofiber Aerogels for the Removal of Cationic and Anionic Dyes](https://doi.org/10.1021/acsmaterialsau.6c00006)
-- [Coupling of Engineered High Entropy Alloys with Semiconducting TiO2 Nanofilms for Scalable and Ultrafast Alkaline Hydrogen Evolution Reaction](https://doi.org/10.1002/advs.202514558)
-- [Prediction of Cadmium Adsorption Using a Combined Machine Learning Model with a Multi-Hybrid Input Approach: Advancing Artificial Intelligence in Soil Contaminations](https://doi.org/10.31031/COJRA.2025.04.000587)
 - [DT-MNLR: A Novel Hybrid Machine Learning Framework for Precise Coke Strength and Reactivity Prediction](https://doi.org/10.1177/03019233241250132)
+- [Coupling of Engineered High Entropy Alloys with Semiconducting TiO2 Nanofilms for Scalable and Ultrafast Alkaline Hydrogen Evolution Reaction](https://doi.org/10.1002/advs.202514558)
+- [Cross-Linkable Protein Nanofiber Aerogels for the Removal of Cationic and Anionic Dyes](https://doi.org/10.1021/acsmaterialsau.6c00006)
 - [Review of Catalysts, Substrates, and Fabrication Methods in Catalytic Hydrogen Combustion with Further Challenges and Applications](https://doi.org/10.1021/acs.energyfuels.3c04923)
+- [Prediction of Cadmium Adsorption Using a Combined Machine Learning Model with a Multi-Hybrid Input Approach: Advancing Artificial Intelligence in Soil Contaminations](https://doi.org/10.31031/COJRA.2025.04.000587)
 
 ## 会议
 
